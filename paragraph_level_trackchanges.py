@@ -840,19 +840,20 @@ Respond with the JSON object only:"""
     else:
         user_content = prompt
 
-    # Use prefilled assistant turn to force JSON output immediately
+    # Call LLM — no assistant prefill (not supported by claude-opus-4-6+)
     message = client.messages.create(
         model=model_name,
         max_tokens=16000,
         temperature=0,
         messages=[
             {"role": "user",      "content": user_content},
-            {"role": "assistant", "content": '{"reasoning":'},  # forces JSON output immediately
         ],
     )
     response_text = message.content[0].text.strip()
-    # Prepend what we prefilled so parse_llm_response sees the full JSON structure
-    return '{"reasoning":' + response_text
+    # Strip markdown fences if present
+    if response_text.startswith("```"):
+        response_text = response_text.split("\n", 1)[-1].rsplit("```", 1)[0].strip()
+    return response_text
 
 
 # ──────────────────────────────────────────────
@@ -1002,11 +1003,12 @@ Respond with the JSON object only:"""
         temperature=0,
         messages=[
             {"role": "user",      "content": user_content},
-            {"role": "assistant", "content": '{"reasoning":'},
         ],
     )
     response_text = message.content[0].text.strip()
-    return '{"reasoning":' + response_text
+    if response_text.startswith("```"):
+        response_text = response_text.split("\n", 1)[-1].rsplit("```", 1)[0].strip()
+    return response_text
 
 
 # ──────────────────────────────────────────────
