@@ -171,16 +171,12 @@ Respond with the JSON object only:"""
         temperature=0,
         messages=[
             {"role": "user",      "content": user_content},
-            {"role": "assistant", "content": '{"reasoning":'},
         ],
     )
     response_text = message.content[0].text.strip()
-    return '{"reasoning":' + response_text
-
-
-# ──────────────────────────────────────────────
-# FOOTNOTE FULL DELETION LLM CALL
-# ──────────────────────────────────────────────
+    if response_text.startswith("```"):
+        response_text = response_text.split("\n", 1)[-1].rsplit("```", 1)[0].strip()
+    return response_text
 
 def call_llm_for_footnote_full_deletion(xml_chunk, text_before,
                                          client, changes, model_name=MODEL_OPUS,
@@ -295,11 +291,12 @@ Respond with the JSON object only:"""
         temperature=0,
         messages=[
             {"role": "user",      "content": user_content},
-            {"role": "assistant", "content": '{"reasoning":'},
         ],
     )
     response_text = message.content[0].text.strip()
-    return '{"reasoning":' + response_text
+    if response_text.startswith("```"):
+        response_text = response_text.split("\n", 1)[-1].rsplit("```", 1)[0].strip()
+    return response_text
 
 
 # ──────────────────────────────────────────────
