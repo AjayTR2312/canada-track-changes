@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pxml-api
+  namespace: pxml-pipeline
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pxml-api
+  template:
+    metadata:
+      labels:
+        app: pxml-api
+    spec:
+      containers:
+        - name: api
+          image: pxml-pipeline:latest  # Replace with your registry image
+          command: ["uvicorn", "pipeline_api_celery:app", "--host", "0.0.0.0", "--port", "8000"]
+          ports:
+            - containerPort: 8000
+          env:
+            - name: REDIS_URL
+              value: "redis://redis.pxml-pipeline.svc.cluster.local:6379/0"
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "250m"
+            limits:
+              memory: "1Gi"
+              cpu: "500m"
+          volumeMounts:
+            - name: job-data
+              mountPath: /tmp/pxml_pipeline_jobs
+          readinessProbe:
+            httpGet:
+              path: /api/health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /api/health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 15
+      volumes:
+        - name: job-data
+          persistentVolumeClaim:
+            claimName: job-data-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pxml-api
+  namespace: pxml-pipeline
+spec:
+  type: LoadBalancer  # Or ClusterIP + Ingress
+  selector:
+    app: pxml-api
+  ports:
+    - port: 80
+      targetPort: 8000

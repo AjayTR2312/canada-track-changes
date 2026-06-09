@@ -1,0 +1,31 @@
+# Kubernetes manifests
+k8s/
+
+# Build artifacts
+build/
+__pycache__/
+*.pyc
+*.pyo
+*.spec
+
+# Local output folders
+finaloutputs/
+pipeline_jobs/
+pipeline_output/
+
+# Docker/compose files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Docs/prompts
+*.md
+validation_prompts/

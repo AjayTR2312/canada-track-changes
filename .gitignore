@@ -1,0 +1,48 @@
+# ─── Environment & Secrets ───
+.env
+.env.local
+.env.production
+*.pem
+*.key
+
+# ─── Python ───
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# ─── Logs ───
+logs/
+*.log
+pipeline_log*.txt
+
+# ─── Pipeline outputs & job data ───
+pipeline_jobs/
+pipeline_output/
+finaloutputs/
+
+# ─── IDE ───
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── OS files ───
+Thumbs.db
+.DS_Store
+desktop.ini
+~$*
+
+# ─── Docker ───
+docker-compose.override.yml
+
+# ─── Misc ───
+*.spec
+failed_*.txt
