@@ -3,8 +3,8 @@
 import re
 import json
 import anthropic
-from config import API_KEY, MODEL_OPUS
-client = anthropic.Anthropic(api_key=API_KEY)
+from config import build_anthropic_client, MODEL_OPUS
+client = build_anthropic_client(MODEL_OPUS)
 
 
 # ─────────────────────────────────────────────

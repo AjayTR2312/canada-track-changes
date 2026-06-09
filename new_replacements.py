@@ -40,8 +40,8 @@ REPLACE:
 """
 
     import anthropic
-    from config import MODEL_OPUS
-    client = anthropic.Anthropic(api_key=API_KEY)
+    from config import MODEL_OPUS, build_anthropic_client
+    client = build_anthropic_client(MODEL_OPUS)
     message = client.messages.create(
         model=MODEL_OPUS,
         max_tokens=1024,
