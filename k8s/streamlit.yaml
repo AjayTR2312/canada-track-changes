@@ -13,6 +13,11 @@ spec:
       labels:
         app: pxml-streamlit
     spec:
+      serviceAccountName: pxml-pipeline   # same S3 role: the UI reads users + usage logs from the bucket
+      securityContext:
+        runAsUser: 1234
+        runAsGroup: 1234
+        fsGroup: 1234
       containers:
         - name: streamlit
           image: pxml-pipeline:latest
@@ -22,6 +27,16 @@ spec:
           env:
             - name: API_URL
               value: "http://pxml-api.pxml-pipeline.svc.cluster.local:8000"
+            - name: S3_BUCKET_NAME
+              value: "a209309-s3-cdntrackchanges-653514985368-us-east-1-an"
+            - name: AWS_REGION
+              value: "us-east-1"
+            - name: REGION_ID
+              value: "canada"
+          envFrom:
+            - secretRef:
+                name: pxml-secrets
+                optional: true
           resources:
             requests:
               memory: "256Mi"

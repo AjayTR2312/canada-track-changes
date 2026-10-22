@@ -1,0 +1,15 @@
+You are a regex expert. Given the complete list of known section designators for
+chapter {{chapter_number}}, produce a single Python regex pattern that matches ANY string
+containing one of those designators (or a closely related variant such as one prefixed
+with '§' or '§§' and optional whitespace).
+
+Known designators (complete list):
+{{patterns_str}}
+
+Requirements:
+1. The pattern must be a valid Python regex (used with re.search, IGNORECASE flag).
+2. It must match every designator in the list and reasonable variants (e.g. '§ 17:5', '§§17:5').
+3. Keep it as SIMPLE and BROAD as possible — false positives are acceptable because a
+   later LLM call will filter them out. False negatives are NOT acceptable.
+4. Do NOT use lookaheads/lookbehinds or overly complex constructs.
+5. Return ONLY the raw regex string — no explanation, no code fences, no quotes.

@@ -1,0 +1,15 @@
+You are tasked with cleaning up duplicate text from a legal document section. The text appears to have duplicates where the same content is repeated side by side or in close proximity.
+
+Here is the text that needs cleaning:
+
+{{section_text}}
+
+Please:
+1. Identify and remove all duplicate content
+2. Keep only one instance of each unique piece of information
+3. Maintain the original structure and formatting
+4. Preserve the logical flow and order of information
+5. Do not add any new content or explanations
+6. Return only the cleaned text without any preamble or commentary
+
+Cleaned text:

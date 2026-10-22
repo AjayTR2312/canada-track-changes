@@ -1,0 +1,302 @@
+/* ─── Shared tab styles ─── */
+.tab-section {
+  max-width: 1200px;
+}
+
+.tab-section h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 1rem;
+}
+
+.tab-section h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #495057;
+  margin: 0.5rem 0;
+}
+
+.tab-section h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 0.5rem;
+}
+
+/* Info / success / error boxes */
+.info-box {
+  padding: 0.75rem 1rem;
+  background: #e8f4fd;
+  border-radius: 6px;
+  color: #1565c0;
+  font-size: 0.9rem;
+}
+
+.success-box {
+  padding: 0.75rem 1rem;
+  background: #e8f5e9;
+  border-radius: 6px;
+  color: #2E7D32;
+  font-size: 0.9rem;
+}
+
+.error-box {
+  padding: 0.75rem 1rem;
+  background: #fef0f0;
+  border-radius: 6px;
+  color: #c62828;
+  font-size: 0.9rem;
+}
+
+/* Downloads grid */
+.downloads-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.downloads-grid .panel p {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin: 0.5rem 0 1rem;
+}
+
+/* File list */
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-list li {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.85rem;
+  color: #495057;
+  border-bottom: 1px solid #f0f2f6;
+}
+
+.file-list li:last-child {
+  border-bottom: none;
+}
+
+/* Log */
+.log-output-full {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-family: 'Consolas', 'Courier New', monospace;
+  max-height: 600px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Profile */
+.profile-table {
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.profile-table td {
+  padding: 0.4rem 1rem 0.4rem 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #f0f2f6;
+}
+
+.edit-profile-form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* Logs controls */
+.logs-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: #495057;
+  cursor: pointer;
+}
+
+.logs-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.logs-filters .form-group {
+  flex: 1;
+  max-width: 250px;
+}
+
+/* Data table */
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.data-table th {
+  background: #f8f9fa;
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 2px solid #dee2e6;
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #f0f2f6;
+  color: #212529;
+}
+
+.data-table tr:hover td {
+  background: #f8f9fa;
+}
+
+/* Outcome badges */
+.outcome-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.outcome-badge.success {
+  background: #e8f5e9;
+  color: #2E7D32;
+}
+
+.outcome-badge.error {
+  background: #fef0f0;
+  color: #c62828;
+}
+
+.outcome-badge.stopped {
+  background: #fff8e1;
+  color: #f57c00;
+}
+
+.text-muted {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+/* ─── Recent Validation Sessions ─── */
+.recent-sessions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 0.75rem;
+}
+
+.recent-session-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.recent-session-row:hover {
+  background: #e8f4fd;
+  border-color: #90caf9;
+}
+
+.recent-session-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.recent-session-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c3e50;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recent-session-meta {
+  font-size: 0.78rem;
+  color: #6c757d;
+}
+
+.session-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.btn-resume {
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #1565c0;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.btn-resume:hover {
+  background: #0d47a1;
+}
+
+.btn-delete {
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #c62828;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.btn-delete:hover {
+  background: #b71c1c;
+}
+
+.btn-delete:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOCX Viewer V2</title>
+  </head>
+  <body>
+    <!-- Isolated entry: this document does NOT load the host app's index.css,
+         so none of the main app's global styles can leak into the viewer.
+         Served by the SAME Vite dev/build (port 4000) — no second server. -->
+    <div id="docx-viewer-root"></div>
+    <script type="module" src="/src/docx-viewer/main.tsx"></script>
+  </body>
+</html>

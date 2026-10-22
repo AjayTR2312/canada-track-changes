@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/docxparser.ts","./src/excelparser.ts","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/components/docxviewer.tsx","./src/components/fileupload.tsx","./src/components/pxmleditor.tsx","./src/components/trackchangespanel.tsx"],"version":"5.6.3"}

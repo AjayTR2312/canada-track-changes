@@ -1,0 +1,160 @@
+.batch-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.source-selector {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.source-btn {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  background: #f8f9fa;
+  color: #495057;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.source-btn:hover:not(:disabled) {
+  background: #eef1f4;
+}
+
+.source-btn.active {
+  background: #0068C9;
+  border-color: #0068C9;
+  color: #fff;
+  font-weight: 600;
+}
+
+.source-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sp-link-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sp-link-input {
+  flex: 1;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.batch-review-table select,
+.task-name-input {
+  padding: 0.3rem 0.4rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  max-width: 220px;
+}
+
+.task-name-input {
+  min-width: 160px;
+}
+
+.batch-review-table td {
+  vertical-align: middle;
+}
+
+/* ─── Progress ───
+   Reuses the shared .progress-bar/.progress-fill from the Processing tab so the
+   two views read the same; only the surrounding spacing differs, since the
+   shared rule carries a 1rem bottom margin meant for a full-width panel. */
+.batch-overall-progress {
+  margin: 0.75rem 0 0.25rem;
+}
+
+.batch-overall-progress .progress-bar {
+  margin-bottom: 0;
+}
+
+/* Capped, not fluid: the Status column is wide, and a bar stretched across all
+   of it reads as a page-level progress indicator rather than one chapter's. */
+.batch-progress {
+  margin-top: 0.35rem;
+  width: 230px;
+  max-width: 100%;
+}
+
+.batch-progress .progress-bar {
+  height: 5px;
+  margin-bottom: 0.25rem;
+}
+
+.batch-progress-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #6c757d;
+  line-height: 1.3;
+}
+
+.batch-progress-pct {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: #495057;
+  flex-shrink: 0;
+}
+
+/* ─── Status table ───
+   Fixed column proportions: without these the Task column collapses to its
+   text width while Status sprawls, which is what made the running view look
+   unbalanced next to the review table above it. */
+.batch-status-table {
+  table-layout: fixed;
+}
+
+.batch-status-table th:nth-child(1),
+.batch-status-table td:nth-child(1) { width: 34%; }
+.batch-status-table th:nth-child(2),
+.batch-status-table td:nth-child(2) { width: 30%; }
+.batch-status-table th:nth-child(3),
+.batch-status-table td:nth-child(3) { width: 18%; }
+.batch-status-table th:nth-child(4),
+.batch-status-table td:nth-child(4) { width: 18%; }
+
+.batch-status-table td {
+  vertical-align: top;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  word-break: break-word;
+}
+
+.batch-row-error {
+  font-size: 0.78rem;
+  color: #c62828;
+  margin-top: 0.3rem;
+  line-height: 1.35;
+}
+
+.batch-retry-btn {
+  margin-top: 0.4rem;
+}
+
+/* ─── Batch log ─── */
+.batch-log {
+  margin-top: 1.25rem;
+}
+
+.batch-log h4 {
+  margin: 0 0 0.5rem;
+}
+
+.batch-log .log-output-full {
+  max-height: 220px;
+  margin: 0;
+}

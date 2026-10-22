@@ -1,0 +1,64 @@
+# Region pack: everything that is specific to ONE region/product line lives in this folder.
+# The app loads exactly one pack, chosen by the REGION_ID environment variable
+# (default: us_forms). To add a region, copy regions/_template, fill it in, run
+#   python tools/check_region.py <your_region_id>
+# and set REGION_ID=<your_region_id>. No code changes are needed.
+
+id: us_forms
+name: US Forms                  # shown in the UI and written to usage / false-positive logs
+description: US Forms looseleaf and pamphlet chapters (PAX / PIX)
+
+products:                       # the "Product" choices offered at upload time (first = default)
+  # date_updated: value written to date.updated on new (traced) elements. folder_keywords: a batch folder
+  # whose name contains one of these is processed as this product (command-line batch run only).
+  - { id: looseleaf, label: looseleaf, date_updated: "1" }
+  - { id: pamphlet,  label: pamphlet,  date_updated: "0", folder_keywords: [GO_DDDC] }
+
+# DTDs. Files live in ./dtd. ORDER MATTERS: a document's DOCTYPE path is matched against
+# each family's doctype_keywords in this order and the first hit wins, so list the more
+# specific names (paxint, pixloc) before the generic ones (pax, pix).
+dtd:
+  default_family: pax           # used when the DOCTYPE matches nothing
+  entities_file: PAX DTD Entities.dtd
+  families:
+    - { id: paxint,      file: paxint.dtd,      label: "PAX Interim (paxint)", doctype_keywords: [paxint],      rules_family: pax, citation_style: cite }
+    - { id: paxloc,      file: paxloc.dtd,      label: "PAX Allocate (paxloc)", doctype_keywords: [paxloc],     rules_family: pax, citation_style: cite }
+    - { id: pixloc,      file: pixloc.dtd,      label: "PIX Allocate (pixloc)", doctype_keywords: [pixloc],     rules_family: pix, citation_style: bare }
+    - { id: pix,         file: pix.dtd,         label: "PIX",                   doctype_keywords: [pix],        rules_family: pix, citation_style: bare, selectable: true }
+    - { id: frontmatter, file: frontmatter.dtd, label: "Front Matter",          doctype_keywords: [frontmatter], rules_family: pax, citation_style: cite }
+    - { id: pax,         file: pax.dtd,         label: "PAX",                   doctype_keywords: [pax],        rules_family: pax, citation_style: cite, selectable: true }
+
+# Tagging prompts per product (files in ./prompts). `fallbacks` are tried in order if the
+# product's own file is missing.
+tagging_prompts:
+  looseleaf: US_Forms_Others_Prompt.md
+  pamphlet: US_Forms_Pamphlets_Prompt.md
+  fallbacks: [US_Forms_Pamphlets_Prompt.md, "Canada_Pamphlets_Prompt 1.md"]
+
+# Rule snippets injected into the prompts ({{XML_ENTITY_RULES}}, {{CASE_CITATION_RULES}},
+# {{URL_TAGGING_RULES}}). Files live in ./rules. {family} = the DTD family's rules_family.
+rules:
+  entity_rules: entity_rules.md
+  citation_rules: "citation_rules.{family}.md"
+  url_rules: "url_rules.{family}.md"
+
+# When a family's citation_style is "bare" (e.g. PIX: <cc>, <st>, ...) the shared
+# <cite type="..."> examples in the tagging prompts are rewritten with these tags.
+citation_tag_map:
+  case: cc
+  lrre: st
+  periodical: pl
+  topic.key: tk
+  secondaryxref: x
+
+# (Feedback logs -- false positives, corrections, resolver runs, triage reports -- are stored in the
+# S3 bucket under feedback/<region id>/, so there is nothing to configure here.)
+
+# Validation tweaks.
+validation:
+  # Tags that never raise DTD / unknown-element errors (they are unwrapped before DTD validation).
+  # Left EMPTY on purpose: the DOCTYPE already picks the right DTD, so a PIX document accepts
+  # <cc>/<st>/<pl>/<x>/<tk>/<ntc>/<url>/<rc> while a PAX document still flags them (pax.dtd declares
+  # none of them). Only list tags here for a rollout that must pass in BOTH.
+  allowed_tags: []
+

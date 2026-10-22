@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #11111b;
+  color: #cdd6f4;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+  background: #181825;
+  border-bottom: 1px solid #313244;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.app-header h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #89b4fa;
+  white-space: nowrap;
+}
+
+.app-header .file-upload-bar {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.error-bar {
+  padding: 8px 20px;
+  background: #f38ba822;
+  color: #f38ba8;
+  font-size: 13px;
+  border-bottom: 1px solid #f38ba844;
+}
+
+.panels-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.panel {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-left {
+  width: 320px;
+  min-width: 260px;
+  flex-shrink: 0;
+  border-right: 1px solid #313244;
+}
+
+.panel-center {
+  flex: 1;
+  min-width: 300px;
+}
+
+.panel-right {
+  width: 380px;
+  min-width: 280px;
+  flex-shrink: 0;
+  border-left: 1px solid #313244;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #11111b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313244;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #45475a;
+}
+
+/* Draft button in header */
+.btn-draft {
+  padding: 6px 14px;
+  border: 1px solid #4a90d9;
+  border-radius: 6px;
+  background: transparent;
+  color: #4a90d9;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-draft:hover {
+  background: rgba(74, 144, 217, 0.15);
+}
+
+.btn-draft.active {
+  background: #4a90d9;
+  color: #fff;
+}
+
+/* Draft panel layout */
+.panel-draft {
+  width: 300px;
+  min-width: 240px;
+  flex-shrink: 0;
+  border-right: 1px solid #313244;
+}
+
+/* Toggle buttons in header (Revisions, Matches) */
+.btn-toggle {
+  padding: 6px 14px;
+  border: 1px solid #6c7086;
+  border-radius: 6px;
+  background: transparent;
+  color: #6c7086;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-toggle:hover {
+  background: rgba(108, 112, 134, 0.15);
+  border-color: #a6adc8;
+  color: #a6adc8;
+}
+
+.btn-toggle.active {
+  background: rgba(166, 227, 161, 0.15);
+  border-color: #a6e3a1;
+  color: #a6e3a1;
+}
+
+/* ─── Inline Panel Hide Button ──────────────────────────────────── */
+.panel-left {
+  position: relative;
+}
+
+.panel-hide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 18px;
+  height: 48px;
+  border: 1px solid #313244;
+  border-radius: 0 6px 6px 0;
+  background: #181825;
+  color: #6c7086;
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  padding: 0;
+}
+
+.panel-hide-btn:hover {
+  background: #313244;
+  color: #cdd6f4;
+  border-color: #89b4fa;
+}
+
+.panel-hide-btn-right {
+  right: -18px;
+  border-left: none;
+}
+
+/* ─── Collapsed Panel Tab ───────────────────────────────────────── */
+.panel-collapsed-tab {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 4px;
+  background: #181825;
+  border-right: 1px solid #313244;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6c7086;
+  transition: background 0.15s, color 0.15s;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.panel-collapsed-tab:hover {
+  background: #1e1e2e;
+  color: #89b4fa;
+}
+
+.panel-collapsed-tab span {
+  white-space: nowrap;
+}
+

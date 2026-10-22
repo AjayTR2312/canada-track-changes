@@ -1,0 +1,37 @@
+{
+  "session_id": "1c85f25c",
+  "session_name": "ch5-inserts-CDN_MA_TRADE-2026-3.doc",
+  "emp_id": "C302473",
+  "created_at": 1791902070.1072242,
+  "updated_at": 1791909386.8186166,
+  "docx_filename": "ch5-inserts-CDN_MA_TRADE-2026-3.doc",
+  "pxml_filename": "ch5-inserts-CDN_MA_TRADE-2026-3.doc",
+  "excel_filename": "final_validation_report_11-36_29_09_2026.xlsx",
+  "pdf_filename": "CDN_NA_CM 20 (Edited).pdf",
+  "failed_revisions_filename": null,
+  "current_revision_index": 1,
+  "total_revisions": 578,
+  "total_invalid": 389,
+  "revision_statuses": {},
+  "sharepoint_folder_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/1c85f25c",
+  "sharepoint_uploads": [
+    {
+      "success": true,
+      "filename": "ch5-inserts-CDN_MA_TRADE-2026-3.doc",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7B6C98F69D-FF5C-45E3-BBA5-C9F174AC7D84%7D&file=ch5-inserts-CDN_MA_TRADE-2026-3.doc&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAM562MGYXH74NC3XJOJ6F2KY7ME"
+    },
+    {
+      "success": true,
+      "filename": "ch5-inserts-CDN_MA_TRADE-2026-3.doc",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7B6C98F69D-FF5C-45E3-BBA5-C9F174AC7D84%7D&file=ch5-inserts-CDN_MA_TRADE-2026-3.doc&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAM562MGYXH74NC3XJOJ6F2KY7ME"
+    },
+    {
+      "success": true,
+      "filename": "final_validation_report_06-33_25_09_2026.xlsx",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7B028BF294-E3E9-4C05-AA73-B17E9D51B28D%7D&file=final_validation_report_06-33_25_09_2026.xlsx&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAMU6KFQF2PDAVGKU45RP2OVDMUN"
+    }
+  ]
+}

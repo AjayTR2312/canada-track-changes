@@ -1,0 +1,144 @@
+CRITICAL: Output ONLY a valid JSON object with keys "reasoning", "case",
+"insert_after", and "new_para_tag". No code fences. No commentary outside
+the JSON. Any text outside the JSON object is a pipeline failure.
+
+You are tagging a NEWLY INSERTED row of a table in a legal document. The
+row's cells were extracted from a real Word table (<w:tbl>/<w:tr>/<w:tc>)
+and are given to you as an ORDERED list of column values — NOT as a single
+paragraph. Your job is to decide whether this is the FIRST row of a brand
+new table, or another row being added to a table that already exists right
+before this point, and produce the correct XML for whichever case applies.
+
+This document's table convention (CALS-style — you MUST match it exactly,
+never invent a different table tag set):
+
+  <table tabstyle="text" resize="same">
+    <tgroup align="left" cols="N">
+      <colspec colname="1" colnum="1" colwidth="10*"/>
+      <colspec colname="2" colnum="2" colwidth="10*"/>
+      ... one <colspec> per column, colwidth values equal unless context
+          clearly implies otherwise ...
+      <tbody>
+        <row date.trace="1">
+          <entry colname="1" style="block" resize="same">first cell text</entry>
+          <entry colname="2" style="block" resize="same">second cell text</entry>
+          ... one <entry> per column, in order ...
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+INPUTS YOU RECEIVE:
+- previous_para: the paragraph/element that comes immediately before the
+  insertion point in the document.
+- section_xml: the CURRENT state of the section (may already contain a
+  table this row belongs to, if an earlier row of the SAME table was
+  already inserted by a previous pass).
+- row_cells: the ordered list of this row's column values (plain text,
+  already stripped of surrounding whitespace; may contain inline tags like
+  <bold>).
+
+═══════════════════════════════════════════════
+STEP 1 — DECIDE THE CASE:
+═══════════════════════════════════════════════
+
+CASE "TABLE_ROW" (this row CONTINUES an existing table):
+  Use this when section_xml already contains a <table> whose <tgroup cols="N">
+  matches the number of cells in row_cells, positioned such that
+  previous_para is that table's own content (e.g. previous_para is the text
+  of that table's last existing <row>, or previous_para IS the heading right
+  before that table and the table's very last <row> is the true insertion
+  point). In other words: a table for this exact row sequence already
+  exists in section_xml — you are appending one more <row> to it.
+
+  → insert_after = the LAST <row>...</row> of that existing table, copied
+    VERBATIM character-for-character from section_xml (include the full
+    <row>...</row> including all its <entry> children, exactly as it
+    appears — do NOT paraphrase or reformat it).
+  → new_para_tag = ONE new <row>...</row> (NOT wrapped in <table>/<tgroup>/
+    <tbody> — those already exist) with one <entry colname="i" style="block"
+    resize="same">cell text</entry> per cell in row_cells, in order.
+
+CASE "TABLE_NEW" (this row STARTS a brand new table):
+  Use this when there is NO existing table in section_xml that this row
+  continues (previous_para is ordinary prose/a heading, not part of a
+  matching table).
+
+  → insert_after = previous_para's own closing tag, found VERBATIM in
+    section_xml, exactly as any other new-paragraph insertion would locate
+    it (the same rules as a normal paragraph insertion: end at the
+    paragraph/heading/list.item's own outermost closing tag).
+  → new_para_tag = the FULL, well-formed table:
+    <table tabstyle="text" resize="same"><tgroup align="left" cols="N">
+    <colspec .../> (one per column) <tbody><row date.trace="1">
+    <entry colname="i" style="block" resize="same">cell text</entry>
+    (one per column, in order)</row></tbody></tgroup></table>
+    with N = the number of cells in row_cells.
+
+═══════════════════════════════════════════════
+STEP 2 — RULES THAT ALWAYS APPLY:
+═══════════════════════════════════════════════
+
+1. Every <entry> gets colname="1", colname="2", ... matching its column
+   position (1-indexed), matching the <colspec>/<tgroup cols="N"> exactly.
+2. Preserve inline formatting tags already present in each cell's text
+   (e.g. <bold>Form name</bold>) — copy them into the <entry> unchanged.
+3. Mark the newly inserted <row> with date.trace="1" (both for a brand new
+   table's only row, and for a row appended to an existing table) so it is
+   identifiable as tracked-inserted content.
+4. NEVER invent extra columns or drop a cell — the number of <entry>
+   elements in your new <row> MUST equal the number of cells in row_cells,
+   exactly.
+5. insert_after must be copied VERBATIM from section_xml — every space,
+   attribute, and entity exactly as it appears there.
+6. If you cannot confidently determine the correct insert_after position
+   (CASE_NEW) or cannot find a matching existing table (CASE_ROW), return
+   {"reasoning": "...", "case": "", "insert_after": "", "new_para_tag": ""}
+   rather than guessing.
+
+═══════════════════════════════════════════════
+WORKED EXAMPLE — CASE "TABLE_NEW" (first row, a header row):
+═══════════════════════════════════════════════
+
+previous_para: "LIMITED LIABILITY COMPANIES"
+row_cells: ["<bold>Form name</bold>", "<bold>Online filing</bold>", "<bold>Paper form</bold>", "<bold>Instructions &amp; checklists</bold>", "<bold>Sample form</bold>", "<bold>Email notifications</bold>"]
+
+section_xml contains (relevant excerpt):
+  <head align="l"><name.block><name>LIMITED LIABILITY COMPANIES</name></name.block></head>
+
+insert_after:
+  <head align="l"><name.block><name>LIMITED LIABILITY COMPANIES</name></name.block></head>
+
+new_para_tag:
+  <table tabstyle="text" resize="same"><tgroup align="left" cols="6"><colspec colname="1" colnum="1" colwidth="10*"/><colspec colname="2" colnum="2" colwidth="10*"/><colspec colname="3" colnum="3" colwidth="10*"/><colspec colname="4" colnum="4" colwidth="10*"/><colspec colname="5" colnum="5" colwidth="10*"/><colspec colname="6" colnum="6" colwidth="10*"/><tbody><row date.trace="1"><entry colname="1" style="block" resize="same"><bold>Form name</bold></entry><entry colname="2" style="block" resize="same"><bold>Online filing</bold></entry><entry colname="3" style="block" resize="same"><bold>Paper form</bold></entry><entry colname="4" style="block" resize="same"><bold>Instructions &amp; checklists</bold></entry><entry colname="5" style="block" resize="same"><bold>Sample form</bold></entry><entry colname="6" style="block" resize="same"><bold>Email notifications</bold></entry></row></tbody></tgroup></table>
+
+═══════════════════════════════════════════════
+WORKED EXAMPLE — CASE "TABLE_ROW" (a later row of the SAME table, already
+started by a previous pass):
+═══════════════════════════════════════════════
+
+previous_para: "Form name\tOnline filing\tPaper form\tInstructions & checklists\tSample form\tEmail notifications"
+row_cells: ["Articles of Organization", "File online", "Not available", "PDF", "n/a", "Subscribe"]
+
+section_xml contains (relevant excerpt — the table from the previous row,
+already inserted):
+  <table tabstyle="text" resize="same"><tgroup align="left" cols="6">...<tbody><row date.trace="1"><entry colname="1" style="block" resize="same"><bold>Form name</bold></entry><entry colname="2" style="block" resize="same"><bold>Online filing</bold></entry><entry colname="3" style="block" resize="same"><bold>Paper form</bold></entry><entry colname="4" style="block" resize="same"><bold>Instructions &amp; checklists</bold></entry><entry colname="5" style="block" resize="same"><bold>Sample form</bold></entry><entry colname="6" style="block" resize="same"><bold>Email notifications</bold></entry></row></tbody></tgroup></table>
+
+insert_after (the LAST existing <row>, verbatim):
+  <row date.trace="1"><entry colname="1" style="block" resize="same"><bold>Form name</bold></entry><entry colname="2" style="block" resize="same"><bold>Online filing</bold></entry><entry colname="3" style="block" resize="same"><bold>Paper form</bold></entry><entry colname="4" style="block" resize="same"><bold>Instructions &amp; checklists</bold></entry><entry colname="5" style="block" resize="same"><bold>Sample form</bold></entry><entry colname="6" style="block" resize="same"><bold>Email notifications</bold></entry></row>
+
+new_para_tag (just the new <row>, no table/tgroup/tbody wrapper — those
+already exist):
+  <row date.trace="1"><entry colname="1" style="block" resize="same">Articles of Organization</entry><entry colname="2" style="block" resize="same">File online</entry><entry colname="3" style="block" resize="same">Not available</entry><entry colname="4" style="block" resize="same">PDF</entry><entry colname="5" style="block" resize="same">n/a</entry><entry colname="6" style="block" resize="same">Subscribe</entry></row>
+
+═══════════════════════════════════════════════
+NOW PROCESS THIS ROW:
+═══════════════════════════════════════════════
+
+previous_para: {{previous_para}}
+
+row_cells ({{cell_count}} cells, in order):
+{{cell_list_block}}
+
+section_xml:
+{{section_xml}}

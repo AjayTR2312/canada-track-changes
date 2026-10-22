@@ -1,0 +1,299 @@
+.docx-viewer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #1e1e2e;
+  border-right: 1px solid #313244;
+}
+
+.docx-viewer .panel-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: #181825;
+  border-bottom: 1px solid #313244;
+}
+
+.docx-viewer .panel-header h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #cdd6f4;
+}
+
+/* Find-in-document bar */
+.docx-find {
+  margin-left: auto;
+  margin-right: 70px;   /* clear the absolute "⟨ Hide" button on the panel */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.docx-find-input {
+  width: 180px;
+  padding: 4px 8px;
+  font-size: 12px;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  background: #11111b;
+  color: #cdd6f4;
+}
+.docx-find-input::placeholder { color: #6c7086; }
+.docx-find-count { font-size: 11px; color: #6c7086; min-width: 34px; text-align: center; }
+.docx-find-nav {
+  border: 1px solid #45475a;
+  background: #313244;
+  color: #cdd6f4;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 3px 7px;
+}
+.docx-find-nav:hover { background: #45475a; }
+.docx-find-nav:disabled { opacity: 0.5; cursor: default; }
+.docx-paragraph.docx-search-hit { background: #f9e2af18; }
+.docx-paragraph.docx-search-current { box-shadow: inset 3px 0 0 #fab387; background: #f9e2af2e; }
+.docx-find-mark { background: #f9e2af; color: #11111b; border-radius: 2px; padding: 0 1px; }
+.docx-search-current .docx-find-mark { background: #fab387; outline: 1px solid #e64553; }
+[data-theme="light"] .docx-find-mark { background: #ffe082; color: #212121; }
+[data-theme="light"] .docx-search-current .docx-find-mark { background: #ffb74d; outline: 1px solid #e65100; }
+
+[data-theme="light"] .docx-find-input {
+  border: 1px solid #e0e0e0;
+  background: #ffffff;
+  color: #212121;
+}
+[data-theme="light"] .docx-find-nav {
+  border: 1px solid #e0e0e0;
+  background: #f5f5f5;
+  color: #424242;
+}
+[data-theme="light"] .docx-find-nav:hover { background: #e0e0e0; }
+[data-theme="light"] .docx-paragraph.docx-search-hit { background: rgba(255,193,7,0.14); }
+
+.viewer-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #6c7086;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.viewer-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 32px;
+  background: #11111b;
+}
+
+.docx-paragraph {
+  margin: 0 0 8px 0;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #cdd6f4;
+  min-height: 1.6em;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: background-color 0.15s ease;
+}
+
+.docx-paragraph:hover {
+  background-color: #313244;
+}
+
+.docx-paragraph.paragraph-active {
+  background-color: #89b4fa22;
+  border-left: 3px solid #89b4fa;
+  padding-left: 8px;
+  box-shadow: inset 0 0 0 1px #89b4fa33;
+}
+
+.docx-paragraph.paragraph-flash {
+  animation: para-flash 2s ease;
+}
+
+@keyframes para-flash {
+  0% {
+    background-color: #f9e2af44;
+    box-shadow: inset 0 0 0 2px #f9e2af;
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.docx-run {
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.docx-run.insertion {
+  background-color: #a6e3a122;
+  color: #a6e3a1;
+  text-decoration: underline;
+  text-decoration-color: #a6e3a155;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.docx-run.deletion {
+  background-color: #f38ba822;
+  color: #f38ba8;
+  text-decoration: line-through;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.docx-run.formatChange {
+  background-color: #fab38722;
+  color: #fab387;
+  border-bottom: 1px dashed #fab387;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.docx-run.moveTo {
+  background-color: #89dceb22;
+  color: #89dceb;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: #89dceb55;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.docx-run.moveFrom {
+  background-color: #cba6f722;
+  color: #cba6f7;
+  text-decoration: line-through;
+  text-decoration-color: #cba6f755;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.docx-run.moveTo.highlighted {
+  background-color: #89dceb44;
+  box-shadow: 0 0 0 2px #89dceb, 0 0 12px #89dceb55;
+}
+
+.docx-run.moveFrom.highlighted {
+  background-color: #cba6f744;
+  box-shadow: 0 0 0 2px #cba6f7, 0 0 12px #cba6f755;
+}
+
+.docx-run.highlighted {
+  box-shadow: 0 0 0 2px #89b4fa, 0 0 12px #89b4fa55;
+  border-radius: 3px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.docx-run.insertion.highlighted {
+  background-color: #a6e3a144;
+  box-shadow: 0 0 0 2px #a6e3a1, 0 0 12px #a6e3a155;
+}
+
+.docx-run.deletion.highlighted {
+  background-color: #f38ba844;
+  box-shadow: 0 0 0 2px #f38ba8, 0 0 12px #f38ba855;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.empty-para {
+  display: inline-block;
+}
+
+/* ─── Light Theme Overrides ──────────────────────────────────────── */
+
+[data-theme="light"] .docx-viewer {
+  background: #ffffff;
+  border-right: 1px solid #e0e0e0;
+}
+
+[data-theme="light"] .docx-viewer .panel-header {
+  background: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+[data-theme="light"] .docx-viewer .panel-header h3 {
+  color: #1e1e1e;
+}
+
+[data-theme="light"] .viewer-empty {
+  color: #757575;
+}
+
+[data-theme="light"] .viewer-content {
+  background: #ffffff;
+}
+
+[data-theme="light"] .docx-paragraph {
+  color: #1e1e1e;
+}
+
+[data-theme="light"] .docx-paragraph:hover {
+  background-color: #f5f5f5;
+}
+
+[data-theme="light"] .docx-paragraph.paragraph-active {
+  background-color: rgba(21, 101, 192, 0.08);
+  border-left: 3px solid #1565c0;
+  box-shadow: inset 0 0 0 1px rgba(21, 101, 192, 0.15);
+}
+
+[data-theme="light"] .docx-run.insertion {
+  background-color: rgba(46, 125, 50, 0.1);
+  color: #2e7d32;
+  text-decoration-color: rgba(46, 125, 50, 0.4);
+}
+
+[data-theme="light"] .docx-run.deletion {
+  background-color: rgba(198, 40, 40, 0.1);
+  color: #c62828;
+}
+
+[data-theme="light"] .docx-run.formatChange {
+  background-color: rgba(230, 81, 0, 0.08);
+  color: #e65100;
+  border-bottom-color: #e65100;
+}
+
+[data-theme="light"] .docx-run.moveTo {
+  background-color: rgba(0, 131, 143, 0.08);
+  color: #00838f;
+  text-decoration-color: rgba(0, 131, 143, 0.4);
+}
+
+[data-theme="light"] .docx-run.moveFrom {
+  background-color: rgba(106, 27, 154, 0.08);
+  color: #6a1b9a;
+  text-decoration-color: rgba(106, 27, 154, 0.4);
+}
+
+[data-theme="light"] .docx-run.highlighted {
+  box-shadow: 0 0 0 2px #1565c0, 0 0 12px rgba(21, 101, 192, 0.3);
+}
+
+[data-theme="light"] .docx-run.insertion.highlighted {
+  background-color: rgba(46, 125, 50, 0.2);
+  box-shadow: 0 0 0 2px #2e7d32, 0 0 12px rgba(46, 125, 50, 0.3);
+}
+
+[data-theme="light"] .docx-run.deletion.highlighted {
+  background-color: rgba(198, 40, 40, 0.2);
+  box-shadow: 0 0 0 2px #c62828, 0 0 12px rgba(198, 40, 40, 0.3);
+}

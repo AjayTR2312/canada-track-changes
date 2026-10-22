@@ -1,10 +1,19 @@
+# API (FastAPI + in-pod worker pool).
+#
+# Stateless: every record that must outlive a pod (jobs, batches, validation sessions, uploads/outputs,
+# users, usage, feedback logs) is in the S3 bucket, so replicas can be added, killed or rescheduled
+# freely and any replica can answer for any job. The only local disk is scratch (/tmp, an emptyDir).
+#
+# A pipeline run that is IN FLIGHT inside a pod that is killed stops; it is reported as "interrupted"
+# (the pod marks it on a graceful shutdown, other pods notice a stale heartbeat otherwise) and can be
+# re-run from its inputs, which are already in S3.
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pxml-api
   namespace: pxml-pipeline
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: pxml-api
@@ -13,41 +22,62 @@ spec:
       labels:
         app: pxml-api
     spec:
+      serviceAccountName: pxml-pipeline
+      # Time for the shutdown hook to mark running jobs as interrupted.
+      terminationGracePeriodSeconds: 60
+      securityContext:
+        runAsUser: 1234
+        runAsGroup: 1234
+        fsGroup: 1234
       containers:
         - name: api
           image: pxml-pipeline:latest  # Replace with your registry image
-          command: ["uvicorn", "pipeline_api_celery:app", "--host", "0.0.0.0", "--port", "8000"]
+          command: ["uvicorn", "pipeline_api:app", "--host", "0.0.0.0", "--port", "8000"]
           ports:
             - containerPort: 8000
           env:
-            - name: REDIS_URL
-              value: "redis://redis.pxml-pipeline.svc.cluster.local:6379/0"
+            - name: S3_BUCKET_NAME
+              value: "a209309-s3-cdntrackchanges-653514985368-us-east-1-an"
+            - name: AWS_REGION
+              value: "us-east-1"
+            - name: PIPELINE_MAX_WORKERS
+              value: "6"
+            - name: REGION_ID
+              value: "canada"
+          # LLM / e-mail credentials: put them in a Secret (or keep the baked .env) -- NOT AWS keys.
+          envFrom:
+            - secretRef:
+                name: pxml-secrets
+                optional: true
           resources:
             requests:
-              memory: "512Mi"
-              cpu: "250m"
+              memory: "4Gi"
+              cpu: "2"
             limits:
-              memory: "1Gi"
-              cpu: "500m"
+              memory: "16Gi"
+              cpu: "4"
           volumeMounts:
-            - name: job-data
-              mountPath: /tmp/pxml_pipeline_jobs
+            - name: scratch
+              mountPath: /tmp
           readinessProbe:
             httpGet:
               path: /api/health
               port: 8000
-            initialDelaySeconds: 5
-            periodSeconds: 5
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 10
           livenessProbe:
             httpGet:
               path: /api/health
               port: 8000
-            initialDelaySeconds: 10
-            periodSeconds: 15
+            initialDelaySeconds: 60
+            periodSeconds: 30
+            timeoutSeconds: 10
+            failureThreshold: 5
       volumes:
-        - name: job-data
-          persistentVolumeClaim:
-            claimName: job-data-pvc
+        - name: scratch              # throw-away job workspaces; S3 holds the real copies
+          emptyDir:
+            sizeLimit: 20Gi
 ---
 apiVersion: v1
 kind: Service
@@ -55,9 +85,9 @@ metadata:
   name: pxml-api
   namespace: pxml-pipeline
 spec:
-  type: LoadBalancer  # Or ClusterIP + Ingress
+  type: ClusterIP   # or LoadBalancer / Ingress
   selector:
     app: pxml-api
   ports:
-    - port: 80
+    - port: 8000
       targetPort: 8000

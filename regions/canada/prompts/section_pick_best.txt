@@ -1,0 +1,10 @@
+You are a legal document parser. A paragraph at index {{current_para_idx}}
+needs to be assigned to its section for chapter {{chapter_number}}.
+
+All candidates below are confirmed section headers (not cross-references).
+They are sorted by proximity (closest to {{current_para_idx}} first).
+Return the section number of the CLOSEST one (highest idx):
+
+{{candidates_text}}
+{{patterns_context}}
+The section number is:

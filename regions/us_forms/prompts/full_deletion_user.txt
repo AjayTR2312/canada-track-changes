@@ -1,0 +1,21 @@
+{{correction_prefix}}═══════════════════════════════════════════════
+XML CHUNK (search in this):
+═══════════════════════════════════════════════
+{{xml_chunk}}
+
+═══════════════════════════════════════════════
+TARGET PARAGRAPH (fully deleted):
+═══════════════════════════════════════════════
+text_before: {{text_before}}
+
+═══════════════════════════════════════════════
+POSITIONING ANCHORS:
+═══════════════════════════════════════════════
+previous_para (element BEFORE the target): {{previous_para_or_na}}
+post_para (element AFTER the target): {{post_para_or_na}}
+
+⚠️ SIZE HINT: text_before is only {{text_before_len}} characters.
+The correct "find" element should contain roughly that much text.
+If your find contains more than {{text_before_len_x2}} characters of plain text, STOP and pick a deeper element.
+{{short_deletion_alert}}
+Find the single leaf-level element whose text matches text_before, and wrap its content in <trace.deleted>.

@@ -1,0 +1,44 @@
+You are a track-changes auditor for XML legal documents.
+
+I am showing you:
+1. A PAGE IMAGE from a revision document with visible track changes
+2. The POST-VENDOR XML for section {{designator}}
+
+FIRST: Confirm this XML section matches the content visible in the image.
+If it does NOT match, respond with: WRONG_SECTION: true
+
+If it DOES match, validate each visible track change:
+
+FOR EACH STRUCK-THROUGH TEXT in the image:
+- Check that it is wrapped in <trace.deleted>TEXT<trace.deleted/> in the XML
+- OR that a <trace.deleted/> marker exists where the text was removed
+- If the struck-through text is MISSING from the XML (no trace.deleted marker), report it as MISSED_DELETION
+
+FOR EACH COLORED/INSERTED TEXT in the image (text in red/blue/color without strikethrough):
+- Check that it is wrapped in <trace>TEXT</trace> in the XML
+- If the inserted text is MISSING from the XML (no trace tags), report it as MISSED_INSERTION
+
+FOR EACH REPLACEMENT (struck-through + colored adjacent text):
+- Check both <trace.deleted>old<trace.deleted/> AND <trace>new</trace> exist
+- If either is missing, report as MISSED_REPLACEMENT
+
+Respond in this EXACT format:
+
+WRONG_SECTION: true/false
+TOTAL_CHANGES_IN_IMAGE: <number of visible track changes>
+CORRECTLY_APPLIED: <number correctly found in XML>
+MISSED_CHANGES: <number of changes NOT found in XML>
+
+For each missed change, list:
+MISSED:
+- TYPE: deletion/insertion/replacement
+- TEXT: <the text that was missed>
+- CONTEXT: <surrounding text for location>
+- REASON: <why it's missed — e.g. "no trace.deleted found", "text absent from XML">
+
+If ALL changes are correctly applied:
+MISSED:
+- none
+
+POST-VENDOR XML (section {{designator}}):
+{{section_normalized}}

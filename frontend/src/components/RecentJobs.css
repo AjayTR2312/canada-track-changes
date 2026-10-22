@@ -1,0 +1,152 @@
+.recent-jobs {
+  margin-top: 1.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: #fff;
+}
+
+.recent-jobs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.recent-jobs-header h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.rj-error {
+  padding: 0.6rem 0.75rem;
+  background: #fef0f0;
+  color: #c62828;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.rj-empty {
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  color: #6c757d;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.rj-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+}
+
+.rj-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.83rem;
+}
+
+.rj-table th {
+  background: #f8f9fa;
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 2px solid #dee2e6;
+  white-space: nowrap;
+}
+
+.rj-table td {
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid #f0f2f6;
+  color: #212529;
+  vertical-align: middle;
+}
+
+.rj-table tr:hover td {
+  background: #f8f9fa;
+}
+
+.rj-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.rj-badge.success {
+  background: #e8f5e9;
+  color: #2E7D32;
+}
+
+.rj-badge.error {
+  background: #fef0f0;
+  color: #c62828;
+}
+
+.rj-badge.stopped {
+  background: #fff8e1;
+  color: #f57c00;
+}
+
+.btn-sm {
+  padding: 0.3rem 0.7rem !important;
+  font-size: 0.78rem !important;
+}
+
+.btn-resume {
+  background: #e3f2fd;
+  color: #1565c0;
+  border: 1px solid #90caf9;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-resume:hover:not(:disabled) {
+  background: #bbdefb;
+  border-color: #64b5f6;
+}
+
+.btn-resume:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-delete {
+  background: #fef0f0;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-delete:hover:not(:disabled) {
+  background: #ffcdd2;
+  border-color: #e57373;
+}
+
+.btn-delete:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rj-unavailable {
+  font-size: 0.75rem;
+  color: #adb5bd;
+  font-style: italic;
+}
+
+.rj-status-text {
+  font-size: 0.78rem;
+  color: #6c757d;
+  font-style: italic;
+}

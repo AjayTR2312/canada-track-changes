@@ -3,12 +3,12 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 from finaloutputs.chapter_section import extract_designator_pattern_using_llm
-from full_section_insertion_prevendor import PXMLInserter
-from inline_replacement_section import SectionLineReplacement
-from new_footnotes_insertions import process_all_footnote_insertions
-from section_insertion import SectionExtractor
-from track_changes_df import process_docx
-from section_deletion import section_deletion_filling
+from canada_pipeline.full_section_insertion_prevendor import PXMLInserter
+from canada_pipeline.inline_replacement_section import SectionLineReplacement
+from canada_pipeline.new_footnotes_insertions import process_all_footnote_insertions
+from canada_pipeline.section_insertion import SectionExtractor
+from canada_pipeline.track_changes_df import process_docx
+from canada_pipeline.section_deletion import section_deletion_filling
 import pandas as pd
 import anthropic
 import time
@@ -17,22 +17,22 @@ import sys
 import os
 import ctypes
 from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
-from config import API_KEY, MODEL_OPUS, MODEL_SONNET
-from continous_ncont_insertions import *
-from newline_insertions import *
-from insertions_paragraphs import *
-from section_name_edge_cases import *
-from section_split_ import handle_section_split
-from postprocessing import postprocessing_fortags
-from paragraph_level_trackchanges import parse_pxml_sections_from_str_new
-from inline_footnotes_insertion import process_all_footnotes_with_llm,parse_pxml_sections_from_str_dict_positions
-from track_changes_df  import process_docx
-from newline_insertions_new import return_closest_previous_par,process_all_newline_insertions_with_llm
-from sectionnumber_filling import fill_sections_backward_verbose
-from inline_footnotes_insertion import process_all_footnotes_with_llm,parse_pxml_sections_from_str_dict_positions
-from inline_footnotes_insertion import build_anthropic_client
-from paragraph_level_trackchanges import process_with_llm, process_with_llm_footnotes
-from revisions_images import convert_revision_pages_to_images, extract_page_texts
+from canada_pipeline.config import API_KEY, MODEL_OPUS, MODEL_SONNET
+from canada_pipeline.continous_ncont_insertions import *
+from canada_pipeline.newline_insertions import *
+from canada_pipeline.insertions_paragraphs import *
+from canada_pipeline.section_name_edge_cases import *
+from canada_pipeline.section_split_ import handle_section_split
+from canada_pipeline.postprocessing import postprocessing_fortags
+from canada_pipeline.paragraph_level_trackchanges import parse_pxml_sections_from_str_new
+from canada_pipeline.inline_footnotes_insertion import process_all_footnotes_with_llm,parse_pxml_sections_from_str_dict_positions
+from canada_pipeline.track_changes_df  import process_docx
+from canada_pipeline.newline_insertions_new import return_closest_previous_par,process_all_newline_insertions_with_llm
+from canada_pipeline.sectionnumber_filling import fill_sections_backward_verbose
+from canada_pipeline.inline_footnotes_insertion import process_all_footnotes_with_llm,parse_pxml_sections_from_str_dict_positions
+from canada_pipeline.inline_footnotes_insertion import build_anthropic_client
+from canada_pipeline.paragraph_level_trackchanges import process_with_llm, process_with_llm_footnotes
+from canada_pipeline.revisions_images import convert_revision_pages_to_images, extract_page_texts
 
 # from collapse_fully_deleted_elements import collapse_empty_para_with_trace_deleted
 
@@ -157,7 +157,8 @@ def run_pipeline(docx_path, pxml_path, output_dir):
 
         # ── Superscript extraction from PDF ──
         print("\n[SUPERSCRIPT] Extracting footnote superscript numbers from PDF...")
-        from superscript_extraction_from_pdf import convert_docx_to_pdf, process_excel as process_superscripts
+        from canada_pipeline.superscript_extraction_from_pdf import convert_docx_to_pdf, process_excel as process_superscripts
+        pdf_path_for_superscript = None
         try:
             pdf_path_for_superscript = convert_docx_to_pdf(docx_path, output_dir=output_dir)
             superscript_excel = os.path.join(output_dir, "superscript_extraction.xlsx")
@@ -307,7 +308,7 @@ def run_pipeline(docx_path, pxml_path, output_dir):
         print(f"[Pipeline 4] designator_patterns_p4: {designator_patterns_p4}")
 
         # Build an Anthropic client for LLM-based key matching
-        from config import build_anthropic_client as _build_client_config
+        from canada_pipeline.config import build_anthropic_client as _build_client_config
         _client_p4 = _build_client_config()
 
         if len(sections) > 0:
@@ -371,14 +372,16 @@ def run_pipeline(docx_path, pxml_path, output_dir):
                     # If ALL those rows have has_changes=True → NOT a split (all new content)
                     # If any row has has_changes=False → IS a split (existing content from prev section)
                     start_pi_check = int(each_section['start_paragraph_index'])
+                    end_pi_check = int(each_section['end_paragraph_index'])
                     desig_pattern_re = re.compile(r'^§?\s*\d+' + separator + r'\d+', re.IGNORECASE)
 
-                    rows_after = result_with_ba[result_with_ba['idx'] > start_pi_check].drop_duplicates(subset=['idx'], keep='first').sort_values('idx')
+                    rows_after = result_with_ba[(result_with_ba['idx'] > start_pi_check) & (result_with_ba['idx'] <= end_pi_check)].drop_duplicates(subset=['idx'], keep='first').sort_values('idx')
 
                     checked_rows = []
-                    print(f"  📝 Checking rows after idx={start_pi_check} until next designator:")
+                    print(f"  📝 Checking rows after idx={start_pi_check} until end idx={end_pi_check}:")
                     for _, row in rows_after.iterrows():
-                        row_text = str(row.get('text', '')).strip()
+                        raw_text = row.get('text', '')
+                        row_text = '' if pd.isna(raw_text) else str(raw_text).strip()
                         # Stop at next designator
                         if row_text and desig_pattern_re.match(row_text):
                             print(f"     ⛔ idx={row['idx']}: starts with designator — stopping")
@@ -691,6 +694,7 @@ def run_pipeline(docx_path, pxml_path, output_dir):
             client=client,
             model_name=model_name,
             failed_log_path=os.path.join(output_dir, "failed_newline_insertions.txt"),
+            pdf_path=pdf_path_for_superscript,
         )
 
         # with open(os.path.join(output_dir, 'save_afternew_line_insertions.pxml'), 'w', encoding='utf-8') as f:
@@ -755,6 +759,31 @@ def run_pipeline(docx_path, pxml_path, output_dir):
             f.write(final_pxml_content)
 
         # ══════════════════════════════════════════════════════════
+        # ── Structural changes: paragraph converted to list (bullet point) ──
+        if 'has_bullet_point' in result_with_ba.columns:
+            bullet_structural_mask = (
+                (result_with_ba['has_changes'] == True) &
+                (result_with_ba['has_bullet_point'] == True) &
+                (result_with_ba['text_before'].fillna('').str.strip() != '') &
+                (result_with_ba['text_after'].fillna('').str.strip() != '')
+            )
+            bullet_structural_df = result_with_ba[bullet_structural_mask]
+            if not bullet_structural_df.empty:
+                print(f"  📌 Found {len(bullet_structural_df)} structural changes (paragraph → list)")
+                for _, row in bullet_structural_df.iterrows():
+                    failed_inline_changes.append({
+                        "Row Index": row.get('idx', ''),
+                        "Docx_Paragraph": str(row.get('text_before', '') or ''),
+                        "Section": str(row.get('section', '') or ''),
+                        "Designator": str(row.get('designator', '') or ''),
+                        "Reason": "Structural change - paragraph converted to list",
+                        "Change Type": str(row.get('type', '') or ''),
+                        "Inserted Text": str(row.get('text_after', '') or ''),
+                        "Deleted Text": str(row.get('text', '') or ''),
+                        "Previous Context": str(row.get('prev_context', '') or ''),
+                        "Post Context": str(row.get('post_context', '') or ''),
+                    })
+
         # CONSOLIDATED FAILED REVISIONS EXCEL
         # ══════════════════════════════════════════════════════════
         print(f"\n{'='*80}")
@@ -864,7 +893,7 @@ def run_pipeline(docx_path, pxml_path, output_dir):
         # ══════════════════════════════════════════════════════════════════
         # PIPELINE 9 — Retry failed inline deletions via LLM
         # ══════════════════════════════════════════════════════════════════
-        from failed_revisions_handler import retry_failed_inline_deletions
+        from canada_pipeline.failed_revisions_handler import retry_failed_inline_deletions
 
         final_pxml_content, retry_success_count, retry_total, succeeded_indices, retry_rows_list = retry_failed_inline_deletions(
             failed_inline_changes=failed_inline_changes,
@@ -942,12 +971,25 @@ def run_pipeline(docx_path, pxml_path, output_dir):
         print(f"\n{'='*80}")
         print("PIPELINE-10: Post Processing (Final)")
         print(f"{'='*80}")
+        _content_before_postprocessing = final_pxml_content
         with open(os.path.join(output_dir, 'save_before_postprocessing.pxml'), 'w', encoding='utf-8') as f:
             f.write(final_pxml_content)
         final_pxml_content = postprocessing_fortags(final_pxml_content, product_type=PRODUCT_TYPE)
 
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(final_pxml_content)
+
+        # Content-loss guard (additive, never fatal): compare section labels and
+        # tag balance before vs after post-processing; writes CONTENT_LOSS_REPORT.txt
+        # and prints a loud banner if any section was silently dropped.
+        try:
+            from canada_pipeline.content_loss_guard import verify_no_content_loss
+            verify_no_content_loss(
+                _content_before_postprocessing, final_pxml_content,
+                output_dir=output_dir, context=os.path.basename(output_file),
+            )
+        except Exception as _guard_err:
+            print(f"  [CONTENT-GUARD] skipped (non-fatal): {_guard_err}")
 
         print(f"\n{'='*80}")
         print(f"✅ Output saved to: {output_file}")

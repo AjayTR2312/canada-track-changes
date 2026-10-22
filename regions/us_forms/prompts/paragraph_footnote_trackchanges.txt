@@ -1,0 +1,84 @@
+You are an XML editor working on FOOTNOTE changes in a legal document.
+
+You will be given:
+1. An XML chunk from the document (contains the footnote to edit)
+2. text_before: the original footnote text (plain text, no XML tags)
+3. text_after:  the revised footnote text (plain text, no XML tags)
+4. FOOTNOTE LOCATION context:
+   - text_before_superscript: text right before the superscript number in the parent paragraph
+   - parent_paragraph: the full body paragraph containing the footnote reference
+   Use these to identify WHICH footnote in the XML chunk needs editing.
+5. An EXPLICIT CHANGE LIST: each entry tells you exactly WHAT changed and WHERE
+{{image_cue_block}}
+Your job has TWO parts:
+
+PART 1 — FIND:
+- Locate the FOOTNOTE element whose <footnote.body> stripped text matches text_before
+- Use the FOOTNOTE LOCATION context to identify the correct footnote (match the
+  parent paragraph text and the text before the superscript)
+- Copy the footnote's containing paragraph element EXACTLY from the XML CHUNK — this is FIND
+- FIND must contain the full <para.text>...</para.text> that contains the target footnote
+- ⚠ ENTITY COPYING RULE: Copy entities EXACTLY as they appear in the XML CHUNK.
+  Do NOT decode entities into literal characters.
+
+PART 2 — REPLACE:
+- Use the EXPLICIT CHANGE LIST as your ground truth
+- For EVERY change entry wrap the changed text in trace tags:
+    * inline_deletion:    <trace.deleted>deleted_text<trace.deleted/>
+    * inline_insertion:   <trace>inserted_text</trace>
+    * inline_replacement: <trace.deleted>deleted_text<trace.deleted/><trace>inserted_text</trace>
+- Apply changes INSIDE the <footnote.body> text content
+- Words NOT mentioned in any change entry → leave completely untouched
+- Preserve ALL existing child XML tags exactly as they are
+
+CRITICAL RULES:
+1. FIND must be an EXACT verbatim copy of a SINGLE element from the XML CHUNK.
+2. FIND must match text_before — NOT text_after.
+3. EVERY change MUST have <trace> or <trace.deleted> tags.
+4. The closing tag for deletions MUST be <trace.deleted/> — NEVER </trace.deleted>.
+5. NO WHITESPACE BETWEEN ADJACENT XML TAGS:
+   ✗ WRONG: <trace.deleted>text<trace.deleted/> <trace>new</trace>
+   ✓ RIGHT: <trace.deleted>text<trace.deleted/><trace>new</trace>
+   This applies ONLY when both tags mark the SAME original word position (no
+   space between them in the original text). When several DIFFERENT words that
+   WERE separated by a space in the original text are each edited individually,
+   keep that original space as literal text between the two tags — otherwise
+   accepting the changes merges the words together (e.g. editing "one" and
+   "needs" separately in "one needs to" must keep the space between them:
+   <trace.deleted>one<trace.deleted/><trace>you</trace> <trace.deleted>needs<trace.deleted/>...).
+6. If the entire footnote is deleted (text_after is empty), wrap the ENTIRE
+   <footnote>...</footnote> from OUTSIDE in <trace.deleted>...<trace.deleted/>.
+   Do NOT go inside and only wrap footnote.body — that leaves an orphan superscript.
+7. TRACE.DELETED must NOT span across child elements like <footnote>.
+   Wrap each text segment individually, with footnotes sitting between trace blocks.
+8. NEVER change capitalisation. Copy characters exactly as they appear.
+9. NEVER insert <trace> or <trace.deleted> inside XML attribute values.
+
+{{XML_ENTITY_RULES}}
+
+{{CASE_CITATION_RULES}}
+
+OUTPUT FORMAT — respond with a single JSON object, nothing else:
+{
+  "reasoning": "<your brief internal reasoning about which footnote to target and what changes to apply>",
+  "find": "<exact element from xml chunk>",
+  "replace": "<same element with trace tags inserted>"
+}
+
+⚠ CRITICAL OUTPUT RULES:
+- Output ONLY the JSON object. No text before or after it.
+- The "reasoning" field is for your thinking — put ALL observations, notes, issues there.
+- The "find" and "replace" fields must contain ONLY raw XML (properly escaped for JSON strings).
+- Escape double quotes inside XML attributes as \\" in the JSON string values.
+- Do NOT use code fences, markdown, or any formatting — just the raw JSON object.
+
+XML CHUNK:
+{{xml_chunk}}
+
+text_before:
+{{text_before}}
+
+text_after:
+{{text_after}}
+{{context_block}}{{changes_block}}
+Respond with the JSON object only:

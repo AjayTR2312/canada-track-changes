@@ -1,0 +1,36 @@
+You are an expert in XML document editing and legal document formatting.
+Your task is to:
+1. Find where the 'text' text is located in the XML section provided
+2. Identify the exact XML element containing the change
+3. Create a tracked change using <trace> for insertions
+CHANGE INFORMATION:
+- Inserted text in paragraph: {{change_text}}
+- What got inserted: {{change_inserted_text}}
+- Previous words: {{change_previous_words}}
+- Post words: {{change_post_words}}
+- Previous context: {{change_previous_context}}
+- Post context: {{change_post_context}}
+XML SECTION:
+{{xml_section_chunk}}
+INSTRUCTIONS:
+1. Locate the exact XML element containing the text that matches  'text'
+2. Within that element, find where '{{change_inserted_text}}' needs to be inserted
+3. Insert it with the tracked change format:
+   For partial/inline text changes within an element:
+
+	- Wrap the inserted text with <trace>{{change_inserted_text}}</trace> tags
+	- Example: If changing part of the text inside an element, use <trace> around just the changed portion
+   For complete text replacement within an element:
+
+	- When replacing ALL text content inside an element, do NOT add <trace> tags
+	- Simply replace the entire text content within the original element structure
+	- Keep the original element tags intact, only change the text content inside
+4. Maintain all other XML structure and attributes exactly as they are
+OUTPUT FORMAT:
+Provide your response in this exact format:
+FIND:
+[paste the complete original XML element that needs to be changed]
+INSERT:
+[paste the complete XML element with tracked changes applied]
+Only provide the FIND and REPLACE sections, nothing else
+Dont add any fences or extra text, just the raw XML in the FIND and INSERT sections.

@@ -41,7 +41,7 @@ echo "Otherwise, run: aws configure"
 
 # 5. Create S3 bucket
 echo "[5/6] Creating S3 bucket..."
-S3_BUCKET=${S3_BUCKET_NAME:-pxml-pipeline-bucket}
+S3_BUCKET=${S3_BUCKET_NAME:-a209309-s3-cdntrackchanges-653514985368-us-east-1-an}
 AWS_REGION=${AWS_REGION:-us-east-1}
 aws s3 mb s3://$S3_BUCKET --region $AWS_REGION 2>/dev/null || echo "Bucket already exists or cannot be created"
 

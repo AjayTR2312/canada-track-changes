@@ -138,6 +138,21 @@ SECTION 2: DELETION RULES
   deletion when the deletion point falls inside an existing <trace> block. If
   <trace.deleted/> appears inside a <trace>...</trace> element, that is a CRITICAL error
   indicating the deletion abandonment logic failed.
+- EXCEPTION — changes inside a <cite>: <trace> tags are NOT permitted inside a <cite>.
+  Therefore, when an insertion OR deletion occurs inside a <cite> (or its inner <ref>), the
+  pipeline intentionally wraps the ENTIRE <cite>...</cite> in a single <trace>...</trace> and
+  REMOVES all internal <trace>, </trace>, and <trace.deleted/> markers. For a deletion, the
+  deleted text is simply dropped from the <ref> content — there is deliberately NO separate
+  <trace.deleted/> marker left behind, inside or outside the block. This is the CORRECT and
+  EXPECTED representation for a changed citation: do NOT flag it as an abandoned deletion, do
+  NOT claim the deletion should have been retained, and do NOT require a <trace.deleted/> to be
+  moved outside the <trace> block. Example: original
+  "Gagnon v. Quebec Securities, &lsqb;1965&rsqb; S.C.R. 73, 50 D.L.R. (2d) 329 (S.C.C.)" with the
+  ", 50 D.L.R. (2d) 329 (S.C.C.)" portion deleted correctly becomes
+  <trace><cite ...><ref ...>Gagnon v. Quebec Securities, &lsqb;1965&rsqb; S.C.R. 73</ref></cite></trace>.
+  The only situation to flag here is a <trace.deleted/> marker LITERALLY remaining inside the
+  <cite>/<ref> (e.g. <ref ...>...S.C.R. 73<trace.deleted/></ref>) — that means Step 2 cleanup
+  failed; a clean wrapped cite with the text removed is valid.
 - Empty tag pairs created by deletion (e.g., <ital></ital>, <para></para>) must have been
   removed. If you see them, that is an error.
 - <trace.deleted/> must not appear between a closing tag and its matching opening tag of the
@@ -267,6 +282,12 @@ Lists must use this structure:
 - All designator types (numbers, letters, Roman numerals, symbols, bullets) must be wrapped
   in <designator> tags.
 - Nested lists must be properly nested inside the parent <list.item>.
+- CRITICAL: If the page image shows a paragraph with bullet-point formatting (bullet symbol,
+  numbered list, lettered list, or any list indentation), the corresponding content in the
+  XML MUST be wrapped in <list.item> structure — NOT in a plain <para>. If the image clearly
+  shows bullet/list formatting but the XML uses <para><para.text>...</para.text></para>
+  instead of <list.item>, that is a MAJOR tagging error. The pipeline must convert paragraphs
+  that were changed to bullet/list formatting into the proper <list.item> structure.
 
 3.6 Heading Tagging
 New headings must use:
@@ -277,7 +298,13 @@ New headings must use:
     </name.block>
   </head>
 
-- Headings are centered and underlined in the source document.
+- Headings are visually distinct from body text in the source document. Common indicators
+  include: bold text on its own line, underlined standalone text, centered text, larger font
+  size, or any combination of these. If the page image shows a short standalone line of text
+  that is bold, underlined, or otherwise visually formatted as a title/heading (not part of a
+  flowing paragraph), it MUST be tagged as <head> — NOT as <para>. Using
+  <para><para.text>...</para.text></para> for content that is visually a heading in the page
+  image is a MAJOR tagging error.
 - Inline heading modifications (where only part of a heading text is changed, not a completely
   new heading) use <trace> wrapping around the changed content inside the existing <head>
   block. Example:
@@ -645,6 +672,7 @@ IMPORTANT INSTRUCTIONS FOR AUDITING
 		1. <trace> </trace> 2. <para>  </para> 
 - Track change insertion occurring in one paragraph should not be coded into two different <para date.trace='1'> tags.
 - Look for page breaks added in the image, placed to create a new paragraph not being present in the xml chunk should be flagged
+- PARAGRAPH SPLIT NOT IDENTIFIED: Compare the paragraph structure in the page image against the XML chunk. If the image shows the inserted text starting a NEW paragraph (a new first-line indent / paragraph break — i.e. what was previously ONE paragraph is now shown as TWO separate paragraphs), but the XML keeps the inserted text inline within the SAME <para> (or does not open a new <para date.trace="1"> at that break), that is an error and MUST be flagged. The inserted second paragraph should have been closed off from the first with </para> and re-opened as <para date.trace="1"><para.text>...</para.text></para>. Report it as "Paragraph split not identified — inserted text begins a new paragraph in the image but is coded inline in a single <para>".
 - If any tag contains only <trace.deleted/> with no other meaningful content or text, it should be flagged. This applies to any opening and closing tag pair where the entire content has been deleted, leaving the tag effectively empty (e.g., <para><trace.deleted/></para>, <section><trace.deleted/></section>). Such tags should be reported as empty post-deletion.
 - LLM DATA LEAKAGE: If any element contains plain English reasoning, explanations, or commentary text that is clearly not legal document content (e.g., "I notice there's an issue with...", "Let me provide the corrected XML", "The first trace.deleted tag...", "Here's the corrected..."), that is a CRITICAL error. This indicates the LLM processing step leaked its internal reasoning into the XML output. Flag it as "LLM data leakage — reasoning text found in XML content".
 
@@ -671,11 +699,20 @@ NEW CONTENT TAGGING (IMPORTANT)
   Example: <para date.trace="1"><para.text>...</para.text></para>
 
 CITE TRANSFORMATION REMINDER (IMPORTANT)
-- We convert a <cite> tag and its corresponding <ref> tag to an <st> tag whenever there is a
-  <trace> or <trace.deleted/> tag inside the <cite>. We intentionally remove the <trace> tag
-  from between the <st> tags and move the <trace.deleted/> tag to before the <st> tag if it
-  is present. The <trace> wrapper then goes on the outside of the <st>/<x>/<cc> tag, never
-  inside it.
+- When a <cite> contains any <trace> or <trace.deleted/> marker (i.e. an insertion or deletion
+  happened inside the citation), the citation is transformed because <trace> is not allowed
+  inside a <cite>. Either of the following two shapes is VALID and must NOT be flagged:
+  1. Current pipeline (cite retained): the ENTIRE <cite>...</cite> is wrapped in a single
+     <trace>...</trace>, and all internal <trace>, </trace>, and <trace.deleted/> markers are
+     removed. Deleted text is dropped from the <ref>. Example:
+       <trace><cite ...><ref ...>Gagnon v. Quebec Securities, &lsqb;1965&rsqb; S.C.R. 73</ref></cite></trace>
+  2. Legacy pipeline (cite converted): the <cite>/<ref> is converted to an <st> (or <x>/<cc>/<url>)
+     tag. The <trace> tag is removed from between the <st> tags, and a <trace.deleted/> — if the
+     change was a deletion — is moved to BEFORE the <st> tag. The <trace> wrapper then goes on the
+     OUTSIDE of the <st>/<x>/<cc>/<url> tag, never inside it.
+- In BOTH shapes, a change inside a cite does NOT leave a <trace.deleted/> marker inside the
+  <cite>/<ref>, and does NOT require a <trace.deleted/> outside the wrapping <trace>. Do not treat
+  the removed deletion marker as a failed/abandoned deletion.
 
 
 You are given:

@@ -1,0 +1,75 @@
+You are an XML editor working with legal document XML.
+
+You will be given:
+- A section of XML
+- TEXT_BEFORE_SUPERSCRIPT: the full plain text of the paragraph up to where the footnote superscript appears
+- LAST_WORD_BEFORE_SUPERSCRIPT: the single last word/token immediately before the superscript number
+- Footnote content to insert
+- Optionally POST_PARA: the paragraph after the target, for positioning help
+
+YOUR TASKS:
+
+1. Find the correct paragraph in the XML using TEXT_BEFORE_SUPERSCRIPT.
+   - The paragraph whose plain text (ignoring XML tags) matches TEXT_BEFORE_SUPERSCRIPT
+     is your target.
+   - Use POST_PARA as an additional positional anchor if needed.
+
+2. Within that paragraph, find LAST_WORD_BEFORE_SUPERSCRIPT.
+   - The footnote must be inserted immediately after this word/token in the XML.
+   - LAST_WORD_BEFORE_SUPERSCRIPT is the exact plain-text word right before the superscript.
+   - Example: if TEXT_BEFORE_SUPERSCRIPT ends with "...of the Interest Act"
+     and LAST_WORD_BEFORE_SUPERSCRIPT is "Act", then find "Act" (or its closing
+     inline tag like </ital> or </cite>) in the XML and insert right after it.
+
+3. Identify insert_after — the EXACT verbatim string from the XML at the insertion point.
+   CRITICAL RULES for insert_after:
+   - The footnote MUST be inserted INSIDE the <para.text> block, never outside it
+   - insert_after must NOT include the closing </para.text> tag
+   - insert_after must be a verbatim substring that exists in the XML
+   - It should end at LAST_WORD_BEFORE_SUPERSCRIPT including any inline closing
+     tags like </ital> </cite> </trace> </ref> that immediately wrap that word
+   - STOP before </para.text> — never include </para.text> in insert_after
+   - Make it specific enough to be unique (~50-80 chars)
+
+4. Build the complete <footnote> XML block using the footnote content provided.
+
+RETURN VALID JSON ONLY. No explanation. No markdown. No code fences. Raw JSON only.
+CRITICAL: The JSON values must NOT contain unescaped newlines or unescaped quotes.
+          Escape all inner double quotes as \\\" and use \\n for newlines inside strings.
+
+JSON FORMAT:
+{
+  "insert_after": "verbatim string from XML at insertion point, never include </para.text>",
+  "footnote_tag": "the complete <footnote>...</footnote> XML block"
+}
+
+**date.trace="1" to be added at footnote level as below as it is new insertion.
+
+FOOTNOTE STRUCTURE TO USE:
+<footnote date.updated="0" date.trace="1">
+    <footnote.reference date.updated="0">{{ref_number}}</footnote.reference>
+    <footnote.body date.updated="0">
+        <para date.updated="0">
+            <para.text date.updated="0">FOOTNOTE_CONTENT</para.text>
+        </para>
+    </footnote.body>
+</footnote>
+
+EXAMPLE:
+  XML contains:  ...Section 2 of the <ital>Interest Act</ital> currently provides...
+  TEXT_BEFORE_SUPERSCRIPT = "Section 2 of the Interest Act"
+  LAST_WORD_BEFORE_SUPERSCRIPT = "Act"
+  → insert_after = "Section 2 of the <ital>Interest Act</ital>"
+  → footnote goes right after </ital>, before the next word "currently"
+
+TEXT_BEFORE_SUPERSCRIPT:
+{{text_before_superscript_clean}}
+
+LAST_WORD_BEFORE_SUPERSCRIPT:
+{{last_word_before_superscript_clean}}
+{{post_para_block}}
+FOOTNOTE CONTENT:
+{{footnote_text}}
+
+SECTION XML:
+{{section_xml}}

@@ -1,0 +1,2846 @@
+=== CONTENT-LOSS REPORT (DOCX unchanged text vs final XML) ===
+
+DOCX file                 : C:\projectdata\xmlproject\new_approach_working\testing_exe_ouputs\test13\anamika\CDN_MA_LCCIC 7 2026-1 update.doc
+DOCX parts read           : word/document.xml, word/footnotes.xml, word/endnotes.xml
+Final XML file            : C:\projectdata\xmlproject\new_approach_working\testing_exe_ouputs\test13\anamika\testing\CDN_MA_LCCIC 7 (chapter and all children)_20260702_161505_final.pxml
+
+DOCX unchanged words      : 13708
+Final baseline words      : 14197
+Word-stream similarity    : 0.7446
+Dropped segments          : 472  (3319 words)
+Extra segments in final   : 466
+
+---- 🚩 CONTENT DROP (present in DOCX unchanged text, MISSING in final XML) ----
+
+[1] Missing text: 'Chapter 7.'
+    DOCX word range : (0, 2)
+    DOCX char range : (2, 12)
+    ... [[MISSING]] Saskatchewan Climate Change Law and Policy*...
+
+[2] Missing text: 'Policy*\nI. Overview\n7:1. Generally\n \tSaskatchewan'
+    DOCX word range : (7, 13)
+    DOCX char range : (49, 98)
+    ...apter 7. Saskatchewan Climate Change Law and [[MISSING]] occupies a fairly unique position among Cana...
+
+[3] Missing text: '("GHG")'
+    DOCX word range : (35, 36)
+    DOCX char range : (247, 254)
+    ...erienced remarkable growth in greenhouse gas [[MISSING]] emissions over the last decade, fueled by a...
+
+[4] Missing text: '2007.1'
+    DOCX word range : (113, 114)
+    DOCX char range : (759, 765)
+    ...Saskatchewan Energy and Climate Change Plan, [[MISSING]] However, with a subsequent change of governm...
+
+[5] Missing text: '(MRGGA).2'
+    DOCX word range : (158, 159)
+    DOCX char range : (1047, 1056)
+    ...gement and Reduction of Greenhouse Gases Act [[MISSING]] Bill 95 was subsequently revised and reintro...
+
+[6] Missing text: 'reintroduced.3'
+    DOCX word range : (165, 166)
+    DOCX char range : (1094, 1108)
+    ...RGGA).2 Bill 95 was subsequently revised and [[MISSING]] The new MRGGA received Royal Assent on May 3...
+
+[7] Missing text: '2010,4'
+    DOCX word range : (195, 196)
+    DOCX char range : (1298, 1304)
+    ...Environmental Management and Protection Act, [[MISSING]] and its companion, The Saskatchewan Environm...
+
+[8] Missing text: 'Code,5'
+    DOCX word range : (202, 203)
+    DOCX char range : (1355, 1361)
+    ...ts companion, The Saskatchewan Environmental [[MISSING]] the MRGGA implements Saskatchewan's current...
+
+[9] Missing text: 'Strategy,6'
+    DOCX word range : (217, 218)
+    DOCX char range : (1480, 1490)
+    ...e Resilience: A Made-in-Saskatchewan Climate [[MISSING]] this plan builds on the government's 2016 Wh...
+
+[10] Missing text: 'prominently.7'
+    DOCX word range : (246, 247)
+    DOCX char range : (1660, 1673)
+    ...ns of addressing climate change was featured [[MISSING]] Furthermore, Saskatchewan has rejected the u...
+
+[11] Missing text: "emissions.\nII. Saskatchewan's"
+    DOCX word range : (262, 265)
+    DOCX char range : (1760, 1789)
+    ...e use of a carbon price as a means to reduce [[MISSING]] Climate Change Profile A. Greenhouse Gas Emi...
+
+[12] Missing text: 'Profile\nA. Greenhouse'
+    DOCX word range : (267, 270)
+    DOCX char range : (1805, 1826)
+    ...emissions. II. Saskatchewan's Climate Change [[MISSING]] Gas Emissions 7:2. Historical Emissions   In...
+
+[13] Missing text: 'Emissions\n7:2. Historical Emissions\n \tIn'
+    DOCX word range : (271, 276)
+    DOCX char range : (1831, 1871)
+    ...n's Climate Change Profile A. Greenhouse Gas [[MISSING]] 202, Saskatchewan generated % of Canada's to...
+
+[14] Missing text: '%'
+    DOCX word range : (279, 280)
+    DOCX char range : (1900, 1901)
+    ...l Emissions   In 202, Saskatchewan generated [[MISSING]] of Canada's total GHG emissions, or  Megaton...
+
+[15] Missing text: '2005.1er'
+    DOCX word range : (291, 292)
+    DOCX char range : (1967, 1975)
+    ...G emissions, or  Megatonnes, down from Mt in [[MISSING]] capita emissions from Saskatchewan decreased...
+
+[16] Missing text: 'persoas'
+    DOCX word range : (304, 305)
+    DOCX char range : (2054, 2061)
+    ...n decreased from 71.6 to  tonnes of GHGs per [[MISSING]] a result of Saskatchewan's declining emissio...
+
+[17] Missing text: 'population.This'
+    DOCX word range : (317, 318)
+    DOCX char range : (2137, 2152)
+    ...lining emission rates as well as its growing [[MISSING]] is roughly  times the GHG emissions generate...
+
+[18] Missing text: 'basis.This'
+    DOCX word range : (339, 340)
+    DOCX char range : (2279, 2289)
+    ...lute terms and almost  times on a per capita [[MISSING]] comparison is of some interest, since both p...
+
+[19] Missing text: '202.'
+    DOCX word range : (371, 372)
+    DOCX char range : (2487, 2491)
+    ...eased from 4 Mega tonnes to  Mt from 1990 to [[MISSING]] From 2005 to 202, Saskatchewan experienced a...
+
+[20] Missing text: 'a%'
+    DOCX word range : (378, 379)
+    DOCX char range : (2535, 2537)
+    .... From 2005 to 202, Saskatchewan experienced [[MISSING]] decrease of GHG emissions. It is interesting...
+
+[21] Missing text: 'emissions.4\n \tSaskatchewan'
+    DOCX word range : (455, 457)
+    DOCX char range : (2987, 3013)
+    ...and also saw significant drops in their GHG [[MISSING]] produces approximately one-third of the worl...
+
+[22] Missing text: 'Columbia.\n \tThe'
+    DOCX word range : (507, 509)
+    DOCX char range : (3356, 3371)
+    ...cer, ranking behind only Alberta and British [[MISSING]] oil and gas sector is the single largest con...
+
+[23] Missing text: '3%'
+    DOCX word range : (532, 533)
+    DOCX char range : (3506, 3508)
+    ...s. As of 20, oil and gas was responsible for [[MISSING]] of all provincial emissions. It is followed...
+
+[24] Missing text: '2%.'
+    DOCX word range : (545, 546)
+    DOCX char range : (3584, 3587)
+    ...t is followed by the agriculture sector with [[MISSING]] Enteric fermentation associated with livesto...
+
+[25] Missing text: '19%'
+    DOCX word range : (582, 583)
+    DOCX char range : (3876, 3879)
+    ...agriculture, electricity generation produces [[MISSING]] and transportation 1% of emissions.5   Saska...
+
+[26] Missing text: "1% of emissions.5\n \tSaskatchewan's"
+    DOCX word range : (585, 589)
+    DOCX char range : (3899, 3933)
+    ...y generation produces 19% and transportation [[MISSING]] continental climate, with warm summers and v...
+
+[27] Missing text: 'emissions.6'
+    DOCX word range : (615, 616)
+    DOCX char range : (4102, 4113)
+    ...ric generation is also a major source of GHG [[MISSING]] SaskPower is Saskatchewan's Crown-owned elec...
+
+[28] Missing text: '37%'
+    DOCX word range : (628, 629)
+    DOCX char range : (4225, 4228)
+    ...al-fired power plants generate approximately [[MISSING]] of Saskatchewan's electricity, with natural...
+
+[29] Missing text: '43%'
+    DOCX word range : (638, 639)
+    DOCX char range : (4311, 4314)
+    ...atural gas-fired plants representing another [[MISSING]] of supply.7 The remaining demand for electri...
+
+[30] Missing text: 'supply.7'
+    DOCX word range : (640, 641)
+    DOCX char range : (4318, 4326)
+    ...gas-fired plants representing another 43% of [[MISSING]] The remaining demand for electricity is supp...
+
+[31] Missing text: '15%)'
+    DOCX word range : (652, 653)
+    DOCX char range : (4425, 4429)
+    ...ugh hydroelectric development (approximately [[MISSING]] and wind power (approximately 3%), and other...
+
+[32] Missing text: '3%),'
+    DOCX word range : (657, 658)
+    DOCX char range : (4460, 4464)
+    ...oximately 15%) and wind power (approximately [[MISSING]] and other sources (approximately 1%). Of Sas...
+
+[33] Missing text: '1%).'
+    DOCX word range : (662, 663)
+    DOCX char range : (4498, 4502)
+    ...mately 3%), and other sources (approximately [[MISSING]] Of SaskPower's 2019-20 generating capacity o...
+
+[34] Missing text: "agreements.8\n7:3. Projected Emissions\n\tSaskatchewan's"
+    DOCX word range : (686, 691)
+    DOCX char range : (4665, 4718)
+    ...ance of 772 through long-term power-purchase [[MISSING]] per capita emissions of  tonnes carbon dioxi...
+
+[35] Missing text: '%'
+    DOCX word range : (700, 701)
+    DOCX char range : (4781, 4782)
+    ...ons of  tonnes carbon dioxide equivalent are [[MISSING]] of Canada's emission despite having only 3%...
+
+[36] Missing text: "emission despite having only 3% of the country's population."
+    DOCX word range : (703, 712)
+    DOCX char range : (4795, 4855)
+    ...carbon dioxide equivalent are % of Canada's [[MISSING]] That amounts to  million tonnes of carbon di...
+
+[37] Missing text: 'million tonnes of carbon dioxide equivalent emissions each year..3'
+    DOCX word range : (715, 724)
+    DOCX char range : (4873, 4939)
+    ...f the country's population. That amounts to [[MISSING]] It was previously predicted that Saskatche...
+
+[38] Missing text: 'noted'
+    DOCX word range : (742, 743)
+    DOCX char range : (5070, 5075)
+    ...appreciably reduce until 2030. As previously [[MISSING]] Only more recent data will reveal whether or...
+
+[39] Missing text: 'trend.4\nB.'
+    DOCX word range : (762, 764)
+    DOCX char range : (5181, 5191)
+    ...ion was temporary or the beginning of a real [[MISSING]] Climate Change Impacts 7:4. Historical Impac...
+
+[40] Missing text: 'Impacts\n7:4. Historical Impacts\n \tThe'
+    DOCX word range : (766, 771)
+    DOCX char range : (5207, 5244)
+    ...eginning of a real trend.4 B. Climate Change [[MISSING]] Canadian Prairie Provinces have seen a warmi...
+
+[41] Missing text: '1.5&deg; Celsius--winter'
+    DOCX word range : (790, 792)
+    DOCX char range : (5381, 5405)
+    ...verage temperatures increasing approximately [[MISSING]] temperatures warming by 3.1&deg;C, and summe...
+
+[42] Missing text: '3.1&deg;C,'
+    DOCX word range : (795, 796)
+    DOCX char range : (5430, 5440)
+    ...deg; Celsius--winter temperatures warming by [[MISSING]] and summer temperatures by 1.5&deg;.1 The da...
+
+[43] Missing text: '1.5&deg;.1'
+    DOCX word range : (800, 801)
+    DOCX char range : (5468, 5478)
+    ...ing by 3.1&deg;C, and summer temperatures by [[MISSING]] The date of the last spring frost occurs abo...
+
+[44] Missing text: 'years.2'
+    DOCX word range : (864, 865)
+    DOCX char range : (5817, 5824)
+    ...d spring run-off begins earlier than in past [[MISSING]] Within the last hundred years, the Prairies...
+
+[45] Missing text: '60%'
+    DOCX word range : (895, 896)
+    DOCX char range : (6018, 6021)
+    ...years of the 1930s, where rainfall was only [[MISSING]] of normal, and the even more severe drought...
+
+[46] Missing text: 'season.3\n7:5. Projected Impacts\n \tThe'
+    DOCX word range : (921, 926)
+    DOCX char range : (6180, 6217)
+    ...than average temperatures during the growing [[MISSING]] main effect of climate change in Saskatchewa...
+
+[47] Missing text: 'increase.1\n \tThe'
+    DOCX word range : (1030, 1032)
+    DOCX char range : (6905, 6921)
+    ...ewan. Soil moisture deficits are expected to [[MISSING]] timing of precipitation is expected to chang...
+
+[48] Missing text: 'winters.2\nIII. Legal Framework\nA. Constitutional Framework\n7:6. Generally\n \tThe reader is referred'
+    DOCX word range : (1131, 1144)
+    DOCX char range : (7575, 7673)
+    ..., which would otherwise not survive the cold [[MISSING]] to §§6:1 et seq., "Alberta", and §§3:1 et se...
+
+[49] Missing text: '§§6:1 et seq., "Alberta",'
+    DOCX word range : (1145, 1149)
+    DOCX char range : (7677, 7702)
+    ...k 7:6. Generally   The reader is referred to [[MISSING]] and §§3:1 et seq., "Climate Change and the C...
+
+[50] Missing text: '§§3:1 et seq., "Climate Change and the Canadian Constitution", for a discussion of the constitutional framework affecting the Prairie provinces. Like Alberta and Manitoba, Saskatchewan did not receive jurisdiction over its natural resources until the'
+    DOCX word range : (1150, 1185)
+    DOCX char range : (7707, 7957)
+    ...is referred to §§6:1 et seq., "Alberta", and [[MISSING]] Natural Resources Transfer Agreement of 1930...
+
+[51] Missing text: 'Transfer Agreement'
+    DOCX word range : (1187, 1189)
+    DOCX char range : (7976, 7994)
+    ...atural resources until the Natural Resources [[MISSING]] of 1930. To date, the Government of Saskatch...
+
+[52] Missing text: "1930. To date, the Government of Saskatchewan has not aggressively contested the federal government's assertions of shared jurisdiction over climate change regulation.1 Instead, Saskatchewan has advocated against measures that would limit economic growth in the province. Recent discussion of a federal carbon tax, however, has garnered strong opposition from the current government of Saskatchewan.\nB. Legislative"
+    DOCX word range : (1190, 1246)
+    DOCX char range : (7998, 8412)
+    ...the Natural Resources Transfer Agreement of [[MISSING]] and Regulatory Framework 7:7. Introduction...
+
+[53] Missing text: 'Framework\n7:7. Introduction\n \tIn'
+    DOCX word range : (1248, 1252)
+    DOCX char range : (8428, 8460)
+    ...Saskatchewan. B. Legislative and Regulatory [[MISSING]] response to the federal Greenhouse Gas Pollu...
+
+[54] Missing text: 'Act1'
+    DOCX word range : (1260, 1261)
+    DOCX char range : (8518, 8522)
+    ...the federal Greenhouse Gas Pollution Pricing [[MISSING]] that imposes a carbon tax on jurisdictions t...
+
+[55] Missing text: 'Act2 ("MRGGA")'
+    DOCX word range : (1295, 1297)
+    DOCX char range : (8782, 8796)
+    ...Management and Reduction of Greenhouse Gases [[MISSING]] was finally proclaimed after being first int...
+
+[56] Missing text: 'Saskatchewan.\n7:8. Environment-- General Legislation\nThe'
+    DOCX word range : (1326, 1332)
+    DOCX char range : (9016, 9072)
+    ...climate change mitigation and adaptation in [[MISSING]] Environmental Management and Protection Act,...
+
+[57] Missing text: '2010\n \tThe'
+    DOCX word range : (1337, 1339)
+    DOCX char range : (9118, 9128)
+    ...Environmental Management and Protection Act, [[MISSING]] Environmental Management and Protection Act,...
+
+[58] Missing text: '20101'
+    DOCX word range : (1344, 1345)
+    DOCX char range : (9174, 9179)
+    ...Environmental Management and Protection Act, [[MISSING]] is Saskatchewan's omnibus environmental prot...
+
+[59] Missing text: "Saskatchewan's"
+    DOCX word range : (1346, 1347)
+    DOCX char range : (9183, 9197)
+    ...ntal Management and Protection Act, 20101 is [[MISSING]] omnibus environmental protection and managem...
+
+[60] Missing text: 'regulations.\n \tPart'
+    DOCX word range : (1410, 1412)
+    DOCX char range : (9649, 9668)
+    ...atchewan Environment Code and its supporting [[MISSING]] III of this Act establishes a prohibition ag...
+
+[61] Missing text: 'discharges2'
+    DOCX word range : (1421, 1422)
+    DOCX char range : (9732, 9743)
+    ...tablishes a prohibition against unauthorized [[MISSING]] and pollution. Section 8 creates a prohibiti...
+
+[62] Missing text: 'discharge.\n \tThis'
+    DOCX word range : (1490, 1492)
+    DOCX char range : (10168, 10185)
+    ...its an unauthorized discharge to report such [[MISSING]] Act also imposes a duty to report the discov...
+
+[63] Missing text: 'discharge.3\n \tThe'
+    DOCX word range : (1575, 1577)
+    DOCX char range : (10656, 10673)
+    ...mediate remedial action in the event of such [[MISSING]] Discharge and Recovery Reporting, c. B.1.1,...
+
+[64] Missing text: "person's"
+    DOCX word range : (1631, 1632)
+    DOCX char range : (11062, 11070)
+    ...reports to the Minister, the landowner, the [[MISSING]] employer, the person in control of the subst...
+
+[65] Missing text: 'made.4\n \tThe'
+    DOCX word range : (1652, 1654)
+    DOCX char range : (11185, 11197)
+    ...e directly affected by the discharge must be [[MISSING]] Environmental Management and Protection Act...
+
+[66] Missing text: 'process.5\n \tThe'
+    DOCX word range : (1688, 1690)
+    DOCX char range : (11449, 11464)
+    ...sported or used as an input in an industrial [[MISSING]] Environmental Management and Protection Act...
+
+[67] Missing text: '"person responsible"'
+    DOCX word range : (1797, 1799)
+    DOCX char range : (12064, 12084)
+    ...ister to require a person who is or may be a [[MISSING]] (as defined by the Act) to conduct a site as...
+
+[68] Missing text: 'site.6'
+    DOCX word range : (1822, 1823)
+    DOCX char range : (12221, 12227)
+    ...at a site may be an environmentally impacted [[MISSING]] Division 5 of this Act directs the minister...
+
+[69] Missing text: 'sites.7'
+    DOCX word range : (1840, 1841)
+    DOCX char range : (12337, 12344)
+    ...ntain a registry of environmentally impacted [[MISSING]] Section 5 directs the Minister to prepare a...
+
+[70] Missing text: 'environment.\n \tAlthough'
+    DOCX word range : (1881, 1883)
+    DOCX char range : (12591, 12614)
+    ...nging and identify emerging concerns for the [[MISSING]] none of the current regulations promulgated...
+
+[71] Missing text: 'GHGs.\n \tWhen'
+    DOCX word range : (1983, 1985)
+    DOCX char range : (13334, 13346)
+    ...m Regulations each of which apply to certain [[MISSING]] The Environmental Management and Protection...
+
+[72] Missing text: 'fund.8\nThe'
+    DOCX word range : (2066, 2068)
+    DOCX char range : (13952, 13962)
+    ...ng compliance options such as the technology [[MISSING]] Clean Air Act   The Clean Air Act was repeal...
+
+[73] Missing text: 'Act\n \tThe'
+    DOCX word range : (2070, 2072)
+    DOCX char range : (13973, 13982)
+    ...such as the technology fund.8 The Clean Air [[MISSING]] Clean Air Act was repealed by c. E-10.22, Th...
+
+[74] Missing text: '"Air Quality"'
+    DOCX word range : (2115, 2117)
+    DOCX char range : (14240, 14253)
+    ...anagement and Protection Act, 2010, entitled [[MISSING]] and in Chapters E.1.1 "Halocarbon Control" a...
+
+[75] Missing text: '"Halocarbon Control"'
+    DOCX word range : (2121, 2123)
+    DOCX char range : (14276, 14296)
+    ...entitled "Air Quality" and in Chapters E.1.1 [[MISSING]] and E.1.2 "Industrial Source (Air Quality)"...
+
+[76] Missing text: '"Industrial'
+    DOCX word range : (2125, 2126)
+    DOCX char range : (14307, 14318)
+    ...hapters E.1.1 "Halocarbon Control" and E.1.2 [[MISSING]] Source (Air Quality)" of the Saskatchewan En...
+
+[77] Missing text: 'Quality)"'
+    DOCX word range : (2128, 2129)
+    DOCX char range : (14331, 14340)
+    ...n Control" and E.1.2 "Industrial Source (Air [[MISSING]] of the Saskatchewan Environmental Code.   Th...
+
+[78] Missing text: 'Code.\n \tThe'
+    DOCX word range : (2133, 2135)
+    DOCX char range : (14375, 14386)
+    ...Quality)" of the Saskatchewan Environmental [[MISSING]] chapters prohibit the operation or alteratio...
+
+[79] Missing text: '"Industrial'
+    DOCX word range : (2166, 2167)
+    DOCX char range : (14596, 14607)
+    ...nants, without first obtaining a permit. The [[MISSING]] Source (Air Quality)" chapter does not apply...
+
+[80] Missing text: 'Quality)"'
+    DOCX word range : (2169, 2170)
+    DOCX char range : (14620, 14629)
+    ...aining a permit. The "Industrial Source (Air [[MISSING]] chapter does not apply in general to oil and...
+
+[81] Missing text: '"air contaminant"'
+    DOCX word range : (2251, 2253)
+    DOCX char range : (15216, 15233)
+    ...Management and Protection Act, 2010 defines [[MISSING]] as any solid, liquid, gas or combination of...
+
+[82] Missing text: 'effect.\n \tApart'
+    DOCX word range : (2313, 2315)
+    DOCX char range : (15564, 15579)
+    ...ready be considered to be causing an adverse [[MISSING]] from permitting powers, The Environmental Ma...
+
+[83] Missing text: 'orders9'
+    DOCX word range : (2331, 2332)
+    DOCX char range : (15695, 15702)
+    ...t, 2010 allows the minister to issue control [[MISSING]] requiring any person who contravenes the "Ai...
+
+[84] Missing text: '"Air Quality"'
+    DOCX word range : (2338, 2340)
+    DOCX char range : (15744, 15757)
+    ...rs9 requiring any person who contravenes the [[MISSING]] Part of the Act or the regulations made for...
+
+[85] Missing text: 'to:\n  • refrain'
+    DOCX word range : (2357, 2360)
+    DOCX char range : (15839, 15854)
+    ...ade for the purposes of this Part of the Act [[MISSING]] from emitting air contaminants;   • control...
+
+[86] Missing text: 'contaminants;\n  • control'
+    DOCX word range : (2363, 2366)
+    DOCX char range : (15873, 15898)
+    ...of the Act to:   • refrain from emitting air [[MISSING]] the emission of air contaminants in accordan...
+
+[87] Missing text: 'order;\n  • comply'
+    DOCX word range : (2378, 2381)
+    DOCX char range : (15976, 15993)
+    ...in accordance with directions issued in the [[MISSING]] with procedures to be followed in relation t...
+
+[88] Missing text: 'emission;\n  • install,'
+    DOCX word range : (2390, 2393)
+    DOCX char range : (16044, 16066)
+    ...procedures to be followed in relation to the [[MISSING]] replace or alter equipment;   • measure the...
+
+[89] Missing text: 'equipment;\n  • measure'
+    DOCX word range : (2396, 2399)
+    DOCX char range : (16084, 16106)
+    ...the emission;   • install, replace or alter [[MISSING]] the rate of emission of air contaminants;...
+
+[90] Missing text: 'contaminants;\n  • measure'
+    DOCX word range : (2405, 2408)
+    DOCX char range : (16135, 16160)
+    ...ent;   • measure the rate of emission of air [[MISSING]] the concentration of air contaminants in the...
+
+[91] Missing text: 'air;\n  • provide'
+    DOCX word range : (2416, 2419)
+    DOCX char range : (16214, 16230)
+    ...entration of air contaminants in the ambient [[MISSING]] information, statistics and other data;   •...
+
+[92] Missing text: 'data;\n  • measure'
+    DOCX word range : (2423, 2426)
+    DOCX char range : (16265, 16282)
+    ...• provide information, statistics and other [[MISSING]] or monitor meteorological conditions;   • ca...
+
+[93] Missing text: 'conditions;\n  • carry'
+    DOCX word range : (2429, 2432)
+    DOCX char range : (16309, 16330)
+    ...data;   • measure or monitor meteorological [[MISSING]] out studies for investigations in response t...
+
+[94] Missing text: 'problems;\n  • refrain'
+    DOCX word range : (2442, 2445)
+    DOCX char range : (16400, 16421)
+    ...ations in response to specific air pollution [[MISSING]] from removing, repairing, servicing, replaci...
+
+[95] Missing text: 'discharge;\n  • remove'
+    DOCX word range : (2458, 2461)
+    DOCX char range : (16526, 16547)
+    ...any equipment designed to control halocarbon [[MISSING]] or discharge a halocarbon from a container;...
+
+[96] Missing text: 'container;\n  • store'
+    DOCX word range : (2467, 2470)
+    DOCX char range : (16581, 16601)
+    ...• remove or discharge a halocarbon from a [[MISSING]] a halocarbon in a specified manner; and   •...
+
+[97] Missing text: 'and\n  • report'
+    DOCX word range : (2476, 2479)
+    DOCX char range : (16638, 16652)
+    ...• store a halocarbon in a specified manner; [[MISSING]] to the director on any of the above.10   Whe...
+
+[98] Missing text: 'above.10\n \tWhere'
+    DOCX word range : (2486, 2488)
+    DOCX char range : (16683, 16699)
+    ...and   • report to the director on any of the [[MISSING]] a person fails to carry out the requirements...
+
+[99] Missing text: 'issued.11'
+    DOCX word range : (2520, 2521)
+    DOCX char range : (16871, 16880)
+    ...ered against the party to whom the order was [[MISSING]] Where the Minister is of the opinion that it...
+
+[100] Missing text: "public's"
+    DOCX word range : (2533, 2534)
+    DOCX char range : (16936, 16944)
+    ...Minister is of the opinion that it is in the [[MISSING]] interest to take immediate action to remedy,...
+
+[101] Missing text: 'order.\n\n\n\t\n\n\n\n\n\n\n\n\n\n\n\t\n\n7:9. Environment--'
+    DOCX word range : (2580, 2583)
+    DOCX char range : (17216, 17258)
+    ...e action to take any measure required by the [[MISSING]] Environmental Assessment Legislation The Env...
+
+[102] Missing text: 'Legislation\nThe Environmental Assessment Act1\n \tThe'
+    DOCX word range : (2585, 2591)
+    DOCX char range : (17284, 17335)
+    ...7:9. Environment-- Environmental Assessment [[MISSING]] Environmental Assessment Act outlines requir...
+
+[103] Missing text: '"development"'
+    DOCX word range : (2601, 2602)
+    DOCX char range : (17423, 17436)
+    ...irements for environmental assessment of any [[MISSING]] that, inter alia, is likely to "cause the em...
+
+[104] Missing text: '"cause'
+    DOCX word range : (2608, 2609)
+    DOCX char range : (17468, 17474)
+    ..."development" that, inter alia, is likely to [[MISSING]] the emission of any pollutant"2 or "have a s...
+
+[105] Missing text: 'pollutant"2'
+    DOCX word range : (2613, 2614)
+    DOCX char range : (17495, 17506)
+    ...lia, is likely to "cause the emission of any [[MISSING]] or "have a significant impact on the environ...
+
+[106] Missing text: '"have'
+    DOCX word range : (2615, 2616)
+    DOCX char range : (17510, 17515)
+    ...to "cause the emission of any pollutant"2 or [[MISSING]] a significant impact on the environment".3 A...
+
+[107] Missing text: 'environment".3'
+    DOCX word range : (2621, 2622)
+    DOCX char range : (17544, 17558)
+    ...utant"2 or "have a significant impact on the [[MISSING]] As a result of recent amendments, project pr...
+
+[108] Missing text: 'Act.4'
+    DOCX word range : (2651, 2652)
+    DOCX char range : (17738, 17743)
+    ...elopments and, thus, within the scope of the [[MISSING]] Approval, and therefore, an assessment, is o...
+
+[109] Missing text: 'development.\n \tProject'
+    DOCX word range : (2671, 2673)
+    DOCX char range : (17850, 17872)
+    ...he project is deemed by the Minister to be a [[MISSING]] proponents may obtain screening advice regar...
+
+[110] Missing text: '("SEARP").'
+    DOCX word range : (2743, 2744)
+    DOCX char range : (18367, 18377)
+    ...chewan Environmental Assessment Review Panel [[MISSING]] SEARP is made up of representatives of vario...
+
+[111] Missing text: '("EIA")'
+    DOCX word range : (2778, 2779)
+    DOCX char range : (18616, 18623)
+    ...e whether an Environmental Impact Assessment [[MISSING]] is required. In this process, the Branch may...
+
+[112] Missing text: 'concerns.\n \tIf,'
+    DOCX word range : (2800, 2802)
+    DOCX char range : (18760, 18775)
+    ...rmation meetings in order to identify public [[MISSING]] after consultation with the SEARP, the Branc...
+
+[113] Missing text: "department's"
+    DOCX word range : (2870, 2871)
+    DOCX char range : (19186, 19198)
+    ...ion that will be required in addition to the [[MISSING]] general EIA guidelines. Project-specific gui...
+
+[114] Missing text: 'Environment.\n \tThe'
+    DOCX word range : (2895, 2897)
+    DOCX char range : (19346, 19364)
+    ...ays after they are issued by the Minister of [[MISSING]] proponent is responsible for conducting the...
+
+[115] Missing text: 'conditions.\n \tWhether'
+    DOCX word range : (3045, 3047)
+    DOCX char range : (20355, 20376)
+    ...the development is approved, with or without [[MISSING]] climate change impacts are considered in the...
+
+[116] Missing text: 'effects.5\n \tSaskatchewan'
+    DOCX word range : (3070, 3072)
+    DOCX char range : (20540, 20564)
+    ...sed development and its likely environmental [[MISSING]] is a party to the Canada-Saskatchewan Agreem...
+
+[117] Missing text: 'Cooperation,6'
+    DOCX word range : (3082, 3083)
+    DOCX char range : (20641, 20654)
+    ...chewan Agreement on Environmental Assessment [[MISSING]] which establishes a mechanism for the joint...
+
+[118] Missing text: 'impacts.\n7:10. Environment-- Wildlife'
+    DOCX word range : (3100, 3104)
+    DOCX char range : (20776, 20813)
+    ...d developments having federal and provincial [[MISSING]] Protection Legislation The Wildlife Habitat...
+
+[119] Missing text: 'Legislation\nThe'
+    DOCX word range : (3105, 3107)
+    DOCX char range : (20825, 20840)
+    ...cts. 7:10. Environment-- Wildlife Protection [[MISSING]] Wildlife Habitat Protection Act1   The Wildl...
+
+[120] Missing text: 'Act1\n \tThe'
+    DOCX word range : (3110, 3112)
+    DOCX char range : (20869, 20879)
+    ...Legislation The Wildlife Habitat Protection [[MISSING]] Wildlife Habitat Protection Act is the legis...
+
+[121] Missing text: 'employed.\n \tIn'
+    DOCX word range : (3207, 3209)
+    DOCX char range : (21503, 21517)
+    ...ded that appropriate protective measures are [[MISSING]] 2014, however, the provincial government rem...
+
+[122] Missing text: '"moderate"'
+    DOCX word range : (3230, 3231)
+    DOCX char range : (21652, 21662)
+    ...rotections by reclassifying them as lands of [[MISSING]] ecological value. These lands became eligibl...
+
+[123] Missing text: 'restriction.2'
+    DOCX word range : (3266, 3267)
+    DOCX char range : (21898, 21911)
+    ...525,000 acres were eligible for sale without [[MISSING]] Consequently, the positive climate benefits...
+
+[124] Missing text: 'risk.\nThe'
+    DOCX word range : (3282, 3284)
+    DOCX char range : (22022, 22031)
+    ...from breaking, draining, and clearing are at [[MISSING]] Wildlife Act, 19983   This Act vests all pro...
+
+[125] Missing text: '19983\n \tThis'
+    DOCX word range : (3286, 3288)
+    DOCX char range : (22046, 22058)
+    ...and clearing are at risk. The Wildlife Act, [[MISSING]] Act vests all property and wildlife in Saska...
+
+[126] Missing text: '("COSEWIC").'
+    DOCX word range : (3360, 3361)
+    DOCX char range : (22516, 22528)
+    ...the Status of Endangered Wildlife in Canada [[MISSING]] The Act contains prohibitions against the di...
+
+[127] Missing text: 'species.\n7:11. Environment-- Product'
+    DOCX word range : (3390, 3394)
+    DOCX char range : (22739, 22775)
+    ...of recovery plans in relation to designated [[MISSING]] and Building Standards Building Codes   The...
+
+[128] Missing text: 'Standards\nBuilding Codes\n \tThe'
+    DOCX word range : (3396, 3400)
+    DOCX char range : (22789, 22819)
+    ...es. 7:11. Environment-- Product and Building [[MISSING]] 2015 National Building Code of Canada took e...
+
+[129] Missing text: "province's"
+    DOCX word range : (3419, 3420)
+    DOCX char range : (22926, 22936)
+    ...1, 2018 in Saskatchewan as the basis for the [[MISSING]] building standards. The enforcement of provi...
+
+[130] Missing text: 'amendments.1'
+    DOCX word range : (3457, 3458)
+    DOCX char range : (23208, 23220)
+    ...Code of Canada through regulations with some [[MISSING]] Updates occur on a five-year cycle. Publicat...
+
+[131] Missing text: 'changes.2'
+    DOCX word range : (3490, 3491)
+    DOCX char range : (23411, 23420)
+    ...ic along with the complexity of the proposed [[MISSING]] However, a significant change includes the c...
+
+[132] Missing text: 'efficiency.3'
+    DOCX word range : (3515, 3516)
+    DOCX char range : (23574, 23586)
+    ...set out a model for achieving greater energy [[MISSING]] Likewise, large buildings only became subjec...
+
+[133] Missing text: '2019.4'
+    DOCX word range : (3533, 3534)
+    DOCX char range : (23693, 23699)
+    ...ional Energy Code of Canada for Buildings in [[MISSING]] This Act is binding upon the Crown and is ad...
+
+[134] Missing text: '2020.5\nIV. Climate'
+    DOCX word range : (3552, 3555)
+    DOCX char range : (23819, 23837)
+    ...an municipality. Further updates occurred in [[MISSING]] Change Policy Development 7:12. Pre-Kyoto Po...
+
+[135] Missing text: 'Development\n7:12. Pre-Kyoto'
+    DOCX word range : (3557, 3560)
+    DOCX char range : (23852, 23879)
+    ...occurred in 2020.5 IV. Climate Change Policy [[MISSING]] Policy Development   Early policy developmen...
+
+[136] Missing text: 'Development\n \tEarly'
+    DOCX word range : (3561, 3563)
+    DOCX char range : (23887, 23906)
+    ...ge Policy Development 7:12. Pre-Kyoto Policy [[MISSING]] policy development in Saskatchewan was initi...
+
+[137] Missing text: '("SECDA").'
+    DOCX word range : (3586, 3587)
+    DOCX char range : (24099, 24109)
+    ...nergy Conservation and Development Authority [[MISSING]] SECDA was given the mandate to evaluate and...
+
+[138] Missing text: 'opportunities.1\n \tIn'
+    DOCX word range : (3610, 3612)
+    DOCX char range : (24273, 24293)
+    ...ion, alternative energy and related business [[MISSING]] the build-up to Canada's ratification of the...
+
+[139] Missing text: "Canada's"
+    DOCX word range : (3615, 3616)
+    DOCX char range : (24310, 24318)
+    ...usiness opportunities.1   In the build-up to [[MISSING]] ratification of the Kyoto Protocol, climate...
+
+[140] Missing text: 'policy.\n \tIn'
+    DOCX word range : (3660, 3662)
+    DOCX char range : (24635, 24647)
+    ...used as instruments of provincial government [[MISSING]] 1995, SaskEnergy, with its transmission subs...
+
+[141] Missing text: 'Program.2'
+    DOCX word range : (3681, 3682)
+    DOCX char range : (24783, 24792)
+    ...under the Voluntary Climate Change Challenge [[MISSING]] The SaskEnergy/Trans Gas voluntary actions w...
+
+[142] Missing text: 'exist.\n \tBy'
+    DOCX word range : (3726, 3728)
+    DOCX char range : (25122, 25133)
+    ...995; however, the program no longer seems to [[MISSING]] 1996, SECDA was disbanded as part of governm...
+
+[143] Missing text: 'Council.3\n7:13. Policy'
+    DOCX word range : (3752, 3755)
+    DOCX char range : (25307, 25329)
+    ...ere transferred to the Saskatchewan Research [[MISSING]] Development in Early Kyoto Era   In 1998, th...
+
+[144] Missing text: 'Era\n \tIn'
+    DOCX word range : (3759, 3761)
+    DOCX char range : (25357, 25365)
+    ...il.3 7:13. Policy Development in Early Kyoto [[MISSING]] 1998, the Government of Saskatchewan establi...
+
+[145] Missing text: 'matters.\n \tIn'
+    DOCX word range : (3796, 3798)
+    DOCX char range : (25657, 25670)
+    ...change information related to climate change [[MISSING]] May of 2001, the Government of Saskatchewan...
+
+[146] Missing text: 'strategy.1'
+    DOCX word range : (3826, 3827)
+    DOCX char range : (25867, 25877)
+    ...h a long-term provincial energy conservation [[MISSING]] The objective of the Green Print was to prov...
+
+[147] Missing text: "Saskatchewan's"
+    DOCX word range : (3885, 3886)
+    DOCX char range : (26233, 26247)
+    ...rgy costs, it was also intended to deal with [[MISSING]] responsibilities and commitments on climate...
+
+[148] Missing text: 'change.\n \tIn'
+    DOCX word range : (3891, 3893)
+    DOCX char range : (26292, 26304)
+    ...responsibilities and commitments on climate [[MISSING]] response to and in anticipation of federal c...
+
+[149] Missing text: '2002.2'
+    DOCX word range : (3914, 3915)
+    DOCX char range : (26449, 26455)
+    ...own perspective on climate change policy in [[MISSING]] That policy recognized anthropogenic climate...
+
+[150] Missing text: "Saskatchewan's"
+    DOCX word range : (3936, 3937)
+    DOCX char range : (26609, 26623)
+    ...vince of Saskatchewan. The Policy emphasized [[MISSING]] ongoing efforts to implement actions to redu...
+
+[151] Missing text: 'following:\n  • the'
+    DOCX word range : (3953, 3956)
+    DOCX char range : (26730, 26748)
+    ...emissions, which, at the time, included the [[MISSING]] establishment of the Saskatchewan Stakeholde...
+
+[152] Missing text: 'Change;\n  • the'
+    DOCX word range : (3965, 3968)
+    DOCX char range : (26825, 26840)
+    ...an Stakeholder Advisory Committee on Climate [[MISSING]] enactment of legislation to mandate the use...
+
+[153] Missing text: 'gasoline;\n  • the'
+    DOCX word range : (3978, 3981)
+    DOCX char range : (26899, 26916)
+    ...legislation to mandate the use of ethanol in [[MISSING]] establishment of the Office of Energy Conser...
+
+[154] Missing text: '2002;\n  • the'
+    DOCX word range : (3989, 3992)
+    DOCX char range : (26971, 26984)
+    ...ment of the Office of Energy Conservation in [[MISSING]] initiation of the IEA Weyburn Carbon Dioxide...
+
+[155] Missing text: 'Project;\n  • the'
+    DOCX word range : (4002, 4005)
+    DOCX char range : (27053, 27069)
+    ...eyburn Carbon Dioxide Monitoring and Storage [[MISSING]] establishment of the International Test Cent...
+
+[156] Missing text: 'Regina;\n  • support'
+    DOCX word range : (4019, 4022)
+    DOCX char range : (27165, 27184)
+    ...Carbon Dioxide Capture at the University of [[MISSING]] for the establishment of a Prairie Adaptatio...
+
+[157] Missing text: 'Prairies;\n  • participation'
+    DOCX word range : (4044, 4047)
+    DOCX char range : (27348, 27375)
+    ...unds adaptation research across the Canadian [[MISSING]] in the Gull Lake and Cypress Wind Power Deve...
+
+[158] Missing text: 'Development;\n  • the'
+    DOCX word range : (4055, 4058)
+    DOCX char range : (27416, 27436)
+    ...tion in the Gull Lake and Cypress Wind Power [[MISSING]] establishment of a forest carbon reserve wit...
+
+[159] Missing text: 'SaskPower;\n  • various'
+    DOCX word range : (4065, 4068)
+    DOCX char range : (27483, 27505)
+    ...stablishment of a forest carbon reserve with [[MISSING]] initiatives with the Saskatchewan Research C...
+
+[160] Missing text: "groups.\nSaskatchewan's"
+    DOCX word range : (4076, 4078)
+    DOCX char range : (27567, 27589)
+    ...the Saskatchewan Research Council and other [[MISSING]] policy was focused on five major areas:   •...
+
+[161] Missing text: 'areas:\n  • public education;\n  • carbon'
+    DOCX word range : (4084, 4090)
+    DOCX char range : (27623, 27662)
+    ...katchewan's policy was focused on five major [[MISSING]] capture technology;   • the development of a...
+
+[162] Missing text: 'technology;\n  • the'
+    DOCX word range : (4091, 4094)
+    DOCX char range : (27671, 27690)
+    ...as:   • public education;   • carbon capture [[MISSING]] development of adaptation strategies;   • th...
+
+[163] Missing text: 'strategies;\n  • the'
+    DOCX word range : (4097, 4100)
+    DOCX char range : (27717, 27736)
+    ...echnology;   • the development of adaptation [[MISSING]] development of biological carbon sinks in ag...
+
+[164] Missing text: 'and\n  • energy'
+    DOCX word range : (4110, 4113)
+    DOCX char range : (27811, 27825)
+    ...bon sinks in agricultural soils and forests; [[MISSING]] conservation and alternative energy projects...
+
+[165] Missing text: 'projects.\n7:14. Post-Kyoto'
+    DOCX word range : (4117, 4120)
+    DOCX char range : (27862, 27888)
+    ...• energy conservation and alternative energy [[MISSING]] Policy Development   In 2002, the Government...
+
+[166] Missing text: 'Development\n \tIn'
+    DOCX word range : (4121, 4123)
+    DOCX char range : (27896, 27912)
+    ...ive energy projects. 7:14. Post-Kyoto Policy [[MISSING]] 2002, the Government of Saskatchewan created...
+
+[167] Missing text: 'reductions.\n7:15. Post-Kyoto'
+    DOCX word range : (4179, 4182)
+    DOCX char range : (28308, 28336)
+    ...gy conservation with a secondary goal of GHG [[MISSING]] Policy Development-- A First Report on Makin...
+
+[168] Missing text: 'Development--'
+    DOCX word range : (4183, 4184)
+    DOCX char range : (28344, 28357)
+    ...l of GHG reductions. 7:15. Post-Kyoto Policy [[MISSING]] A First Report on Making Saskatchewan a Cana...
+
+[169] Missing text: '(2006)1\n \tIn'
+    DOCX word range : (4200, 4202)
+    DOCX char range : (28470, 28482)
+    ...onservation and Renewable Energy Development [[MISSING]] May 2006, then Premier Lorne Calvert appoint...
+
+[170] Missing text: "Saskatchewan's"
+    DOCX word range : (4233, 4234)
+    DOCX char range : (28697, 28711)
+    ...ith the preparation of a report dealing with [[MISSING]] options for the development of renewable ene...
+
+[171] Missing text: "Saskatchewan's"
+    DOCX word range : (4263, 4264)
+    DOCX char range : (28885, 28899)
+    ...rnment of the day that by 2020, one third of [[MISSING]] energy needs would be met by renewable energ...
+
+[172] Missing text: "Saskatchewan's"
+    DOCX word range : (4326, 4327)
+    DOCX char range : (29323, 29337)
+    ...ained recommendations which would build upon [[MISSING]] existing wind power, ethanol production, CO2...
+
+[173] Missing text: 'sector.\n \tIn'
+    DOCX word range : (4349, 4351)
+    DOCX char range : (29499, 29511)
+    ...on the electricity sector and the buildings [[MISSING]] the electrical sector, the priority recommen...
+
+[174] Missing text: "Saskatchewan's"
+    DOCX word range : (4373, 4374)
+    DOCX char range : (29684, 29698)
+    ...demand management. The report proposed that [[MISSING]] Renewable Energy and Conservation Portfolio...
+
+[175] Missing text: '50%'
+    DOCX word range : (4386, 4387)
+    DOCX char range : (29784, 29787)
+    ...lio Standard would require that a minimum of [[MISSING]] of Saskatchewan's electricity would be deriv...
+
+[176] Missing text: "Saskatchewan's"
+    DOCX word range : (4388, 4389)
+    DOCX char range : (29791, 29805)
+    ...ndard would require that a minimum of 50% of [[MISSING]] electricity would be derived from renewable...
+
+[177] Missing text: '2025.2'
+    DOCX word range : (4401, 4402)
+    DOCX char range : (29897, 29903)
+    ...ergy sources and electricity conservation by [[MISSING]] It was proposed that major wind power develo...
+
+[178] Missing text: '"green,'
+    DOCX word range : (4436, 4437)
+    DOCX char range : (30129, 30136)
+    ...ng net metering for small-scale producers of [[MISSING]] low impact" energy.   Facing forecasted elec...
+
+[179] Missing text: 'impact" energy.\n \tFacing'
+    DOCX word range : (4438, 4441)
+    DOCX char range : (30141, 30165)
+    ...ing for small-scale producers of "green, low [[MISSING]] forecasted electricity consumption growth an...
+
+[180] Missing text: 'management.3'
+    DOCX word range : (4464, 4465)
+    DOCX char range : (30330, 30342)
+    ...e emphasis in the report is placed on demand [[MISSING]] Measures were proposed to forecast the consu...
+
+[181] Missing text: 'gap.\n \tThe'
+    DOCX word range : (4480, 4482)
+    DOCX char range : (30432, 30442)
+    ...mption by 2025 in order to manage the supply [[MISSING]] second policy priority proposed in the repor...
+
+[182] Missing text: 'consumers.\n \tThe'
+    DOCX word range : (4518, 4520)
+    DOCX char range : (30693, 30709)
+    ...or energy efficiency in businesses and among [[MISSING]] third priority was the conservation of elect...
+
+[183] Missing text: '"solar rights" legislation.\n \tThe'
+    DOCX word range : (4590, 4594)
+    DOCX char range : (31185, 31218)
+    ...energy, with a call for the introduction of [[MISSING]] final priority policies were directed toward...
+
+[184] Missing text: 'initiatives.4\n7:16. Post-Kyoto'
+    DOCX word range : (4647, 4650)
+    DOCX char range : (31588, 31618)
+    ...unding for conservation and renewable energy [[MISSING]] Policy Development-- The Saskatchewan Energy...
+
+[185] Missing text: 'Development-- The'
+    DOCX word range : (4651, 4653)
+    DOCX char range : (31626, 31643)
+    ...energy initiatives.4 7:16. Post-Kyoto Policy [[MISSING]] Saskatchewan Energy and Climate Change Plan,...
+
+[186] Missing text: '2007\n \tIn'
+    DOCX word range : (4659, 4661)
+    DOCX char range : (31689, 31698)
+    ...Saskatchewan Energy and Climate Change Plan, [[MISSING]] 2007, Saskatchewan's NDP government introduc...
+
+[187] Missing text: "Saskatchewan's"
+    DOCX word range : (4662, 4663)
+    DOCX char range : (31705, 31719)
+    ...rgy and Climate Change Plan, 2007   In 2007, [[MISSING]] NDP government introduced an aggressive plan...
+
+[188] Missing text: '32%,'
+    DOCX word range : (4676, 4677)
+    DOCX char range : (31803, 31807)
+    ...e plan to reduce per capita GHG emissions by [[MISSING]] based on 2004 GHG emission levels, by 2020....
+
+[189] Missing text: '80%'
+    DOCX word range : (4701, 4702)
+    DOCX char range : (31936, 31939)
+    ...in the following years, so as to achieve an [[MISSING]] per capita reduction from 2004 levels by 205...
+
+[190] Missing text: '2020)1'
+    DOCX word range : (4747, 4748)
+    DOCX char range : (32187, 32193)
+    ...in 2004 to 49.9 tonnes of GHG per person in [[MISSING]] and a per capita reduction of 55 tonnes by 2...
+
+[191] Missing text: '"the'
+    DOCX word range : (4780, 4781)
+    DOCX char range : (32352, 32356)
+    ...as expressed by the government of the day as [[MISSING]] most ambitious target in Canada"2 and as bei...
+
+[192] Missing text: 'Canada"2'
+    DOCX word range : (4785, 4786)
+    DOCX char range : (32382, 32390)
+    ...of the day as "the most ambitious target in [[MISSING]] and as being significantly greater than the...
+
+[193] Missing text: 'Protocol.3'
+    DOCX word range : (4806, 4807)
+    DOCX char range : (32523, 32533)
+    ...meet the reduction required under the Kyoto [[MISSING]] The plan was promoted as particularly ambiti...
+
+[194] Missing text: "Saskatchewan's"
+    DOCX word range : (4816, 4817)
+    DOCX char range : (32593, 32607)
+    ...romoted as particularly ambitious because of [[MISSING]] cold climate, its energy-intensive economy a...
+
+[195] Missing text: "Saskatchewan's"
+    DOCX word range : (4838, 4839)
+    DOCX char range : (32754, 32768)
+    ...andoned the Plan, and this goal was not met; [[MISSING]] per capita emissions for 2020 were recorded...
+
+[196] Missing text: 'tonnes.\n \tBorrowing'
+    DOCX word range : (4848, 4850)
+    DOCX char range : (32821, 32840)
+    ...ita emissions for 2020 were recorded at 55.8 [[MISSING]] language from former U.S. Vice-President Al...
+
+[197] Missing text: '"tipping point"'
+    DOCX word range : (4864, 4866)
+    DOCX char range : (32941, 32956)
+    ...lan described Saskatchewan as representing a [[MISSING]] in that, despite its small population, Saska...
+
+[198] Missing text: "Saskatchewan's"
+    DOCX word range : (4872, 4873)
+    DOCX char range : (32996, 33010)
+    ...oint" in that, despite its small population, [[MISSING]] efforts to curb GHG emissions would make a g...
+
+[199] Missing text: '3%'
+    DOCX word range : (4898, 4899)
+    DOCX char range : (33160, 33162)
+    ...e challenges faced by a province having only [[MISSING]] of Canada's population but which contributed...
+
+[200] Missing text: "Canada's"
+    DOCX word range : (4900, 4901)
+    DOCX char range : (33166, 33174)
+    ...lenges faced by a province having only 3% of [[MISSING]] population but which contributed, as of 2004...
+
+[201] Missing text: '9%'
+    DOCX word range : (4908, 4909)
+    DOCX char range : (33221, 33223)
+    ...opulation but which contributed, as of 2004, [[MISSING]] of Canada's GHG emissions. It also recognize...
+
+[202] Missing text: "Canada's"
+    DOCX word range : (4910, 4911)
+    DOCX char range : (33227, 33235)
+    ...ion but which contributed, as of 2004, 9% of [[MISSING]] GHG emissions. It also recognized the contin...
+
+[203] Missing text: "province's"
+    DOCX word range : (4920, 4921)
+    DOCX char range : (33294, 33304)
+    .... It also recognized the continuation of the [[MISSING]] rapid economic growth was largely dependent...
+
+[204] Missing text: 'energy.\n \tThe'
+    DOCX word range : (4940, 4942)
+    DOCX char range : (33434, 33447)
+    ...esource sector, especially fossil fuel based [[MISSING]] Plan was based on five "wedges" or areas of...
+
+[205] Missing text: '"wedges"'
+    DOCX word range : (4947, 4948)
+    DOCX char range : (33471, 33479)
+    ...l based energy.   The Plan was based on five [[MISSING]] or areas of emission reduction and climate c...
+
+[206] Missing text: 'environment.\n7:17. Post-Kyoto'
+    DOCX word range : (5068, 5071)
+    DOCX char range : (34257, 34286)
+    ...d measures to remove carbon dioxide from the [[MISSING]] Policy Development-- The Saskatchewan Energy...
+
+[207] Missing text: 'Development-- The'
+    DOCX word range : (5072, 5074)
+    DOCX char range : (34294, 34311)
+    ...rom the environment. 7:17. Post-Kyoto Policy [[MISSING]] Saskatchewan Energy and Climate Change Plan,...
+
+[208] Missing text: '2007-- Conservation'
+    DOCX word range : (5080, 5082)
+    DOCX char range : (34357, 34376)
+    ...Saskatchewan Energy and Climate Change Plan, [[MISSING]] and Efficiency   The Plan included a commitm...
+
+[209] Missing text: 'Efficiency\n \tThe'
+    DOCX word range : (5083, 5085)
+    DOCX char range : (34381, 34397)
+    ...Climate Change Plan, 2007-- Conservation and [[MISSING]] Plan included a commitment to save at least...
+
+[210] Missing text: "SaskPower's"
+    DOCX word range : (5096, 5097)
+    DOCX char range : (34452, 34463)
+    ...uded a commitment to save at least 300 MW of [[MISSING]] electricity generating capacity through dema...
+
+[211] Missing text: 'plant.1'
+    DOCX word range : (5113, 5114)
+    DOCX char range : (34602, 34609)
+    ...the equivalent of one coal-fired generating [[MISSING]] Whether this was intended to mean the closur...
+
+[212] Missing text: 'municipalities.\n \tThe'
+    DOCX word range : (5202, 5204)
+    DOCX char range : (35209, 35230)
+    ...mercial and industrial facilities, farms and [[MISSING]] Plan identified a series of other continuing...
+
+[213] Missing text: "government's"
+    DOCX word range : (5273, 5274)
+    DOCX char range : (35710, 35722)
+    ...commitment to reduce energy consumption from [[MISSING]] core buildings by 20%, to be realized throug...
+
+[214] Missing text: '20%,'
+    DOCX word range : (5277, 5278)
+    DOCX char range : (35741, 35745)
+    ...sumption from government's core buildings by [[MISSING]] to be realized through the replacement of bu...
+
+[215] Missing text: 'components.\n \tThe'
+    DOCX word range : (5286, 5288)
+    DOCX char range : (35797, 35814)
+    ...realized through the replacement of building [[MISSING]] Plan also called for incremental measures in...
+
+[216] Missing text: '20%'
+    DOCX word range : (5327, 5328)
+    DOCX char range : (36087, 36090)
+    ...alternative or flex fuel, or within the top [[MISSING]] of efficiency in their class. As an alternat...
+
+[217] Missing text: 'supported.\n \tOn'
+    DOCX word range : (5422, 5424)
+    DOCX char range : (36758, 36773)
+    ...atives in the agricultural sector were to be [[MISSING]] the two-year planning horizon, the Plan call...
+
+[218] Missing text: 'industry.\n \tOn'
+    DOCX word range : (5473, 5475)
+    DOCX char range : (37117, 37131)
+    ...ncy building standards, in consultation with [[MISSING]] a five-year planning horizon, the Plan targe...
+
+[219] Missing text: 'infrastructure.\n7:18. Post-Kyoto'
+    DOCX word range : (5526, 5529)
+    DOCX char range : (37502, 37534)
+    ...quirements for power supply and transmission [[MISSING]] Policy Development-- The Saskatchewan Energy...
+
+[220] Missing text: 'Development-- The'
+    DOCX word range : (5530, 5532)
+    DOCX char range : (37542, 37559)
+    ...sion infrastructure. 7:18. Post-Kyoto Policy [[MISSING]] Saskatchewan Energy and Climate Change Plan,...
+
+[221] Missing text: '2007-- Carbon'
+    DOCX word range : (5538, 5540)
+    DOCX char range : (37605, 37618)
+    ...Saskatchewan Energy and Climate Change Plan, [[MISSING]] Capture and Storage in the Oil and Gas and E...
+
+[222] Missing text: 'Sectors1\n \tThe'
+    DOCX word range : (5550, 5552)
+    DOCX char range : (37674, 37688)
+    ...d Storage in the Oil and Gas and Electricity [[MISSING]] Plan built upon Saskatchewan's leading role...
+
+[223] Missing text: "Saskatchewan's"
+    DOCX word range : (5555, 5556)
+    DOCX char range : (37705, 37719)
+    ...d Electricity Sectors1   The Plan built upon [[MISSING]] leading role in the study of carbon dioxide...
+
+[224] Missing text: 'plants.\n \tIn'
+    DOCX word range : (5660, 5662)
+    DOCX char range : (38418, 38430)
+    ...r plants, heavy oil upgraders and fertilizer [[MISSING]] order to develop the technology necessary to...
+
+[225] Missing text: 'Project.\n7:19. Post-Kyoto'
+    DOCX word range : (5727, 5730)
+    DOCX char range : (38889, 38914)
+    ...rbon Capture and Storage (CCS) Demonstration [[MISSING]] Policy Development-- The Saskatchewan Energy...
+
+[226] Missing text: 'Development-- The'
+    DOCX word range : (5731, 5733)
+    DOCX char range : (38922, 38939)
+    ...monstration Project. 7:19. Post-Kyoto Policy [[MISSING]] Saskatchewan Energy and Climate Change Plan,...
+
+[227] Missing text: '2007-- Increase'
+    DOCX word range : (5739, 5741)
+    DOCX char range : (38985, 39000)
+    ...Saskatchewan Energy and Climate Change Plan, [[MISSING]] the Use of Renewable Energy1   At the time t...
+
+[228] Missing text: 'Energy1\n \tAt'
+    DOCX word range : (5745, 5747)
+    DOCX char range : (39022, 39034)
+    ...e Plan, 2007-- Increase the Use of Renewable [[MISSING]] the time the Plan was released, Saskatchewan...
+
+[229] Missing text: 'capacity.1.50'
+    DOCX word range : (5795, 5796)
+    DOCX char range : (39351, 39364)
+    ...an has approximately 889 MW of hydroelectric [[MISSING]] The Plan supported the addition of small-sca...
+
+[230] Missing text: 'producers.\n \tIn'
+    DOCX word range : (5811, 5813)
+    DOCX char range : (39488, 39503)
+    ...tric power generation from independent power [[MISSING]] 2005, Saskatchewan became the first province...
+
+[231] Missing text: 'plants.2'
+    DOCX word range : (5845, 5846)
+    DOCX char range : (39725, 39733)
+    ...020, Canada had eight operational bio-diesel [[MISSING]] As of 2015, one bio-diesel plant was in oper...
+
+[232] Missing text: 'Saskatchewan.3'
+    DOCX word range : (5856, 5857)
+    DOCX char range : (39787, 39801)
+    ...15, one bio-diesel plant was in operation in [[MISSING]] A new bio-diesel plant is expected to be con...
+
+[233] Missing text: '2027.4'
+    DOCX word range : (5869, 5870)
+    DOCX char range : (39874, 39880)
+    ...xpected to be constructed in Saskatchewan by [[MISSING]] The ethanol plants produce grain-based ethan...
+
+[234] Missing text: 'above.\n7:20. Post-Kyoto'
+    DOCX word range : (5973, 5976)
+    DOCX char range : (40655, 40678)
+    ...vernment vehicle purchasing policy discussed [[MISSING]] Policy Development-- The Saskatchewan Energy...
+
+[235] Missing text: 'Development-- The'
+    DOCX word range : (5977, 5979)
+    DOCX char range : (40686, 40703)
+    ...icy discussed above. 7:20. Post-Kyoto Policy [[MISSING]] Saskatchewan Energy and Climate Change Plan,...
+
+[236] Missing text: '2007-- Promoting'
+    DOCX word range : (5985, 5987)
+    DOCX char range : (40749, 40765)
+    ...Saskatchewan Energy and Climate Change Plan, [[MISSING]] the Creation of Natural Carbon Sinks1   The...
+
+[237] Missing text: 'Sinks1\n \tThe'
+    DOCX word range : (5992, 5994)
+    DOCX char range : (40797, 40809)
+    ...7-- Promoting the Creation of Natural Carbon [[MISSING]] Plan assumed a national emissions trading sy...
+
+[238] Missing text: 'reductions).\n7:21. Post-Kyoto'
+    DOCX word range : (6073, 6076)
+    DOCX char range : (41299, 41328)
+    ...to result in another 4.9 Mt in CO2 emission [[MISSING]] Policy Development-- The Saskatchewan Energy...
+
+[239] Missing text: 'Development-- The'
+    DOCX word range : (6077, 6079)
+    DOCX char range : (41336, 41353)
+    ...mission reductions). 7:21. Post-Kyoto Policy [[MISSING]] Saskatchewan Energy and Climate Change Plan,...
+
+[240] Missing text: '2007-- Reduction'
+    DOCX word range : (6085, 6087)
+    DOCX char range : (41399, 41415)
+    ...Saskatchewan Energy and Climate Change Plan, [[MISSING]] of Methane and Other Emissions from Oil, Gas...
+
+[241] Missing text: 'Sectors1\n \tIn'
+    DOCX word range : (6097, 6099)
+    DOCX char range : (41478, 41491)
+    ...her Emissions from Oil, Gas and Agricultural [[MISSING]] agriculture, the Plan targeted emissions fro...
+
+[242] Missing text: '20%'
+    DOCX word range : (6130, 6131)
+    DOCX char range : (41705, 41708)
+    ...ctices and technology that would result in a [[MISSING]] reduction in agricultural emissions per anim...
+
+[243] Missing text: '2030.\n \tIn'
+    DOCX word range : (6144, 6146)
+    DOCX char range : (41791, 41801)
+    ...er animal and per acre of crop production by [[MISSING]] the oil and gas sector, Saskatchewan committ...
+
+[244] Missing text: "industry's"
+    DOCX word range : (6168, 6169)
+    DOCX char range : (41938, 41948)
+    ...d recommendations for the improvement of the [[MISSING]] efficiency and competitiveness, and to reduc...
+
+[245] Missing text: "province's"
+    DOCX word range : (6194, 6195)
+    DOCX char range : (42117, 42127)
+    ...ther make up a very significant share of the [[MISSING]] total GHG emissions. 7:22. Post-Kyoto Policy...
+
+[246] Missing text: 'emissions.\n7:22. Post-Kyoto'
+    DOCX word range : (6197, 6200)
+    DOCX char range : (42138, 42165)
+    ...ignificant share of the province's total GHG [[MISSING]] Policy Development-- The Saskatchewan Energy...
+
+[247] Missing text: 'Development-- The'
+    DOCX word range : (6201, 6203)
+    DOCX char range : (42173, 42190)
+    ...total GHG emissions. 7:22. Post-Kyoto Policy [[MISSING]] Saskatchewan Energy and Climate Change Plan,...
+
+[248] Missing text: '2007-- Sustainable'
+    DOCX word range : (6209, 6211)
+    DOCX char range : (42236, 42254)
+    ...Saskatchewan Energy and Climate Change Plan, [[MISSING]] Non-Renewable Resource Sector1   As the seco...
+
+[249] Missing text: 'Sector1\n \tAs'
+    DOCX word range : (6213, 6215)
+    DOCX char range : (42278, 42290)
+    ...n, 2007-- Sustainable Non-Renewable Resource [[MISSING]] the second-largest oil-producing province in...
+
+[250] Missing text: "Saskatchewan's"
+    DOCX word range : (6230, 6231)
+    DOCX char range : (42399, 42413)
+    ...rd-largest producer of coal and natural gas, [[MISSING]] goal is to continue to reap the economic ben...
+
+[251] Missing text: "province's"
+    DOCX word range : (6258, 6259)
+    DOCX char range : (42571, 42581)
+    ...they account for producing over half of the [[MISSING]] GHG emissions. The Plan saw technology as th...
+
+[252] Missing text: 'emissions).\n \tSaskatchewan'
+    DOCX word range : (6338, 6340)
+    DOCX char range : (43083, 43109)
+    ...ction in these areas would also increase GHG [[MISSING]] is either the largest or second-largest prod...
+
+[253] Missing text: 'uranium.2'
+    DOCX word range : (6348, 6349)
+    DOCX char range : (43162, 43171)
+    ...er the largest or second-largest producer of [[MISSING]] The Plan called for assessment of the develo...
+
+[254] Missing text: '7:23. Post-Kyoto'
+    DOCX word range : (6372, 6374)
+    DOCX char range : (43323, 43339)
+    ...electricity for domestic and export markets. [[MISSING]] Policy Development-- The Saskatchewan Energy...
+
+[255] Missing text: 'Development-- The'
+    DOCX word range : (6375, 6377)
+    DOCX char range : (43347, 43364)
+    ...and export markets. 7:23. Post-Kyoto Policy [[MISSING]] Saskatchewan Energy and Climate Change Plan,...
+
+[256] Missing text: '2007-- Adaptation1\n \tIn'
+    DOCX word range : (6383, 6386)
+    DOCX char range : (43410, 43433)
+    ...Saskatchewan Energy and Climate Change Plan, [[MISSING]] preparation for warmer, drier weather and po...
+
+[257] Missing text: "Plan's"
+    DOCX word range : (6406, 6407)
+    DOCX char range : (43580, 43586)
+    ...eat waves, storm flooding and tornadoes, the [[MISSING]] focus was on working with other agencies to...
+
+[258] Missing text: 'level.\nV. Current'
+    DOCX word range : (6501, 6504)
+    DOCX char range : (44211, 44228)
+    ...ion measures to be developed at a very local [[MISSING]] Legal and Policy Response A. Mitigation 1. M...
+
+[259] Missing text: 'Response\nA. Mitigation\n1. Major Initiatives\n\n\n\n\n\n\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7:24. The'
+    DOCX word range : (6507, 6515)
+    DOCX char range : (44246, 44322)
+    ...ery local level. V. Current Legal and Policy [[MISSING]] Management and Reduction of Greenhouse Gases...
+
+[260] Missing text: 'Act1\n \tOn'
+    DOCX word range : (6521, 6523)
+    DOCX char range : (44368, 44377)
+    ...Management and Reduction of Greenhouse Gases [[MISSING]] May 11, 2009, the Government of Saskatchewan...
+
+[261] Missing text: '("MRGGA").'
+    DOCX word range : (6541, 6542)
+    DOCX char range : (44496, 44506)
+    ...gement and Reduction of Greenhouse Gases Act [[MISSING]] It was touted as establishing "a made-in-Sas...
+
+[262] Missing text: '"a'
+    DOCX word range : (6547, 6548)
+    DOCX char range : (44537, 44539)
+    ...Act ("MRGGA"). It was touted as establishing [[MISSING]] made-in-Saskatchewan plan for reducing GHG e...
+
+[263] Missing text: 'technologies".2'
+    DOCX word range : (6563, 6564)
+    DOCX char range : (44658, 44673)
+    ...argets and promote investments in low-carbon [[MISSING]] It filled the void left when Saskatchewan ab...
+
+[264] Missing text: 'government.\n \tThis'
+    DOCX word range : (6583, 6585)
+    DOCX char range : (44803, 44821)
+    ...Change Plan, 2007 introduced by the previous [[MISSING]] legislation was reintroduced with minor amen...
+
+[265] Missing text: "province's"
+    DOCX word range : (6609, 6610)
+    DOCX char range : (44975, 44985)
+    ...8 with significant amendments as part of the [[MISSING]] climate strategy, Prairie Resilience. The MR...
+
+[266] Missing text: "government's"
+    DOCX word range : (6625, 6626)
+    DOCX char range : (45105, 45117)
+    ...egulatory framework to implement the current [[MISSING]] climate change strategy, Prairie Resilience....
+
+[267] Missing text: 'Resilience.\n \tThe'
+    DOCX word range : (6630, 6632)
+    DOCX char range : (45151, 45168)
+    ...overnment's climate change strategy, Prairie [[MISSING]] MRGGA empowers the province to set GHG emiss...
+
+[268] Missing text: 'them.3'
+    DOCX word range : (6649, 6650)
+    DOCX char range : (45278, 45284)
+    ...s and to monitor and enforce compliance with [[MISSING]] The MRGGA then targets "regulated emitters"...
+
+[269] Missing text: '"regulated emitters"'
+    DOCX word range : (6654, 6656)
+    DOCX char range : (45308, 45328)
+    ...ompliance with them.3 The MRGGA then targets [[MISSING]] by requiring them to establish baseline emis...
+
+[270] Missing text: 'time.4'
+    DOCX word range : (6676, 6677)
+    DOCX char range : (45454, 45460)
+    ...ties and then to reduce those emissions over [[MISSING]] Reduction requirements are specified in a se...
+
+[271] Missing text: 'MRGGA.\n7:25. Regulated'
+    DOCX word range : (6692, 6695)
+    DOCX char range : (45567, 45589)
+    ...ns emission standards passed pursuant to the [[MISSING]] Emitters (General)   The Management and Redu...
+
+[272] Missing text: '(General)\n \tThe'
+    DOCX word range : (6696, 6698)
+    DOCX char range : (45599, 45614)
+    ...suant to the MRGGA. 7:25. Regulated Emitters [[MISSING]] Management and Reduction of Greenhouse Gases...
+
+[273] Missing text: 'Regulations1'
+    DOCX word range : (6707, 6708)
+    DOCX char range : (45687, 45699)
+    ...Greenhouse Gases (Standards and Compliance) [[MISSING]] defines a regulated emitter as an owner or o...
+
+[274] Missing text: 'emitter.2'
+    DOCX word range : (6748, 6749)
+    DOCX char range : (45929, 45938)
+    ...an 25,000 tonnes can apply to be a regulated [[MISSING]] Regulated emitters are required to be regist...
+
+[275] Missing text: 'registered3'
+    DOCX word range : (6755, 6756)
+    DOCX char range : (45977, 45988)
+    ...tter.2 Regulated emitters are required to be [[MISSING]] and determine their baseline emission level...
+
+[276] Missing text: '"qualified person".4'
+    DOCX word range : (6774, 6776)
+    DOCX char range : (46102, 46122)
+    ...roduct they produce with the assistance of a [[MISSING]] They are then required to reduce their emiss...
+
+[277] Missing text: 'sector.5'
+    DOCX word range : (6801, 6802)
+    DOCX char range : (46275, 46283)
+    ...utlined in the Standard established for that [[MISSING]] The Minister is empowered to set up offset p...
+
+[278] Missing text: 'targets.6'
+    DOCX word range : (6819, 6820)
+    DOCX char range : (46388, 46397)
+    ...st emitters in meeting their annual emission [[MISSING]] Finally, regulated emitters are required to...
+
+[279] Missing text: 'MRGGA.7\n \tPrairie'
+    DOCX word range : (6835, 6837)
+    DOCX char range : (46505, 46522)
+    ...ssions returns to verify compliance with the [[MISSING]] Resilience explains that more than 40 indust...
+
+[280] Missing text: 'Regulations.8'
+    DOCX word range : (6868, 6869)
+    DOCX char range : (46742, 46755)
+    ...Greenhouse Gases (Standards and Compliance) [[MISSING]] An overall 10% reduction or 5.3 million tonn...
+
+[281] Missing text: '10%'
+    DOCX word range : (6871, 6872)
+    DOCX char range : (46767, 46770)
+    ...rds and Compliance) Regulations.8 An overall [[MISSING]] reduction or 5.3 million tonnes of carbon di...
+
+[282] Missing text: 'time.9'
+    DOCX word range : (6896, 6897)
+    DOCX char range : (46933, 46939)
+    ...rmance standards that will be increased over [[MISSING]] The overall reduction will be achieved throu...
+
+[283] Missing text: '5%'
+    DOCX word range : (6904, 6905)
+    DOCX char range : (46987, 46989)
+    ...e overall reduction will be achieved through [[MISSING]] intensity reductions in the potash, coal and...
+
+[284] Missing text: 'production.10\n7:26. Electricity Producers\n \tLarge'
+    DOCX word range : (6923, 6928)
+    DOCX char range : (47107, 47156)
+    ...and pulps mills, and fertilizer and ethanol [[MISSING]] electricity producers, however, are subject...
+
+[285] Missing text: 'Regulations.1'
+    DOCX word range : (6949, 6950)
+    DOCX char range : (47316, 47329)
+    ...use Gases (General and Electricity Producer) [[MISSING]] The "regulated emitter" under these regulati...
+
+[286] Missing text: '"regulated emitter"'
+    DOCX word range : (6951, 6953)
+    DOCX char range : (47334, 47353)
+    ...and Electricity Producer) Regulations.1 The [[MISSING]] under these regulations includes any person...
+
+[287] Missing text: '(IPPs).2'
+    DOCX word range : (6981, 6982)
+    DOCX char range : (47546, 47554)
+    ...d generation and independent power producers [[MISSING]] IPPs are defined as those who generate over...
+
+[288] Missing text: 'returns3'
+    DOCX word range : (7023, 7024)
+    DOCX char range : (47816, 47824)
+    ...ers and IPPs are required to submit emission [[MISSING]] and are subject to the administrative penalt...
+
+[289] Missing text: 'regulations.4'
+    DOCX word range : (7042, 7043)
+    DOCX char range : (47930, 47943)
+    ...the MRRGA if they fail to comply with these [[MISSING]] These regulations impose a cumulative emissi...
+
+[290] Missing text: '2029.5'
+    DOCX word range : (7059, 7060)
+    DOCX char range : (48051, 48057)
+    ...llion tonnes of carbon dioxide equivalent by [[MISSING]] This cap, combined with the promise to shift...
+
+[291] Missing text: '50%'
+    DOCX word range : (7068, 7069)
+    DOCX char range : (48103, 48106)
+    ...This cap, combined with the promise to shift [[MISSING]] of electricity generation to renewable power...
+
+[292] Missing text: '40%'
+    DOCX word range : (7081, 7082)
+    DOCX char range : (48181, 48184)
+    ...renewable power, are expected to result in a [[MISSING]] annual reduction below 2005 emission levels....
+
+[293] Missing text: 'levels.6\n7:27. The'
+    DOCX word range : (7087, 7090)
+    DOCX char range : (48222, 48240)
+    ...n a 40% annual reduction below 2005 emission [[MISSING]] Saskatchewan Technology Fund   The Managemen...
+
+[294] Missing text: 'Fund\n \tThe'
+    DOCX word range : (7092, 7094)
+    DOCX char range : (48265, 48275)
+    ...n levels.6 7:27. The Saskatchewan Technology [[MISSING]] Management and Reduction of Greenhouse Gases...
+
+[295] Missing text: '"to'
+    DOCX word range : (7107, 7108)
+    DOCX char range : (48370, 48373)
+    ...has created the Saskatchewan Technology Fund [[MISSING]] support initiatives in Saskatchewan that lea...
+
+[296] Missing text: 'gases".1'
+    DOCX word range : (7121, 7122)
+    DOCX char range : (48474, 48482)
+    ...tion, sequestration or capture of greenhouse [[MISSING]] Although the fund is administered by the Min...
+
+[297] Missing text: 'administered.2'
+    DOCX word range : (7150, 7151)
+    DOCX char range : (48648, 48662)
+    ...determining how the fund should be used and [[MISSING]] Revenue in the fund will be generated from c...
+
+[298] Missing text: 'assessed.3\n7:28. Administrative,'
+    DOCX word range : (7169, 7172)
+    DOCX char range : (48778, 48810)
+    ...and any administrative penalties that may be [[MISSING]] Inspections and Enforcement   Part VIII of t...
+
+[299] Missing text: 'Enforcement\n \tPart'
+    DOCX word range : (7174, 7176)
+    DOCX char range : (48827, 48845)
+    ...ssed.3 7:28. Administrative, Inspections and [[MISSING]] VIII of the The Management and Reduction of...
+
+[300] Missing text: 'records.\n7:29. Administrative,'
+    DOCX word range : (7209, 7212)
+    DOCX char range : (49074, 49104)
+    ...pursue investigations and maintain copies of [[MISSING]] Inspections and Enforcement-- Offences and A...
+
+[301] Missing text: 'Enforcement-- Offences'
+    DOCX word range : (7214, 7216)
+    DOCX char range : (49121, 49143)
+    ...cords. 7:29. Administrative, Inspections and [[MISSING]] and Administrative Penalties   As per s. 75(...
+
+[302] Missing text: 'Penalties\n \tAs'
+    DOCX word range : (7218, 7220)
+    DOCX char range : (49163, 49177)
+    ...nd Enforcement-- Offences and Administrative [[MISSING]] per s. 75(2) of The Management and Reduction...
+
+[303] Missing text: '$1'
+    DOCX word range : (7262, 7263)
+    DOCX char range : (49414, 49416)
+    ...n summary conviction to a fine not exceeding [[MISSING]] million. A person or entity will be in viola...
+
+[304] Missing text: 'codes.1'
+    DOCX word range : (7329, 7330)
+    DOCX char range : (49762, 49769)
+    ...provision of the Act, the regulations or the [[MISSING]] Any director, office or agent of a corporati...
+
+[305] Missing text: 'prosecution.2'
+    DOCX word range : (7373, 7374)
+    DOCX char range : (50024, 50037)
+    ...n is also guilty of an offence and liable to [[MISSING]] A court will be able to impose additional pe...
+
+[306] Missing text: 'offence.3'
+    DOCX word range : (7411, 7412)
+    DOCX char range : (50246, 50255)
+    ...court, may result in the continuation of the [[MISSING]] The Minister will be empowered to impose adm...
+
+[307] Missing text: "Queen's"
+    DOCX word range : (7445, 7446)
+    DOCX char range : (50472, 50479)
+    ...eal the penalty to the Saskatchewan Court of [[MISSING]] Bench within 30 days after the date of the M...
+
+[308] Missing text: "Minister's"
+    DOCX word range : (7455, 7456)
+    DOCX char range : (50523, 50533)
+    ...s Bench within 30 days after the date of the [[MISSING]] decision to impose the penalty.4   One of th...
+
+[309] Missing text: 'penalty.4\n \tOne'
+    DOCX word range : (7460, 7462)
+    DOCX char range : (50557, 50572)
+    ...ate of the Minister's decision to impose the [[MISSING]] of the main components of Prairie Resilience...
+
+[310] Missing text: '2019.5'
+    DOCX word range : (7478, 7479)
+    DOCX char range : (50668, 50674)
+    ...e Methane Action Plan, which was released in [[MISSING]] This initiative aims to reduce methane-based...
+
+[311] Missing text: "province's"
+    DOCX word range : (7489, 7490)
+    DOCX char range : (50745, 50755)
+    ...educe methane-based GHG emissions within the [[MISSING]] oil and gas sector with the specific goal of...
+
+[312] Missing text: '2025.6'
+    DOCX word range : (7510, 7511)
+    DOCX char range : (50877, 50883)
+    ...ent (CO2e) by 4.5 million tonnes annually by [[MISSING]] At the point of production, companies often...
+
+[313] Missing text: 'flaring.7\n \tThe'
+    DOCX word range : (7612, 7614)
+    DOCX char range : (51561, 51576)
+    ...and directs the focus away from venting and [[MISSING]] Output-Based Performance Standards initiativ...
+
+[314] Missing text: '10%'
+    DOCX word range : (7670, 7671)
+    DOCX char range : (51955, 51958)
+    ...ord a total emissions intensity reduction of [[MISSING]] by 2030.8   In 2022, the province announced...
+
+[315] Missing text: '2030.8\n \tIn'
+    DOCX word range : (7672, 7674)
+    DOCX char range : (51962, 51973)
+    ...otal emissions intensity reduction of 10% by [[MISSING]] 2022, the province announced that the Output...
+
+[316] Missing text: '$2.3'
+    DOCX word range : (7717, 7718)
+    DOCX char range : (52323, 52327)
+    ...ocessing. These sectors will save a total of [[MISSING]] billion compared to coverage under the feder...
+
+[317] Missing text: 'equivalent.9\n \tFollowing'
+    DOCX word range : (7748, 7750)
+    DOCX char range : (52540, 52564)
+    ...s been reduced to 0 tonnes of carbon dioxide [[MISSING]] the introduction of these initiatives, metha...
+
+[318] Missing text: '50%'
+    DOCX word range : (7776, 7777)
+    DOCX char range : (52737, 52740)
+    ...dioxide equivalent in 2020. This is almost a [[MISSING]] reduction from 2015 levels and is tantamount...
+
+[319] Missing text: 'year.10\n2. Supplementary Initiatives\n7:30. Renewable Fuels\n \tIn'
+    DOCX word range : (7794, 7802)
+    DOCX char range : (52847, 52910)
+    ...million cars from Saskatchewan roads for one [[MISSING]] April 2002, the Government of Saskatchewan r...
+
+[320] Missing text: 'Saskatchewan.1'
+    DOCX word range : (7815, 7816)
+    DOCX char range : (53004, 53018)
+    ...sed its Greenprint for Ethanol Production in [[MISSING]] The intent was to create a framework to stim...
+
+[321] Missing text: "Saskatchewan's"
+    DOCX word range : (7846, 7847)
+    DOCX char range : (53192, 53206)
+    ...as a viable fuel to reduce the dependence of [[MISSING]] residents upon gasoline and as a means of pr...
+
+[322] Missing text: "Saskatchewan's"
+    DOCX word range : (7860, 7861)
+    DOCX char range : (53291, 53305)
+    ...of providing new marketing opportunities for [[MISSING]] grain producers and wood product companies....
+
+[323] Missing text: '30%'
+    DOCX word range : (7887, 7888)
+    DOCX char range : (53452, 53455)
+    ...GHG emissions could be reduced by as much as [[MISSING]] where ethanol is blended with gasoline.2   A...
+
+[324] Missing text: 'gasoline.2\n \tAt'
+    DOCX word range : (7893, 7895)
+    DOCX char range : (53486, 53501)
+    ...as much as 30% where ethanol is blended with [[MISSING]] the time, Saskatchewan's ethanol production...
+
+[325] Missing text: "Saskatchewan's"
+    DOCX word range : (7897, 7898)
+    DOCX char range : (53512, 53526)
+    ...ol is blended with gasoline.2   At the time, [[MISSING]] ethanol production was approximately 12 mill...
+
+[326] Missing text: '$272.8'
+    DOCX word range : (7990, 7991)
+    DOCX char range : (54123, 54129)
+    ...o 450 jobs in Saskatchewan and approximately [[MISSING]] million in construction investment.3   Apart...
+
+[327] Missing text: 'investment.3\n \tApart'
+    DOCX word range : (7994, 7996)
+    DOCX char range : (54154, 54174)
+    ...approximately $272.8 million in construction [[MISSING]] from ethanol-based fuel, the Greenprint also...
+
+[328] Missing text: 'sunflowers.4\n \tBuilding'
+    DOCX word range : (8027, 8029)
+    DOCX char range : (54379, 54402)
+    ...crops, including soy beans, canola, corn and [[MISSING]] on this initiative, the Saskatchewan governm...
+
+[329] Missing text: 'Act.5'
+    DOCX word range : (8039, 8040)
+    DOCX char range : (54476, 54481)
+    ...atchewan government enacted The Ethanol Fuel [[MISSING]] The Act, as implemented through The Ethanol...
+
+[330] Missing text: 'Regulations,6'
+    DOCX word range : (8049, 8050)
+    DOCX char range : (54541, 54554)
+    ...plemented through The Ethanol Fuel (General) [[MISSING]] required distributors of automotive gasoline...
+
+[331] Missing text: '1.0%'
+    DOCX word range : (8085, 8086)
+    DOCX char range : (54773, 54777)
+    ...have had an average composition of at least [[MISSING]] ethanol for the period November 1, 2005 to e...
+
+[332] Missing text: '2007.7'
+    DOCX word range : (8098, 8099)
+    DOCX char range : (54843, 54849)
+    ...od November 1, 2005 to ending on January 14, [[MISSING]] This increased to 7.5% ethanol by December 3...
+
+[333] Missing text: '7.5%'
+    DOCX word range : (8102, 8103)
+    DOCX char range : (54868, 54872)
+    ...ding on January 14, 2007.7 This increased to [[MISSING]] ethanol by December 31, 2007 and remains her...
+
+[334] Missing text: 'fuel.\n7:31. Renewable Energy-- Nuclear Energy\n \tIn'
+    DOCX word range : (8116, 8123)
+    DOCX char range : (54956, 55006)
+    ...ns here for all unleaded automotive gasoline [[MISSING]] 2008, the Government of Saskatchewan establi...
+
+[335] Missing text: "world's"
+    DOCX word range : (8151, 8152)
+    DOCX char range : (55205, 55212)
+    ...the Province of Saskatchewan (which was the [[MISSING]] largest producer of uranium at the time) and...
+
+[336] Missing text: '2009.1\n \tThe'
+    DOCX word range : (8188, 8190)
+    DOCX char range : (55472, 55484)
+    ...mitted its report to government on March 31, [[MISSING]] Report included several key findings in rela...
+
+[337] Missing text: 'generation.2'
+    DOCX word range : (8200, 8201)
+    DOCX char range : (55551, 55563)
+    ...al key findings in relation to nuclear power [[MISSING]] Electricity demand growth in Saskatchewan is...
+
+[338] Missing text: "Saskatchewan's"
+    DOCX word range : (8265, 8266)
+    DOCX char range : (55962, 55976)
+    ...ended inclusion of nuclear energy as part of [[MISSING]] long-range energy planning mix. As of 2019,...
+
+[339] Missing text: 'electricity.2.50\n \tAs'
+    DOCX word range : (8279, 8281)
+    DOCX char range : (56073, 56094)
+    ...hewan generated 24.1 terawatt-hours (TWh) of [[MISSING]] a follow-up to the Report, the government es...
+
+[340] Missing text: 'issue.3\n \tIn'
+    DOCX word range : (8343, 8345)
+    DOCX char range : (56521, 56533)
+    ...but nuclear energy proved to be a polarizing [[MISSING]] 2018, Saskatchewan joined National Resources...
+
+[341] Missing text: 'Canada.4'
+    DOCX word range : (8368, 8369)
+    DOCX char range : (56699, 56707)
+    ...gulation of small module nuclear reactors in [[MISSING]] Current Premier Scott Moe has clearly stated...
+
+[342] Missing text: "Saskatchewan's"
+    DOCX word range : (8379, 8380)
+    DOCX char range : (56771, 56785)
+    ...ott Moe has clearly stated that tapping into [[MISSING]] abundant uranium resources is one of the str...
+
+[343] Missing text: 'coal.5\n \tPursuant'
+    DOCX word range : (8402, 8404)
+    DOCX char range : (56942, 56959)
+    ...ons by replacing electricity generation from [[MISSING]] to his stated intentions, in 2019 Moe announ...
+
+[344] Missing text: 'emissions.6\n \tThis'
+    DOCX word range : (8433, 8435)
+    DOCX char range : (57121, 57139)
+    ...future as part of its goals to lower carbon [[MISSING]] year, 2022, in April the province announced...
+
+[345] Missing text: 'Saskatchewan.\n7:32. Renewable Energy-- Wind Power\n \tWind'
+    DOCX word range : (8468, 8475)
+    DOCX char range : (57321, 57377)
+    ...ta to develop SMRs, four of which will be in [[MISSING]] generation is featured prominently in the Pr...
+
+[346] Missing text: '40%'
+    DOCX word range : (8487, 8488)
+    DOCX char range : (57457, 57460)
+    ...in the Prairie Resilience plan to achieve a [[MISSING]] reduction in GHG emissions from 2005 levels...
+
+[347] Missing text: '16%.'
+    DOCX word range : (8503, 8504)
+    DOCX char range : (57557, 57561)
+    ...easing total electricity produced by wind to [[MISSING]] Saskatchewan currently has nine operational...
+
+[348] Missing text: '3%'
+    DOCX word range : (8515, 8516)
+    DOCX char range : (57645, 57647)
+    ...ional wind power facilities that account for [[MISSING]] of the province's energy production capacity...
+
+[349] Missing text: "province's"
+    DOCX word range : (8518, 8519)
+    DOCX char range : (57655, 57665)
+    ...power facilities that account for 3% of the [[MISSING]] energy production capacity. Sunbridge Wind P...
+
+[350] Missing text: "Canada's"
+    DOCX word range : (8536, 8537)
+    DOCX char range : (57766, 57774)
+    ...ty can produce 11 MW of power and was one of [[MISSING]] first, large-scale wind power projects. Othe...
+
+[351] Missing text: 'MW).1'
+    DOCX word range : (8573, 8574)
+    DOCX char range : (57995, 58000)
+    ...), Blue Hill (175 MW), and Golden South (200 [[MISSING]] A number of these projects are operated inde...
+
+[352] Missing text: 'SaskPower.2'
+    DOCX word range : (8591, 8592)
+    DOCX char range : (58110, 58121)
+    ...he power they produce through contracts with [[MISSING]] With the recent announcement that Potentia R...
+
+[353] Missing text: 'homes.3'
+    DOCX word range : (8644, 8645)
+    DOCX char range : (58470, 58477)
+    ...pable of generating enough power for 100,000 [[MISSING]] Golden South is an example of one of the afo...
+
+[354] Missing text: 'SaskPower.\n7:33. Renewable Energy-- Solar Energy\n \tAs'
+    DOCX word range : (8669, 8676)
+    DOCX char range : (58630, 58683)
+    ...he power they produce through contracts with [[MISSING]] part of the province's commitment in Prairie...
+
+[355] Missing text: "province's"
+    DOCX word range : (8679, 8680)
+    DOCX char range : (58696, 58706)
+    ...wable Energy-- Solar Energy   As part of the [[MISSING]] commitment in Prairie Resilience to increase...
+
+[356] Missing text: '50%'
+    DOCX word range : (8694, 8695)
+    DOCX char range : (58805, 58808)
+    ...nt of electricity generated by renewables to [[MISSING]] of the province's total energy use, a 60 MW...
+
+[357] Missing text: "province's"
+    DOCX word range : (8697, 8698)
+    DOCX char range : (58816, 58826)
+    ...ricity generated by renewables to 50% of the [[MISSING]] total energy use, a 60 MW solar energy proje...
+
+[358] Missing text: 'infrastructure.\n \t2021'
+    DOCX word range : (8723, 8725)
+    DOCX char range : (58978, 59000)
+    ...r investment by the Province in solar energy [[MISSING]] saw the opening of Highfield Solar Facility,...
+
+[359] Missing text: "province's"
+    DOCX word range : (8733, 8734)
+    DOCX char range : (59050, 59060)
+    ...the opening of Highfield Solar Facility, the [[MISSING]] first utility-scale solar generation project...
+
+[360] Missing text: 'homes.1\n7:34. Renewable Energy-- Net'
+    DOCX word range : (8765, 8770)
+    DOCX char range : (59279, 59315)
+    ...e of generating enough power for about 2,500 [[MISSING]] Metering Program   Through the Saskatchewan...
+
+[361] Missing text: 'Program\n \tThrough'
+    DOCX word range : (8771, 8773)
+    DOCX char range : (59325, 59342)
+    ...omes.1 7:34. Renewable Energy-- Net Metering [[MISSING]] the Saskatchewan Research Council, wind powe...
+
+[362] Missing text: "utility's"
+    DOCX word range : (8805, 8806)
+    DOCX char range : (59565, 59574)
+    ...100 kW or less and that comply with the area [[MISSING]] net metering policies are eligible for a one...
+
+[363] Missing text: '20%'
+    DOCX word range : (8818, 8819)
+    DOCX char range : (59642, 59645)
+    ...are eligible for a one-time payment of up to [[MISSING]] of the first $100,000 in start-up costs. 7:3...
+
+[364] Missing text: '$100,000'
+    DOCX word range : (8822, 8823)
+    DOCX char range : (59659, 59667)
+    ...a one-time payment of up to 20% of the first [[MISSING]] in start-up costs. 7:35. Energy Efficiency...
+
+[365] Missing text: 'costs.\n7:35. Energy Efficiency\n \tSaskatchewan'
+    DOCX word range : (8825, 8830)
+    DOCX char range : (59680, 59725)
+    ...up to 20% of the first $100,000 in start-up [[MISSING]] does not have any legislation specific to en...
+
+[366] Missing text: 'efficiency.\n \tIn'
+    DOCX word range : (8848, 8850)
+    DOCX char range : (59853, 59869)
+    ...has adopted policies directed toward energy [[MISSING]] addition to the Building Code requirements d...
+
+[367] Missing text: '§7:11,'
+    DOCX word range : (8858, 8859)
+    DOCX char range : (59926, 59932)
+    ...the Building Code requirements discussed in [[MISSING]] the province has adopted various programs to...
+
+[368] Missing text: '50%'
+    DOCX word range : (8881, 8882)
+    DOCX char range : (60090, 60093)
+    ...rently, the province offers rebates of up to [[MISSING]] to replace commercial refrigeration products...
+
+[369] Missing text: '$50'
+    DOCX word range : (8902, 8903)
+    DOCX char range : (60236, 60239)
+    ...The Parking Lot Controller Program provides [[MISSING]] per controller installed in parking lots to...
+
+[370] Missing text: 'systems.\n7:36. Energy Efficiency-- Energy Efficiency--Programs'
+    DOCX word range : (8931, 8937)
+    DOCX char range : (60421, 60483)
+    ...centives to audit and upgrade compressed air [[MISSING]] for Individuals and Home Owners   The Govern...
+
+[371] Missing text: 'Owners\n \tThe'
+    DOCX word range : (8941, 8943)
+    DOCX char range : (60509, 60521)
+    ...fficiency--Programs for Individuals and Home [[MISSING]] Government of Saskatchewan had implemented s...
+
+[372] Missing text: "province's"
+    DOCX word range : (8963, 8964)
+    DOCX char range : (60665, 60675)
+    ...ency and thereby aid in the reduction of the [[MISSING]] GHG emissions. Most of these programs, howev...
+
+[373] Missing text: 'renewed.\n7:37. Transportation\n \tPrairie'
+    DOCX word range : (8975, 8979)
+    DOCX char range : (60751, 60790)
+    ...rograms, however, have expired without being [[MISSING]] Resilience does not contain explicit emissio...
+
+[374] Missing text: '14%'
+    DOCX word range : (8996, 8997)
+    DOCX char range : (60916, 60919)
+    ...on even though the sector is responsible for [[MISSING]] of the province's emissions according to dat...
+
+[375] Missing text: "province's"
+    DOCX word range : (8999, 9000)
+    DOCX char range : (60927, 60937)
+    ...ugh the sector is responsible for 14% of the [[MISSING]] emissions according to data from 2015. Rathe...
+
+[376] Missing text: 'following:1\n  • Monitor'
+    DOCX word range : (9012, 9015)
+    DOCX char range : (61008, 61031)
+    ...ta from 2015. Rather the plan commits to the [[MISSING]] the highway system for vulnerabilities that...
+
+[377] Missing text: 'redesign.\n  • Create'
+    DOCX word range : (9035, 9038)
+    DOCX char range : (61190, 61210)
+    ...help prioritize preventative maintenance and [[MISSING]] a freight strategy to improve delivery times...
+
+[378] Missing text: 'efficiency.\n  • Increase'
+    DOCX word range : (9050, 9053)
+    DOCX char range : (61287, 61311)
+    ...elivery times, reduce fuel use, and increase [[MISSING]] the use of idle time limiters in government...
+
+[379] Missing text: 'usage.\n  • Evaluate'
+    DOCX word range : (9065, 9068)
+    DOCX char range : (61378, 61397)
+    ...limiters in government trucks to reduce fuel [[MISSING]] government fleet vehicles for lower-carbon t...
+
+[380] Missing text: 'opportunities.\n  • Continue'
+    DOCX word range : (9074, 9077)
+    DOCX char range : (61452, 61479)
+    ...t fleet vehicles for lower-carbon technology [[MISSING]] to support industry in expanding the size an...
+
+[381] Missing text: 'systems.\n  • Expand'
+    DOCX word range : (9093, 9096)
+    DOCX char range : (61568, 61587)
+    ...nd usage of the short haul (short line) rail [[MISSING]] the Trucking Partnership Program to increase...
+
+[382] Missing text: 'hauling.\n  • Facilitate'
+    DOCX word range : (9106, 9109)
+    DOCX char range : (61660, 61683)
+    ...ogram to increase fuel efficiency in freight [[MISSING]] traffic data specific to Saskatchewan to mit...
+
+[383] Missing text: 'idling.\n7:38. Transportation-- Anti-Idling\n \tThe'
+    DOCX word range : (9120, 9125)
+    DOCX char range : (61764, 61812)
+    ...an to mitigate emissions from congestion and [[MISSING]] transportation programs introduced by the Go...
+
+[384] Missing text: 'offices.\n \tIn'
+    DOCX word range : (9190, 9192)
+    DOCX char range : (62284, 62297)
+    ...mmunity and recreation centres and municipal [[MISSING]] addition, the Saskatchewan Ministries of Env...
+
+[385] Missing text: 'efficiency.1\n3. Carbon Sequestration\n7:39. Introduction\n \tSequestration'
+    DOCX word range : (9225, 9232)
+    DOCX char range : (62546, 62617)
+    ...tion of driving practices that maximize fuel [[MISSING]] involves the permanent, verifiable capture o...
+
+[386] Missing text: "Saskatchewan's"
+    DOCX word range : (9309, 9310)
+    DOCX char range : (63142, 63156)
+    ...oil. On the opposite end of that spectrum is [[MISSING]] program for the development of large-scale c...
+
+[387] Missing text: 'sector.\n7:40. Biotic'
+    DOCX word range : (9324, 9327)
+    DOCX char range : (63250, 63270)
+    ...n capture and storage projects in the energy [[MISSING]] Carbon Sequestration   Opportunities in Sask...
+
+[388] Missing text: 'Sequestration\n \tOpportunities'
+    DOCX word range : (9328, 9330)
+    DOCX char range : (63278, 63307)
+    ...ts in the energy sector. 7:40. Biotic Carbon [[MISSING]] in Saskatchewan for biotic carbon sequestrat...
+
+[389] Missing text: 'sectors.\n \tPrairie'
+    DOCX word range : (9344, 9346)
+    DOCX char range : (63410, 63428)
+    ...identified in the agricultural and forestry [[MISSING]] Adaptation Research Collaborative ("PARC") i...
+
+[390] Missing text: '("PARC")'
+    DOCX word range : (9349, 9350)
+    DOCX char range : (63463, 63471)
+    ...Prairie Adaptation Research Collaborative [[MISSING]] is a partnership of the governments of Canad...
+
+[391] Missing text: 'research,1'
+    DOCX word range : (9377, 9378)
+    DOCX char range : (63653, 63663)
+    ...on research in the Prairie Provinces. In its [[MISSING]] PARC identifies Saskatchewan as having a lar...
+
+[392] Missing text: 'adoption.\n \tUnder'
+    DOCX word range : (9460, 9462)
+    DOCX char range : (64222, 64239)
+    ...mic incentives required to secure widespread [[MISSING]] a 50-year agreement, Saskatchewan Environmen...
+
+[393] Missing text: '("GERT")'
+    DOCX word range : (9492, 9493)
+    DOCX char range : (64458, 64466)
+    ...he Greenhouse Gas Emission Reduction Trading [[MISSING]] Pilot. It was determined that the project wi...
+
+[394] Missing text: '$6'
+    DOCX word range : (9535, 9536)
+    DOCX char range : (64747, 64749)
+    ...e with-project case. The expenditure of some [[MISSING]] million for the establishment of white spruc...
+
+[395] Missing text: 'project.2'
+    DOCX word range : (9619, 9620)
+    DOCX char range : (65284, 65293)
+    ...illed in order to permit registration of the [[MISSING]] Nonetheless, rates of zero-tillage have been...
+
+[396] Missing text: 'Saskatchewan.3\n7:41. Carbon'
+    DOCX word range : (9628, 9631)
+    DOCX char range : (65353, 65380)
+    ...ates of zero-tillage have been increasing in [[MISSING]] Capture and Storage   Saskatchewan, primaril...
+
+[397] Missing text: 'Storage\n \tSaskatchewan,'
+    DOCX word range : (9633, 9635)
+    DOCX char range : (65393, 65416)
+    ...g in Saskatchewan.3 7:41. Carbon Capture and [[MISSING]] primarily through SaskPower, is investing he...
+
+[398] Missing text: 'fuel.)\n \tIn'
+    DOCX word range : (9710, 9712)
+    DOCX char range : (65960, 65971)
+    ...ill eventually be turned into GHG-generating [[MISSING]] 2018, Whitecap Resources Inc. acquired the l...
+
+[399] Missing text: 'Saskatchewan.1'
+    DOCX word range : (9727, 9728)
+    DOCX char range : (66078, 66092)
+    ...il recovery project in Canada, near Weyburn, [[MISSING]] Since the year 2000, 36 Mt have been sequest...
+
+[400] Missing text: 'Unit.1.50'
+    DOCX word range : (9740, 9741)
+    DOCX char range : (66157, 66166)
+    ..., 36 Mt have been sequestered at the Weyburn [[MISSING]] When complete, 40 million tonnes of CO2 will...
+
+[401] Missing text: 'stored.2\n \tIn'
+    DOCX word range : (9753, 9755)
+    DOCX char range : (66235, 66248)
+    ...on tonnes of CO2 will have been captured and [[MISSING]] 2006, the Government of Saskatchewan announc...
+
+[402] Missing text: '$1.5'
+    DOCX word range : (9766, 9767)
+    DOCX char range : (66323, 66327)
+    ...tchewan announced an initiative to develop a [[MISSING]] billion, 300 MW near-zero emissions pulveriz...
+
+[403] Missing text: "Saskatchewan's"
+    DOCX word range : (9806, 9807)
+    DOCX char range : (66588, 66602)
+    ...ments and add generating capacity to utilize [[MISSING]] 300-year supply of low-cost lignite coal.3 C...
+
+[404] Missing text: 'coal.3'
+    DOCX word range : (9812, 9813)
+    DOCX char range : (66639, 66645)
+    ...chewan's 300-year supply of low-cost lignite [[MISSING]] Cost escalation that put the project cost at...
+
+[405] Missing text: '$3.8'
+    DOCX word range : (9822, 9823)
+    DOCX char range : (66696, 66700)
+    ...escalation that put the project cost at some [[MISSING]] billion resulted in the cancellation of the...
+
+[406] Missing text: '2007.\n \tIn'
+    DOCX word range : (9833, 9835)
+    DOCX char range : (66769, 66779)
+    ...cancellation of the proposed development in [[MISSING]] 2014, SaskPower completed the Boundary Dam I...
+
+[407] Missing text: "world's"
+    DOCX word range : (9854, 9855)
+    DOCX char range : (66917, 66924)
+    ...on Project. The Boundary Dam Project was the [[MISSING]] first commercially viable large-scale carbon...
+
+[408] Missing text: 'recovery.4'
+    DOCX word range : (9896, 9897)
+    DOCX char range : (67201, 67211)
+    ...by pipeline and sold for use in enhanced oil [[MISSING]] Before further investment in carbon capture,...
+
+[409] Missing text: 'expectations.\n \tThe'
+    DOCX word range : (9920, 9922)
+    DOCX char range : (67362, 67381)
+    ...ompletes because its costs have far exceeded [[MISSING]] Boundary Dam Project creates opportunities f...
+
+[410] Missing text: 'purposes.5\n4. Agriculture;'
+    DOCX word range : (9976, 9979)
+    DOCX char range : (67733, 67759)
+    ...s it for use in ready-mix concrete and other [[MISSING]] Natural Systems; Community Preparedness; Car...
+
+[411] Missing text: 'Pricing\n7:42. Agriculture\n \tPrairie'
+    DOCX word range : (9984, 9988)
+    DOCX char range : (67808, 67843)
+    ...ural Systems; Community Preparedness; Carbon [[MISSING]] Resilience acknowledges the complicated role...
+
+[412] Missing text: 'GHGs.1'
+    DOCX word range : (10009, 10010)
+    DOCX char range : (67988, 67994)
+    ...climate change as both a source and sink of [[MISSING]] Consequently, the province has committed to...
+
+[413] Missing text: '25%'
+    DOCX word range : (10066, 10067)
+    DOCX char range : (68363, 68366)
+    ...Finally, the province intends to ensure that [[MISSING]] of Saskatchewan's cropland has a nutrient st...
+
+[414] Missing text: "Saskatchewan's"
+    DOCX word range : (10068, 10069)
+    DOCX char range : (68370, 68384)
+    ..., the province intends to ensure that 25% of [[MISSING]] cropland has a nutrient stewardship plan by...
+
+[415] Missing text: '2025.2\n7:43. Natural Systems\n \tPrairie'
+    DOCX word range : (10076, 10081)
+    DOCX char range : (68429, 68467)
+    ...cropland has a nutrient stewardship plan by [[MISSING]] Resilience highlights the importance of natu...
+
+[416] Missing text: 'including:1\n  • Ensure'
+    DOCX word range : (10117, 10120)
+    DOCX char range : (68714, 68736)
+    ...es to maintain or improve existing practices [[MISSING]] natural and commercially forested lands are...
+
+[417] Missing text: 'preparedness.\n  • Maintain'
+    DOCX word range : (10152, 10155)
+    DOCX char range : (68953, 68979)
+    ...ng, respecting normal forest cycles and fire [[MISSING]] or restore landscape integrity to optimize e...
+
+[418] Missing text: 'biodiversity.\n  • Increase'
+    DOCX word range : (10176, 10179)
+    DOCX char range : (69122, 69148)
+    ...xtreme weather events and manage the risk to [[MISSING]] our understanding of future climate trends a...
+
+[419] Missing text: 'supplies.\n  • Advance'
+    DOCX word range : (10205, 10208)
+    DOCX char range : (69319, 69340)
+    ...ding and droughts could have on future water [[MISSING]] options to improve Saskatchewan's ability to...
+
+[420] Missing text: "Saskatchewan's"
+    DOCX word range : (10211, 10212)
+    DOCX char range : (69360, 69374)
+    ...ter supplies.   • Advance options to improve [[MISSING]] ability to measure stream flows and provide...
+
+[421] Missing text: 'operations.\n  • Continue'
+    DOCX word range : (10236, 10239)
+    DOCX char range : (69529, 69553)
+    ...mate change on watersheds and infrastructure [[MISSING]] to implement Saskatchewan's agricultural wat...
+
+[422] Missing text: "Saskatchewan's"
+    DOCX word range : (10241, 10242)
+    DOCX char range : (69567, 69581)
+    ...ucture operations.   • Continue to implement [[MISSING]] agricultural water management framework in t...
+
+[423] Missing text: 'flood.\n  • Advance'
+    DOCX word range : (10268, 10271)
+    DOCX char range : (69773, 69791)
+    ...noff management in times of both drought and [[MISSING]] options to focus on permanent flood damage r...
+
+[424] Missing text: 'areas.\n  • Continue'
+    DOCX word range : (10290, 10293)
+    DOCX char range : (69922, 69941)
+    ...d thereby increase resiliency of flood prone [[MISSING]] to improve the condition and resilience of p...
+
+[425] Missing text: 'infrastructure.\n \tThe'
+    DOCX word range : (10305, 10307)
+    DOCX char range : (70019, 70040)
+    ...ilience of provincially owned dams and water [[MISSING]] only new commitments include creating a carb...
+
+[426] Missing text: 'commitments.\n7:44. Community Preparedness\n \tPrairie'
+    DOCX word range : (10344, 10349)
+    DOCX char range : (70285, 70336)
+    ...no timelines, however, associated with these [[MISSING]] Resilience recognizes that communities need...
+
+[427] Missing text: 'Métis,'
+    DOCX word range : (10379, 10380)
+    DOCX char range : (70533, 70539)
+    ...helping build resiliency with First Nations, [[MISSING]] and municipal communities. As the list of pr...
+
+[428] Missing text: 'resiliency:1\n  • Examine'
+    DOCX word range : (10412, 10415)
+    DOCX char range : (70748, 70772)
+    ...spond rather than taking firm steps to build [[MISSING]] current floodplain mapping to identify local...
+
+[429] Missing text: 'events.\n  • Encourage'
+    DOCX word range : (10431, 10434)
+    DOCX char range : (70886, 70907)
+    ...risk of flooding, fire, and extreme weather [[MISSING]] family preparedness plans, by making emergen...
+
+[430] Missing text: 'websites.\n  • Maintain'
+    DOCX word range : (10454, 10457)
+    DOCX char range : (71069, 71091)
+    ...le through Saskatchewan and local government [[MISSING]] and enhance partnerships with First Nations...
+
+[431] Missing text: 'Métis'
+    DOCX word range : (10464, 10465)
+    DOCX char range : (71140, 71145)
+    ...enhance partnerships with First Nations and [[MISSING]] communities to address and adapt to a changi...
+
+[432] Missing text: 'knowledge.\n  • Encourage'
+    DOCX word range : (10482, 10485)
+    DOCX char range : (71259, 71283)
+    ...ns that are guided by traditional ecological [[MISSING]] communities to develop appropriate plans and...
+
+[433] Missing text: 'events.\n  • Encourage'
+    DOCX word range : (10499, 10502)
+    DOCX char range : (71386, 71407)
+    ...to respond and recover from extreme weather [[MISSING]] municipalities to consider disaster mitigati...
+
+[434] Missing text: 'funding.\n  • Promote'
+    DOCX word range : (10514, 10517)
+    DOCX char range : (71508, 71528)
+    ...a priority when applying for infrastructure [[MISSING]] the upgrading of municipal waste and sewage...
+
+[435] Missing text: 'programs.\n7:45. Carbon Pricing\n \tPrairie'
+    DOCX word range : (10556, 10561)
+    DOCX char range : (71788, 71828)
+    ...pport under joint federal/provincial funding [[MISSING]] Resilience makes it clear that the made-in-S...
+
+[436] Missing text: "Saskatchewan's"
+    DOCX word range : (10594, 10595)
+    DOCX char range : (72052, 72066)
+    ...g Saskatchewan over other regions because of [[MISSING]] reliance on agriculture and the oil and gas...
+
+[437] Missing text: 'sectors.1'
+    DOCX word range : (10603, 10604)
+    DOCX char range : (72111, 72120)
+    ...reliance on agriculture and the oil and gas [[MISSING]] The promotion of a carbon tax is cited as th...
+
+[438] Missing text: 'Act.2\nB. The'
+    DOCX word range : (10659, 10662)
+    DOCX char range : (72471, 72483)
+    ...x under the Greenhouse Gas Pollution Pricing [[MISSING]] Oil and Gas Emissions Management Regulations...
+
+[439] Missing text: 'Regulations\n7:46. Generally\n \tThe'
+    DOCX word range : (10667, 10671)
+    DOCX char range : (72517, 72550)
+    ...ct.2 B. The Oil and Gas Emissions Management [[MISSING]] Oil and Gas Emissions Management Regulations...
+
+[440] Missing text: 'Regulations1'
+    DOCX word range : (10676, 10677)
+    DOCX char range : (72584, 72596)
+    ...rally   The Oil and Gas Emissions Management [[MISSING]] supplement the requirements of the MRGGA, bu...
+
+[441] Missing text: 'Act.2'
+    DOCX word range : (10694, 10695)
+    DOCX char range : (72704, 72709)
+    ...sed pursuant to The Oil and Gas Conservation [[MISSING]] They specifically address operations that fl...
+
+[442] Missing text: 'year.3'
+    DOCX word range : (10718, 10719)
+    DOCX char range : (72864, 72870)
+    ...,000 tonnes of carbon dioxide equivalent per [[MISSING]] It also regulates emissions from oil facilit...
+
+[443] Missing text: 'facilities.4'
+    DOCX word range : (10725, 10726)
+    DOCX char range : (72908, 72920)
+    ...year.3 It also regulates emissions from oil [[MISSING]] Each business subject to these regulations i...
+
+[444] Missing text: 'Minister.5'
+    DOCX word range : (10745, 10746)
+    DOCX char range : (73036, 73046)
+    ...sions reduction plan that is approved by the [[MISSING]] Failure to comply with that plan is an offen...
+
+[445] Missing text: '$50'
+    DOCX word range : (10765, 10766)
+    DOCX char range : (73155, 73158)
+    ...in an administrative penalty that will reach [[MISSING]] per tonne of excess emissions by 2030.6 The...
+
+[446] Missing text: '2030.6'
+    DOCX word range : (10772, 10773)
+    DOCX char range : (73192, 73198)
+    ...l reach $50 per tonne of excess emissions by [[MISSING]] The Minister has discretion to defer the pay...
+
+[447] Missing text: '"qualified'
+    DOCX word range : (10796, 10797)
+    DOCX char range : (73342, 73352)
+    ...essed with the penalty is participating in a [[MISSING]] conservation project".7   The Oil and Gas Em...
+
+[448] Missing text: 'project".7\n \tThe'
+    DOCX word range : (10798, 10800)
+    DOCX char range : (73366, 73382)
+    ...s participating in a "qualified conservation [[MISSING]] Oil and Gas Emissions Management Regulations...
+
+[449] Missing text: '40-45%'
+    DOCX word range : (10830, 10831)
+    DOCX char range : (73574, 73580)
+    ...ing emissions from the oil and gas sector by [[MISSING]] by 2025. Success in meeting this target, how...
+
+[450] Missing text: '10%'
+    DOCX word range : (10854, 10855)
+    DOCX char range : (73730, 73733)
+    ...a market demand for methane. In addition, a [[MISSING]] reduction is being set for refining and upgr...
+
+[451] Missing text: '15%'
+    DOCX word range : (10864, 10865)
+    DOCX char range : (73788, 73791)
+    ...is being set for refining and upgrading and [[MISSING]] reduction for upstream combustion in this se...
+
+[452] Missing text: 'sector.8\nVI. Future'
+    DOCX word range : (10871, 10874)
+    DOCX char range : (73834, 73853)
+    ...5% reduction for upstream combustion in this [[MISSING]] Trends in Provincial Law and Policy; Regiona...
+
+[453] Missing text: 'Linkages\n7:47. Future'
+    DOCX word range : (10883, 10886)
+    DOCX char range : (73918, 73939)
+    ...l Law and Policy; Regional and International [[MISSING]] Trends in Provincial Law and Policy   The fu...
+
+[454] Missing text: 'Policy\n \tThe'
+    DOCX word range : (10891, 10893)
+    DOCX char range : (73969, 73981)
+    ...es 7:47. Future Trends in Provincial Law and [[MISSING]] future of climate change law and policy in S...
+
+[455] Missing text: "Saskatchewan's"
+    DOCX word range : (10935, 10936)
+    DOCX char range : (74270, 74284)
+    ...reduction compliance pressures on the other. [[MISSING]] new-found position as a "have" instead of a...
+
+[456] Missing text: '"have"'
+    DOCX word range : (10940, 10941)
+    DOCX char range : (74309, 74315)
+    ...ther. Saskatchewan's new-found position as a [[MISSING]] instead of a "have-not" province that is no...
+
+[457] Missing text: '"have-not"'
+    DOCX word range : (10944, 10945)
+    DOCX char range : (74329, 74339)
+    ...new-found position as a "have" instead of a [[MISSING]] province that is no longer dependent upon fe...
+
+[458] Missing text: 'changes--economic'
+    DOCX word range : (10983, 10984)
+    DOCX char range : (74591, 74608)
+    ...diversified economy and the effects of those [[MISSING]] and attitudinal--should not be underestimate...
+
+[459] Missing text: 'attitudinal--should'
+    DOCX word range : (10985, 10986)
+    DOCX char range : (74613, 74632)
+    ...d the effects of those changes--economic and [[MISSING]] not be underestimated. The understandable re...
+
+[460] Missing text: 'Alberta.\n \tIt'
+    DOCX word range : (11031, 11033)
+    DOCX char range : (74935, 74948)
+    ...sil fuel producing, resource-rich neighbour, [[MISSING]] is expected that Saskatchewan will stay true...
+
+[461] Missing text: '"well'
+    DOCX word range : (11072, 11073)
+    DOCX char range : (75211, 75216)
+    ...This approach has been criticized as falling [[MISSING]] short of what is required for Saskatchewan t...
+
+[462] Missing text: 'Accord".1\n7:48. Regional'
+    DOCX word range : (11100, 11103)
+    DOCX char range : (75382, 75406)
+    ...meet its commitments under the Paris Climate [[MISSING]] and International Linkages   Saskatchewan's...
+
+[463] Missing text: "Linkages\n \tSaskatchewan's"
+    DOCX word range : (11105, 11107)
+    DOCX char range : (75425, 75450)
+    ...e Accord".1 7:48. Regional and International [[MISSING]] opposition to carbon pricing drives its link...
+
+[464] Missing text: 'appealed.1'
+    DOCX word range : (11201, 11202)
+    DOCX char range : (76055, 76065)
+    ...he authority to impose the tax, Saskatchewan [[MISSING]] A future Supreme Court of Canada decision on...
+
+[465] Missing text: 'issues.\nVII. Conclusion\n7:49. Concluding Remarks\n \tApart'
+    DOCX word range : (11224, 11231)
+    DOCX char range : (76215, 76271)
+    ...onally and internationally on climate change [[MISSING]] from the Arctic and the North, Saskatchewan...
+
+[466] Missing text: "Canada's"
+    DOCX word range : (11243, 11244)
+    DOCX char range : (76338, 76346)
+    ...he North, Saskatchewan stands to see some of [[MISSING]] most significant climate change impacts. Hig...
+
+[467] Missing text: 'Saskatchewan\'s "new economy"'
+    DOCX word range : (11275, 11278)
+    DOCX char range : (76559, 76587)
+    ...ty and scarcity of water. On the other hand, [[MISSING]] is largely resource based and is GHG intensi...
+
+[468] Missing text: 'intensive.\n \tIn'
+    DOCX word range : (11285, 11287)
+    DOCX char range : (76625, 76640)
+    ...conomy" is largely resource based and is GHG [[MISSING]] 2007, the Government of Saskatchewan announc...
+
+[469] Missing text: '32%'
+    DOCX word range : (11300, 11301)
+    DOCX char range : (76726, 76729)
+    ...ounced a climate change plan that called for [[MISSING]] per capita GHG emission reductions by 2020....
+
+[470] Missing text: '"Made'
+    DOCX word range : (11373, 11374)
+    DOCX char range : (77198, 77203)
+    ...ctive was dropped. It has been replaced by a [[MISSING]] in Saskatchewan" plan. Prairie Resilience re...
+
+[471] Missing text: 'Saskatchewan"'
+    DOCX word range : (11375, 11376)
+    DOCX char range : (77207, 77220)
+    ...dropped. It has been replaced by a "Made in [[MISSING]] plan. Prairie Resilience rejects climate pri...
+
+[472] Missing text: 'Appendix 7A. Case Digest\nNatural resources--Oil and gas--Practice and procedure--Evidence\n \tRespondent operated oil pipeline that leaked and caused significant quantity of oil to spill into river--Environment and Climate Change Canada (ECCC) began investigation partially to determine whether respondent committed offences under Fisheries Act--Respondent claimed litigation privilege over 96 documents, and solicitor-client privilege over 9 documents--Crown brought application for release of documents--Application granted in part--Litigation was reasonably apprehended by respondent soon after oil spill was discovered--Respondent created investigation charter which guided its internal investigation and was expected from outset to remain confidential--While respondent was required to provide report regarding spill to authorities under statutory and regulatory obligations, dominant purpose of investigation charter was to prepare for litigation--Respondent did not waive privilege--All but three documents were subject to privilege: Her Majesty The Queen v. Husky Energy Inc. (2017), 2017 CarswellSask 695, 2017 SKQB 383, J.D. Kalmakoff J. (Sask. Q.B.) [Saskatchewan]\n\n\n\n*\nJohn D. Stefaniuk is a Partner in Thompson Dorfman Sweatman LLP. Patricia Farnese is an Associate Professor of Law at the University of Saskatchewan.\n\n1\nSaskatchewan, Saskatchewan Energy and Climate Change Plan 2007.\n\n2\n2nd Sess., 26th Leg., Saskatchewan, 2009.\n\n3\n3rd Sess., 26th Leg., Saskatchewan, 2009.\n\n4\nS.S. 2010, c. E-10.22. Assented to May 20, 2010 and proclaimed in force June 1, 2015.\n\n5\nThe Code is available at http://publications.saskatchewan.ca/#/categories/69 (accessed October 2019).\n\n6\nGovernment of Saskatchewan, Prairie Resilience: A Made-In-Saskatchewan Climate Change Strategy (December 2017), available at https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/saskatchewans-climate-change-strategy (accessed October 2019).\n\n7\nGovernment of , Climate Change White Paper (October 2016), available at https://www.scribd.com/document/328041639/Saskatchewan-White-Paper-on-Climte-Change#from_embed (accessed October 2019).\n\n1\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\n\n5\n\n\n\n6\nMinistry of the Environment, "Saskatchewan Environmental Code: Moving Forward in Partnership" (November 2014), available at http://mcmillan.ca/wp-content/uploads/2020/09/Default.aspx_.pdf.\n\n7\nSaskPower, Powering Saskatchewan to a cleaner Energy Future: 2016-2017 Annual Report, at 10, available at https://www.saskpower.com/-/media/SaskPower/About-Us/Reports/Past-Reports/Report-AnnualReport-2019-20.ashx (accessed August 2017).\n\n8\nSaskPower, Powering Saskatchewan to a cleaner Energy Future: 2016-2017 Annual Report, available at https://www.saskpower.com/-/media/SaskPower/About-Us/Reports/Past-Reports/Report-AnnualReport-2019-20.ashx (accessed August 2017).\n\n\n\n\n\n\n\n\n\n\n3\n\n\n\n4\nEnvironment and Climate Change Canada, Canada\'s Second Biennial Report on Climate Change, at 38, available at https://www.canada.ca/en/environment-climate-change/services/climate-change/greenhouse-gas-emissions/second-biennial-report.html.\n\n1\nEnvironment and Climate Change Canada, Climate data and scenarios for Canada: Synthesis of recent observations and modelling results (2016), at 5, available at https://www.canada.ca/en/environment-climate-change/services/climate-change/publications/data-scenarios-synthesis-recent-observation.html (accessed March 2020).\n\n2\nNatural Resources Canada, The Winds of Change: Climate Change in Prairie Provinces (September 12, 2007), available at http://publications.gc.ca/site/eng/96166/publication.html (accessed March 2020), citing H.W. Cutforth, B.G. McConkey, R.J. Woodvine, D.G. Smith, P.G. Jefferson and O.O. Akinremi, "Climate Change in the Semiarid Prairie of Southwestern Saskatchewan", Canadian Journal of Plant Science (upcoming issue); H.G. Hengeveld, "Projections for Canada\'s Climate Future: A Discussion of Recent Simulations with the Canadian Global Climate Model", Climate Change Digest 00-01 (Ottawa: Environment Canada, 2000); G.D.V. Williams, R.A. Fautley, K.H. Jones, R.B. Stewart and E.E. Wheaton, "Estimating Effects of Climate Change on Agriculture in Saskatachewan, Canada" in The Impact of Climate Variations on Agriculture: Assessments in Cool Temperature and Cold Regions, Vol. 1, M.L. Parry et al., eds. (Boston: Kluwer Academic Publishers, 1988), at pp. 221-382.\n\n3\nInternational Institute for Sustainable Development and the Environmental Adaptation Research Group, Agriculture and Climate Change--A Prairie Perspective (Institute for Environmental Studies, University of Toronto, 1997), available at https://www.iisd.org/system/files/publications/agriculture_climate.pdf (accessed March 2020).\n\n\n1\nElaine M. Barrow and Dave Sauchyn, "Uncertainty in climate projections and time of emergence of climate signals in the western Canadian Prairies", International Journal of Climatology (March 2019), DOI: 10.1002/joc.6079.\n\n2\nD. Sauchyn and S. Kulshreshtha, "Prairies", in From Impacts to Adaptation: Canada in a Changing Climate 2007, D.S. Lemmen, F.J. Warren, J. Lacrox and E. Bush, eds. (Ottawa: Natural Resources Canada, 2008), available at https://www.nrcan.gc.ca/environment/resources/publications/impacts-adaptation/reports/assessments/2008/10253 (accessed March 2020).\n\n1\nFor further discussion on climate change and the federal versus provincial jurisdiction debate, see Jason Maclean, "Climate Change, Constitutions and the Courts: The Reference re Greenhouse Gas Pollution Pricing Act and Beyond" in (2019), 82 Sask. L. Rev.\n\n1\nS.C. 2018, c. 12.\n\n2\nS.S. 2010, c. M-2.01, as amended by the Statutes of Saskatchewan, 2013, c.13; 2014, c.E-13.1; and 2018, c.48.\n\n1\nS.S. 2010, c. E-10.22, as amended by the Statutes of Saskatchewan, 2013, c.20, c.27 and c.32; 2014, c.E-13.1; and 2018, c.9 and c.10.\n\n2\nSection 2(1)(g): "\'Discharge\' means discharge, drainage, deposit, release or emission into the environment."\n\n3\nSection 10.\n\n4\nR.R.S. c. E-10.22, Reg. 2.\n\n5\nSection 52(3)(d).\n\n6\nSection 13(1).\n\n7\nSection 22(1).\n\n8\nGovernment of Saskatchewan, "Legislation and Regulations" (16 January 2019), online: Saskatchewan https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/legislation-and-regulation.\n\n9\nSection 54(1).\n\n10\nSection 54(2).\n\n11\nSection 60.\n\n\n\n\n\n\n\n\n\n\n\n\n1\nS.S. 1979-80, c. E-10.1, as amended by the Statutes of Saskatchewan, 1983 c.77; 1988-89 c.42 and c.55; 1996 c.F-19.1; 2002, c.C-11.1; 2010, c.11; 2013, c.27; and 2018, c.42.\n\n2\nSection 2(d)(iii).\n\n3\nSection 2(d)(vi).\n\n4\nSection 7.2(1).\n\n5\nFor a discussion of how climate change considerations may be incorporated into environmental assessment processes, see the Federal-Provincial-Territorial Committee on Climate Change and Environmental Assessment, Incorporating Climate Change Considerations in Environmental Assessment: General Guidance for Practitioners (November 2003), available at https://www.canada.ca/en/impact-assessment-agency/services/policy-guidance/incorporating-climate-change-considerations-environmental-assessment-general-guidance-practitioners.html.\n\n6\nCanada-Saskatchewan Agreement on Environmental Assessment Cooperation, 2005, available at https://www.canada.ca/en/impact-assessment-agency/corporate/acts-regulations/legislation-regulations/canada-saskatchewan-agreement-environmental-assessment-cooperation-2005.html (accessed March 2020).\n\n1\nS.S. 1983-84, c. W-13.2, as amended by the Statutes of Saskatchewan, 1984-85-86, c.3 and 59; 1988-89, c.39; 1992, c.66; 1996, c.70; 1999, c.30; 2002, c.40; 2004, c.69; 2005, c.9 and 31; 2006, c.12; 2007, c.44; 2008, c.28; 2009, c.33; 2010, c.36; and 2018, c.42.\n\n2\nAndrea Olive, "Under Threat. 20 Years Since the Saskatchewan Wildlife Act" (Canadian Centre for Policy Alternatives, February 2018), available at https://www.policyalternatives.ca/sites/default/files/uploads/publications/Saskatchewan%20Office/2018/02/Under%20Threat.pdf (accessed October 2019).\n\n3\nS.S. 1998, c. W-13.12.\n\n1\nGovernment of Canada, "Model code adoption across Canada" (July 2, 2020), online: https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/model-code-adoption-across-canada.\n\n2\nGovernment of Canada, "Codes Canada - frequently asked questions" (July 23, 2021), online: https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/codes-canada-frequently-asked-questions.\n\n3\nGovernment of Canada, "National Building Code of Canada 2020" (March 28, 2022), online: https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/codes-canada-publications/national-building-code-canada-2020.\n\n4\nS.S. 1983-84, c. U-1.2, as amended.\n\n5\nGovernment of Canada, "National Energy Code of Canada for Buildings 2020" (March 28, 2022), online: https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/codes-canada-publications/national-energy-code-canada-buildings-2020.\n\n1\nSaskatchewan, "Saskatchewan Energy Conservation and Development Authority to be Wound", News Release (March 26, 1996), available at https://www.saskatchewan.ca/government/news-and-media/1996/march/28/saskatchewan-energy-conservation-and-development-authority-to-be-wound; and see, for example, Saskatchewan Energy Conservation and Development Authority, "Evaluation and Recommendations for Saskatchewan\'s Electric Options 2003 to 2020" (1994).\n\n2\nSaskEnergy Incorporated and Trans Gas Limited, Action Plan: A Voluntary Climate Change Program (SaskEnergy, 1995).\n\n3\nSaskatchewan, "Saskatchewan Energy Conservation and Development Authority to be Wound", News Release (March 26, 1996), available at https://www.saskatchewan.ca/government/news-and-media/1996/march/28/saskatchewan-energy-conservation-and-development-authority-to-be-wound.\n\n1\nSaskatchewan, "Saskatchewan Green Print for Energy Conservation Backgrounder" (Saskatchewan, 2001).\n\n2\nSaskatchewan, "Making it Work: A Saskatchewan Perspective on Climate Change Policy" (Saskatchewan Industry and Resources, October 2002).\n\n1\nPeter Prebble, MLA, "A First Report on Making Saskatchewan a Canadian Leader in Energy Conservation and Renewable Energy Development" (Government of Saskatchewan, December 2006).\n\n2\nPeter Prebble, MLA, "A First Report on Making Saskatchewan a Canadian Leader in Energy Conservation and Renewable Energy Development" (Government of Saskatchewan, December 2006), at p. 1.\n\n3\nPeter Prebble, MLA, "A First Report on Making Saskatchewan a Canadian Leader in Energy Conservation and Renewable Energy Development" (Government of Saskatchewan, December 2006), at pp. 19-24.\n\n4\nPeter Prebble, MLA, "A First Report on Making Saskatchewan a Canadian Leader in Energy Conservation and Renewable Energy Development" (Government of Saskatchewan, December 2006), at p. 3.\n\n1\nJose Candor, "Options to Implement a Regulatory Framework to Accommodate Geological Storage in CO2 in Saskatchewan", ScienceDirect (2013), online: https://reader.elsevier.com/reader/sd/pii/S1876610213009569?token=CCF1E49E94BBCE299E8FF994A25AC625452D3C86AAB5A1FF5BB8F3AFAD9A4DED3C4BE4ADEE63883AF7742C382775D558&originRegion=us-east-1&originCreation=20220613002309.\n\n2\nSaskatchewan Energy and Climate Change Plan, 2007, at p. 3.\n\n3\nSaskatchewan Energy and Climate Change Plan, 2007, at p. 7.\n\n1\nSaskatchewan Energy and Climate Change Plan, 2007, at p. 10.\n\n1\nSaskatchewan Energy and Climate Change Plan, 2007, at pp. 11-12.\n\n1\nSaskatchewan Energy and Climate Change Plan, 2007, at pp. 12-13.\n\n1.50\nGovernment of Canada, "Provincial and Territorial Energy Profiles - Saskatchewan" (July 28, 2022), online: https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/provincial-territorial-energy-profiles/provincial-territorial-energy-profiles-saskatchewan.html.\n\n2\nU.S. Department of Agriculture, Foreign Agricultural Service, "Biofuels Annual: Canada" (March 4, 2022), online: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Biofuels%20Annual_Ottawa_Canada_06-14-2021.pdf.\n\n3\nCanadian Renewable Fuels Association, "Canadian Ethanol Facilities" (June 14, 2021), online: https://ricanada.org/wp-content/uploads/2015/03/Canadian-Ethanol-and-Biodiesel-Facilities-Producer-Tables-for-Website.pdf.\n\n4\nMickey Djuric, "$2B renewable diesel, canola-crushing plant to be built in Regina", CBC News (January 17, 2022), online: https://www.cbc.ca/news/canada/saskatchewan/diesel-canola-plant-regina-1.6318248#:~:text=The%20Saskatchewan%20goverment%20says%20the,to%20be%20completed%20by%202027.&text=Saskatchewan%20Premier%20Scott%20Moe%20called,largest%20investments%20in%20the%20province.\n\n1\nSaskatchewan Energy and Climate Change Plan, 2007, at p. 13.\n\n1\nSaskatchewan Energy and Climate Change Plan, 2007, at p. 14.\n\n1\nSaskatchewan Energy and Climate Change Plan, 2007, at pp. 15-16.\n\n2\nSee Government of Saskatchewan, "Energy", online: https://www.saskatchewan.ca/business/investment-and-economic-development/key-economic-sectors/energy and Government of Canada, "About Uranium" (September 23, 2020), online: https://www.nrcan.gc.ca/energy/energy-sources-distribution/uranium-nuclear-energy/uranium-canada/about-uranium/7695.\n\n1\nSaskatchewan Energy and Climate Change Plan, 2007, at pp. 17-18.\n\n\n\n\n\n\n\n1\nS.S. 2010, c. M-2.01, as amended by the Statutes of Saskatchewan, 2013, c.13; 2014, c.E-13.1; and 2018, c.48.\n\n2\nSaskatchewan, "Saskatchewan Takes Real Action to Reduce Greenhouse Gas Emissions", News Release (May 11, 2009).\n\n3\nPart II.\n\n4\nPart VI, Division 1.\n\n1\nChapter M-2.01 Reg. 3, as amended by Saskatchewan Regulations 91/2019 and 103/2020.\n\n2\nSection 3.\n\n3\nSection 5.\n\n4\nSection 13.\n\n5\nSections 11 and 15.\n\n6\nSection 20.\n\n7\nPart V.\n\n8\nSaskatchewan, Prairie Resilience: Output-Based Performance Standards (December 2017), available at: https://www.saskatchewan.ca/-/media/news-release-backgrounders/2018/aug/prairieresilience-performancestandard.pdf (accessed October 2019).\n\n9\nSaskatchewan, "New Industry Standards Next Step in Prairie Resilience Climate Change Strategy", News Release (August 29, 2018) available at https://www.saskatchewan.ca/government/news-and-media/2018/august/29/prairie-resilience-climate-strategy.\n\n10\nSaskatchewan, "New Industry Standards Next Step in Prairie Resilience Climate Change Strategy", News Release (August 29, 2018) available at https://www.saskatchewan.ca/government/news-and-media/2018/august/29/prairie-resilience-climate-strategy.\n\n1\nChapter M-2.01, Reg 1.\n\n2\nSection 2.\n\n3\nSection 7.\n\n4\nAppendix, Part 3.\n\n5\nPart 4.\n\n6\nSaskatchewan, Saskatchewan Energy and Climate Change Plan 2007, at p. 6.\n\n1\nSection 23.1(2)(a).\n\n2\nSection 23.2.\n\n3\nSection 23.3.\n\n1\nSection 75(1).\n\n2\nSection 75(3).\n\n3\nSection 75(4)(a).\n\n4\nSection 79.\n\n5\nGovernment of Saskatchewan, "Methane Action Plan" (January 2019), online at: https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/methane-action-plan#:~:text=Released%20in%20January%202019%2C%20the,upstream%20oil%20and%20gas%20industry.\n\n6\nGovernment of Saskatchewan Methane Action Plan, online: https://publications.saskatchewan.ca/api/v1/products/92902/formats/109981/download.\n\n7\nGovernment of Saskatchewan, Prairie Resilience, online: https://publications.saskatchewan.ca/api/v1/products/92902/formats/109981/download.\n\n8\nGovernment of Saskatchewan, Prairie Resilience, online: https://publications.saskatchewan.ca/api/v1/products/91091/formats/107966/download.\n\n9\nGovernment of Saskatchewan, "Output-Based Performance Standards" (19 January 2022), online: https://www.saskatchewan.ca/government/news-and-media/2022/january/19/saskatchewan-expands-obps-to-protect-additional-sectors-from-the-federally-imposed-carbon-tax.\n\n10\nGovernment of Saskatchewan, "First Annual Oil and Gas Emissions Report" (20 December 2021), online: https://www.saskatchewan.ca/government/news-and-media/2021/december/20/saskatchewan-releases-first-annual-oil-and-gas-emissions-report.\n\n1\nMinistry of Industry and Resources, "Greenprint on Ethanol Production in Saskatchewan" (Saskatchewan Industry and Resources, April 2002).\n\n2\nMinistry of Industry and Resources, "Greenprint on Ethanol Production in Saskatchewan" (Saskatchewan Industry and Resources, April 2002), at p. 3.\n\n3\nMinistry of Industry and Resources, "Greenprint on Ethanol Production in Saskatchewan" (Saskatchewan Industry and Resources, April 2002), at p. 8.\n\n4\nMinistry of Industry and Resources, "Greenprint on Ethanol Production in Saskatchewan" (Saskatchewan Industry and Resources, April 2002), at p. 10.\n\n5\nS.S. 2002, c. E-11.1 (in force July 15, 2002).\n\n6\nR.R.S., c. E-11.1, Reg. 1 (in force October 24, 2002), as amended by Saskatchewan Regulations 115/2002, 11/2004, 41/2004, 113/2005, 58/2006, 111/2006, 1/2015 and 27/2020.\n\n7\nR.R.S., c. E-11.1, Reg. 1, s. 5(1).\n\n1\n"Capturing the Full Potential of the Uranium Value Chain in Saskatchewan" (March 31, 2009), available at www.leaderpost.com/pdf/udp_final_report.pdf.\n\n2\n"Capturing the Full Potential of the Uranium Value Chain in Saskatchewan" (March 31, 2009), available at www.leaderpost.com/pdf/udp_final_report.pdf, at p. 7.\n\n2.50\nGovernment of Canada, "Provincial and Territorial Energy Profiles - Saskatchewan" (28 July 2022), online: https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/provincial-territorial-energy-profiles/provincial-territorial-energy-profiles-saskatchewan.html.\n\n3\nSylvia Fedoruk Canadian Centre for Nuclear Innovation, "Who do you trust? University of Saskatchewan survey looks at nuclear perceptions", News Release (May 14, 2014), available at https://news.usask.ca/media-release-pages/2014/who-do-you-trust-u-of-s-survey-looks-at-nuclear-perceptions.php.\n\n4\nCanadian Nuclear Association, "SMR Roadmap", available at https://smrroadmap.ca (accessed October, 2019).\n\n5\nDavid Baxter, "Saskatchewan Giving Early Consideration to Small Nuclear Reactors", Global News (May 16, 2019), online: https://globalnews.ca/news/5286649/saskatchewan-small-nuclear-reactors/.\n\n6\nJennifer Francis, "Green Party leaders urge Sask. government to half small modular reactor plans", CBC News (May 9, 2022), online: https://www.cbc.ca/news/canada/saskatchewan/green-party-leaders-urge-sask-to-government-to-halt-snrs-1.6447250.\n\n1\nSaskPower, "System Map", online: https://www.saskpower.com/our-power-future/our-electricity/electrical-system/system-map.\n\n2\nSaskPower Annual Report, p. 10.\n\n3\nSaskPower, "Golden South Wind Facility", online: https://www.saskpower.com/Our-Power-Future/Our-Electricity/Electrical-System/System-Map/Golden-South-Wind-Facility.\n\n1\nSaskPower, "Highfield Solar Facility", online: https://www.saskpower.com/Our-Power-Future/Our-Electricity/Electrical-System/System-Map/Highfield-Solar-Facility.\n\n1\nSaskatchewan, Saskatchewan Energy and Climate Change Plan 2007, at p. 7.\n\n1\nSee Saskatchewan Ministry of Environment website, at https://www.saskatchewan.ca/environment#utm_campaign=q2_2015&utm_medium=short&utm_source=%2Fenvironment.\n\n1\nMark Johnston, Ph.D., "The Carbon Sink Potential in Saskatchewan: Report of an Expert Workshop held at Prairie Adaptation Research Collaborative" (Regina, Sask.: March 25-26, 2002).\n\n2\nTony C. Lemprière, Mark Johnston, Al Willcocks, Bryan Bogdanski, Deb Bisson, Mike Apps, and Oliver Bussler, "Saskatchewan Forest Carbon Sequestration Project" (2002), 78 Forestry Chronicle 843, at p. 843.\n\n3\nSaskatchewan Ministry of the Environment, 2017 State of the Environment Report (2017), at 33, available at https://www.saskatchewan.ca/residents/environment-public-health-and-safety/state-of-the-environment/about-the-report1.\n\n1\nWhitecap Resources Inc., "Weyburn Unit", available at https://www.wcap.ca/operations/core-operating-areas/weyburn-unit.html (accessed October 2019).\n\n1.50\nWhitecap Resources: A Responsible Energy Story, online: https://www.wcap.ca/sustainability/co2-sequestration.\n\n2\nNatural Resources Canada, "International Energy Agency Greenhouse Gas Weyburn-Midale CO2 Monitoring and Storage Project", available at https://www.nrcan.gc.ca/energy/publications/16459 (accessed October 2019).\n\n3\nSaskatchewan, "Saskatchewan-based Partnership Developing World-Leading Clean Coal Technology", News Release (July 6, 2006), available at https://www.saskatchewan.ca/government/news-and-media/2006/august/17/saskatchewanbased-partnership-developing-worldleading-clean-coal-technology#:~:text=SASKATCHEWAN%2DBASED%20PARTNERSHIP%20DEVELOPING%20WORLD%2DLEADING%20CLEAN%20COAL%20TECHNOLOGY,-Released%20on%20August&text=Babcock%20%26%20Wilcox%20Canada%20(B%26W%20Canada,emissions%20coal%2Dfired%20power%20plant.\n\n4\nSaskPower, Powering Saskatchewan to a cleaner Energy Future: 2016-2017 Annual Report, at 35, available at https://www.saskpower.com/about-us/Our-Company/Current-Reports/Past-Annual-Reports (accessed August 2017).\n\n5\nSaskPower, Powering Saskatchewan to a cleaner Energy Future: 2016-2017 Annual Report, at 35, available at https://www.saskpower.com/about-us/Our-Company/Current-Reports/Past-Annual-Reports (accessed August 2017).\n\n1\nSaskatchewan, Saskatchewan Energy and Climate Change Plan 2007, at p. 4.\n\n2\nGovernment of Saskatchewan, Saskatchewan\'s Climate Resilience Measurement Framework (December 2017), available at https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/climate-resilience-framework-and-reports (accessed October 2019).\n\n1\nSaskatchewan, Saskatchewan Energy and Climate Change Plan 2007, at pp. 4 and 5.\n\n1\nSaskatchewan, Saskatchewan Energy and Climate Change Plan 2007, at p. 9.\n\n1\nSaskatchewan, Saskatchewan Energy and Climate Change Plan 2007, at p. 1.\n\n2\nS.C. 2018, c. 12.\n\n1\nChapter O-2, Reg. 7, as amended by Saskatchewan Regulations 8/2020 and 107/2020.\n\n2\nR.S.S. 1978, c. O-2, as amended by the Statutes of Saskatchewan, 1982-83, c.1; 1983, c.54; 1988-89, c.31; 1989-90, c.54; 1990-91, c.39; 1993, c.35; 1998, c.30; 2000, c.50; 2001, c.26; 2003, c.29; 2007, c.7; 2010, c.E-9.22; 2011, c.11; 2014, c.E-13.1 and c.21; 2015, c.21; 2017, c.21; 2018, c.42; and 2019, c.14.\n\n3\nSection 3.\n\n4\nSection 8.\n\n5\nPart 4.\n\n6\nSection 10(2) and Table 3.\n\n7\nPart 5.\n\n8\nEnvironment and Climate Change Canada, Canada\'s Second Biennial Report on Climate Change, at 38, available at https://www.canada.ca/en/environment-climate-change/services/climate-change/greenhouse-gas-emissions/second-biennial-report.html.\n\n1\n2nd Sess., 26th Leg., Saskatchewan, 2009 at p. 1.\n\n1\nReference re Greenhouse Gas Pollution Pricing Act, 2019 SKCA 40 (Sask. C.A.).'
+    DOCX word range : (11395, 13708)
+    DOCX char range : (77349, 99875)
+    ...ribed as unambitious targets to reduce GHGs. [[MISSING]] ...
+
+---- ℹ️  EXTRA TEXT IN FINAL (present in final baseline, not in DOCX unchanged text) ----
+     (not necessarily an error: leftover deletion text, moved text, formatting artefacts, or DOCX parts that were not read)
+
+[1] Extra text: 'PolicyChapter7Saskatchewan Climate Change Law and PolicyJohn D. Stefaniuk is a Partner in Thompson Dorfman Sweatman LLP. Patricia Farnese is an Associate Professor of Law at the University of Saskatchewan.IOverviewENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:1GenerallySaskatchewan'  (final words (5, 41))
+[2] Extra text: '(GHG)'  (final words (63, 64))
+[3] Extra text: '2007.1Saskatchewan, Saskatchewan Energy and Climate Change Plan 2007.'  (final words (141, 149))
+[4] Extra text: '(MRGGA).22nd Sess., 26th Leg., Saskatchewan, 2009.'  (final words (193, 199))
+[5] Extra text: 'reintroduced.33rd Sess., 26th Leg., Saskatchewan, 2009.'  (final words (205, 211))
+[6] Extra text: '2010,4S.S. 2010, c. E-10.22. Assented to May 20, 2010 and proclaimed in force June 1, 2015.'  (final words (240, 256))
+[7] Extra text: 'Code,5The Code is available at http://publications.saskatchewan.ca//categories/69 (accessed October 2019).'  (final words (262, 271))
+[8] Extra text: 'Strategy,6Government of Saskatchewan, Prairie Resilience: A Made-In-Saskatchewan Climate Change Strategy (December 2017), available at https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/saskatchewans-climate-change-strategy (accessed October 2019).'  (final words (285, 303))
+[9] Extra text: 'prominently.7, available at https://www.scribd.com/document/328041639/Saskatchewan-White-Paper-on-Climte-Changefrom_embed (accessed October 2019).'  (final words (331, 338))
+[10] Extra text: "emissions.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessmentIISaskatchewan's"  (final words (353, 361))
+[11] Extra text: 'ProfileENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAirAGreenhouse'  (final words (363, 372))
+[12] Extra text: 'EmissionsENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:2Historical EmissionsIn'  (final words (373, 383))
+[13] Extra text: '2005 er'  (final words (397, 399))
+[14] Extra text: 'perso as'  (final words (411, 413))
+[15] Extra text: 'population1Canadian Centre for Energy Information. Greenhouse Gas Emissions  National Inventory Report (NIR), (last modified 13 May 2025), online (website): https://energy-information.canada.ca/en/subjects/greenhouse-gas-emissions-national-inventory-report-nir. This'  (final words (425, 446))
+[16] Extra text: 'basis.2 This'  (final words (467, 469))
+[17] Extra text: '202'  (final words (500, 501))
+[18] Extra text: 'a'  (final words (507, 508))
+[19] Extra text: 'emissions.4Saskatchewan'  (final words (584, 585))
+[20] Extra text: 'Columbia.The'  (final words (635, 636))
+[21] Extra text: '3'  (final words (659, 660))
+[22] Extra text: '2.'  (final words (672, 673))
+[23] Extra text: '19'  (final words (709, 710))
+[24] Extra text: "1Saskatchewan's"  (final words (712, 713))
+[25] Extra text: 'emissions.6Ministry of the Environment, Saskatchewan Environmental Code: Moving Forward in Partnership (November 2014), available at http://mcmillan.ca/wp-content/uploads/2020/09/Default.aspx_.pdf.'  (final words (739, 755))
+[26] Extra text: '37'  (final words (767, 768))
+[27] Extra text: '43'  (final words (777, 778))
+[28] Extra text: 'supply.7SaskPower, Powering Saskatchewan to a cleaner Energy Future: 2016-2017 Annual Report, at 10, available at https://www.saskpower.com/-/media/SaskPower/About-Us/Reports/Past-Reports/Report-AnnualReport-2019-20.ashx (accessed August 2017).'  (final words (779, 798))
+[29] Extra text: '15)'  (final words (809, 810))
+[30] Extra text: '3),'  (final words (814, 815))
+[31] Extra text: '1).'  (final words (819, 820))
+[32] Extra text: "agreements.8SaskPower, Powering Saskatchewan to a cleaner Energy Future: 2016-2017 Annual Report, available at https://www.saskpower.com/-/media/SaskPower/About-Us/Reports/Past-Reports/Report-AnnualReport-2019-20.ashx (accessed August 2017).ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:3Projected EmissionsSaskatchewan's"  (final words (843, 869))
+[33] Extra text: 'noted,'  (final words (901, 902))
+[34] Extra text: 'trend.4Environment and'  (final words (921, 923))
+[35] Extra text: "Canada, Canada's Second Biennial Report on Climate Change, at 38, available at https://www.canada.ca/en/environment-climate-change/services/climate-change/greenhouse-gas-emissions/second-biennial-report.html.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessmentBClimate Change ImpactsENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:4Historical ImpactsThe"  (final words (925, 955))
+[36] Extra text: '1.5 Celsiuswinter'  (final words (974, 976))
+[37] Extra text: '3.1C,'  (final words (979, 980))
+[38] Extra text: '1.5.1Environment and Climate Change Canada, Climate data and scenarios for Canada: Synthesis of recent observations and modelling results (2016), at 5, available at https://www.canada.ca/en/environment-climate-change/services/climate-change/publications/data-scenarios-synthesis-recent-observation.html (accessed March 2020).'  (final words (984, 1011))
+[39] Extra text: "years.2Natural Resources Canada, The Winds of Change: Climate Change in Prairie Provinces (September 12, 2007), available at http://publications.gc.ca/site/eng/96166/publication.html (accessed March 2020), citing H.W. Cutforth, B.G. McConkey, R.J. Woodvine, D.G. Smith, P.G. Jefferson and O.O. Akinremi, Climate Change in the Semiarid Prairie of Southwestern Saskatchewan, Canadian Journal of Plant Science (upcoming issue); H.G. Hengeveld, Projections for Canada's Climate Future: A Discussion of Recent Simulations with the Canadian Global Climate Model, Climate Change Digest 00-01 (Ottawa: Environment Canada, 2000); G.D.V. Williams, R.A. Fautley, K.H. Jones, R.B. Stewart and E.E. Wheaton, Estimating Effects of Climate Change on Agriculture in Saskatachewan, Canada in The Impact of Climate Variations on Agriculture: Assessments in Cool Temperature and Cold Regions, Vol. 1, M.L. Parry et al., eds. (Boston: Kluwer Academic Publishers, 1988), at pp. 221-382."  (final words (1074, 1202))
+[40] Extra text: '60'  (final words (1232, 1233))
+[41] Extra text: 'season.3International Institute for Sustainable Development and the Environmental Adaptation Research Group, Agriculture and Climate ChangeA Prairie Perspective (Institute for Environmental Studies, University of Toronto, 1997), available at https://www.iisd.org/system/files/publications/agriculture_climate.pdf (accessed March 2020).ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:5Projected ImpactsThe'  (final words (1258, 1297))
+[42] Extra text: 'increase.1Elaine M. Barrow and Dave Sauchyn, Uncertainty in climate projections and time of emergence of climate signals in the western Canadian Prairies, International Journal of Climatology (March 2019), DOI: 10.1002/joc.6079.The'  (final words (1401, 1431))
+[43] Extra text: 'winters.2D. Sauchyn and S. Kulshreshtha, Prairies, in From Impacts'  (final words (1530, 1539))
+[44] Extra text: 'Adaptation: Canada in a Changing Climate 2007, D.S. Lemmen, F.J. Warren, J. Lacrox'  (final words (1540, 1553))
+[45] Extra text: 'E. Bush, eds. (Ottawa:'  (final words (1554, 1558))
+[46] Extra text: 'Canada, 2008), available at https://www.nrcan.gc.ca/environment/resources/publications/impacts-adaptation/reports/assessments/2008/10253 (accessed March 2020).ENV.III.1.b Environmental lawStatutory protection'  (final words (1560, 1571))
+[47] Extra text: 'environmentEnvironmental assessmentProvincial assessmentIIILegal FrameworkAConstitutional FrameworkBLegislative'  (final words (1572, 1577))
+[48] Extra text: 'FrameworkENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:7IntroductionIn'  (final words (1579, 1587))
+[49] Extra text: 'Act1S.C. 2018, c. 12.'  (final words (1595, 1599))
+[50] Extra text: 'Act2S.S. 2010, c. M-2.01, as amended by the Statutes of Saskatchewan, 2013, c.13; 2014, c.E-13.1; and 2018, c.48. (MRGGA)'  (final words (1633, 1652))
+[51] Extra text: 'Saskatchewan.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessmentENV.III.1.g Environmental lawStatutory protection of environmentEnvironmental assessmentMiscellaneous7:8EnvironmentGeneral LegislationThe'  (final words (1681, 1696))
+[52] Extra text: '2010The'  (final words (1701, 1702))
+[53] Extra text: '20101S.S. 2010, c. E-10.22, as amended by the Statutes of Saskatchewan, 2013, c.20, c.27 and c.32; 2014, c.E-13.1; and 2018, c.9 and c.10.'  (final words (1707, 1730))
+[54] Extra text: 'Saskatchewans'  (final words (1731, 1732))
+[55] Extra text: 'regulations.Part'  (final words (1795, 1796))
+[56] Extra text: 'discharges2Section 2(1)(g): Discharge means discharge, drainage, deposit, release or emission into the environment.'  (final words (1805, 1818))
+[57] Extra text: 'discharge.This'  (final words (1886, 1887))
+[58] Extra text: 'discharge.3Section 10.The'  (final words (1970, 1972))
+[59] Extra text: 'persons'  (final words (2026, 2027))
+[60] Extra text: 'made.4R.R.S. c. E-10.22, Reg. 2.The'  (final words (2047, 2052))
+[61] Extra text: 'process.5Section 52(3)(d).The'  (final words (2086, 2088))
+[62] Extra text: 'person responsible'  (final words (2195, 2197))
+[63] Extra text: 'site.6Section 13(1).'  (final words (2220, 2222))
+[64] Extra text: 'sites.7Section 22(1).'  (final words (2239, 2241))
+[65] Extra text: 'environment.Although'  (final words (2281, 2282))
+[66] Extra text: 'GHGs.When'  (final words (2382, 2383))
+[67] Extra text: 'fund.8Government of Saskatchewan, Legislation and Regulations (16 January 2019), online: Saskatchewan https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/legislation-and-regulation.The'  (final words (2464, 2476))
+[68] Extra text: 'ActThe'  (final words (2478, 2479))
+[69] Extra text: 'Air Quality'  (final words (2522, 2524))
+[70] Extra text: 'Halocarbon Control'  (final words (2528, 2530))
+[71] Extra text: 'Industrial'  (final words (2532, 2533))
+[72] Extra text: 'Quality)'  (final words (2535, 2536))
+[73] Extra text: 'Code.The'  (final words (2540, 2541))
+[74] Extra text: 'Industrial'  (final words (2572, 2573))
+[75] Extra text: 'Quality)'  (final words (2575, 2576))
+[76] Extra text: 'air contaminant'  (final words (2657, 2659))
+[77] Extra text: 'effect.Apart'  (final words (2719, 2720))
+[78] Extra text: 'orders9Section 54(1).'  (final words (2736, 2738))
+[79] Extra text: 'Air Quality'  (final words (2744, 2746))
+[80] Extra text: 'to:refrain'  (final words (2763, 2764))
+[81] Extra text: 'contaminants;control'  (final words (2767, 2768))
+[82] Extra text: 'order;comply'  (final words (2780, 2781))
+[83] Extra text: 'emission;install,'  (final words (2790, 2791))
+[84] Extra text: 'equipment;measure'  (final words (2794, 2795))
+[85] Extra text: 'contaminants;measure'  (final words (2801, 2802))
+[86] Extra text: 'air;provide'  (final words (2810, 2811))
+[87] Extra text: 'data;measure'  (final words (2815, 2816))
+[88] Extra text: 'conditions;carry'  (final words (2819, 2820))
+[89] Extra text: 'problems;refrain'  (final words (2830, 2831))
+[90] Extra text: 'discharge;remove'  (final words (2844, 2845))
+[91] Extra text: 'container;store'  (final words (2851, 2852))
+[92] Extra text: 'andreport'  (final words (2858, 2859))
+[93] Extra text: 'above.10Section 54(2).Where'  (final words (2866, 2868))
+[94] Extra text: 'issued.11Section 60.'  (final words (2900, 2902))
+[95] Extra text: 'publics'  (final words (2914, 2915))
+[96] Extra text: 'order.Bill 147 - The Oil and Gas Conservation Amendment ActIn November 2018, the Government of Saskatchewan introduced The Oil and Gas Amendment Act to facilitate emissions regulations in the oil and gas sector. The Regulation of flared and vented methane emissions in the upstream oil and gas sector led to a 71 per cent reduction in emissions from 2015 levels by 2024. The Regulations were amended in 2024 to remove coverage of flared gas, due to its coverage under the OBPS Program, and now focus only on vented gas.33Government of Saskatchewan, Legislation and Regulations, (accessed 25 May 2026), online: https://www.saskatchewan.ca/Business/Environmental-Protection-and-Sustainability/A-Made-in-Saskatchewan-Climate-Change-Strategy/Legislation-and-RegulationsThe Management and Reduction of Greenhouse Gases ActThe Management and Reduction of Greenhouse gases Act was partially proclaimed in January 2018 to provide authority for electricity and reporting regulations. An amended Act was proclaimed in full in December 2018, which provided the authorities for the output-based emissions management framework, including compliance options such as the Technology Fund, which allows the Minister to support initiatives in Saskatchewan that lead to mitigation,sequestration or capture of greenhouse gases.The Management and Reduction of Greenhouse Gases (Standards and Compliance) Regulations, 2023Effective January 1, 2023, The Act was amended to create The Management and Reduction of Greenhouse Gases (Standards and Compliance) Regulations, 2023 which establish parameters for mandatory greenhouse gas reductions through output-based performance standards for industry, along with compliance options, under Saskatchewans OBPS Program.The OBPS program creates individual standards for Industrial, Electrical, and Aggregate Facilities, along with Performance Credit Standards and a Carbon Capture, Utilization and Storage Credit Standard. The electricity compliance under the Output-Based Performance Standards (OBPS) Program enabled the creation of a Clean Electricity Transition Grant and a Small Modular Reactor Investment Fund in the province.The Management and Reduction of Greenhouse Gases (Reporting and General) Regulations, 2025Effective June 1, 2025, additional amendments were made to The Management and Reduction of Greenhouse Gases Act. Chapter M-2.01 Reg 5, or The Management and Reduction of Greenhouse Gases (Reporting and General) Regulations, 2025 were introduced requiring every person who owns or operates a facility that emits 10,000 tonnes or more of CO2e each year to be subject to these regulations by reporting their emissions.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:9EnvironmentEnvironmental Assessment LegislationThe'  (final words (2961, 3327))
+[97] Extra text: 'Act1S.S. 1979-80, c. E-10.1, as amended by the Statutes of Saskatchewan, 1983 c.77; 1988-89 c.42 and c.55; 1996 c.F-19.1; 2002, c.C-11.1; 2010, c.11; 2013, c.27; and 2018, c.42.The'  (final words (3329, 3357))
+[98] Extra text: 'development'  (final words (3367, 3368))
+[99] Extra text: 'cause'  (final words (3374, 3375))
+[100] Extra text: 'pollutant2Section 2(d)(iii).'  (final words (3379, 3381))
+[101] Extra text: 'have'  (final words (3382, 3383))
+[102] Extra text: 'environment.3Section 2(d)(vi).'  (final words (3388, 3390))
+[103] Extra text: 'Act.4Section 7.2(1).'  (final words (3419, 3421))
+[104] Extra text: 'development.Project'  (final words (3440, 3441))
+[105] Extra text: '(SEARP).'  (final words (3511, 3512))
+[106] Extra text: '(EIA)'  (final words (3546, 3547))
+[107] Extra text: 'concerns.If,'  (final words (3568, 3569))
+[108] Extra text: 'departments'  (final words (3637, 3638))
+[109] Extra text: 'Environment.The'  (final words (3662, 3663))
+[110] Extra text: 'conditions.Whether'  (final words (3811, 3812))
+[111] Extra text: 'effects.5For a discussion of how climate change considerations may be incorporated into environmental assessment processes, see the Federal-Provincial-Territorial Committee on Climate Change and Environmental Assessment, Incorporating Climate Change Considerations in Environmental Assessment: General Guidance for Practitioners (November 2003), available at https://www.canada.ca/en/impact-assessment-agency/services/policy-guidance/incorporating-climate-change-considerations-environmental-assessment-general-guidance-practitioners.html.Saskatchewan'  (final words (3835, 3876))
+[112] Extra text: 'Cooperation,6Canada-Saskatchewan Agreement on Environmental Assessment Cooperation, 2005, available at https://www.canada.ca/en/impact-assessment-agency/corporate/acts-regulations/legislation-regulations/canada-saskatchewan-agreement-environmental-assessment-cooperation-2005.html (accessed March 2020).'  (final words (3886, 3899))
+[113] Extra text: 'impacts.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:10EnvironmentWildlife'  (final words (3916, 3924))
+[114] Extra text: 'LegislationThe'  (final words (3925, 3926))
+[115] Extra text: 'Act1S.S. 1983-84, c. W-13.2, as amended by the Statutes of Saskatchewan, 1984-85-86, c.3 and 59; 1988-89, c.39; 1992, c.66; 1996, c.70; 1999, c.30; 2002, c.40; 2004, c.69; 2005, c.9 and 31; 2006, c.12; 2007, c.44; 2008, c.28; 2009, c.33; 2010, c.36; and 2018, c.42.The'  (final words (3929, 3973))
+[116] Extra text: 'employed.In'  (final words (4068, 4069))
+[117] Extra text: 'moderate'  (final words (4090, 4091))
+[118] Extra text: 'restriction.2Andrea Olive, Under Threat. 20 Years Since the Saskatchewan Wildlife Act (Canadian Centre for Policy Alternatives, February 2018), available at https://www.policyalternatives.ca/sites/default/files/uploads/publications/Saskatchewan20Office/2018/02/Under20Threat.pdf (accessed October 2019).'  (final words (4126, 4150))
+[119] Extra text: 'risk.The'  (final words (4165, 4166))
+[120] Extra text: '19983S.S. 1998, c. W-13.12.This'  (final words (4168, 4172))
+[121] Extra text: '(COSEWIC).'  (final words (4244, 4245))
+[122] Extra text: 'species.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:11EnvironmentProduct'  (final words (4274, 4282))
+[123] Extra text: 'StandardsBuilding CodesThe'  (final words (4284, 4286))
+[124] Extra text: 'provinces'  (final words (4305, 4306))
+[125] Extra text: 'amendments.1Government of Canada, Model code adoption across Canada (July 2, 2020), online: https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/model-code-adoption-across-canada.'  (final words (4343, 4356))
+[126] Extra text: 'changes.2Government of Canada, Codes Canada  frequently asked questions (July 23, 2021), online: https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/codes-canada-frequently-asked-questions.'  (final words (4388, 4401))
+[127] Extra text: 'efficiency.3Government of Canada, National Building Code of Canada 2020 (March 28, 2022), online: https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/codes-canada-publications/national-building-code-canada-2020.'  (final words (4425, 4439))
+[128] Extra text: '2019.4S.S. 1983-84, c. U-1.2, as amended.'  (final words (4456, 4462))
+[129] Extra text: '2020.5Government of Canada, National Energy Code of Canada for Buildings 2020 (March 28, 2022), online: https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/codes-canada-publications/national-energy-code-canada-buildings-2020.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessmentIVClimate'  (final words (4480, 4503))
+[130] Extra text: 'DevelopmentENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:12Pre-Kyoto'  (final words (4505, 4513))
+[131] Extra text: 'DevelopmentEarly'  (final words (4514, 4515))
+[132] Extra text: '(SECDA).'  (final words (4538, 4539))
+[133] Extra text: 'opportunities.1Saskatchewan, Saskatchewan Energy Conservation and Development Authority to be Wound, News Release (March 26, 1996), available at https://www.saskatchewan.ca/government/news-and-media/1996/march/28/saskatchewan-energy-conservation-and-development-authority-to-be-wound; and see, for example, Saskatchewan Energy Conservation and Development Authority, Evaluation and Recommendations for Saskatchewans Electric Options 2003 to 2020 (1994).In'  (final words (4562, 4601))
+[134] Extra text: 'Canadas'  (final words (4604, 4605))
+[135] Extra text: 'policy.In'  (final words (4649, 4650))
+[136] Extra text: 'Program.2SaskEnergy Incorporated and Trans Gas Limited, Action Plan: A Voluntary Climate Change Program (SaskEnergy, 1995).'  (final words (4669, 4684))
+[137] Extra text: 'exist.By'  (final words (4728, 4729))
+[138] Extra text: 'Council.3Saskatchewan, Saskatchewan Energy Conservation and Development Authority to be Wound, News Release (March 26, 1996), available at https://www.saskatchewan.ca/government/news-and-media/1996/march/28/saskatchewan-energy-conservation-and-development-authority-to-be-wound.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:13Policy'  (final words (4753, 4778))
+[139] Extra text: 'EraIn'  (final words (4782, 4783))
+[140] Extra text: 'matters.In'  (final words (4818, 4819))
+[141] Extra text: 'strategy.1Saskatchewan, Saskatchewan Green Print for Energy Conservation Backgrounder (Saskatchewan, 2001).'  (final words (4847, 4857))
+[142] Extra text: 'Saskatchewans'  (final words (4915, 4916))
+[143] Extra text: 'change.In'  (final words (4921, 4922))
+[144] Extra text: '2002.2Saskatchewan, Making it Work: A Saskatchewan Perspective on Climate Change Policy (Saskatchewan Industry and Resources, October 2002).'  (final words (4943, 4960))
+[145] Extra text: 'Saskatchewans'  (final words (4981, 4982))
+[146] Extra text: 'following:the'  (final words (4998, 4999))
+[147] Extra text: 'Change;the'  (final words (5008, 5009))
+[148] Extra text: 'gasoline;the'  (final words (5019, 5020))
+[149] Extra text: '2002;the'  (final words (5028, 5029))
+[150] Extra text: 'Project;the'  (final words (5039, 5040))
+[151] Extra text: 'Regina;support'  (final words (5054, 5055))
+[152] Extra text: 'Prairies;participation'  (final words (5077, 5078))
+[153] Extra text: 'Development;the'  (final words (5086, 5087))
+[154] Extra text: 'SaskPower;various'  (final words (5094, 5095))
+[155] Extra text: 'groups.Saskatchewans'  (final words (5103, 5104))
+[156] Extra text: 'areas:public education;carbon'  (final words (5110, 5112))
+[157] Extra text: 'technology;the'  (final words (5113, 5114))
+[158] Extra text: 'strategies;the'  (final words (5117, 5118))
+[159] Extra text: 'andenergy'  (final words (5128, 5129))
+[160] Extra text: 'projects.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:14Post-Kyoto'  (final words (5133, 5141))
+[161] Extra text: 'DevelopmentIn'  (final words (5142, 5143))
+[162] Extra text: 'reductions.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:15Post-Kyoto'  (final words (5199, 5207))
+[163] Extra text: 'DevelopmentA First Report on Making Saskatchewan a Canadian Leader in Energy Conservation and Renewable Energy Development (2006)1Peter Prebble, MLA,'  (final words (5208, 5227))
+[164] Extra text: '(Government of Saskatchewan, December 2006).In'  (final words (5243, 5248))
+[165] Extra text: 'Saskatchewans'  (final words (5279, 5280))
+[166] Extra text: 'Saskatchewans'  (final words (5309, 5310))
+[167] Extra text: 'Saskatchewans'  (final words (5372, 5373))
+[168] Extra text: 'sector.In'  (final words (5395, 5396))
+[169] Extra text: 'Saskatchewans'  (final words (5418, 5419))
+[170] Extra text: '50'  (final words (5431, 5432))
+[171] Extra text: 'Saskatchewans'  (final words (5433, 5434))
+[172] Extra text: '2025.2Peter Prebble, MLA, A First Report on Making Saskatchewan a Canadian Leader in Energy Conservation and Renewable Energy Development (Government of Saskatchewan, December 2006), at p. 1.'  (final words (5446, 5473))
+[173] Extra text: 'green,'  (final words (5507, 5508))
+[174] Extra text: 'impact energy.Facing'  (final words (5509, 5511))
+[175] Extra text: 'management.3Peter Prebble, MLA, A First Report on Making Saskatchewan a Canadian Leader in Energy Conservation and Renewable Energy Development (Government of Saskatchewan, December 2006), at pp. 19-24.'  (final words (5534, 5561))
+[176] Extra text: 'gap.The'  (final words (5576, 5577))
+[177] Extra text: 'consumers.The'  (final words (5613, 5614))
+[178] Extra text: 'solar rights legislation.The'  (final words (5684, 5687))
+[179] Extra text: 'initiatives.4Peter Prebble, MLA, A First Report on Making Saskatchewan a Canadian Leader in Energy Conservation and Renewable Energy Development (Government of Saskatchewan, December 2006), at p. 3.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:16Post-Kyoto'  (final words (5740, 5774))
+[180] Extra text: 'DevelopmentThe'  (final words (5775, 5776))
+[181] Extra text: '2007In'  (final words (5782, 5783))
+[182] Extra text: 'Saskatchewans'  (final words (5784, 5785))
+[183] Extra text: '32,'  (final words (5798, 5799))
+[184] Extra text: '80'  (final words (5823, 5824))
+[185] Extra text: '2020)1Jose Candor, Options to Implement a Regulatory Framework to Accommodate Geological Storage in CO2 in Saskatchewan, ScienceDirect (2013), online: https://reader.elsevier.com/reader/sd/pii/S1876610213009569?tokenCCF1E49E94BBCE299E8FF994A25AC625452D3C86AAB5A1FF5BB8F3AFAD9A4DED3C4BE4ADEE63883AF7742C382775D558originRegionus-east-1originCreation20220613002309.'  (final words (5869, 5889))
+[186] Extra text: 'the'  (final words (5921, 5922))
+[187] Extra text: 'Canada2Saskatchewan Energy and Climate Change Plan, 2007, at p. 3.'  (final words (5926, 5936))
+[188] Extra text: 'Protocol.3Saskatchewan Energy and Climate Change Plan, 2007, at p. 7.'  (final words (5956, 5966))
+[189] Extra text: 'Saskatchewans'  (final words (5975, 5976))
+[190] Extra text: 'Saskatchewans'  (final words (5997, 5998))
+[191] Extra text: 'tonnes.Borrowing'  (final words (6007, 6008))
+[192] Extra text: 'tipping point'  (final words (6022, 6024))
+[193] Extra text: 'Saskatchewans'  (final words (6030, 6031))
+[194] Extra text: '3'  (final words (6056, 6057))
+[195] Extra text: 'Canadas'  (final words (6058, 6059))
+[196] Extra text: '9'  (final words (6066, 6067))
+[197] Extra text: 'Canadas'  (final words (6068, 6069))
+[198] Extra text: 'provinces'  (final words (6078, 6079))
+[199] Extra text: 'energy.The'  (final words (6098, 6099))
+[200] Extra text: 'wedges'  (final words (6104, 6105))
+[201] Extra text: 'environment.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:17Post-Kyoto'  (final words (6225, 6233))
+[202] Extra text: 'DevelopmentThe'  (final words (6234, 6235))
+[203] Extra text: '2007Conservation'  (final words (6241, 6242))
+[204] Extra text: 'EfficiencyThe'  (final words (6243, 6244))
+[205] Extra text: 'SaskPowers'  (final words (6255, 6256))
+[206] Extra text: 'plant.1Saskatchewan Energy and Climate Change Plan, 2007, at p. 10.'  (final words (6272, 6282))
+[207] Extra text: 'municipalities.The'  (final words (6370, 6371))
+[208] Extra text: 'governments'  (final words (6440, 6441))
+[209] Extra text: '20,'  (final words (6444, 6445))
+[210] Extra text: 'components.The'  (final words (6453, 6454))
+[211] Extra text: '20'  (final words (6493, 6494))
+[212] Extra text: 'supported.On'  (final words (6588, 6589))
+[213] Extra text: 'industry.On'  (final words (6638, 6639))
+[214] Extra text: 'infrastructure.ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:18Post-Kyoto'  (final words (6690, 6699))
+[215] Extra text: 'DevelopmentThe'  (final words (6700, 6701))
+[216] Extra text: '2007Carbon'  (final words (6707, 6708))
+[217] Extra text: 'Sectors1Saskatchewan Energy and Climate Change Plan, 2007, at pp. 11-12.The'  (final words (6718, 6728))
+[218] Extra text: 'Saskatchewans'  (final words (6731, 6732))
+[219] Extra text: 'plants.In'  (final words (6836, 6837))
+[220] Extra text: 'Project.ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:19Post-Kyoto'  (final words (6902, 6911))
+[221] Extra text: 'DevelopmentThe'  (final words (6912, 6913))
+[222] Extra text: '2007Increase'  (final words (6919, 6920))
+[223] Extra text: 'Energy1Saskatchewan Energy and Climate Change Plan, 2007, at pp. 12-13.At'  (final words (6924, 6934))
+[224] Extra text: 'capacity.1.50Government of Canada, Provincial and Territorial Energy Profiles  Saskatchewan (July 28, 2022), online: https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/provincial-territorial-energy-profiles/provincial-territorial-energy-profiles-saskatchewan.html.'  (final words (6982, 6996))
+[225] Extra text: 'producers.In'  (final words (7011, 7012))
+[226] Extra text: 'plants.2U.S. Department of Agriculture, Foreign Agricultural Service, Biofuels Annual: Canada (March 4, 2022), online: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileNameBiofuels20Annual_Ottawa_Canada_06-14-2021.pdf.'  (final words (7044, 7059))
+[227] Extra text: 'Saskatchewan.3Canadian Renewable Fuels Association, Canadian Ethanol Facilities (June 14, 2021), online: https://ricanada.org/wp-content/uploads/2015/03/Canadian-Ethanol-and-Biodiesel-Facilities-Producer-Tables-for-Website.pdf.'  (final words (7069, 7081))
+[228] Extra text: '2027.4Mickey Djuric, 2B renewable diesel, canola-crushing plant to be built in Regina, CBC News (January 17, 2022), online: https://www.cbc.ca/news/canada/saskatchewan/diesel-canola-plant-regina-1.6318248::textThe20Saskatchewan20goverment20says20the,to20be20completed20by202027.textSaskatchewan20Premier20Scott20Moe20called,largest20investments20in20the20province.'  (final words (7093, 7112))
+[229] Extra text: 'above.ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:20Post-Kyoto'  (final words (7215, 7224))
+[230] Extra text: 'DevelopmentThe'  (final words (7225, 7226))
+[231] Extra text: '2007Promoting'  (final words (7232, 7233))
+[232] Extra text: 'Sinks1Saskatchewan Energy and Climate Change Plan, 2007, at p. 13.The'  (final words (7238, 7248))
+[233] Extra text: 'reductions).ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:21Post-Kyoto'  (final words (7327, 7336))
+[234] Extra text: 'DevelopmentThe'  (final words (7337, 7338))
+[235] Extra text: '2007Reduction'  (final words (7344, 7345))
+[236] Extra text: 'Sectors1Saskatchewan Energy and Climate Change Plan, 2007, at p. 14.In'  (final words (7355, 7365))
+[237] Extra text: '20'  (final words (7396, 7397))
+[238] Extra text: '2030.In'  (final words (7410, 7411))
+[239] Extra text: 'industrys'  (final words (7433, 7434))
+[240] Extra text: 'provinces'  (final words (7459, 7460))
+[241] Extra text: 'emissions.ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:22Post-Kyoto'  (final words (7462, 7471))
+[242] Extra text: 'DevelopmentThe'  (final words (7472, 7473))
+[243] Extra text: '2007Sustainable'  (final words (7479, 7480))
+[244] Extra text: 'Sector1Saskatchewan Energy and Climate Change Plan, 2007, at pp. 15-16.As'  (final words (7482, 7492))
+[245] Extra text: 'Saskatchewans'  (final words (7507, 7508))
+[246] Extra text: 'provinces'  (final words (7535, 7536))
+[247] Extra text: 'emissions).Saskatchewan'  (final words (7615, 7616))
+[248] Extra text: 'uranium.2See Government of Saskatchewan, Energy, online: https://www.saskatchewan.ca/business/investment-and-economic-development/key-economic-sectors/energy and Government of Canada, About Uranium (September 23, 2020), online: https://www.nrcan.gc.ca/energy/energy-sources-distribution/uranium-nuclear-energy/uranium-canada/about-uranium/7695.'  (final words (7624, 7642))
+[249] Extra text: '7:23.60Saskatchewans Affordable Power Plan  Related InitiativesThe province also points to complementary measures, including Saskatchewans Critical Minerals Strategy, launched in March 2023, to double the number of critical minerals produced by 2030 and support the transition to a lower carbon economy. Moreover, the establishment of the Saskatchewan Research Council Rare Earth Processing Facility in Saskatoon will allow rare earth elements to be processed and used in clean electricity technologies. Lastly, the province has continued to work on the 2021 CCUS priorities, including CCUS credits introduced in 2023 to encourage OBPS-regulated emitters to adopt CCUS technology.Saskatchewan also frames part of its contribution to global emissions reductions as supplying international markets with lower-emission products and promoting sustainable land use, progressive environmental regulation, and innovation to support climate resilience and sustainable economic development.13Government of Saskatchewan, Saskatchewans Climate Change Strategy, online: https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/saskatchewans-climate-change-strategy.\n7:23.50Saskatchewans Affordable Power Plan  FundingThe affordable Power Plan uses OBPS compliance payments from the electricity sector to support SaskPowers clean grid transition, splitting proceeds so that half goes to an SMR Investment Fund and the other half is provided to SaskPower through the Clean Electricity Transition Grant (CETG) to support clean electricity operating costs, including renewable power imports, demand-side management programs, and renewable power purchase agreements In 2024-25, the Ministry of Environment allocated 140 million in CETG funding to SaskPower.Between April 1, 2024, and March 31, 2025, the CETG is reported to have enabled 3,737,117 MWh of renewable generation, which is enough to power approximately 480,000 homes for a year. Additionally, it supported 1,754 household efficiency retrofits, including 62 in northern Indigenous communities, and helped 30 businesses access technical and financial support to implement energy-saving measures.12Government of Saskatchewan, Saskatchewans Climate Change Strategy, online: https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/saskatchewans-climate-change-strategy.\n7:23.40Saskatchewans Affordable Power PlanSaskatchewans Affordable Power Plan outlines initiatives to achieve a net-zero electricity grid by 2050, positioning that timeline as realistic while aiming to maintain affordable, reliable electricity for households and businesses as the grid decarbonizes.A variety of energy sources will continue to be used in their approach to meet growing demand, as a mix of coal, natural gas, and renewables such as wind and solar will ensure dependable baseload power while transitioning toward future nuclear baseload generation.11Government of Saskatchewan, Saskatchewans Climate Change Strategy, online: https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/saskatchewans-climate-change-strategy.\n7:23.30Prairie Resilience: A Made-in-Saskatchewan Climate Change Strategy  OBPS OutcomesReported outcomes of the OBPS program include 3.3 billion in savings for regulated emitters from 20192022 and projected savings of 14 billion by 2030 compared to federal carbon pricing. Additionally, full compliance by regulated emitters under the OBPS program has been observed, and the Saskatchewan Technology Fund awarded 25 million to 13 projects at its first intake in 2023. Together, the projects will eliminate more than 4.5 million tonnes of CO2e emissions, attract over 277 million in additional investment, and save five million gigajoules of energy. A second intake announced January 16, 2025 made 50 million available for additional industry-driven projects.10Government of Saskatchewan, Saskatchewans Climate Change Strategy, online: https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/saskatchewans-climate-change-strategy.\n7:23.20Prairie Resilience: A Made-in-Saskatchewan Climate Change Strategy  Key ProgramsThe Prairie Resilience strategy introduced two key programs to reduce emissions in the province. The Methane Action Plan and the Output-Based Performance Standards (OBPS) Program have worked together to reduce upstream oil and gas venting and flaring emissions by 71 since 2015.The OBPS Program is Saskatchewans industrial emissions framework, designed to reduce emissions intensity while preventing carbon leakage. Changes effective January 1, 2023, increased reduction requirements, expanded coverage, and introduced a Carbon Capture Utilization and Storage (CCUS) credit program aimed at further incentivizing reductions in industrial emissions. Facilities that exceed permitted levels must use performance or CCUS credits or pay into the Saskatchewan Technology Fund, which supports emissions-reduction projects at regulated facilities.9Government of Saskatchewan, Saskatchewans Climate Change Strategy, online: https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/saskatchewans-climate-change-strategy.\n7:23Prairie Resilience: A Made-in-Saskatchewan Climate Change StrategyPrairie Resilience is Saskatchewans climate change strategy, launched in December 2017, aimed at reducing greenhouse gas emissions while protecting competitiveness, prioritizing affordability, and supporting sustainable growth and development. It is framed as a practical approach to strengthening the provinces resilience to climate impacts while recognizing the role of a strong, sustainable economy in addressing climate change. The strategy reduces emissions through agricultural practices such as carbon sequestration via zero and low tillage, improved fertilizer efficiency through 4R nutrient stewardship, and methane reductions using innovative animal feed.8Government of Saskatchewan, Saskatchewans Climate Change Strategy, online: https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/saskatchewans-climate-change-strategy.ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:23Post-Kyoto'  (final words (7665, 8386))
+[250] Extra text: 'DevelopmentThe'  (final words (8387, 8388))
+[251] Extra text: '2007Adaptation1Saskatchewan Energy and Climate Change Plan, 2007, at pp. 17-18.In'  (final words (8394, 8404))
+[252] Extra text: 'Plans'  (final words (8424, 8425))
+[253] Extra text: 'level.ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAirVCurrent'  (final words (8519, 8528))
+[254] Extra text: 'ResponseENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAirAMitigationENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir1Major InitiativesENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:24The'  (final words (8531, 8557))
+[255] Extra text: 'Act1S.S. 2010, c. M-2.01, as amended by the Statutes of Saskatchewan, 2013, c.13; 2014, c.E-13.1; and 2018, c.48.On'  (final words (8563, 8581))
+[256] Extra text: '(MRGGA).'  (final words (8599, 8600))
+[257] Extra text: 'a'  (final words (8605, 8606))
+[258] Extra text: 'technologies.2Saskatchewan, Saskatchewan Takes Real Action to Reduce Greenhouse Gas Emissions, News Release (May 11, 2009).'  (final words (8621, 8636))
+[259] Extra text: 'government.This'  (final words (8655, 8656))
+[260] Extra text: 'provinces'  (final words (8680, 8681))
+[261] Extra text: 'governments'  (final words (8696, 8697))
+[262] Extra text: 'Resilience.The'  (final words (8701, 8702))
+[263] Extra text: 'them.3Part II.'  (final words (8719, 8721))
+[264] Extra text: 'regulated emitters'  (final words (8725, 8727))
+[265] Extra text: 'time.4Part VI, Division 1.'  (final words (8747, 8751))
+[266] Extra text: 'MRGGA.ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:25Regulated'  (final words (8766, 8775))
+[267] Extra text: '(General)The'  (final words (8776, 8777))
+[268] Extra text: 'Regulations1Chapter M-2.01 Reg. 3, as amended by Saskatchewan Regulations 91/2019 and 103/2020.'  (final words (8786, 8798))
+[269] Extra text: 'emitter.2Section 3.'  (final words (8838, 8840))
+[270] Extra text: 'registered3Section 5.'  (final words (8846, 8848))
+[271] Extra text: 'qualified person.4Section 13.'  (final words (8866, 8869))
+[272] Extra text: 'sector.5Sections 11 and 15.'  (final words (8894, 8898))
+[273] Extra text: 'targets.6Section 20.'  (final words (8915, 8917))
+[274] Extra text: 'MRGGA.7Part V.Prairie'  (final words (8932, 8934))
+[275] Extra text: 'Regulations.8Saskatchewan, Prairie Resilience: Output-Based Performance Standards (December 2017), available at: https://www.saskatchewan.ca/-/media/news-release-backgrounders/2018/aug/prairieresilience-performancestandard.pdf (accessed October 2019).'  (final words (8965, 8979))
+[276] Extra text: '10'  (final words (8981, 8982))
+[277] Extra text: 'time.9Saskatchewan, New Industry Standards Next Step in Prairie Resilience Climate Change Strategy, News Release (August 29, 2018) available at https://www.saskatchewan.ca/government/news-and-media/2018/august/29/prairie-resilience-climate-strategy.'  (final words (9006, 9026))
+[278] Extra text: '5'  (final words (9033, 9034))
+[279] Extra text: 'production.10Saskatchewan, New Industry Standards Next Step in Prairie Resilience Climate Change Strategy, News Release (August 29, 2018) available at https://www.saskatchewan.ca/government/news-and-media/2018/august/29/prairie-resilience-climate-strategy.7:26Electricity ProducersLarge'  (final words (9052, 9073))
+[280] Extra text: 'Regulations.1Chapter M-2.01, Reg 1.'  (final words (9094, 9098))
+[281] Extra text: 'regulated emitter'  (final words (9099, 9101))
+[282] Extra text: '(IPPs).2Section 2.'  (final words (9129, 9131))
+[283] Extra text: 'returns3Section 7.'  (final words (9172, 9174))
+[284] Extra text: 'regulations.4Appendix, Part 3.'  (final words (9192, 9195))
+[285] Extra text: '2029.5Part 4.'  (final words (9211, 9213))
+[286] Extra text: '50'  (final words (9221, 9222))
+[287] Extra text: '40'  (final words (9234, 9235))
+[288] Extra text: 'levels.6Saskatchewan, Saskatchewan Energy and Climate Change Plan 2007, at p. 6.ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:27The'  (final words (9240, 9259))
+[289] Extra text: 'FundThe'  (final words (9261, 9262))
+[290] Extra text: 'to'  (final words (9275, 9276))
+[291] Extra text: 'gases.1Section 23.1(2)(a).'  (final words (9289, 9291))
+[292] Extra text: 'administered.2Section 23.2.'  (final words (9319, 9321))
+[293] Extra text: 'assessed.3Section 23.3.ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:28Administrative,'  (final words (9339, 9349))
+[294] Extra text: 'EnforcementPart'  (final words (9351, 9352))
+[295] Extra text: 'records.ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:29Administrative,'  (final words (9385, 9394))
+[296] Extra text: 'EnforcementOffences'  (final words (9396, 9397))
+[297] Extra text: 'PenaltiesAs'  (final words (9399, 9400))
+[298] Extra text: '1'  (final words (9442, 9443))
+[299] Extra text: 'codes.1Section 75(1).'  (final words (9509, 9511))
+[300] Extra text: 'prosecution.2Section 75(3).'  (final words (9554, 9556))
+[301] Extra text: 'offence.3Section 75(4)(a).'  (final words (9593, 9595))
+[302] Extra text: 'Queens'  (final words (9628, 9629))
+[303] Extra text: 'Ministers'  (final words (9638, 9639))
+[304] Extra text: 'penalty.4Section 79.One'  (final words (9643, 9645))
+[305] Extra text: '2019.5Government of Saskatchewan, Methane Action Plan (January 2019), online at: https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/methane-action-plan::textReleased20in20January2020192C20the,upstream20oil20and20gas20industry.'  (final words (9661, 9672))
+[306] Extra text: 'provinces'  (final words (9682, 9683))
+[307] Extra text: '2025.6Government of Saskatchewan Methane Action Plan, online: https://publications.saskatchewan.ca/api/v1/products/92902/formats/109981/download.'  (final words (9703, 9711))
+[308] Extra text: 'flaring.7Government of Saskatchewan, Prairie Resilience, online: https://publications.saskatchewan.ca/api/v1/products/92902/formats/109981/download.The'  (final words (9812, 9819))
+[309] Extra text: '10'  (final words (9875, 9876))
+[310] Extra text: '2030.8Government of Saskatchewan, Prairie Resilience, online: https://publications.saskatchewan.ca/api/v1/products/91091/formats/107966/download.In'  (final words (9877, 9884))
+[311] Extra text: '2.3'  (final words (9927, 9928))
+[312] Extra text: 'equivalent.9Government of Saskatchewan, Output-Based Performance Standards (19 January 2022), online: https://www.saskatchewan.ca/government/news-and-media/2022/january/19/saskatchewan-expands-obps-to-protect-additional-sectors-from-the-federally-imposed-carbon-tax.Following'  (final words (9958, 9969))
+[313] Extra text: '50'  (final words (9995, 9996))
+[314] Extra text: 'year.10Government of Saskatchewan, First Annual Oil and Gas Emissions Report (20 December 2021), online: https://www.saskatchewan.ca/government/news-and-media/2021/december/20/saskatchewan-releases-first-annual-oil-and-gas-emissions-report.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment2Supplementary InitiativesENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:30Renewable FuelsIn'  (final words (10013, 10044))
+[315] Extra text: 'Saskatchewan.1Ministry of Industry and Resources, Greenprint on Ethanol Production in Saskatchewan (Saskatchewan Industry and Resources, April 2002).'  (final words (10057, 10074))
+[316] Extra text: 'Saskatchewans'  (final words (10104, 10105))
+[317] Extra text: 'Saskatchewans'  (final words (10118, 10119))
+[318] Extra text: '30'  (final words (10145, 10146))
+[319] Extra text: 'gasoline.2Ministry of Industry and Resources, Greenprint on Ethanol Production in Saskatchewan (Saskatchewan Industry and Resources, April 2002), at p. 3.At'  (final words (10151, 10171))
+[320] Extra text: 'Saskatchewans'  (final words (10173, 10174))
+[321] Extra text: '272.8'  (final words (10266, 10267))
+[322] Extra text: 'investment.3Ministry of Industry and Resources, Greenprint on Ethanol Production in Saskatchewan (Saskatchewan Industry and Resources, April 2002), at p. 8.Apart'  (final words (10270, 10290))
+[323] Extra text: 'sunflowers.4Ministry of Industry and Resources, Greenprint on Ethanol Production in Saskatchewan (Saskatchewan Industry and Resources, April 2002), at p. 10.Building'  (final words (10321, 10341))
+[324] Extra text: 'Act.5S.S. 2002, c. E-11.1 (in force July 15, 2002).'  (final words (10351, 10360))
+[325] Extra text: 'Regulations,6R.R.S., c. E-11.1, Reg. 1 (in force October 24, 2002), as amended by Saskatchewan Regulations 115/2002, 11/2004, 41/2004, 113/2005, 58/2006, 111/2006, 1/2015 and 27/2020.'  (final words (10369, 10393))
+[326] Extra text: '1.0'  (final words (10428, 10429))
+[327] Extra text: '2007.7R.R.S., c. E-11.1, Reg. 1, s. 5(1).'  (final words (10441, 10448))
+[328] Extra text: '7.5'  (final words (10451, 10452))
+[329] Extra text: 'fuel.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:31Renewable EnergyNuclear EnergyIn'  (final words (10465, 10475))
+[330] Extra text: 'worlds'  (final words (10503, 10504))
+[331] Extra text: '2009.1Capturing the Full Potential of the Uranium Value Chain in Saskatchewan (March 31, 2009), available at www.leaderpost.com/pdf/udp_final_report.pdf.The'  (final words (10540, 10557))
+[332] Extra text: 'generation.2Capturing the Full Potential of the Uranium Value Chain in Saskatchewan (March 31, 2009), available at www.leaderpost.com/pdf/udp_final_report.pdf, at p. 7.'  (final words (10567, 10587))
+[333] Extra text: 'Saskatchewans'  (final words (10651, 10652))
+[334] Extra text: 'electricity.2.50Government of Canada, Provincial and Territorial Energy Profiles  Saskatchewan (28 July 2022), online: https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/provincial-territorial-energy-profiles/provincial-territorial-energy-profiles-saskatchewan.html.As'  (final words (10665, 10679))
+[335] Extra text: 'issue.3Sylvia Fedoruk Canadian Centre for Nuclear Innovation, Who do you trust? University of Saskatchewan survey looks at nuclear perceptions, News Release (May 14, 2014), available at https://news.usask.ca/media-release-pages/2014/who-do-you-trust-u-of-s-survey-looks-at-nuclear-perceptions.php.In'  (final words (10741, 10768))
+[336] Extra text: 'Canada.4Canadian Nuclear Association, SMR Roadmap, available at https://smrroadmap.ca (accessed October, 2019).'  (final words (10791, 10802))
+[337] Extra text: 'Saskatchewans'  (final words (10812, 10813))
+[338] Extra text: 'coal.5David Baxter, Saskatchewan Giving Early Consideration to Small Nuclear Reactors, Global News (May 16, 2019), online: https://globalnews.ca/news/5286649/saskatchewan-small-nuclear-reactors/.Pursuant'  (final words (10835, 10852))
+[339] Extra text: 'emissions.6Jennifer Francis, Green Party leaders urge Sask. government to half small modular reactor plans, CBC News (May 9, 2022), online: https://www.cbc.ca/news/canada/saskatchewan/green-party-leaders-urge-sask-to-government-to-halt-snrs-1.6447250.This'  (final words (10881, 10902))
+[340] Extra text: 'Saskatchewan.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessmentENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:32Renewable EnergyWind PowerWind'  (final words (10935, 10953))
+[341] Extra text: '40'  (final words (10965, 10966))
+[342] Extra text: '16.'  (final words (10981, 10982))
+[343] Extra text: '3'  (final words (10993, 10994))
+[344] Extra text: 'provinces'  (final words (10996, 10997))
+[345] Extra text: 'Canadas'  (final words (11014, 11015))
+[346] Extra text: 'MW).1SaskPower, System Map, online: https://www.saskpower.com/our-power-future/our-electricity/electrical-system/system-map.'  (final words (11051, 11056))
+[347] Extra text: 'SaskPower.2SaskPower Annual Report, p. 10.'  (final words (11073, 11078))
+[348] Extra text: 'homes.3SaskPower, Golden South Wind Facility, online: https://www.saskpower.com/Our-Power-Future/Our-Electricity/Electrical-System/System-Map/Golden-South-Wind-Facility.'  (final words (11130, 11137))
+[349] Extra text: 'SaskPower.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:33Renewable EnergySolar EnergyAs'  (final words (11161, 11171))
+[350] Extra text: 'provinces'  (final words (11174, 11175))
+[351] Extra text: '50'  (final words (11189, 11190))
+[352] Extra text: 'provinces'  (final words (11192, 11193))
+[353] Extra text: 'infrastructure.2021'  (final words (11218, 11219))
+[354] Extra text: 'provinces'  (final words (11227, 11228))
+[355] Extra text: 'homes.1SaskPower, Highfield Solar Facility, online: https://www.saskpower.com/Our-Power-Future/Our-Electricity/Electrical-System/System-Map/Highfield-Solar-Facility.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:34Renewable EnergyNet'  (final words (11259, 11273))
+[356] Extra text: 'ProgramThrough'  (final words (11274, 11275))
+[357] Extra text: 'utilitys'  (final words (11307, 11308))
+[358] Extra text: '20'  (final words (11320, 11321))
+[359] Extra text: '100,000'  (final words (11324, 11325))
+[360] Extra text: 'costs.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:35Energy EfficiencySaskatchewan'  (final words (11327, 11336))
+[361] Extra text: 'efficiency.In'  (final words (11354, 11355))
+[362] Extra text: '7:11,'  (final words (11363, 11364))
+[363] Extra text: '50'  (final words (11386, 11387))
+[364] Extra text: '50'  (final words (11407, 11408))
+[365] Extra text: 'systems.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:36Energy EfficiencyEnergy EfficiencyPrograms'  (final words (11436, 11446))
+[366] Extra text: 'OwnersThe'  (final words (11450, 11451))
+[367] Extra text: 'provinces'  (final words (11471, 11472))
+[368] Extra text: 'renewed.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:37TransportationPrairie'  (final words (11483, 11491))
+[369] Extra text: '14'  (final words (11508, 11509))
+[370] Extra text: 'provinces'  (final words (11511, 11512))
+[371] Extra text: 'following:1Saskatchewan, Saskatchewan Energy and Climate Change Plan 2007, at p. 7.Monitor'  (final words (11524, 11535))
+[372] Extra text: 'redesign.Create'  (final words (11555, 11556))
+[373] Extra text: 'efficiency.Increase'  (final words (11568, 11569))
+[374] Extra text: 'usage.Evaluate'  (final words (11581, 11582))
+[375] Extra text: 'opportunities.Continue'  (final words (11588, 11589))
+[376] Extra text: 'systems.Expand'  (final words (11605, 11606))
+[377] Extra text: 'hauling.Facilitate'  (final words (11616, 11617))
+[378] Extra text: 'idling.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:38TransportationAnti-IdlingThe'  (final words (11628, 11636))
+[379] Extra text: 'offices.In'  (final words (11701, 11702))
+[380] Extra text: 'efficiency.1See Saskatchewan Ministry of Environment website, at https://www.saskatchewan.ca/environmentutm_campaignq2_2015utm_mediumshortutm_source2Fenvironment.3Carbon SequestrationENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:39IntroductionSequestration'  (final words (11735, 11752))
+[381] Extra text: 'Saskatchewans'  (final words (11829, 11830))
+[382] Extra text: 'sector.ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:40Biotic'  (final words (11844, 11853))
+[383] Extra text: 'SequestrationOpportunities'  (final words (11854, 11855))
+[384] Extra text: 'sectors.Prairie'  (final words (11869, 11870))
+[385] Extra text: '(PARC)'  (final words (11873, 11874))
+[386] Extra text: 'research,1Mark Johnston, Ph.D., The Carbon Sink Potential in Saskatchewan: Report of an Expert Workshop held at Prairie Adaptation Research Collaborative (Regina, Sask.: March 25-26, 2002).'  (final words (11901, 11926))
+[387] Extra text: 'adoption.Under'  (final words (12008, 12009))
+[388] Extra text: '(GERT)'  (final words (12039, 12040))
+[389] Extra text: '6'  (final words (12082, 12083))
+[390] Extra text: 'project.2Tony C. Lemprire, Mark Johnston, Al Willcocks, Bryan Bogdanski, Deb Bisson, Mike Apps, and Oliver Bussler, Saskatchewan Forest Carbon Sequestration Project (2002), 78 Forestry Chronicle 843, at p. 843.'  (final words (12166, 12195))
+[391] Extra text: 'Saskatchewan.3Saskatchewan Ministry of the Environment, 2017 State of the Environment Report (2017), at 33, available at https://www.saskatchewan.ca/residents/environment-public-health-and-safety/state-of-the-environment/about-the-report1.ENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:41Carbon'  (final words (12203, 12228))
+[392] Extra text: 'StorageSaskatchewan,'  (final words (12230, 12231))
+[393] Extra text: 'fuel.)In'  (final words (12306, 12307))
+[394] Extra text: 'Saskatchewan.1Whitecap Resources Inc., Weyburn Unit, available at https://www.wcap.ca/operations/core-operating-areas/weyburn-unit.html (accessed October 2019).'  (final words (12322, 12333))
+[395] Extra text: 'Unit.1.50Whitecap Resources: A Responsible Energy Story, online: https://www.wcap.ca/sustainability/co2-sequestration.'  (final words (12345, 12353))
+[396] Extra text: 'stored.2Natural Resources Canada, International Energy Agency Greenhouse Gas Weyburn-Midale CO2 Monitoring and Storage Project, available at https://www.nrcan.gc.ca/energy/publications/16459 (accessed October 2019).In'  (final words (12365, 12385))
+[397] Extra text: '1.5'  (final words (12396, 12397))
+[398] Extra text: 'Saskatchewans'  (final words (12436, 12437))
+[399] Extra text: 'coal.3Saskatchewan, Saskatchewan-based Partnership Developing World-Leading Clean Coal Technology, News Release (July 6, 2006), available at https://www.saskatchewan.ca/government/news-and-media/2006/august/17/saskatchewanbased-partnership-developing-worldleading-clean-coal-technology:~:textSASKATCHEWAN2DBASED20PARTNERSHIP20DEVELOPING20WORLD2DLEADING20CLEAN20COAL20TECHNOLOGY,-Released20on20AugusttextBabcock202620Wilcox20Canada20(B26W20Canada,emissions20coal2Dfired20power20plant.'  (final words (12442, 12458))
+[400] Extra text: '3.8'  (final words (12467, 12468))
+[401] Extra text: '2007.In'  (final words (12478, 12479))
+[402] Extra text: 'worlds'  (final words (12498, 12499))
+[403] Extra text: 'recovery.4SaskPower, Powering Saskatchewan to a cleaner Energy Future: 2016-2017 Annual Report, at 35, available at https://www.saskpower.com/about-us/Our-Company/Current-Reports/Past-Annual-Reports (accessed August 2017).'  (final words (12540, 12559))
+[404] Extra text: 'expectations.The'  (final words (12582, 12583))
+[405] Extra text: 'purposes.5SaskPower, Powering Saskatchewan to a cleaner Energy Future: 2016-2017 Annual Report, at 35, available at https://www.saskpower.com/about-us/Our-Company/Current-Reports/Past-Annual-Reports (accessed August 2017).4Agriculture;'  (final words (12637, 12656))
+[406] Extra text: 'Pricing7:42AgriculturePrairie'  (final words (12661, 12662))
+[407] Extra text: 'GHGs.1Saskatchewan, Saskatchewan Energy and Climate Change Plan 2007, at p. 4.'  (final words (12683, 12694))
+[408] Extra text: '25'  (final words (12750, 12751))
+[409] Extra text: 'Saskatchewans'  (final words (12752, 12753))
+[410] Extra text: '2025.2Government of Saskatchewan, Saskatchewans Climate Resilience Measurement Framework (December 2017), available at https://www.saskatchewan.ca/business/environmental-protection-and-sustainability/a-made-in-saskatchewan-climate-change-strategy/climate-resilience-framework-and-reports (accessed October 2019).7:43Natural SystemsPrairie'  (final words (12760, 12777))
+[411] Extra text: 'including:1Saskatchewan, Saskatchewan Energy and Climate Change Plan 2007, at pp. 4 and 5.Ensure'  (final words (12813, 12826))
+[412] Extra text: 'preparedness.Maintain'  (final words (12858, 12859))
+[413] Extra text: 'biodiversity.Increase'  (final words (12880, 12881))
+[414] Extra text: 'supplies.Advance'  (final words (12907, 12908))
+[415] Extra text: 'Saskatchewans'  (final words (12911, 12912))
+[416] Extra text: 'operations.Continue'  (final words (12936, 12937))
+[417] Extra text: 'Saskatchewans'  (final words (12939, 12940))
+[418] Extra text: 'flood.Advance'  (final words (12966, 12967))
+[419] Extra text: 'areas.Continue'  (final words (12986, 12987))
+[420] Extra text: 'infrastructure.The'  (final words (12999, 13000))
+[421] Extra text: 'commitments.7:44Community PreparednessPrairie'  (final words (13037, 13039))
+[422] Extra text: 'Mtis,'  (final words (13069, 13070))
+[423] Extra text: 'resiliency:1Saskatchewan, Saskatchewan Energy and Climate Change Plan 2007, at p. 9.Examine'  (final words (13102, 13113))
+[424] Extra text: 'events.Encourage'  (final words (13129, 13130))
+[425] Extra text: 'websites.Maintain'  (final words (13150, 13151))
+[426] Extra text: 'Mtis'  (final words (13158, 13159))
+[427] Extra text: 'knowledge.Encourage'  (final words (13176, 13177))
+[428] Extra text: 'events.Encourage'  (final words (13191, 13192))
+[429] Extra text: 'funding.Promote'  (final words (13204, 13205))
+[430] Extra text: 'programs.7:45Carbon PricingPrairie'  (final words (13244, 13246))
+[431] Extra text: 'Saskatchewans'  (final words (13279, 13280))
+[432] Extra text: 'sectors.1Saskatchewan, Saskatchewan Energy and Climate Change Plan 2007, at p. 1.'  (final words (13288, 13299))
+[433] Extra text: 'Act.2S.C. 2018, c. 12.BThe'  (final words (13354, 13358))
+[434] Extra text: 'RegulationsENV.III.2.e Environmental lawStatutory protection of environmentApprovals, licences and ordersAir7:46GenerallyThe'  (final words (13363, 13372))
+[435] Extra text: 'Regulations1Chapter O-2, Reg. 7, as amended by Saskatchewan Regulations 8/2020 and 107/2020.'  (final words (13377, 13389))
+[436] Extra text: 'Act.2R.S.S. 1978, c. O-2, as amended by the Statutes of Saskatchewan, 1982-83, c.1; 1983, c.54; 1988-89, c.31; 1989-90, c.54; 1990-91, c.39; 1993, c.35; 1998, c.30; 2000, c.50; 2001, c.26; 2003, c.29; 2007, c.7; 2010, c.E-9.22; 2011, c.11; 2014, c.E-13.1 and c.21; 2015, c.21; 2017, c.21; 2018, c.42; and 2019, c.14.'  (final words (13406, 13456))
+[437] Extra text: 'year.3Section 3.'  (final words (13479, 13481))
+[438] Extra text: 'facilities.4Section 8.'  (final words (13487, 13489))
+[439] Extra text: 'Minister.5Part 4.'  (final words (13508, 13510))
+[440] Extra text: '50'  (final words (13529, 13530))
+[441] Extra text: '2030.6Section 10(2) and Table 3.'  (final words (13536, 13541))
+[442] Extra text: 'qualified'  (final words (13564, 13565))
+[443] Extra text: 'project.7Part 5.The'  (final words (13566, 13568))
+[444] Extra text: '40-45'  (final words (13598, 13599))
+[445] Extra text: '10'  (final words (13622, 13623))
+[446] Extra text: '15'  (final words (13632, 13633))
+[447] Extra text: 'sector.8Environment and Climate Change Canada, Canadas Second Biennial Report on Climate Change, at 38, available at https://www.canada.ca/en/environment-climate-change/services/climate-change/greenhouse-gas-emissions/second-biennial-report.html.VIFuture'  (final words (13639, 13656))
+[448] Extra text: 'LinkagesENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:47Future'  (final words (13665, 13673))
+[449] Extra text: 'PolicyThe'  (final words (13678, 13679))
+[450] Extra text: 'Saskatchewans'  (final words (13721, 13722))
+[451] Extra text: 'have'  (final words (13726, 13727))
+[452] Extra text: 'have-not'  (final words (13730, 13731))
+[453] Extra text: 'changeseconomic'  (final words (13769, 13770))
+[454] Extra text: 'attitudinalshould'  (final words (13771, 13772))
+[455] Extra text: 'Alberta.It'  (final words (13817, 13818))
+[456] Extra text: 'well'  (final words (13857, 13858))
+[457] Extra text: 'Accord.12nd Sess., 26th Leg., Saskatchewan, 2009 at p. 1.ENV.III.1.b Environmental lawStatutory protection of environmentEnvironmental assessmentProvincial assessment7:48Regional'  (final words (13885, 13901))
+[458] Extra text: 'LinkagesSaskatchewans'  (final words (13903, 13904))
+[459] Extra text: 'appealed.1Reference re Greenhouse Gas Pollution Pricing Act, 2019 SKCA 40 (Sask. C.A.).'  (final words (13998, 14010))
+[460] Extra text: 'issues.VIIConclusion7:49Concluding RemarksApart'  (final words (14032, 14034))
+[461] Extra text: 'Canadas'  (final words (14046, 14047))
+[462] Extra text: 'Saskatchewans new economy'  (final words (14078, 14081))
+[463] Extra text: 'intensive.In'  (final words (14088, 14089))
+[464] Extra text: '32'  (final words (14102, 14103))
+[465] Extra text: 'Made'  (final words (14175, 14176))
+[466] Extra text: 'Saskatchewan'  (final words (14177, 14178))
+
+---- SUMMARY ----
+⚠️  ACTION NEEDED: 472 segment(s) (3319 words) of unchanged content were dropped from the final XML.

@@ -9,9 +9,17 @@ __pycache__/
 *.spec
 
 # Local output folders
-finaloutputs/
 pipeline_jobs/
 pipeline_output/
+
+# finaloutputs: keep the code package (imported at runtime), drop generated data
+finaloutputs/*
+!finaloutputs/__init__.py
+!finaloutputs/chapter_section.py
+
+# Dead code and standalone tools are not needed in the deployed image
+legacy/
+tools/
 
 # Docker/compose files
 Dockerfile
@@ -26,6 +34,14 @@ docker-compose.yml
 .vscode/
 .idea/
 
-# Docs/prompts
+# Docs
 *.md
 validation_prompts/
+
+# Re-include runtime prompts (section_insertion.py loads prompts/ at runtime)
+!prompts
+!prompts/**
+
+# Tests and dev requirements are not needed in the deployed image
+tests/
+requirements-dev.txt

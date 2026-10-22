@@ -1,0 +1,32 @@
+You are analyzing a legal document update where section headings have changed.
+
+{{diff_context}}
+
+**Current XML block in the file:**
+{{original_block}}
+
+**Analysis Task:**
+Compare the old paragraph text with the new paragraph text to determine what changed. The change can be:
+1. **Designator change** – the section number changed (e.g., "7:2" → "7:4")
+2. **Name change** – the section name/title changed (e.g., "Improper Restoration of an Antique Car" → "An Automobile Collision")
+3. **Both** – both designator and name changed
+
+**Rules:**
+- If the designator NUMBER changed (the part after the colon), update ONLY the number inside the <designator> tag and add date.trace="1" attribute.
+  Example: <designator date.updated="0" date.trace="1">4:3</designator>
+- If the section NAME changed, update ONLY the text inside the <name> tag and add date.trace="1" attribute to the <name> tag.
+  Example: <name date.updated="0" date.trace="1">New Section Name</name>
+- If BOTH changed, update both tags accordingly, adding date.trace="1" to each changed tag.
+- Keep all existing XML attributes, tags (like <sep/>), and formatting exactly the same for parts that did NOT change.
+- Do NOT put name/title text inside the designator tag.
+
+**Your task:**
+Return the correct find/replace XML block.
+
+Return ONLY a JSON response in this exact format:
+{
+    "find": "<the exact XML block to find>",
+    "replace": "<the exact XML block with correct updates>"
+}
+
+Do not include any other text, explanation, or markdown formatting.

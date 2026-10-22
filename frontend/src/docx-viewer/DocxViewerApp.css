@@ -1,0 +1,864 @@
+/* Layout for the DOCX Viewer V2. This file is loaded ONLY inside the isolated
+   iframe document (via main.tsx), so it never mixes with the host app's CSS.
+   The global reset + body/background live in standalone.css. Kept identical to
+   the original docx-viewer-v2 App.css so the look matches the standalone. */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+  background: #181825;
+  border-bottom: 1px solid #313244;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.app-header h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #89b4fa;
+  white-space: nowrap;
+}
+
+.app-header .file-upload-bar {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* ─── Viewer Mode Toggle ──────────────────────────────────────────── */
+
+.viewer-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  background: #11111b;
+  border-radius: 8px;
+  padding: 3px;
+  border: 1px solid #313244;
+}
+
+.viewer-mode-toggle .mode-option {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #6c7086;
+  transition: all 0.2s ease;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.viewer-mode-toggle .mode-option input[type="checkbox"] {
+  display: none;
+}
+
+.viewer-mode-toggle .mode-option.active {
+  background: #313244;
+  color: #89b4fa;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.viewer-mode-toggle .mode-option:hover:not(.active) {
+  color: #a6adc8;
+  background: #1e1e2e;
+}
+
+.error-bar {
+  padding: 8px 20px;
+  background: #f38ba822;
+  color: #f38ba8;
+  font-size: 13px;
+  border-bottom: 1px solid #f38ba844;
+}
+
+.file-readiness-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 20px;
+  background: #1e1e2e;
+  border-bottom: 1px solid #45475a;
+  font-size: 13px;
+}
+.file-readiness-banner .readiness-title {
+  color: #f9e2af;
+  font-weight: 600;
+  margin-right: 4px;
+}
+.file-readiness-banner .readiness-item {
+  color: #a6adc8;
+}
+.file-readiness-banner .readiness-item.ready {
+  color: #a6e3a1;
+}
+
+[data-theme="light"] .file-readiness-banner {
+  background: #fffbeb;
+  border-bottom: 1px solid #fde68a;
+}
+[data-theme="light"] .file-readiness-banner .readiness-title {
+  color: #92400e;
+}
+[data-theme="light"] .file-readiness-banner .readiness-item {
+  color: #6b7280;
+}
+[data-theme="light"] .file-readiness-banner .readiness-item.ready {
+  color: #059669;
+}
+
+.panels-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.panel {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-left {
+  width: 320px;
+  min-width: 220px;
+  flex-shrink: 0;
+  border-right: none;
+  position: relative;
+}
+/* Left (Revisions) hide button sits top-right of the panel. */
+.panel-collapse-btn.left { left: auto; right: 10px; }
+
+.panel-resize-handle {
+  width: 5px;
+  cursor: col-resize;
+  background: #313244;
+  transition: background 0.15s ease;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.panel-resize-handle:hover,
+.panel-resize-handle:active {
+  background: #89b4fa;
+}
+
+.panel-center {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+}
+
+/* Floating "hide this panel" control (Document panel). */
+.panel-collapse-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 5;
+  padding: 3px 10px;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  background: #313244;
+  color: #cdd6f4;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.85;
+}
+.panel-collapse-btn:hover { opacity: 1; background: #45475a; }
+[data-theme="light"] .panel-collapse-btn {
+  border: 1px solid #e0e0e0;
+  background: #f5f5f5;
+  color: #424242;
+}
+[data-theme="light"] .panel-collapse-btn:hover { background: #e0e0e0; }
+
+/* Flash a paragraph when Content Check jumps to it in the document */
+.para-flash {
+  animation: para-flash-kf 2.2s ease-out;
+  border-radius: 4px;
+}
+@keyframes para-flash-kf {
+  0%, 30% { background: #f9e2af55; box-shadow: 0 0 0 3px #f9e2af55; }
+  100% { background: transparent; box-shadow: none; }
+}
+[data-theme="light"] .para-flash {
+  animation: para-flash-kf-light 2.2s ease-out;
+}
+@keyframes para-flash-kf-light {
+  0%, 30% { background: rgba(255,193,7,0.35); box-shadow: 0 0 0 3px rgba(255,193,7,0.35); }
+  100% { background: transparent; box-shadow: none; }
+}
+
+/* "Load a processed file" dropdown on the landing view */
+.load-job-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.load-job-row label { font-size: 13px; color: #a6adc8; font-weight: 600; }
+.load-job-select {
+  min-width: 320px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  border: 1px solid #45475a;
+  background: #181825;
+  color: #cdd6f4;
+  font-size: 13px;
+  cursor: pointer;
+}
+.load-job-select:disabled { opacity: 0.6; cursor: default; }
+[data-theme="light"] .load-job-row label { color: #616161; }
+[data-theme="light"] .load-job-select {
+  border: 1px solid #e0e0e0;
+  background: #ffffff;
+  color: #212121;
+}
+
+.panel-right {
+  width: 380px;
+  min-width: 280px;
+  flex-shrink: 0;
+  border-left: 1px solid #313244;
+  position: relative;
+}
+
+/* When the center (document) panel is collapsed, the PXML editor grows to fill. */
+.panel-right.grow {
+  flex: 1;
+  width: auto !important;
+  min-width: 320px;
+}
+
+/* Collapsed-panel rail — a thin clickable bar to re-expand a hidden panel. */
+.panel-rail {
+  width: 30px;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: #181825;
+  border-right: 1px solid #313244;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #89b4fa;
+  font-size: 11px;
+  font-weight: 600;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 1px;
+  transition: background 0.15s ease;
+}
+.panel-rail:hover { background: #313244; color: #cdd6f4; }
+
+/* Header panel-collapse toggle group */
+.panel-collapse-toggle { display: flex; gap: 4px; }
+.btn-panel-toggle {
+  padding: 4px 10px;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  background: #313244;
+  color: #cdd6f4;
+  font-size: 11px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-panel-toggle:hover { background: #45475a; }
+.btn-panel-toggle.off { background: transparent; color: #6c7086; }
+
+[data-theme="light"] .panel-rail {
+  background: #f5f5f5;
+  border-right: 1px solid #e0e0e0;
+  color: #1565c0;
+}
+[data-theme="light"] .panel-rail:hover { background: #e3f2fd; color: #0d47a1; }
+[data-theme="light"] .btn-panel-toggle {
+  border: 1px solid #e0e0e0;
+  background: #f5f5f5;
+  color: #424242;
+}
+[data-theme="light"] .btn-panel-toggle:hover { background: #e0e0e0; }
+[data-theme="light"] .btn-panel-toggle.off { background: transparent; color: #9e9e9e; }
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #11111b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313244;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #45475a;
+}
+
+/* ─── Session Indicator & Back Button ─────────────────────────────── */
+
+.session-indicator {
+  font-size: 11px;
+  color: #a6e3a1;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #a6e3a111;
+  white-space: nowrap;
+}
+
+.btn-sessions {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  background: #313244;
+  color: #cdd6f4;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin-left: 4px;
+}
+
+.btn-sessions:hover {
+  background: #45475a;
+  border-color: #89b4fa;
+}
+
+/* ─── Recent Sessions View ────────────────────────────────────────── */
+
+.recent-sessions-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  overflow-y: auto;
+  background: #11111b;
+}
+
+.sessions-intro {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.sessions-intro h2 {
+  font-size: 22px;
+  color: #cdd6f4;
+  margin-bottom: 8px;
+}
+
+.sessions-intro p {
+  font-size: 14px;
+  color: #6c7086;
+}
+
+.sessions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.session-card {
+  background: #1e1e2e;
+  border: 1px solid #313244;
+  border-radius: 10px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.session-card:hover {
+  border-color: #89b4fa;
+  background: #181825;
+  box-shadow: 0 4px 16px rgba(137, 180, 250, 0.1);
+  transform: translateY(-2px);
+}
+
+.session-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.session-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #cdd6f4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.session-progress {
+  font-size: 13px;
+  font-weight: 700;
+  color: #a6e3a1;
+  background: #a6e3a122;
+  padding: 2px 10px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.session-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #6c7086;
+}
+
+.session-card-footer {
+  border-top: 1px solid #313244;
+  padding-top: 8px;
+}
+
+.session-date {
+  font-size: 11px;
+  color: #585b70;
+}
+
+.no-sessions {
+  text-align: center;
+  color: #6c7086;
+  padding: 40px 20px;
+}
+
+.no-sessions p {
+  font-size: 14px;
+}
+
+/* ─── Theme Toggle ────────────────────────────────────────────────── */
+
+.btn-theme-toggle {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  background: #313244;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-theme-toggle:hover {
+  background: #45475a;
+  border-color: #89b4fa;
+}
+
+/* ─── Light Theme Overrides ───────────────────────────────────────── */
+
+[data-theme="light"] body,
+[data-theme="light"] #docx-viewer-root {
+  background: #f5f5f5;
+  color: #1e1e1e;
+}
+
+[data-theme="light"] .app-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+[data-theme="light"] .app-header h1 {
+  color: #1565c0;
+}
+
+[data-theme="light"] .panels-container {
+  background: #f5f5f5;
+}
+
+[data-theme="light"] .panel-left {
+  background: #ffffff;
+}
+
+[data-theme="light"] .panel-resize-handle {
+  background: #e0e0e0;
+}
+
+[data-theme="light"] .panel-resize-handle:hover,
+[data-theme="light"] .panel-resize-handle:active {
+  background: #1565c0;
+}
+
+[data-theme="light"] .panel-right {
+  border-left: 1px solid #e0e0e0;
+}
+
+[data-theme="light"] .panel-center {
+  background: #fafafa;
+}
+
+[data-theme="light"] .error-bar {
+  background: #fce4ec;
+  color: #c62828;
+  border-bottom: 1px solid #ef9a9a;
+}
+
+[data-theme="light"] .viewer-mode-toggle {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+}
+
+[data-theme="light"] .viewer-mode-toggle .mode-option {
+  color: #757575;
+}
+
+[data-theme="light"] .viewer-mode-toggle .mode-option.active {
+  background: #e3f2fd;
+  color: #1565c0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+[data-theme="light"] .viewer-mode-toggle .mode-option:hover:not(.active) {
+  color: #424242;
+  background: #eeeeee;
+}
+
+[data-theme="light"] .session-indicator {
+  color: #2e7d32;
+  background: #e8f5e9;
+}
+
+[data-theme="light"] .btn-sessions {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  color: #424242;
+}
+
+[data-theme="light"] .btn-sessions:hover {
+  background: #e0e0e0;
+  border-color: #1565c0;
+}
+
+[data-theme="light"] .btn-theme-toggle {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  color: #424242;
+}
+
+[data-theme="light"] .btn-theme-toggle:hover {
+  background: #e0e0e0;
+  border-color: #1565c0;
+}
+
+[data-theme="light"] .recent-sessions-view {
+  background: #f5f5f5;
+}
+
+[data-theme="light"] .sessions-intro h2 {
+  color: #1e1e1e;
+}
+
+[data-theme="light"] .sessions-intro p {
+  color: #757575;
+}
+
+[data-theme="light"] .session-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+[data-theme="light"] .session-card:hover {
+  border-color: #1565c0;
+  background: #f5f5f5;
+  box-shadow: 0 4px 16px rgba(21, 101, 192, 0.1);
+}
+
+[data-theme="light"] .session-name {
+  color: #1e1e1e;
+}
+
+[data-theme="light"] .session-progress {
+  color: #2e7d32;
+  background: #e8f5e9;
+}
+
+[data-theme="light"] .session-card-meta {
+  color: #757575;
+}
+
+[data-theme="light"] .session-card-footer {
+  border-top: 1px solid #e0e0e0;
+}
+
+[data-theme="light"] .session-date {
+  color: #9e9e9e;
+}
+
+/* Scrollbar in light mode */
+[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: #9e9e9e;
+}
+
+/* ─── Draft — Failed Revisions button + panel ──────────────────────── */
+/* Tab bar at the top of the left pane — switches between the Revisions navigator
+   and the Draft (Failed Revisions) list, both inside this one pane. */
+.left-tabs {
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+  padding: 6px 8px 0;
+  background: #181825;
+  border-bottom: 1px solid #313244;
+  flex-shrink: 0;
+}
+
+.left-tab {
+  padding: 6px 12px;
+  border: 1px solid #313244;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  background: transparent;
+  color: #a6adc8;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.left-tab:hover {
+  background: #313244;
+  color: #cdd6f4;
+}
+
+.left-tab.active {
+  background: #4a90d9;
+  border-color: #4a90d9;
+  color: #fff;
+}
+
+.left-tab-hide {
+  margin-left: auto;
+  align-self: center;
+  padding: 3px 10px;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  background: #313244;
+  color: #cdd6f4;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.85;
+}
+.left-tab-hide:hover { opacity: 1; background: #45475a; }
+
+[data-theme="light"] .left-tabs {
+  background: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+}
+[data-theme="light"] .left-tab {
+  border-color: #e0e0e0;
+  color: #616161;
+}
+[data-theme="light"] .left-tab:hover {
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+[data-theme="light"] .left-tab.active {
+  background: #1976d2;
+  border-color: #1976d2;
+  color: #fff;
+}
+[data-theme="light"] .left-tab-hide {
+  border: 1px solid #e0e0e0;
+  background: #f5f5f5;
+  color: #424242;
+}
+[data-theme="light"] .left-tab-hide:hover { background: #e0e0e0; }
+
+/* ─── Pop-out (second-monitor) support ─────────────────────────────── */
+
+/* "Pop out" control in the left panel's tab bar. */
+.left-tab-popout {
+  margin-left: auto;        /* push pop-out (and the Hide button) to the right */
+  align-self: center;
+  padding: 3px 10px;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  background: #313244;
+  color: #89b4fa;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.left-tab-popout:hover { opacity: 1; background: #45475a; }
+/* With the pop-out button present it owns the auto margin; Hide just trails it. */
+.left-tab-popout + .left-tab-hide { margin-left: 6px; }
+[data-theme="light"] .left-tab-popout {
+  border: 1px solid #e0e0e0;
+  background: #f5f5f5;
+  color: #1565c0;
+}
+[data-theme="light"] .left-tab-popout:hover { background: #e0e0e0; }
+
+/* Floating "Pop out" control on the Document / PXML panels. Mirrors
+   .panel-collapse-btn and sits just left of the Hide button. */
+.panel-popout-btn {
+  position: absolute;
+  top: 8px;
+  right: 72px;
+  z-index: 5;
+  padding: 3px 10px;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  background: #313244;
+  color: #89b4fa;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.85;
+}
+.panel-popout-btn:hover { opacity: 1; background: #45475a; }
+.panel-popout-btn.right { right: 10px; }   /* PXML panel has no Hide button */
+[data-theme="light"] .panel-popout-btn {
+  border: 1px solid #e0e0e0;
+  background: #f5f5f5;
+  color: #1565c0;
+}
+[data-theme="light"] .panel-popout-btn:hover { background: #e0e0e0; }
+
+/* Slim rail left behind when a panel is detached — click it to dock back. */
+.panel-rail-popped span { color: #89b4fa; }
+[data-theme="light"] .panel-rail-popped span { color: #1565c0; }
+
+/* Absorbs leftover width when every flexible panel has been popped out. */
+.panel-flex-spacer { flex: 1; }
+
+/* ─── Detached window (rendered inside the popped-out browser window) ── */
+.popout-body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.popout-panel {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.popout-titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 12px;
+  background: #1e1e2e;
+  border-bottom: 1px solid #313244;
+  flex-shrink: 0;
+}
+.popout-title { font-size: 13px; font-weight: 700; color: #cdd6f4; }
+.popout-dock-btn {
+  padding: 4px 12px;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  background: #313244;
+  color: #cdd6f4;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.popout-dock-btn:hover { background: #45475a; }
+.popout-content {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+[data-theme="light"] .popout-titlebar { background: #ffffff; border-bottom: 1px solid #e0e0e0; }
+[data-theme="light"] .popout-title { color: #212121; }
+[data-theme="light"] .popout-dock-btn {
+  border: 1px solid #e0e0e0;
+  background: #f5f5f5;
+  color: #424242;
+}
+[data-theme="light"] .popout-dock-btn:hover { background: #e0e0e0; }
+
+/* One-time tip shown on first pop-out. */
+.popout-tip {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1000;
+  max-width: 360px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  background: #1e1e2e;
+  border: 1px solid #45475a;
+  border-left: 4px solid #89b4fa;
+  border-radius: 8px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+  color: #cdd6f4;
+}
+.popout-tip-icon { font-size: 18px; line-height: 1.2; }
+.popout-tip-body { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; line-height: 1.45; }
+.popout-tip-body strong { font-size: 13px; }
+.popout-tip-close {
+  margin-left: 4px;
+  align-self: center;
+  padding: 5px 12px;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  background: #313244;
+  color: #cdd6f4;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.popout-tip-close:hover { background: #45475a; }
+[data-theme="light"] .popout-tip {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid #1565c0;
+  color: #212121;
+}
+[data-theme="light"] .popout-tip-close {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  color: #424242;
+}
+[data-theme="light"] .popout-tip-close:hover { background: #e0e0e0; }

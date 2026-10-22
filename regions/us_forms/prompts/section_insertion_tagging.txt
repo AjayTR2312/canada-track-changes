@@ -1,0 +1,48 @@
+{{base_prompt}}
+
+INPUT FOR THIS CONVERSION TASK:
+
+SAMPLE XML CONTEXT (for structural consistency with target file):
+{{xml_context}}
+
+PLAIN TEXT TO CONVERT:
+{{plain_text}}
+
+BULLET POINTS DETECTED (authoritative):
+{{bullet_points_block}}
+
+SECTION HEADER HINT: {{section_header_or_none}}
+SECTION DESIGNATOR HINT: {{designator_hint_or_none}}
+
+ADDITIONAL PIPELINE RULES:
+- This is for section insertion output expected as a <section>...</section> block.
+- OUTPUT CONTRACT (MANDATORY): Return exactly one root <section> element.
+- Output must start with <section and end with </section>.
+- Include <section.front> with designator and name from the hints above.
+- Put converted content inside <section.body>...</section.body>.
+- Prefer the US Forms instructions above for tagging decisions. Case citations use exactly the tag specified in the CASE CITATION RULES below for this document's DTD — never a tag declared only in a different DTD.
+- Preserve exact word order and punctuation from input text.
+
+FOOTNOTE MARKER ON THE SECTION HEADING (CRITICAL — apply every time this pattern appears,
+even across multiple new sections in the same batch that share it):
+- The heading/title line may end with a bracketed marker like "[FN1]" (e.g. "...Answer
+  (CV-165) [FN1]"). Its footnote CONTENT appears later, as its own line starting with the
+  same label (e.g. "FN1 JD-CV-165 Rev. 1-26").
+- The footnote MUST be embedded INLINE INSIDE THE <name> TAG (in <section.front>), placed
+  immediately after the title text that carried the reference — NOT as a separate note or
+  paragraph anywhere in <section.body>. Structure:
+  <name>Section title text<footnote><footnote.reference>1</footnote.reference><footnote.body><para><para.text>JD-CV-165 Rev. 1-26</para.text></para></footnote.body></footnote></name>
+- Drop the bracketed marker itself (e.g. "[FN1]") from the visible title text — it is
+  replaced by the <footnote> element, not left alongside it.
+- The footnote.reference number comes from the bracket ("[FN1]" -> 1, "[FN2]" -> 2), not
+  from the literal "FN" text.
+- Never drop this footnote, and never leave its body as a bare paragraph elsewhere in the
+  section instead of inline inside <name>.
+
+{{XML_ENTITY_RULES}}
+
+{{CASE_CITATION_RULES}}
+
+{{URL_TAGGING_RULES}}
+
+Return ONLY valid XML output for the converted content, with no explanation or markdown fences.

@@ -1,0 +1,24 @@
+
+            Please analyze the following track change and add appropriate XML tags based on the document structure visible in the provided images from page(s) {{page_numbers_display}} and the surrounding text context.
+
+            Here is the surrounding context from the document:
+            --- START OF CONTEXT BEFORE THE CHANGE(pre_context) ---
+            {{pre_context}}
+            --- END OF CONTEXT BEFORE THE CHANGE ---
+
+            <<<THE CHANGE TO BE TAGGED IS HERE>>>
+
+            --- START OF CONTEXT AFTER THE CHANGE(post_context) ---
+            {{post_context}}
+            --- END OF CONTEXT AFTER THE CHANGE ---
+
+            Track Change Text to be tagged: {{track_change_text}}
+            - Closely follow the surrounding context to check where the Track Change Text is getting added, for example:- if you find that the track change text is a part of a table from the surrounding text, add it as:-
+            <row><entry>Content</entry></row>
+            - If you find the pre_context endswith a closing tag(</tag_name>) and post_context beginning with a opening tag(<tag_name>), the Track Change Text to be tagged is most probably a new addition and have date.trace = "1" attribute after tag_name.
+            - Child tags like footnote.body,section.body,ref,para.text cannot have date.trace = "1" attribute.
+            - Inline inserts marked with <trace> tags can also have citations and other xml codings in them.EX:-<trace><cite type="periodical" normalpub="lr" reftext="&ldquo;Installment loans have increasingly replaced traditional payday loans in the short-term, small-dollar credit market.&rdquo; Carlie Malone, Paige Marta Skiba, Installment Loans">&ldquo;Installment loans have increasingly replaced traditional payday loans in the short-term, small-dollar credit market.&rdquo; Carlie Malone, Paige Marta Skiba, Installment Loans, 53 J. Legal Stud. 369 (2024)</cite>. See also</trace>
+            
+            Please return only the track change text with appropriate XML structural tags added. Maintain the original content but wrap it with proper XML tags based on the document's structure. Do not add any new content text, just add tags.
+            Below are the images for reference:
+            

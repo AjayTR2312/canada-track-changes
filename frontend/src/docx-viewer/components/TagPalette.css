@@ -1,0 +1,416 @@
+/* Positioned via inline style (top/left/width/max-height, computed in
+   TagPalette.tsx from the trigger button's real screen rect) and rendered
+   through a portal to document.body — this file only owns appearance, never
+   placement, so it can't be squeezed by the editor panel's own width again. */
+.tag-palette {
+  display: flex;
+  flex-direction: column;
+  background: #181825;
+  border: 1px solid #313244;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.tag-palette-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 8px 10px;
+  background: #11111b;
+  border-bottom: 1px solid #313244;
+}
+
+.tag-palette-context {
+  font-size: 11px;
+  color: #a6adc8;
+  line-height: 1.4;
+}
+
+.tag-palette-context code {
+  color: #89b4fa;
+  font-weight: 600;
+}
+
+.tag-palette-unscoped {
+  color: #f9e2af;
+}
+
+.tag-palette-hint {
+  color: #6c7086;
+  font-style: italic;
+}
+
+.tag-palette-close {
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  color: #6c7086;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+  padding: 2px 4px;
+}
+
+.tag-palette-close:hover {
+  color: #f38ba8;
+}
+
+.tag-palette-search {
+  margin: 8px 10px;
+  padding: 6px 8px;
+  background: #11111b;
+  border: 1px solid #313244;
+  border-radius: 4px;
+  color: #cdd6f4;
+  font-size: 12px;
+}
+
+.tag-palette-search:focus {
+  outline: none;
+  border-color: #89b4fa;
+}
+
+.tag-palette-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 6px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tag-palette-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: #cdd6f4;
+  font-size: 12px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tag-palette-item:hover {
+  background: #313244;
+}
+
+.tag-palette-tagname {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tag-palette-badge {
+  flex-shrink: 0;
+  font-size: 9px;
+  font-family: system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #f9e2af;
+  background: #f9e2af22;
+  border: 1px solid #f9e2af55;
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+
+.tag-palette-empty {
+  padding: 12px 8px;
+  color: #6c7086;
+  font-size: 12px;
+  text-align: center;
+}
+
+.tag-palette-footer {
+  padding: 6px 10px;
+  border-top: 1px solid #313244;
+  color: #6c7086;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* ─── Family switch (Auto / PAX / PIX) ─── */
+.tag-palette-header {
+  align-items: center;
+}
+
+.tag-palette-family {
+  display: inline-flex;
+  border: 1px solid #313244;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.tag-palette-family-btn {
+  border: none;
+  background: transparent;
+  color: #a6adc8;
+  font-size: 11px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.tag-palette-family-btn + .tag-palette-family-btn {
+  border-left: 1px solid #313244;
+}
+
+.tag-palette-family-btn:hover {
+  background: #313244;
+}
+
+.tag-palette-family-btn.active {
+  background: #89b4fa;
+  color: #11111b;
+  font-weight: 600;
+}
+
+/* ─── Tabs ─── */
+.tag-palette-tabs {
+  display: flex;
+  gap: 2px;
+  padding: 6px 8px 0;
+  border-bottom: 1px solid #313244;
+}
+
+.tag-palette-tab {
+  border: none;
+  background: transparent;
+  color: #a6adc8;
+  font-size: 12px;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.tag-palette-tab:hover {
+  color: #cdd6f4;
+}
+
+.tag-palette-tab.active {
+  color: #89b4fa;
+  border-bottom-color: #89b4fa;
+  font-weight: 600;
+}
+
+.tag-palette-count {
+  font-size: 10px;
+  color: #6c7086;
+  margin-left: 3px;
+}
+
+.tag-palette-context-row {
+  padding: 6px 10px 0;
+}
+
+/* ─── Rows ─── */
+.tag-palette-row {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.tag-palette-row .tag-palette-item {
+  flex: 1;
+  min-width: 0;
+}
+
+.tag-palette-info {
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  color: #6c7086;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tag-palette-info:hover {
+  background: #313244;
+  color: #89b4fa;
+}
+
+.tag-palette-info-n {
+  font-size: 9px;
+  margin-left: 2px;
+}
+
+.tag-palette-badge-req {
+  color: #f38ba8;
+  background: #f38ba822;
+  border-color: #f38ba855;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: none;
+}
+
+/* ─── Attributes ─── */
+.tag-palette-attr {
+  padding: 4px 2px 6px;
+  border-bottom: 1px solid #313244;
+}
+
+.tag-palette-attr-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tag-palette-attr-name {
+  flex: 1;
+  min-width: 0;
+}
+
+.tag-palette-attr-type {
+  font-size: 10px;
+  color: #6c7086;
+  font-family: system-ui, sans-serif;
+}
+
+.tag-palette-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 2px 8px 0;
+}
+
+.tag-palette-chip {
+  border: 1px solid #45475a;
+  background: #11111b;
+  color: #cdd6f4;
+  font-size: 11px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  padding: 1px 7px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tag-palette-chip:hover {
+  border-color: #89b4fa;
+  color: #89b4fa;
+}
+
+/* ─── Entities ─── */
+.tag-palette-entity {
+  justify-content: flex-start;
+}
+
+.tag-palette-entity .tag-palette-tagname {
+  flex-shrink: 0;
+  min-width: 96px;
+  color: #89b4fa;
+}
+
+.tag-palette-entity-desc {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #6c7086;
+  font-family: system-ui, sans-serif;
+  font-size: 11px;
+}
+
+.tag-palette-warn {
+  color: #f9e2af;
+  font-size: 10px;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+/* ─── Light theme ─── */
+[data-theme="light"] .tag-palette-family,
+[data-theme="light"] .tag-palette-family-btn + .tag-palette-family-btn,
+[data-theme="light"] .tag-palette-tabs,
+[data-theme="light"] .tag-palette-attr {
+  border-color: #d0d5db;
+}
+
+[data-theme="light"] .tag-palette-family-btn {
+  color: #444;
+}
+
+[data-theme="light"] .tag-palette-family-btn:hover,
+[data-theme="light"] .tag-palette-info:hover {
+  background: #eef1f5;
+}
+
+[data-theme="light"] .tag-palette-family-btn.active {
+  background: #1565c0;
+  color: #fff;
+}
+
+[data-theme="light"] .tag-palette-tab {
+  color: #555;
+}
+
+[data-theme="light"] .tag-palette-tab.active,
+[data-theme="light"] .tag-palette-entity .tag-palette-tagname {
+  color: #1565c0;
+  border-bottom-color: #1565c0;
+}
+
+[data-theme="light"] .tag-palette-chip {
+  background: #fff;
+  border-color: #d0d5db;
+  color: #212121;
+}
+
+[data-theme="light"] .tag-palette-warn {
+  color: #b8860b;
+}
+
+[data-theme="light"] .tag-palette {
+  background: #ffffff;
+  border-color: #d0d5db;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .tag-palette-header {
+  background: #f5f6f8;
+  border-color: #d0d5db;
+}
+
+[data-theme="light"] .tag-palette-context {
+  color: #444;
+}
+
+[data-theme="light"] .tag-palette-context code {
+  color: #1565c0;
+}
+
+[data-theme="light"] .tag-palette-unscoped {
+  color: #b8860b;
+}
+
+[data-theme="light"] .tag-palette-search {
+  background: #ffffff;
+  border-color: #d0d5db;
+  color: #212121;
+}
+
+[data-theme="light"] .tag-palette-item {
+  color: #212121;
+}
+
+[data-theme="light"] .tag-palette-item:hover {
+  background: #eef1f5;
+}
+
+[data-theme="light"] .tag-palette-footer {
+  border-color: #d0d5db;
+  color: #888;
+}

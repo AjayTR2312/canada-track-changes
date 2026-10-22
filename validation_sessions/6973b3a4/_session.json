@@ -1,0 +1,43 @@
+{
+  "session_id": "6973b3a4",
+  "session_name": "CDN_NA_CM 20 (Edited).docx",
+  "emp_id": "C302473",
+  "created_at": 1791825880.1577876,
+  "updated_at": 1791891238.7632334,
+  "docx_filename": "CDN_NA_CM 20 (Edited).docx",
+  "pxml_filename": "CDN_NA_CM 20 (Edited).pxml",
+  "excel_filename": "final_validation_report_02-11_08_10_2026.xlsx",
+  "pdf_filename": "CDN_NA_CM 20 (Edited).pdf",
+  "failed_revisions_filename": null,
+  "current_revision_index": 0,
+  "total_revisions": 578,
+  "total_invalid": 259,
+  "revision_statuses": {},
+  "sharepoint_folder_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/6973b3a4",
+  "sharepoint_uploads": [
+    {
+      "success": true,
+      "filename": "CDN_NA_CM 20 (Edited).docx",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7B27BCA52C-4F2A-41D7-8B2A-3DECEFC121E0%7D&file=CDN_NA_CM%2020%20(Edited).docx&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAJMUW6COKSP25AYWKR55TX4CIPA"
+    },
+    {
+      "success": true,
+      "filename": "CDN_NA_CM 20 (Edited).pdf",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/6973b3a4/CDN_NA_CM%2020%20(Edited).pdf",
+      "item_id": "01GZSMCAMDT2YGUSKBP5GIN2OJFA2ZL45Y"
+    },
+    {
+      "success": true,
+      "filename": "CDN_NA_CM 20 (Edited).pxml",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/6973b3a4/CDN_NA_CM%2020%20(Edited).pxml",
+      "item_id": "01GZSMCAL4MYD4UDDQQZAZEJB2S4HV55SS"
+    },
+    {
+      "success": true,
+      "filename": "final_validation_report_11-36_29_09_2026.xlsx",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7B91B2B19A-51A1-4D27-8BF5-C1666C9730F7%7D&file=final_validation_report_11-36_29_09_2026.xlsx&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAM2WGZJDIKRE5GYX5OBMZWJOMHX"
+    }
+  ]
+}

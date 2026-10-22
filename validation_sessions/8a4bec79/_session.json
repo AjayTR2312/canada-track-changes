@@ -1,0 +1,36 @@
+{
+  "session_id": "8a4bec79",
+  "session_name": "CDN_MA_LCCIC 7 2026-1 update.doc",
+  "emp_id": "C303364",
+  "created_at": 1782992069.9145217,
+  "updated_at": 1782992069.9145217,
+  "docx_filename": "CDN_MA_LCCIC 7 2026-1 update.doc",
+  "pxml_filename": "CDN_MA_LCCIC 7 2026-1 update.doc",
+  "excel_filename": "final_validation_report_16-55_02_07_2026.xlsx",
+  "pdf_filename": null,
+  "current_revision_index": 0,
+  "total_revisions": 0,
+  "total_invalid": 0,
+  "revision_statuses": {},
+  "sharepoint_folder_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C303364/8a4bec79",
+  "sharepoint_uploads": [
+    {
+      "success": true,
+      "filename": "CDN_MA_LCCIC 7 2026-1 update.doc",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7BA4BB5D4C-4A25-423C-B539-8557B303C98F%7D&file=CDN_MA_LCCIC%207%202026-1%20update.doc&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAKMLW52IJKKHRBLKOMFK6ZQHSMP"
+    },
+    {
+      "success": true,
+      "filename": "CDN_MA_LCCIC 7 2026-1 update.doc",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7BA4BB5D4C-4A25-423C-B539-8557B303C98F%7D&file=CDN_MA_LCCIC%207%202026-1%20update.doc&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAKMLW52IJKKHRBLKOMFK6ZQHSMP"
+    },
+    {
+      "success": true,
+      "filename": "final_validation_report_16-55_02_07_2026.xlsx",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7B82CAC9C7-1955-4E7C-95EB-531E83FA078F%7D&file=final_validation_report_16-55_02_07_2026.xlsx&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAOHZHFIEVIZPRHJL22TD2B7UB4P"
+    }
+  ]
+}

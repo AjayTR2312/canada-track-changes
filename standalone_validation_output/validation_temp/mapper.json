@@ -1,0 +1,1088 @@
+[
+  {
+    "type": "insertion",
+    "Track Change Segment": "1",
+    "Track changes": "<trace> More recently, Manitoba introduced </trace>",
+    "Previous Content": "for various projects, studies and activities).9The Climate and Green Plan Act, C.C.S.M., c. C134, ss. 2, 3, 5, 7, 9 and 11. ",
+    "is_new_para": true,
+    "xml_element_ids": [
+      "3"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "1",
+    "Deleted Content": "The 2018 Climate and Green Plan Act",
+    "Previous Content": "Climate and Green Plan Act, C.C.S.M., c. C134, ss. 2, 3, 5, 7, 9 and 11. More recently, Manitoba introduced",
+    "xml_element_ids": [
+      "4"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "2",
+    "Track changes": "<trace><ital>Manitoba</ital><ital>&rsquo;s Plan to Net Zero</ital>, which sets an ambitious goal for the province by 2050. As a comprehensive plan, it includes province-wide priorities, government action to lead the change, collaboration with Indigenous peoples, building the next generation of workers, and actions to take across all sectors. In addition to reducing and eliminating emissions, Manitoba aims at removing or offsetting emissions through a combination of activities that could include land and water-based carbon sequestration, carbon capture utilization and storage (CCUS), carbon stored building materials, and carbon offsets.<footnote><para> Government of Manitoba, “Manitoba&rsquo;s Path to Net Zero” (October 2025), online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf</para></footnote> </trace>",
+    "Previous Content": "ss. 2, 3, 5, 7, 9 and 11. More recently, Manitoba introduced The 2018 Climate and Green Plan Act",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "2",
+    "Deleted Content": " will be discussed throughout this chapter.",
+    "Previous Content": "Government of Manitoba, &ldquo;Manitoba&rsquo;s Path to Net Zero&rdquo; (October 2025), online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf",
+    "xml_element_ids": [
+      "18",
+      "19"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "3",
+    "Deleted Content": "17.6&percnt;,",
+    "Previous Content": "Historical Emissions In 2024, the province emitted approximately 21.4 Mt of GHGs, measured in tonnes of carbon dioxide equivalent (&ldquo;CO2e&rdquo;). This represented an increase of nearly",
+    "xml_element_ids": [
+      "20"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "3",
+    "Track changes": "<trace>15%</trace>",
+    "Previous Content": "In 2024, the province emitted approximately 21.4 Mt of GHGs, measured in tonnes of carbon dioxide equivalent (&ldquo;CO2e&rdquo;). This represented an increase of nearly 17.6%,",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "21",
+      "22"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "4",
+    "Deleted Content": "3.3",
+    "Previous Content": "21.4 Mt of GHGs, measured in tonnes of carbon dioxide equivalent (&ldquo;CO2e&rdquo;). This represented an increase of nearly 15% or",
+    "xml_element_ids": [
+      "23"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "4",
+    "Track changes": "<trace>3.1</trace>",
+    "Previous Content": "of carbon dioxide equivalent (&ldquo;CO2e&rdquo;). This represented an increase of nearly 17.6%,15% or 3.3",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "24"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "5",
+    "Track changes": "<trace>.</trace>",
+    "Previous Content": "or 3.33.1 Mt, over Manitoba&apos;s 18.3 Mt of emissions in 1990",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "25"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "5",
+    "Deleted Content": ", the baseline year used for measuring Kyoto compliance.",
+    "Previous Content": "or 3.1 Mt, over Manitoba&apos;s 18.3 Mt of emissions in 1990.",
+    "xml_element_ids": [
+      "26"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "6",
+    "Deleted Content": "Environment Canada, National Inventory Report: Greenhouse Gas Sources and Sinks in Canada, 1990-2008 (April 2010), at Part 3, Annex 14, p. 77. In 2005, Manitoba emitted approximately 20.3 Mt of GHGs, representing nearly 12.8&percnt; or 2 Mt over Manitoba&apos;s emissions in 1990. Environment Canada, National Inventory Report: Greenhouse Gas Sources and Sinks in Canada, 1990-2006 (May 2008), at Annex 11, pp. 580-81.",
+    "Previous Content": "an increase of nearly 15% or 3.1 Mt, over Manitoba&apos;s 18.3 Mt of emissions in 1990.2",
+    "xml_element_ids": [
+      "28"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "6",
+    "Track changes": "<trace><para>Canadian Centre for Energy Information. “Greenhouse Gas Emissions – National Inventory Report (NIR),” (last modified 13 May 2025), online (website): https://energy-information.canada.ca/en/subjects/greenhouse-gas-emissions-national-inventory-report-nir</para></trace>",
+    "Previous Content": "Manitoba&apos;s emissions in 1990. Environment Canada, National Inventory Report: Greenhouse Gas Sources and Sinks in Canada, 1990-2006 (May 2008), at Annex 11, pp. 580-81.",
+    "is_new_para": true,
+    "xml_element_ids": [
+      "29",
+      "30"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "7",
+    "Deleted Content": "734 ",
+    "Previous Content": "It equated to a contribution of approximately 3% to Canada&apos;s national total of",
+    "xml_element_ids": [
+      "33"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "7",
+    "Track changes": "<trace> 684 </trace>",
+    "Previous Content": "It equated to a contribution of approximately 3% to Canada&apos;s national total of 734 ",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "34"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "8",
+    "Track changes": "<trace>024</trace>",
+    "Previous Content": "It equated to a contribution of approximately 3% to Canada&apos;s national total of 734 684 Mt for 2",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "35"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "8",
+    "Deleted Content": "008",
+    "Previous Content": "equated to a contribution of approximately 3% to Canada&apos;s national total of 684 Mt for 2024",
+    "xml_element_ids": [
+      "36"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "9",
+    "Deleted Content": "Office of the Auditor General, Manitoba, Report to the Legislative Assembly&mdash;Performance Audits (December 2010), at pp. 9 and 14, available at https://www.oag.mb.ca/audit-reports/report/report-to-the-legislative-assembly-performance-audits/ (accessed May 2022).",
+    "Previous Content": "equated to a contribution of approximately 3% to Canada&apos;s national total of 684 Mt for 2024.3",
+    "xml_element_ids": [
+      "37"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "9",
+    "Track changes": "<trace>  In 2023, Manitoba&rsquo;s emissions per capita were 15.3 tonnes of C02e, which is 16 per cent below the Canadian average of 18.2 tonnes per capita.</trace>",
+    "Previous Content": "(December 2010), at pp. 9 and 14, available at https://www.oag.mb.ca/audit-reports/report/report-to-the-legislative-assembly-performance-audits/ (accessed May 2022).",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "38",
+      "39",
+      "40",
+      "41"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "10",
+    "Track changes": "<trace> From 2011 to 2018, Manitoba saw an increase in GHG emissions from 19.1 Mt to 22.2 Mt, with emissions slowly declining since 2018. Manitoba&rsquo;s historic growth of emissions has remained relatively flat and lower than the Canadian average. From 2005 to 2023, Manitoba&rsquo;s economy has grown more rapidly than emissions, with emissions intensity for the entire economy (GHG per GDP) declining by 25 per cent over this period. This progress reflects improvements in energy efficiency, the phase-out of coal, fuel switching, and other measures.<footnote><para> Government of Manitoba, “Manitoba&rsquo;s Path to Net Zero” (October 2025) at 8, online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf</para></footnote></trace>",
+    "Previous Content": "discussion, see Manitoba Wildlands, &ldquo;Recession Lowers Manitoba GHG Emissions&rdquo;, available at https://perma.cc/9JQK-C2ER (accessed May 2022). ",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "10",
+    "Deleted Content": "Reductions for 2011 and 2012 were 0.939 Mt and 1.018 Mt respectively.Manitoba, Manitoba&apos;s Report on Climate Change for 2012, Department of Conservation and Water Stewardship (February 2014) at 9, available at https://perma.cc/D7M6-79S9 (accessed May 2022). The largest sources of GHG reductions in 2012 were the ethanol mandate (0.41 Mt), the regulation limiting the use of Manitoba Hydro&apos;s sole remaining coal-fired facility (0.343 Mt) and Manitoba Hydro&apos;s Power Smart programs (0.41 Mt).Manitoba, Manitoba&apos;s Report on Climate Change for 2012, Department of Conservation and Water Stewardship (February 2014) at 9, available at https://perma.cc/D7M6-79S9 (accessed May 2022).",
+    "Previous Content": "of Manitoba, &ldquo;Manitoba&rsquo;s Path to Net Zero&rdquo; (October 2025) at 8, online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf",
+    "xml_element_ids": [
+      "61"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "11",
+    "Track changes": "<trace>24</trace>",
+    "Previous Content": "at 9, available at https://perma.cc/D7M6-79S9 (accessed May 2022). Despite past reductions, Manitoba&apos;s emissions increased on the whole from 1990-20",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "72"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "11",
+    "Deleted Content": "12",
+    "Previous Content": "past reductions, Manitoba&apos;s emissions increased on the whole from 1990-2024",
+    "xml_element_ids": [
+      "73"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "12",
+    "Track changes": "<trace>24</trace>",
+    "Previous Content": "Despite past reductions, Manitoba&apos;s emissions increased on the whole from 1990-202412. Emissions for 20",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "74",
+      "75"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "12",
+    "Deleted Content": "12",
+    "Previous Content": "past reductions, Manitoba&apos;s emissions increased on the whole from 1990-2024. Emissions for 2024",
+    "xml_element_ids": [
+      "76"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "13",
+    "Track changes": "<trace>4</trace>",
+    "Previous Content": "on the whole from 1990-202412. Emissions for 202412 totalled 21.",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "77"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "13",
+    "Deleted Content": "1",
+    "Previous Content": "Despite past reductions, Manitoba&apos;s emissions increased on the whole from 1990-2024. Emissions for 2024 totalled 21.4",
+    "xml_element_ids": [
+      "78"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "14",
+    "Track changes": "<trace>24</trace>",
+    "Previous Content": "on Climate Change for 2012, Department of Conservation and Water Stewardship (February 2014) at 6, available at https://perma.cc/D7M6-79S9 (accessed May 2022). Between 1990 and 20",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "79"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "14",
+    "Deleted Content": "00",
+    "Previous Content": "Department of Conservation and Water Stewardship (February 2014) at 6, available at https://perma.cc/D7M6-79S9 (accessed May 2022). Between 1990 and 2024",
+    "xml_element_ids": [
+      "80"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "15",
+    "Track changes": "<trace>7</trace>",
+    "Previous Content": "at https://perma.cc/D7M6-79S9 (accessed May 2022). Between 1990 and 202400, Manitoba&apos;s GHG emissions grew by 1",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "81"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "15",
+    "Deleted Content": "5",
+    "Previous Content": "(accessed May 2022). Between 1990 and 2024, Manitoba&apos;s GHG emissions grew by 17",
+    "xml_element_ids": [
+      "82"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "16",
+    "Track changes": "<trace>. </trace>",
+    "Previous Content": "Between 1990 and 202400, Manitoba&apos;s GHG emissions grew by 175%",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "83",
+      "84"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "16",
+    "Deleted Content": " (2.7 Mt). While emissions decreased approximately 2.4&percnt; (0.5Mt) between 2000 to 2012, in 2017 Manitoba&apos;s emissions increased to 21.7 Mt.Environment and Climate Change Canada, National Inventory Report 1990-2017: Greenhouse Gas Sources and Sinks in Canada (2019) at Part 3, Annex 11, Table A11-14, p. 27, available at https://publications.gc.ca/collections/collection_2019/eccc/En81-4-2017-3-eng.pdf (accessed May 2022). This represented a 7.7&percnt; (1.5 Mt) increase in emissions from 2005, continuing to account for 3&percnt; of total Canadian emissions.Environment and Climate Change Canada, National Inventory Report 1990-2017: Greenhouse Gas Sources and Sinks in Canada (2019), at Part 1, p. 31. See also Report of the Expert Advisory Council to the Minister of Sustainable Development: A Carbon Savings Account for Manitoba, June 2019 (2019) at p. 13, available at https://perma.cc/39B3-XBYY (accessed May 2022).",
+    "Previous Content": "at https://perma.cc/D7M6-79S9 (accessed May 2022). Between 1990 and 2024, Manitoba&apos;s GHG emissions grew by 17%.",
+    "xml_element_ids": [
+      "85",
+      "86"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "17",
+    "Track changes": "<trace><para>In 2023, emissions categorized based on the International Panel on Climate Change (IPCC) sectors shows that approximately 62% of Manitoba&rsquo;s emissions are from fossil fuel intensive activities. This includes consumption of fossil fuel for transportation (39%) and stationary combustion sources (19%) like heating buildings and homes, generating electricity, fuel use for mining, construction and manufacturing, and fuel use for agriculture. </para><para>Moreover, 4 % of greenhouse gases from fossil fuels are also released through fugitive sources like production, processing or storage of oil and natural gas (includes venting and flaring). 35% of remaining emissions come from non-energy intensive sources like methane, 27% come from livestock, manure management and inorganic fertilizer use in the agriculture sector, 6% from methane from landfills and wastewater treatment in the waste sector and 2% from other industrial processes that do not use fossil fuels like production of ammonia, lime, and glass.<footnote><para> Government of Manitoba, “Manitoba&rsquo;s Path to Net Zero” (October 2025) at 6, online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf</para></footnote> </trace>",
+    "Previous Content": "of Sustainable Development: A Carbon Savings Account for Manitoba, June 2019 (2019) at p. 13, available at https://perma.cc/39B3-XBYY (accessed May 2022).",
+    "is_new_para": true,
+    "xml_element_ids": [
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "105",
+      "106",
+      "107",
+      "108",
+      "109",
+      "110",
+      "111",
+      "114",
+      "115",
+      "116",
+      "117",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "123",
+      "124",
+      "125",
+      "126",
+      "132"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "17",
+    "Deleted Content": "The 2008 per capita carbon footprint in Manitoba was 18.1 tonnes per person.Environment Canada, National Inventory Report: Greenhouse Gas Sources and Sinks in Canada, 1990-2008 (April 2010), at Part 3, Annex 14, at pp. 77-8. In comparison, it was 15.9 tonnes per person in 201Environment Canada, Canada&apos;s Emission Trends 2013, Table 17, p. 35, Environment Canada (2013), available at https://perma.cc/9QB8-M928 (accessed May 2022). and 16.2 tonnes per person in 2017.Compare to Report of the Expert Advisory Council to the Minister of Sustainable Development: A Carbon Savings Account for Manitoba, June 2019 (2019) at p. 14, available at https://www.gov.mb.ca/asset_library/en/eac/eac_carbon_savings_report2019.pdf (accessed May 2022). Manitoba&apos;s fairly low per capita emission rate is largely attributable to the abundance of hydroelectric power in Manitoba, with virtually all electricity consumed in the province being generated by 15 hydroelectric stations, except for imports to offset peak periods during seasons with high demand for power.Environment Canada, National Inventory Report: Greenhouse Gas Sources and Sinks in Canada, 1990-2008 (April 2010), at Part 3, Annex 14, at pp. 42 and 77-8. Manitoba HydroMore formally, the Manitoba Hydro-Electric Board, a provincial Crown corporation established in 1961 pursuant to The Manitoba Hydro Act, C.C.S.M. c. H190, s. 22. is the sole retail supplier of electricity in the Province of Manitoba. Manitoba Hydro is also the utility supplier of nearly all Manitoba&apos;s natural gas and Manitoba&apos;s largest source of home and building heating energy.Canadian Home Builders&apos; Association, &ldquo;Energy Use and GHG Emission Performance in Manitoba Homes: 1990 to 2005&rdquo;. In those operations it further contributes to GHG emissions. Given this source of electricity supply, however, Manitoba&apos;s carbon footprint remains small relative to the national footprint.See for example Environment and Climate Change Canada, National Inventory Report 1990-2017: Greenhouse Gas Sources and Sinks in Canada&mdash;Executive Summary (2019), Table ES-4, at p. 12. Accordingly, because it is already producing close to 100&percnt; of its energy from clean sources, Manitoba, unlike other provinces, must seek out other ways to significantly reduce GHG emissions going forward.",
+    "Previous Content": "of Manitoba, &ldquo;Manitoba&rsquo;s Path to Net Zero&rdquo; (October 2025) at 6, online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf",
+    "xml_element_ids": [
+      "133"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "18",
+    "Track changes": "<trace> Broken down by economic sector, agriculture accounts for approximately 33% of GHG emissions, followed by transportation at 31%, building heat at 13%, industry (heavy, light manufacturing, construction and forestry) at 11%, waste at 7%, and oil and gas at 4%. Electricity accounts for less than one per cent of Manitoba&rsquo;s GHG emissions.<footnote><para> Government of Manitoba, “Manitoba&rsquo;s Path to Net Zero” (October 2025) at 7, online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf</para></footnote></trace>",
+    "Previous Content": "Report on Climate Change for 2012, Department of Conservation and Water Stewardship (February 2014), at p. 10, available at https://perma.cc/D7M6-79S9 (accessed January 2020). ",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "172",
+      "173",
+      "174",
+      "175",
+      "176",
+      "177",
+      "178",
+      "179",
+      "180",
+      "181",
+      "182",
+      "183",
+      "184",
+      "185"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "18",
+    "Deleted Content": "That said, of Manitoba&apos;s total GHG emissions in 2020 (21.7 Mt), 86&percnt; arose from ",
+    "Previous Content": "of Manitoba, &ldquo;Manitoba&rsquo;s Path to Net Zero&rdquo; (October 2025) at 7, online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf",
+    "xml_element_ids": [
+      "188",
+      "189",
+      "190",
+      "191",
+      "192",
+      "193",
+      "194"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "19",
+    "Track changes": "<trace> .</trace>",
+    "Previous Content": "said, of Manitoba&apos;s total GHG emissions in 2020 (21.7 Mt), 86% arose from ",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "195"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "19",
+    "Deleted Content": "three primary sources: transport; agriculture; and stationary combustion.Environment and Climate Change Canada, National Inventory Report 1990-2020: Greenhouse Gas Sources and Sinks in Canada (2022), at Part 3, Annex 11, Table A11-14, p.28, available at https://unfccc.int/documents/461919 (accessed May 2022). ",
+    "Previous Content": "of Manitoba, &ldquo;Manitoba&rsquo;s Path to Net Zero&rdquo; (October 2025) at 7, online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf.",
+    "xml_element_ids": [
+      "196"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "20",
+    "Track changes": "<trace>4</trace>",
+    "Previous Content": "11, Table A11-14, p.28, available at https://unfccc.int/documents/461919 (accessed May 2022). Canada&apos;s most recent National Inventory Report, 202",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "203"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "20",
+    "Deleted Content": "2",
+    "Previous Content": "most recent National Inventory Report, 2024",
+    "xml_element_ids": [
+      "204"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "21",
+    "Track changes": "<trace> top </trace>",
+    "Previous Content": "May 2022). Canada&apos;s most recent National Inventory Report, 20242 shows that these ",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "205"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "22",
+    "Track changes": "<trace>  sectors</trace>",
+    "Previous Content": "Canada&apos;s most recent National Inventory Report, 20242 shows that these top three",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "206"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "21",
+    "Deleted Content": " sources",
+    "Previous Content": "most recent National Inventory Report, 2024 shows that these top three sectors",
+    "xml_element_ids": [
+      "207"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "22",
+    "Deleted Content": "1990-2020",
+    "Previous Content": "these top three sectors have consistently been the dominant source of emissions in the province from",
+    "xml_element_ids": [
+      "208"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "23",
+    "Track changes": "<trace>2021-2024</trace>",
+    "Previous Content": "sectors sources have consistently been the dominant source of emissions in the province from 1990-2020",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "209"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "23",
+    "Deleted Content": "<trace></trace>21<trace> Canadian Centre for Energy Information. &ldquo;Greenhouse Gas Emissions – National Inventory Report (NIR),&rdquo; (last modified 13 May 2025), online (website): HYPERLINK &quot;https://energy-information.canada.ca/en/subjects/greenhouse-gas-emissions-national-inventory-report-nir?utm_source&equals;chatgpt.com&quot; \\t &quot;_new&quot;https://energy-information.canada.ca/en/subjects/greenhouse-gas-emissions-national-inventory-report-</trace>Environment and Climate Change Canada, National Inventory Report 1990-2020: Greenhouse Gas Sources and Sinks in Canada (2022), at Part 3, Annex 11, Table A11-14, p.28, available at https://unfccc.int/documents/461919 (accessed May 2022). See also discussion in Report of the Expert Advisory Council to the Minister of Sustainable Development: A Carbon Savings Account for Manitoba, June 2019 (2019) at pp. 15-17, available at https://www.gov.mb.ca/asset_library/en/eac/eac_carbon_savings_report2019.pdf (accessed May 2022).",
+    "Previous Content": "in the province from 2021-2024 and are identified as the principal sectors for targeting GHG reduction efforts in the province.",
+    "xml_element_ids": [
+      "210",
+      "211",
+      "214"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "24",
+    "Track changes": "<trace>24</trace>",
+    "Previous Content": "(2019) at pp. 15-17, available at https://www.gov.mb.ca/asset_library/en/eac/eac_carbon_savings_report2019.pdf (accessed May 2022). The National Inventory Report, 20",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "221"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "24",
+    "Deleted Content": "22",
+    "Previous Content": "National Inventory Report, 2024",
+    "xml_element_ids": [
+      "222"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "25",
+    "Track changes": "<trace>4</trace>",
+    "Previous Content": "(accessed May 2022). The National Inventory Report, 202422 also shows that between 2005 and 202",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "223"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "25",
+    "Deleted Content": "0",
+    "Previous Content": "National Inventory Report, 2024 also shows that between 2005 and 2024",
+    "xml_element_ids": [
+      "224"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "26",
+    "Track changes": "<trace>1</trace>",
+    "Previous Content": "also shows that between 2005 and 20240, Manitoba&apos;s emissions have fluctuated: from 2",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "225"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "26",
+    "Deleted Content": "0.5",
+    "Previous Content": "shows that between 2005 and 2024, Manitoba&apos;s emissions have fluctuated: from 21",
+    "xml_element_ids": [
+      "226"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "27",
+    "Track changes": "<trace>4</trace>",
+    "Previous Content": "Manitoba&apos;s emissions have fluctuated: from 210.5 Mt in 2005, peaking at 22.6 Mt in 2018, and decreasing to 21.",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "227"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "27",
+    "Deleted Content": "7",
+    "Previous Content": "emissions have fluctuated: from 21 Mt in 2005, peaking at 22.6 Mt in 2018, and decreasing to 21.4",
+    "xml_element_ids": [
+      "228"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "28",
+    "Track changes": "<trace>4</trace>",
+    "Previous Content": "Mt in 2005, peaking at 22.6 Mt in 2018, and decreasing to 21.47 Mt in 202",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "229"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "28",
+    "Deleted Content": "0",
+    "Previous Content": "Manitoba&apos;s emissions have fluctuated: from 21 Mt in 2005, peaking at 22.6 Mt in 2018, and decreasing to 21.4 Mt in 2024",
+    "xml_element_ids": [
+      "230"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "29",
+    "Track changes": "<trace><footnote><para>21 Canadian Centre for Energy Information. “Greenhouse Gas Emissions – National Inventory Report (NIR),” (last modified 13 May 2025), online (website): https://energy-information.canada.ca/en/subjects/greenhouse-gas-emissions-national-inventory-report-nir</para></footnote></para></trace>",
+    "Previous Content": "in 2005, peaking at 22.6 Mt in 2018, and decreasing to 21.47 Mt in 20240.",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "231"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "30",
+    "Track changes": "<trace>4</trace>",
+    "Previous Content": "13 May 2025), online (website): https://energy-information.canada.ca/en/subjects/greenhouse-gas-emissions-national-inventory-report-nir Between 1990 and 202",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "239"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "29",
+    "Deleted Content": "0",
+    "Previous Content": "https://energy-information.canada.ca/en/subjects/greenhouse-gas-emissions-national-inventory-report-nir Between 1990 and 2024",
+    "xml_element_ids": [
+      "240"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "31",
+    "Track changes": "<trace> 4.9</trace>",
+    "Previous Content": "Between 1990 and 20240, emissions from the transport sector increased from ",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "241"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "30",
+    "Deleted Content": "7.1",
+    "Previous Content": "Between 1990 and 2024, emissions from the transport sector increased from 4.9",
+    "xml_element_ids": [
+      "242"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "31",
+    "Deleted Content": " 8.1",
+    "Previous Content": "Between 1990 and 2024, emissions from the transport sector increased from 4.9 Mt to",
+    "xml_element_ids": [
+      "244"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "32",
+    "Track changes": "<trace>6.3</trace>",
+    "Previous Content": "emissions from the transport sector increased from 4.97.1 Mt to  8.1",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "245"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "33",
+    "Track changes": "<trace> 29.7</trace>",
+    "Previous Content": "from 4.97.1 Mt to  8.16.3 Mt, contributing ",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "246"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "32",
+    "Deleted Content": "37",
+    "Previous Content": "emissions from the transport sector increased from 4.9 Mt to 6.3 Mt, contributing 29.7",
+    "xml_element_ids": [
+      "247"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "34",
+    "Track changes": "<trace>24</trace>",
+    "Previous Content": "Mt to  8.16.3 Mt, contributing 29.737% to the 20",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "248"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "33",
+    "Deleted Content": "20",
+    "Previous Content": "4.9 Mt to 6.3 Mt, contributing 29.7% to the 2024",
+    "xml_element_ids": [
+      "249"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "35",
+    "Track changes": "<trace>4.5</trace>",
+    "Previous Content": "at Part 3, Annex 11, Table A11-14, p.28, available at https://unfccc.int/documents/461919 (accessed May 2022). The majority of these emissions are related to road transportation (",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "250"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "34",
+    "Deleted Content": "5.4",
+    "Previous Content": "p.28, available at https://unfccc.int/documents/461919 (accessed May 2022). The majority of these emissions are related to road transportation (4.5",
+    "xml_element_ids": [
+      "251"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "36",
+    "Track changes": "<trace>)</trace>",
+    "Previous Content": "(accessed May 2022). The majority of these emissions are related to road transportation (4.55.4 Mt",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "252"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "35",
+    "Deleted Content": ")<trace> </trace>Environment and Climate Change Canada, National Inventory Report 1990-2020: Greenhouse Gas Sources and Sinks in Canada (2022), at Part 3, Annex 11, Table A11-14, p.28, available at https://unfccc.int/documents/461919 (accessed May 2022).",
+    "Previous Content": "May 2022). The majority of these emissions are related to road transportation (4.5 Mt)",
+    "xml_element_ids": [
+      "253",
+      "256",
+      "259"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "36",
+    "Deleted Content": "kilometres",
+    "Previous Content": "the increase largely attributable to more",
+    "xml_element_ids": [
+      "264"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "37",
+    "Track changes": "<trace>kilometers</trace>",
+    "Previous Content": "available at https://unfccc.int/documents/461919 (accessed May 2022). with the increase largely attributable to more kilometres",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "265"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "38",
+    "Track changes": "<trace>4</trace>",
+    "Previous Content": "Greenhouse Gas Sources and Sinks in Canada (2022), at Part 1, pp. 45-47, available at https://unfccc.int/documents/461919 (accessed May 2022). Between 1990 and 202",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "266"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "37",
+    "Deleted Content": "0",
+    "Previous Content": "and Sinks in Canada (2022), at Part 1, pp. 45-47, available at https://unfccc.int/documents/461919 (accessed May 2022). Between 1990 and 2024",
+    "xml_element_ids": [
+      "267"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "39",
+    "Track changes": "<trace>2</trace>",
+    "Previous Content": "(accessed May 2022). Between 1990 and 20240, emissions from the agriculture sector increased from 4.",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "268"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "38",
+    "Deleted Content": "1",
+    "Previous Content": "1990 and 2024, emissions from the agriculture sector increased from 4.2",
+    "xml_element_ids": [
+      "269"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "40",
+    "Track changes": "<trace>1</trace>",
+    "Previous Content": "20240, emissions from the agriculture sector increased from 4.21 Mt to 6.",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "270"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "39",
+    "Deleted Content": "3",
+    "Previous Content": "(accessed May 2022). Between 1990 and 2024, emissions from the agriculture sector increased from 4.2 Mt to 6.1",
+    "xml_element_ids": [
+      "271"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "41",
+    "Track changes": "<trace> roughly </trace>",
+    "Previous Content": "the agriculture sector increased from 4.21 Mt to 6.13 Mt, accounting for ",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "272"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "42",
+    "Track changes": "<trace>4</trace>",
+    "Previous Content": "Mt to 6.13 Mt, accounting for roughly 29% of Manitoba&apos;s total GHG emissions in 202",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "273"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "40",
+    "Deleted Content": "0",
+    "Previous Content": "6.1 Mt, accounting for roughly 29% of Manitoba&apos;s total GHG emissions in 2024",
+    "xml_element_ids": [
+      "274"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "43",
+    "Track changes": "<trace>  Canadian Centre for Energy Information. “Greenhouse Gas Emissions – National Inventory Report (NIR),” (last modified 13 May 2025), online (website): https://energy-information.canada.ca/en/subjects/greenhouse-gas-emissions-national-inventory-report-nir</trace>",
+    "Previous Content": "Mt, accounting for roughly 29% of Manitoba&apos;s total GHG emissions in 20240.25",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "275"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "41",
+    "Deleted Content": "Environment and Climate Change Canada, National Inventory Report 1990-2020: Greenhouse Gas Sources and Sinks in Canada (2022) at Part 3, Annex 11, Table A11-14, p.28, available at https://unfccc.int/documents/461919 (accessed May 2022).",
+    "Previous Content": "Inventory Report (NIR),&rdquo; (last modified 13 May 2025), online (website): https://energy-information.canada.ca/en/subjects/greenhouse-gas-emissions-national-inventory-report-nir",
+    "xml_element_ids": [
+      "276"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "44",
+    "Track changes": "<trace>  Over 99% of Manitoba&rsquo;s electricity currently comes from renewable sources, including hydro and wind. As a result, emissions from the electricity sector remain very low, accounting for only 0.3 per cent of total provincial GHG emissions. Manitoba imports all its refined fossil fuels, while producing crude oil for export, which accounts for much of the province&rsquo;s GHG emissions from energy<footnote><para> Government of Manitoba, “Manitoba&rsquo;s Path to Net Zero” (October 2025) at 17, online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf</para></footnote>.</trace>",
+    "Previous Content": "Report 1990-2020: Greenhouse Gas Sources and Sinks in Canada (2022), at Part 1, p. 145 et seq., available at https://unfccc.int/documents/461919 (accessed May 2022). ",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "280",
+      "281",
+      "284",
+      "285",
+      "287",
+      "288",
+      "290",
+      "291",
+      "293",
+      "294",
+      "296",
+      "297",
+      "299",
+      "314"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "42",
+    "Deleted Content": "Between 1990 and 2020, emissions from the stationary combustion (i.e. electricity and heat production, manufacturing and construction industries, electricity generation, mining, petroleum refining, oil and gas extraction, agriculture and forestry) decreased from 4.9 Mt to 4.2 Mt, and accounted for 19&percnt; of Manitoba&rsquo;s total GHG emissions in 2020.Environment and Climate Change Canada, National Inventory Report 1990-2020: Greenhouse Gas Sources and Sinks in Canada (2022), at Part 3, Annex 11, Table A11-14, p.28, available at https://unfccc.int/documents/461919 (accessed May 2022). Emission reductions are largely attributable to changes associated with public electricity and heat production.Environment and Climate Change Canada, National Inventory Report 1990-2020: Greenhouse Gas Sources and Sinks in Canada (2022), at Part 3, Annex 11, Table A11-14, p.28, available at https://unfccc.int/documents/461919 (accessed May 2022).",
+    "Previous Content": "of Manitoba, &ldquo;Manitoba&rsquo;s Path to Net Zero&rdquo; (October 2025) at 17, online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf.",
+    "xml_element_ids": [
+      "316"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "45",
+    "Track changes": "<trace><para> Manitoba&rsquo;s transportation sector accounted for 31 per cent (6.6 Mt) of total provincial</para><para>GHG emissions in 2023. This number is in large part due to the reliance on personal vehicles for day-to-day travel in the province. Agriculture and agri-food account for over 7 per cent of Manitoba&rsquo;s GDP, employ 34,000 people, and generate about one-third (7.10 Mt) of provincial GHG emissions. These emissions come from energy use in equipment and vehicles, as well as fertilizers, soils, and livestock. Buildings are Manitoba&rsquo;s third largest source of emissions (2.8 Mt), making up 13% of provincial GHGs, mostly from heating. Waste accounted for approximately 7% of Manitoba&rsquo;s emissions (1.36 Mt) in 2023, mainly from landfill methane (91%) and wastewater (7%). Managing waste is costly, energy-intensive, and creates land use challenges.<footnote><para> Government of Manitoba, “Manitoba&rsquo;s Path to Net Zero,” (October 2025), online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf</para></footnote> </trace>",
+    "Previous Content": "Gas Sources and Sinks in Canada (2022), at Part 3, Annex 11, Table A11-14, p.28, available at https://unfccc.int/documents/461919 (accessed May 2022).",
+    "is_new_para": true,
+    "xml_element_ids": [
+      "332",
+      "334",
+      "336",
+      "339",
+      "341",
+      "343",
+      "346",
+      "349",
+      "351",
+      "352",
+      "353",
+      "354",
+      "355",
+      "356",
+      "357",
+      "358",
+      "359",
+      "360",
+      "365"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "43",
+    "Deleted Content": "Manitoba has only six large industrial emitters in six different sectors (nitrogen fertilizer, natural gas pipelines, lime, pulp and paper, chemicals&mdash;ethanol, mining) which in 2017 accounted for approximately 7&percnt; of Manitoba&apos;s total emissions.Report of the Expert Advisory Council to the Minister of Sustainable Development: A Carbon Savings Account for Manitoba, June 2019 (2019), at p. 17, available at https://www.gov.mb.ca/asset_library/en/eac/eac_carbon_savings_report2019.pdf (accessed May 2022). Overall, emissions from industrial processes and product use (such as halocarbons, mineral products, and non-energy products from fuels) roughly doubled between 1990 and 2020. Emissions from these sources accounted for approximately 2.7&percnt; (0.49 Mt) in 1990. In 2020, they made up 4.6&percnt; (0.99 Mt) of Manitoba&apos;s total GHG emissions.Environment and Climate Change Canada, National Inventory Report 1990-2020: Greenhouse Gas Sources and Sinks in Canada (2022), at Part 3, Annex 11, Table A11-14, p.28, available at https://unfccc.int/documents/461919 (accessed May 2022).",
+    "Previous Content": "of Manitoba, &ldquo;Manitoba&rsquo;s Path to Net Zero,&rdquo; (October 2025), online (pdf): https://www.manitoba.ca/asset_library/en/netzero/mb-path-to-net-zero.pdf",
+    "xml_element_ids": [
+      "366"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "46",
+    "Track changes": "<trace>4</trace>",
+    "Previous Content": "1.1(2), 4 and 6. As mentioned, Manitoba continues to account for approximately 3% of Canada&apos;s total emissions, with Canada in turn accounting for approximately 1.",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "378"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "44",
+    "Deleted Content": "6",
+    "Previous Content": "As mentioned, Manitoba continues to account for approximately 3% of Canada&apos;s total emissions, with Canada in turn accounting for approximately 1.4",
+    "xml_element_ids": [
+      "380"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "47",
+    "Track changes": "<trace><footnote><para> Monica Crippa et al, “GHG Emissions of All World Countries – 2025 Report” (2025), online: https://data.europa.eu/doi/10.2760/9816914.</para></footnote></trace>",
+    "Previous Content": "3% of Canada&apos;s total emissions, with Canada in turn accounting for approximately 1.46% of the world&apos;s total emissions.",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "381"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "48",
+    "Track changes": "<trace> However, it is important to note that smoke from forest fires is expected to be a significant source of emissions in 2025 and may affect those numbers. Manitoba has set two Emissions Targets thus far, both of which are for cumulative GHG emissions reductions. The 2024 NIR shows that Manitoba&rsquo;s 2018-2022 Emissions Reductions Target of 1 Mt cumulative emissions reduction target has been achieved, with reductions totalling 2.45 Mt for this period. Manitoba&rsquo;s current goal is to reduce emissions by 5.6 Megatonnes (Mt) between 2023-2027.<footnote><para> Government of Manitoba “Climate Action: Tracking Progress” (Accessed 29 May 2026), online: https://www.gov.mb.ca/climateaction/trackingprogress/index.html</para></footnote></trace>",
+    "Previous Content": "According to the Auditor General&apos;s 2017 Report, Manitoba&apos;s GHG emissions are anticipated to grow to approximately 23 Mt by 2030. ",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "412",
+      "414",
+      "416",
+      "417",
+      "419",
+      "420",
+      "421",
+      "422",
+      "423",
+      "424",
+      "425",
+      "426",
+      "427",
+      "428"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "45",
+    "Deleted Content": "A June 2019 report from the Expert Advisory Council (established under The 2018 Climate and Green Plan Act) to the Minister of Sustainable Development provides a forecast comparison using actual emissions and various baseline cases. In the report, the Expert Advisory Council&apos;s comparative forecasts for Manitoba for 2025 range from 19.9 Mt to 23.0 Mt. ",
+    "Previous Content": "Government of Manitoba &ldquo;Climate Action: Tracking Progress&rdquo; (Accessed 29 May 2026), online: https://www.gov.mb.ca/climateaction/trackingprogress/index.html",
+    "xml_element_ids": [
+      "435",
+      "436",
+      "437",
+      "438",
+      "439"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "49",
+    "Track changes": "<trace>  On top of that, </trace>",
+    "Previous Content": "emissions and various baseline cases. In the report, the Expert Advisory Council&apos;s comparative forecasts for Manitoba for 2025 range from 19.9 Mt to 23.0 Mt. ",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "440"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "46",
+    "Deleted Content": "More recently, ",
+    "Previous Content": "On top of that,",
+    "xml_element_ids": [
+      "441"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "50",
+    "Track changes": "<trace> At the time the regulation was introduced, relatively few regulations under the Environment Act were directed toward climate change mitigation, like for example, the Coal and Petroleum Coke Ban for Space Heating Regulation. While Manitoba has since adopted climate related legislation, the majority of the rules under the Act continue to concern environmental protection more broadly. </trace>",
+    "Previous Content": "taken into account in addition to other potential environmental impacts.3The Environment Act, C.C.S.M., c. E125, s. 12.0.2. ",
+    "is_new_para": false,
+    "xml_element_ids": [
+      "442",
+      "445",
+      "447",
+      "449",
+      "451",
+      "453",
+      "455",
+      "458",
+      "460"
+    ]
+  },
+  {
+    "type": "deletion",
+    "Track Change Segment": "47",
+    "Deleted Content": "With the exception of the Coal and Petroleum Coke Ban for Space Heating RegulationCoal and Petroleum Coke Ban for Space Heating Regulation, Man. Reg. 183/2013 (as amended). (introduced in 2014), the majority of the regulations promulgated under The Environment Act are not directed specifically to climate change issues. ",
+    "Previous Content": "Manitoba has since adopted climate related legislation, the majority of the rules under the Act continue to concern environmental protection more broadly.",
+    "xml_element_ids": [
+      "463",
+      "469"
+    ]
+  },
+  {
+    "type": "insertion",
+    "Track Change Segment": "51",
+    "Track changes": "<trace><para><ital>The Carbon Capture and Storage Act</ital><footnote><para> John Stefaniuk, “Not Just Hot Air: Manitoba Introduces The Captured Carbon Storage Act” (11 June 2024), online (article): https://www.tdslaw.com/resource/not-just-hot-air-manitoba-introduces-the-captured-carbon-storage-act/</para></footnote></para><para>Manitoba Bill 31, known as <ital>the Carbon Capture and Storage Act</ital> (CCS Act), represents a significant legislative effort to combat climate change through the regulation and promotion of carbon capture and storage (CCS) technologies. Introduced in the Manitoba Legislature, this bill aims to provide a comprehensive legal framework for the development, implementation, and management of CCS projects within the province. </para><para>Bill 31, <ital>The Carbon Capture and Storage Act</ital> (CCS Act) also aligns with federal CO2 emission credits allowing a cohesive strategy for reducing greenhouse gas emissions. The federal government has implemented a carbon pricing system that includes a carbon tax and an output-based pricing system (OBPS) for large industrial emitters. The CCS Act in Manitoba complements these federal efforts by:</para><para>Compliance Reducing Costs: CCS projects developed under the CCS Act can significantly reduce the carbon emissions of industrial facilities. This reduction helps these facilities lower their carbon tax liabilities or receive credits under the OBPS, which sets a cap on emissions and provides credits for staying below that cap.</para><para>Generating Emission Credits: By capturing and storing CO2, facilities can generate emission reduction credits. These credits can be traded or used to meet federal compliance obligations, integrating seamlessly with the federal carbon pricing system.</para><para>The primary objectives of the Carbon Capture and Storage Act are to establish a legal and regulatory framework for CCS activities, ensure the safe, efficient, and environmentally responsible implementation of CCS projects, promote investment in CCS technologies and infrastructure within Manitoba, and align provincial climate policies with national and international greenhouse gas reduction commitments.</para><para>The enactment of Bill 31 positions Manitoba as a leader in climate change mitigation through innovative technologies. By providing a structured approach to CCS, the province aims to reduce its carbon footprint and contribute to Canada&rsquo;s national emissions reduction targets, attract investment in clean technology and green infrastructure, potentially boosting the local economy, and set a precedent for other provinces and regions to develop similar legislative frameworks for CCS</para></trace>",
+    "Previous Content": "Waste Management FacilitiesRegulation.11The Waste Management Facilities Regulation, Man. Reg. 37/2016 (as amended).",
+    "is_new_para": true,
+    "xml_element_ids": [
+      "475",
+      "477",
+      "489",
+      "493",
+      "496",
+      "499",
+      "503",
+      "504",
+      "505",
+      "510",
+      "511",
+      "512",
+      "513",
+      "514",
+      "515",
+      "516"
+    ]
+  }
+]

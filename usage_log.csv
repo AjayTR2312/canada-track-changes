@@ -1,0 +1,65 @@
+timestamp,date,time,session_id,emp_id,name,email,department,service_type,region,product,files_uploaded,files_completed,files_failed,llm_calls,run_outcome,processing_time_sec
+2026-06-15 13:06:07,2026-06-15,13:06:07,fb664b53,6121007,MadhuLatha,madhulatha.v@thomsonreuters.com,AICoE,PXML Track Changes,Canada,looseleaf,1,1,0,0,success,295.9
+2026-06-15 14:20:03,2026-06-15,14:20:03,0ee6dbd8,6121007,MadhuLatha,madhulatha.v@thomsonreuters.com,AICoE,PXML Track Changes,Canada,looseleaf,1,1,0,0,success,324.6
+2026-06-15 14:44:47,2026-06-15,14:44:47,77ace1ad,6121007,MadhuLatha,madhulatha.v@thomsonreuters.com,AICoE,PXML Track Changes,Canada,looseleaf,1,0,1,0,error,306.5
+2026-06-15 15:01:48,2026-06-15,15:01:48,578624b1,6121007,MadhuLatha,madhulatha.v@thomsonreuters.com,AICoE,PXML Track Changes,Canada,looseleaf,1,1,0,13,success,292.2
+2026-06-15 16:07:21,2026-06-15,16:07:21,955dc57d,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,17,success,92.1
+2026-06-15 19:22:52,2026-06-15,19:22:52,1c141939,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,235,success,2510.3
+2026-06-15 23:16:36,2026-06-15,23:16:36,de8bbf0e,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,98,success,1793.7
+2026-06-16 13:04:43,2026-06-16,13:04:43,d6d3840b,C302473,Ajay yalla,ajay.yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,207,success,5302.5
+2026-06-16 17:58:10,2026-06-16,17:58:10,188ff9d4,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,68,success,2114.0
+2026-06-16 21:39:45,2026-06-16,21:39:45,b6f780b7,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,46,success,1568.3
+2026-06-22 17:45:03,2026-06-22,17:45:03,be5675ef,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,47,success,1719.8
+2026-06-22 18:02:34,2026-06-22,18:02:34,600ab2fd,C302473,Ajay yalla,ajay.yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,15,success,88.6
+2026-06-22 18:18:44,2026-06-22,18:18:44,d5f78201,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,15,success,81.0
+2026-06-25 13:25:20,2026-06-25,13:25:20,17628b91,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,184,success,1067.1
+2026-06-25 21:25:00,2026-06-25,21:25:00,26fbaddc,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,0,1,0,error,2005.6
+2026-06-25 22:14:52,2026-06-25,22:14:52,90712696,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,173,success,2129.0
+2026-07-02 20:32:13,2026-07-02,20:32:13,094d9178,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,167,success,1774.6
+2026-07-02 23:43:18,2026-07-02,23:43:18,2e12544b,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,160,success,986.6
+2026-07-03 00:52:35,2026-07-03,00:52:35,b516a2b8,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,188,success,2318.2
+2026-07-03 11:04:19,2026-07-03,11:04:19,695ead0f,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,0,1,0,error,27.5
+2026-07-03 11:35:20,2026-07-03,11:35:20,d7acf2de,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,166,success,1359.2
+2026-07-03 12:31:06,2026-07-03,12:31:06,db2d9d67,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,168,success,1465.8
+2026-07-06 16:21:41,2026-07-06,16:21:41,38fd1f36,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,157,success,1779.1
+2026-07-06 18:28:57,2026-07-06,18:28:57,8a2c5caf,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,157,success,1719.9
+2026-07-07 15:35:39,2026-07-07,15:35:39,c69226f8,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,137,success,1475.0
+2026-07-07 18:23:36,2026-07-07,18:23:36,c4fe8a4d,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,292,success,3304.9
+2026-07-07 19:02:37,2026-07-07,19:02:37,84986d61,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,52,success,1138.3
+2026-07-08 15:16:46,2026-07-08,15:16:46,1f24b307,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,0,1,0,error,11.3
+2026-07-08 16:04:32,2026-07-08,16:04:32,1a68c54e,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,49,success,352.1
+2026-07-13 15:29:10,2026-07-13,15:29:10,090e771d,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,77,success,808.2
+2026-07-13 19:08:27,2026-07-13,19:08:27,6160f8f7,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,106,success,1372.8
+2026-07-16 17:27:04,2026-07-16,17:27:04,fe20b307,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,174,success,3181.8
+2026-07-16 23:06:12,2026-07-16,23:06:12,380c30a5,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,173,success,4457.0
+2026-07-17 15:11:47,2026-07-17,15:11:47,a71a55b5,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,171,success,3891.3
+2026-07-17 17:18:17,2026-07-17,17:18:17,2deb21fd,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,174,success,3950.3
+2026-07-17 18:51:39,2026-07-17,18:51:39,d18119ca,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,117,success,944.3
+2026-07-20 16:30:28,2026-07-20,16:30:28,57dcafad,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,183,success,1254.8
+2026-07-20 17:50:11,2026-07-20,17:50:11,07b004f6,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,180,success,1031.8
+2026-07-20 22:19:12,2026-07-20,22:19:12,a6702f92,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,117,success,777.0
+2026-07-21 14:24:29,2026-07-21,14:24:29,d7409fc7,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,165,success,1852.1
+2026-07-21 20:31:39,2026-07-21,20:31:39,8e5be255,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,173,success,1324.2
+2026-07-22 13:47:56,2026-07-22,13:47:56,af050e52,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,173,success,1374.6
+2026-07-22 21:37:49,2026-07-22,21:37:49,2a297e4f,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,338,success,5114.3
+2026-07-25 07:07:26,2026-07-25,07:07:26,6db5d8b0,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,0,1,0,error,10.5
+2026-07-27 14:07:35,2026-07-27,14:07:35,975ef5d2,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,165,success,1373.5
+2026-07-27 17:14:13,2026-07-27,17:14:13,0a10238e,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,210,success,2064.7
+2026-07-28 01:53:33,2026-07-28,01:53:33,285ddab6,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,199,success,1447.1
+2026-07-28 02:59:44,2026-07-28,02:59:44,60aa1bd0,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,213,success,1544.6
+2026-08-10 18:45:43,2026-08-10,18:45:43,56c2b500,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,28,success,1162.7
+2026-08-12 15:31:22,2026-08-12,15:31:22,023ef05c,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,344,success,3692.6
+2026-08-12 22:09:28,2026-08-12,22:09:28,9e728e1b,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,pamphlet,1,1,0,410,success,4057.9
+2026-08-13 01:52:53,2026-08-13,01:52:53,6cccba6e,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,424,success,4672.0
+2026-08-14 15:23:42,2026-08-14,15:23:42,dac037f3,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,pamphlet,1,1,0,413,success,29721.1
+2026-08-18 19:30:47,2026-08-18,19:30:47,c56f5f29,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,32,success,1763.2
+2026-08-24 00:00:55,2026-08-24,00:00:55,1c8ab271,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,468,success,14194.9
+2026-09-01 05:14:26,2026-09-01,05:14:26,11205433,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,1508,success,12886.7
+2026-09-02 01:41:19,2026-09-02,01:41:19,3050a81a,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,132,success,994.8
+2026-09-02 17:53:57,2026-09-02,17:53:57,bfcae685,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,22,success,214.3
+2026-09-03 13:45:47,2026-09-03,13:45:47,6ec4a961,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,22,success,146.4
+2026-09-03 14:55:03,2026-09-03,14:55:03,c9c439f5,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,134,success,970.8
+2026-09-04 15:10:14,2026-09-04,15:10:14,eb516dbc,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,131,success,1120.8
+2026-09-22 20:24:13,2026-09-22,20:24:13,1529b300,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,217,success,1256.3
+2026-09-23 14:49:22,2026-09-23,14:49:22,215ac8fd,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,0,1,0,error,7.8
+2026-10-08 02:11:23,2026-10-08,02:11:23,03479f05,C302473,Ajay yalla,Ajay.Yalla@thomsonreuters.com,Operations and Technology,PXML Track Changes,Canada,looseleaf,1,1,0,473,success,3920.9

@@ -1,0 +1,6 @@
+
+⚠️⚠️⚠️ SHORT DELETION ALERT: text_before is under 5 characters!
+The target element alone is likely NOT unique in the document.
+You MUST include the immediately preceding sibling element in your "find" and "replace" 
+(keep the sibling unchanged, only wrap the short target in trace.deleted).
+See the "VERY SHORT DELETIONS" rule in the system prompt.

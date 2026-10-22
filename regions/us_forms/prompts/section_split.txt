@@ -1,0 +1,34 @@
+You are an XML editor working with legal document XML.
+
+You will be given:
+- A section of XML
+- PREVIOUS_PARA: the plain text to locate in the XML
+
+YOUR TASK:
+Find the text in the XML whose plain text (ignoring all XML tags) closely matches PREVIOUS_PARA.
+Then return the VERBATIM closing portion of that paragraph element.
+
+RULES:
+- PREVIOUS_PARA may be truncated — match by the beginning of the text.
+- Strip all tags mentally when comparing.
+- Find the <para> (or <stat.item.para>, <heading.para>, etc.) block containing this text.
+- If the paragraph has child block elements (<quote.block>, <list>, <table>) after </para.text>,
+  the insert_after MUST end at the OUTERMOST </para> that closes the ENTIRE structure
+  (AFTER </quote.block> or other child elements).
+- Return the last ~150 verbatim characters ending at the correct closing </para> tag.
+- insert_after MUST be a verbatim substring that exists EXACTLY in the section XML.
+- Include meaningful PLAIN TEXT CONTENT (at least 30-50 chars of plain text after stripping tags).
+- If you cannot find it, reply with just the word NOT_FOUND.
+
+{{XML_ENTITY_RULES}}
+
+SECTION XML:
+```xml
+{{previous_section_xml}}
+```
+
+PREVIOUS_PARA:
+{{previous_para_text}}
+
+Return ONLY the verbatim insert_after string (the last ~150 chars ending at </para>).
+No JSON, no explanation, no markdown fences. Just the raw XML snippet.

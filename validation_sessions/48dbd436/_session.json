@@ -1,0 +1,43 @@
+{
+  "session_id": "48dbd436",
+  "session_name": "Chapter 31 The Right to Manage revised 3 July 2026.docx",
+  "emp_id": "C302473",
+  "created_at": 1788423680.9744623,
+  "updated_at": 1788457929.1470582,
+  "docx_filename": "Chapter 31 The Right to Manage revised 3 July 2026.docx",
+  "pxml_filename": "Chapter 31 The Right to Manage revised 3 July 2026.pxml",
+  "excel_filename": "final_validation_report_13-45_03_09_2026.xlsx",
+  "pdf_filename": "Chapter 31 The Right to Manage revised 3 July 2026.pdf",
+  "failed_revisions_filename": null,
+  "current_revision_index": 0,
+  "total_revisions": 11,
+  "total_invalid": 8,
+  "revision_statuses": {},
+  "sharepoint_folder_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/48dbd436",
+  "sharepoint_uploads": [
+    {
+      "success": true,
+      "filename": "Chapter 31 The Right to Manage revised 3 July 2026.docx",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7BDFD32ADF-C157-4DA6-A2B3-2012DCD9FE5E%7D&file=Chapter%2031%20The%20Right%20to%20Manage%20revised%203%20July%202026.docx&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAO7FLJ56V6BUZG2FMZACLONT7S6"
+    },
+    {
+      "success": true,
+      "filename": "Chapter 31 The Right to Manage revised 3 July 2026.pdf",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/48dbd436/Chapter%2031%20The%20Right%20to%20Manage%20revised%203%20July%202026.pdf",
+      "item_id": "01GZSMCAJO5VPP3HVMMREYWB25PHDVTJVA"
+    },
+    {
+      "success": true,
+      "filename": "Chapter 31 The Right to Manage revised 3 July 2026.pxml",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/48dbd436/Chapter%2031%20The%20Right%20to%20Manage%20revised%203%20July%202026.pxml",
+      "item_id": "01GZSMCAOQI6YJFXZIXBBLFMFMK4H5OLCD"
+    },
+    {
+      "success": true,
+      "filename": "final_validation_report_13-45_03_09_2026.xlsx",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7BC81C49C8-458D-4369-8336-318C58602941%7D&file=final_validation_report_13-45_03_09_2026.xlsx&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAOIJEOMRDKFNFBYGNRRRRMGAKKB"
+    }
+  ]
+}

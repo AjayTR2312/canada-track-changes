@@ -1,0 +1,45 @@
+{
+  "session_id": "2a37bde3",
+  "session_name": "Nuisance Chapter 7 Update.docx",
+  "emp_id": "C302473",
+  "created_at": 1792572240.87737,
+  "updated_at": 1792576215.5354624,
+  "docx_filename": "Nuisance Chapter 7 Update.docx",
+  "pxml_filename": "Nuisance Chapter 7 Update.pxml",
+  "excel_filename": "final_validation_report_15-10_04_09_2026.xlsx",
+  "pdf_filename": "Nuisance Chapter 7 Update.pdf",
+  "failed_revisions_filename": null,
+  "current_revision_index": 32,
+  "total_revisions": 90,
+  "total_invalid": 34,
+  "revision_statuses": {
+    "5": "skipped"
+  },
+  "sharepoint_folder_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/2a37bde3",
+  "sharepoint_uploads": [
+    {
+      "success": true,
+      "filename": "Nuisance Chapter 7 Update.docx",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7B70D08218-01CD-4DAF-B80B-3F5FFF999554%7D&file=Nuisance%20Chapter%207%20Update.docx&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAIYQLIHBTIBV5G3QCZ7L77ZTFKU"
+    },
+    {
+      "success": true,
+      "filename": "Nuisance Chapter 7 Update.pdf",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/2a37bde3/Nuisance%20Chapter%207%20Update.pdf",
+      "item_id": "01GZSMCAMQQ24J3JQLURDKSHJDFCVZFMV2"
+    },
+    {
+      "success": true,
+      "filename": "Nuisance Chapter 7 Update.pxml",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/2a37bde3/Nuisance%20Chapter%207%20Update.pxml",
+      "item_id": "01GZSMCALKHIWXVA4VZNGLF7MTOU4ILKLC"
+    },
+    {
+      "success": true,
+      "filename": "final_validation_report_15-10_04_09_2026.xlsx",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7BD6F8A92E-1439-4F32-B335-22B3DFEBB13C%7D&file=final_validation_report_15-10_04_09_2026.xlsx&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAJOVH4NMOIUGJH3GNJCWPP6XMJ4"
+    }
+  ]
+}

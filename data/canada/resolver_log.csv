@@ -1,0 +1,9 @@
+timestamp,run_id,session_id,doc_name,emp_id,user_name,change_type,section,status,confidence,kind,steps,model,outcome,reject_reason,detail,region
+2026-10-13 00:08:59,d9d47a11819f,6973b3a4,,C302473,Ajay yalla,inline_insertion,20:52,exhausted,,,10,claude-sonnet-4-6,none,,No acceptable proposal within 10 steps.,Canada
+2026-10-13 00:11:34,d763d2649c33,6973b3a4,,C302473,Ajay yalla,inline_insertion,,exhausted,,,10,claude-sonnet-4-6,none,,No acceptable proposal within 10 steps.,Canada
+2026-10-13 00:13:00,b83a4acf197a,6973b3a4,,C302473,Ajay yalla,inline_insertion,,exhausted,,,10,claude-sonnet-4-6,none,,No acceptable proposal within 10 steps.,Canada
+2026-10-13 00:16:10,7a91e2f6496e,6973b3a4,,C302473,Ajay yalla,inline_insertion,,exhausted,,,10,claude-sonnet-4-6,none,,No acceptable proposal within 10 steps.,Canada
+2026-10-13 00:16:52,5213c40ce82a,6973b3a4,,C302473,Ajay yalla,inline_insertion,,exhausted,,,10,claude-sonnet-4-6,none,,No acceptable proposal within 10 steps.,Canada
+2026-10-13 00:20:14,09020907963b,6973b3a4,,C302473,Ajay yalla,inline_deletion,,exhausted,,,10,claude-sonnet-4-6,none,,No acceptable proposal within 10 steps.,Canada
+2026-10-13 00:22:04,d661aee9230d,6973b3a4,,C302473,Ajay yalla,inline_deletion,,exhausted,,,10,claude-sonnet-4-6,none,,No acceptable proposal within 10 steps.,Canada
+2026-10-13 20:15:46,7ab3301cfc78,1c85f25c,,C302473,Ajay yalla,inline_insertion,,exhausted,,,10,claude-sonnet-4-6,none,,No acceptable proposal within 10 steps.,Canada

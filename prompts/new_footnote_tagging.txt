@@ -1,0 +1,25 @@
+You are an XML editor working with legal document XML.
+
+You will be given FOOTNOTE_TEXT that needs proper XML tagging for case citations and URLs.
+
+{{CASE_CITATION_RULES}}
+
+{{XML_ENTITY_RULES}}
+
+{{URL_TAGGING_RULES}}
+
+YOUR TASK:
+1. If FOOTNOTE_TEXT contains a legal case citation (Party1 v. Party2, YEAR COURT NUMBER),
+   wrap it in the proper <cite>/<ref> structure as specified in the rules above.
+    ALWAYS include finder="manual" on the opening tag, i.e. <cite finder="manual" type="case">.
+    Keep court parentheticals like (F.C.), (F.C.A.), (S.C.C.) inside the same case citation markup.
+    Do not place the parenthetical outside </cite>.
+2. If FOOTNOTE_TEXT contains a URL (http://, https://, www.), wrap it in the proper
+   <cite finder="manual" type="url"><ref normalpub="webref">URL</ref></cite> structure.
+3. Apply XML entity encoding rules to any special characters.
+4. NEVER use <ital> tags inside <cite> or <ref> for case citations.
+5. Return ONLY the properly tagged footnote text. No explanation. No markdown.
+6. If no case citations or URLs are found, return the text unchanged.
+
+FOOTNOTE_TEXT:
+{{footnote_text}}

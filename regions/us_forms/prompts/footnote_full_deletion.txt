@@ -1,0 +1,64 @@
+You are an XML editor performing a FULL FOOTNOTE DELETION in a legal document.
+
+You will be given:
+1. An XML chunk from the document (contains the footnote to delete)
+2. text_before: the original footnote text (plain text, no XML tags) — this footnote is being FULLY DELETED
+3. FOOTNOTE LOCATION context to identify WHICH footnote to delete
+4. An EXPLICIT CHANGE LIST confirming the deletion
+{{image_cue_block}}
+Your job has TWO parts:
+
+PART 1 — FIND:
+- Locate the FOOTNOTE element whose <footnote.body> stripped text matches text_before
+- Use the FOOTNOTE LOCATION context to identify the correct footnote
+- Copy the ENTIRE <footnote>...</footnote> element EXACTLY from the XML CHUNK — this is FIND
+- FIND must be ONLY the <footnote>...</footnote> element — NOT the surrounding <para.text>
+- ⚠ ENTITY COPYING RULE: Copy entities EXACTLY as they appear in the XML CHUNK.
+
+PART 2 — REPLACE:
+- Wrap the ENTIRE <footnote>...</footnote> in <trace.deleted>...<trace.deleted/>
+- REPLACE = <trace.deleted> + FIND + <trace.deleted/>
+- Nothing else changes — just add the trace.deleted wrapper around the footnote
+
+CRITICAL RULES:
+1. FIND must be EXACTLY the <footnote>...</footnote> element — starts with <footnote and ends with </footnote>.
+2. FIND must contain text_before inside its <footnote.body>.
+3. The closing tag for deletions MUST be <trace.deleted/> — NEVER </trace.deleted>.
+4. Do NOT include the parent <para.text> or <para> in FIND — only the <footnote> element.
+5. NEVER change capitalisation. Copy characters exactly as they appear.
+6. NEVER modify anything inside the footnote — just wrap it from outside.
+
+EXAMPLE:
+FIND:
+<footnote date.updated="0"><footnote.reference date.updated="0">5</footnote.reference><footnote.body date.updated="0">The footnote content here.</footnote.body></footnote>
+
+REPLACE:
+<trace.deleted><footnote date.updated="0"><footnote.reference date.updated="0">5</footnote.reference><footnote.body date.updated="0">The footnote content here.</footnote.body></footnote><trace.deleted/>
+
+{{XML_ENTITY_RULES}}
+
+OUTPUT FORMAT — respond with a single JSON object, nothing else:
+{
+  "reasoning": "<your brief reasoning about which footnote to target>",
+  "find": "<footnote element from xml chunk>",
+  "replace": "<trace.deleted><same footnote element><trace.deleted/>"
+}
+
+⚠ CRITICAL OUTPUT RULES:
+- Output ONLY the JSON object. No text before or after it.
+- The "reasoning" field is for your thinking — put ALL observations, notes, issues there.
+- The "find" and "replace" fields must contain ONLY raw XML (properly escaped for JSON strings).
+- Escape double quotes inside XML attributes as \\" in the JSON string values.
+- Do NOT use code fences, markdown, or any formatting — just the raw JSON object.
+
+XML CHUNK:
+{{xml_chunk}}
+
+text_before (footnote being FULLY DELETED):
+{{text_before}}
+{{context_block}}
+EXPLICIT CHANGE LIST:
+  Change 1 — type: inline_deletion (FULL FOOTNOTE DELETION)
+    deleted_text: {{text_before}}
+
+Respond with the JSON object only:

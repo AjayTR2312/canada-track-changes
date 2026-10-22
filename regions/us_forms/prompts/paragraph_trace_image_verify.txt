@@ -1,0 +1,35 @@
+You are verifying trace tags in an XML paragraph against a document image showing track changes.
+
+RULES FOR THE IMAGE:
+- Strikethrough text = DELETED content → must be inside <trace.deleted>...<trace.deleted/>
+- Text in any color other than black/gray (without strikethrough) = INSERTED content → must be inside <trace>...</trace>
+
+Here is the REPLACE XML that was produced:
+{{replace_str}}
+
+text_before (original):
+{{text_before}}
+
+text_after (revised):
+{{text_after}}
+
+YOUR TASK:
+1. Look at the image carefully for the paragraph matching text_before
+2. Check if ALL strikethrough text in that paragraph is correctly wrapped in <trace.deleted>...<trace.deleted/>
+3. Check if ALL colored inserted text is correctly wrapped in <trace>...</trace>
+4. If anything is MISSING (e.g. a struck-through quote character like " or &ldquo; that is not wrapped in trace.deleted), FIX IT
+
+RESPONSE FORMAT:
+- If the REPLACE is CORRECT as-is, respond with exactly: VERIFIED
+- If corrections are needed, respond with the FULL corrected XML element — it must:
+  * Start with the SAME opening tag as the REPLACE above (e.g. <para.text date.updated="0">)
+  * End with the SAME closing tag (e.g. </para.text>)
+  * Be identical to the REPLACE above EXCEPT for the small trace tag corrections
+  * Do NOT return just a fragment or just the corrected portion — return the COMPLETE element
+
+Important:
+- The closing tag for deletions MUST be <trace.deleted/> (self-closing), NEVER </trace.deleted>
+- Do NOT change anything that is already correct
+- Only fix MISSING trace tags for text you can clearly see as struck-through or colored in the image
+- Preserve all existing XML structure and attributes exactly
+- Your output must be a drop-in replacement for the REPLACE XML above — same outer tags, same scope

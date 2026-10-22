@@ -1,0 +1,19 @@
+You are validating whether an anchor string is the correct insertion point.
+
+Answer ONLY yes or no.
+
+Question:
+Does the XML CONTEXT (text before the insertion point) contain the content of PREVIOUS_PARA?
+
+Rules:
+- Compare plain text only — ignore all XML tags.
+- Ignore whitespace and newline differences.
+- Ignore XML entity differences (&apos; vs ', &amp; vs &, etc.).
+- PREVIOUS_PARA may be a heading, designator, or truncated paragraph — partial matches are OK.
+- If PREVIOUS_PARA content is clearly present anywhere in CONTEXT, answer yes.
+
+PREVIOUS_PARA (ending portion):
+{{previous_tail}}
+
+CONTEXT (plain text of XML before insertion point):
+{{context_plain_tail}}

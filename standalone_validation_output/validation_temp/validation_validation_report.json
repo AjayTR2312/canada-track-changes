@@ -1,0 +1,904 @@
+{
+  "input_file": "validation",
+  "validation_model": "claude-opus-4-6",
+  "total_segments_validated": 98,
+  "valid": 60,
+  "invalid": 12,
+  "uncertain": 26,
+  "total_execution_time_seconds": 544.653,
+  "total_execution_time_formatted": "9m 4s",
+  "total_llm_time_seconds": 2412.662,
+  "total_llm_time_formatted": "40m 12s",
+  "llm_summary": {
+    "model": "claude-opus-4-6",
+    "total_calls": 98,
+    "total_input_tokens": 2293958,
+    "total_output_tokens": 88415,
+    "total_tokens": 2382373,
+    "total_cost_usd": 13.6802
+  },
+  "llm_call_details": [
+    {
+      "segment": "1",
+      "type": "insertion",
+      "duration_seconds": 29.847,
+      "input_tokens": 23015,
+      "output_tokens": 1068,
+      "cost_usd": 0.141775,
+      "is_valid": false
+    },
+    {
+      "segment": "1",
+      "type": "deletion",
+      "duration_seconds": 17.267,
+      "input_tokens": 23010,
+      "output_tokens": 439,
+      "cost_usd": 0.126025,
+      "is_valid": true
+    },
+    {
+      "segment": "2",
+      "type": "insertion",
+      "duration_seconds": 90.547,
+      "input_tokens": 23196,
+      "output_tokens": 4776,
+      "cost_usd": 0.23538,
+      "is_valid": false
+    },
+    {
+      "segment": "2",
+      "type": "deletion",
+      "duration_seconds": 26.605,
+      "input_tokens": 23027,
+      "output_tokens": 1001,
+      "cost_usd": 0.14016,
+      "is_valid": true
+    },
+    {
+      "segment": "3",
+      "type": "deletion",
+      "duration_seconds": 25.19,
+      "input_tokens": 23015,
+      "output_tokens": 943,
+      "cost_usd": 0.13865,
+      "is_valid": true
+    },
+    {
+      "segment": "3",
+      "type": "insertion",
+      "duration_seconds": 27.536,
+      "input_tokens": 23018,
+      "output_tokens": 1054,
+      "cost_usd": 0.14144,
+      "is_valid": true
+    },
+    {
+      "segment": "4",
+      "type": "deletion",
+      "duration_seconds": 25.02,
+      "input_tokens": 23000,
+      "output_tokens": 845,
+      "cost_usd": 0.136125,
+      "is_valid": true
+    },
+    {
+      "segment": "4",
+      "type": "insertion",
+      "duration_seconds": 33.003,
+      "input_tokens": 23002,
+      "output_tokens": 847,
+      "cost_usd": 0.136185,
+      "is_valid": true
+    },
+    {
+      "segment": "5",
+      "type": "insertion",
+      "duration_seconds": 23.402,
+      "input_tokens": 19986,
+      "output_tokens": 867,
+      "cost_usd": 0.121605,
+      "is_valid": true
+    },
+    {
+      "segment": "5",
+      "type": "deletion",
+      "duration_seconds": 28.892,
+      "input_tokens": 19991,
+      "output_tokens": 949,
+      "cost_usd": 0.12368,
+      "is_valid": null
+    },
+    {
+      "segment": "6",
+      "type": "deletion",
+      "duration_seconds": 31.61,
+      "input_tokens": 23133,
+      "output_tokens": 1339,
+      "cost_usd": 0.14914,
+      "is_valid": true
+    },
+    {
+      "segment": "6",
+      "type": "insertion",
+      "duration_seconds": 55.333,
+      "input_tokens": 23088,
+      "output_tokens": 2419,
+      "cost_usd": 0.175915,
+      "is_valid": true
+    },
+    {
+      "segment": "7",
+      "type": "deletion",
+      "duration_seconds": 11.035,
+      "input_tokens": 22978,
+      "output_tokens": 299,
+      "cost_usd": 0.122365,
+      "is_valid": true
+    },
+    {
+      "segment": "7",
+      "type": "insertion",
+      "duration_seconds": 12.024,
+      "input_tokens": 22988,
+      "output_tokens": 254,
+      "cost_usd": 0.12129,
+      "is_valid": true
+    },
+    {
+      "segment": "8",
+      "type": "insertion",
+      "duration_seconds": 15.66,
+      "input_tokens": 22992,
+      "output_tokens": 334,
+      "cost_usd": 0.12331,
+      "is_valid": true
+    },
+    {
+      "segment": "8",
+      "type": "deletion",
+      "duration_seconds": 11.323,
+      "input_tokens": 22984,
+      "output_tokens": 376,
+      "cost_usd": 0.12432,
+      "is_valid": true
+    },
+    {
+      "segment": "9",
+      "type": "deletion",
+      "duration_seconds": 29.716,
+      "input_tokens": 23065,
+      "output_tokens": 1129,
+      "cost_usd": 0.14355,
+      "is_valid": true
+    },
+    {
+      "segment": "9",
+      "type": "insertion",
+      "duration_seconds": 36.807,
+      "input_tokens": 23066,
+      "output_tokens": 1432,
+      "cost_usd": 0.15113,
+      "is_valid": false
+    },
+    {
+      "segment": "10",
+      "type": "insertion",
+      "duration_seconds": 69.847,
+      "input_tokens": 23224,
+      "output_tokens": 3281,
+      "cost_usd": 0.198145,
+      "is_valid": false
+    },
+    {
+      "segment": "10",
+      "type": "deletion",
+      "duration_seconds": 38.611,
+      "input_tokens": 23247,
+      "output_tokens": 1662,
+      "cost_usd": 0.157785,
+      "is_valid": true
+    },
+    {
+      "segment": "11",
+      "type": "insertion",
+      "duration_seconds": 15.051,
+      "input_tokens": 23011,
+      "output_tokens": 280,
+      "cost_usd": 0.122055,
+      "is_valid": true
+    },
+    {
+      "segment": "11",
+      "type": "deletion",
+      "duration_seconds": 15.778,
+      "input_tokens": 19974,
+      "output_tokens": 328,
+      "cost_usd": 0.10807,
+      "is_valid": true
+    },
+    {
+      "segment": "12",
+      "type": "insertion",
+      "duration_seconds": 14.635,
+      "input_tokens": 19987,
+      "output_tokens": 317,
+      "cost_usd": 0.10786,
+      "is_valid": true
+    },
+    {
+      "segment": "12",
+      "type": "deletion",
+      "duration_seconds": 7.395,
+      "input_tokens": 19981,
+      "output_tokens": 275,
+      "cost_usd": 0.10678,
+      "is_valid": true
+    },
+    {
+      "segment": "13",
+      "type": "insertion",
+      "duration_seconds": 11.817,
+      "input_tokens": 19981,
+      "output_tokens": 294,
+      "cost_usd": 0.107255,
+      "is_valid": true
+    },
+    {
+      "segment": "13",
+      "type": "deletion",
+      "duration_seconds": 9.791,
+      "input_tokens": 19989,
+      "output_tokens": 380,
+      "cost_usd": 0.109445,
+      "is_valid": null
+    },
+    {
+      "segment": "14",
+      "type": "insertion",
+      "duration_seconds": 13.417,
+      "input_tokens": 23022,
+      "output_tokens": 290,
+      "cost_usd": 0.12236,
+      "is_valid": true
+    },
+    {
+      "segment": "14",
+      "type": "deletion",
+      "duration_seconds": 26.042,
+      "input_tokens": 23009,
+      "output_tokens": 980,
+      "cost_usd": 0.139545,
+      "is_valid": true
+    },
+    {
+      "segment": "15",
+      "type": "insertion",
+      "duration_seconds": 12.04,
+      "input_tokens": 23010,
+      "output_tokens": 333,
+      "cost_usd": 0.123375,
+      "is_valid": true
+    },
+    {
+      "segment": "15",
+      "type": "deletion",
+      "duration_seconds": 25.469,
+      "input_tokens": 22987,
+      "output_tokens": 1007,
+      "cost_usd": 0.14011,
+      "is_valid": true
+    },
+    {
+      "segment": "16",
+      "type": "insertion",
+      "duration_seconds": 34.072,
+      "input_tokens": 22987,
+      "output_tokens": 1240,
+      "cost_usd": 0.145935,
+      "is_valid": true
+    },
+    {
+      "segment": "16",
+      "type": "deletion",
+      "duration_seconds": 21.77,
+      "input_tokens": 19588,
+      "output_tokens": 575,
+      "cost_usd": 0.112315,
+      "is_valid": null
+    },
+    {
+      "segment": "17",
+      "type": "insertion",
+      "duration_seconds": 59.708,
+      "input_tokens": 23302,
+      "output_tokens": 2698,
+      "cost_usd": 0.18396,
+      "is_valid": false
+    },
+    {
+      "segment": "17",
+      "type": "deletion",
+      "duration_seconds": 64.556,
+      "input_tokens": 23653,
+      "output_tokens": 2674,
+      "cost_usd": 0.185115,
+      "is_valid": true
+    },
+    {
+      "segment": "18",
+      "type": "insertion",
+      "duration_seconds": 51.48,
+      "input_tokens": 27008,
+      "output_tokens": 2159,
+      "cost_usd": 0.189015,
+      "is_valid": false
+    },
+    {
+      "segment": "18",
+      "type": "deletion",
+      "duration_seconds": 39.515,
+      "input_tokens": 26895,
+      "output_tokens": 1358,
+      "cost_usd": 0.168425,
+      "is_valid": true
+    },
+    {
+      "segment": "19",
+      "type": "insertion",
+      "duration_seconds": 9.642,
+      "input_tokens": 26831,
+      "output_tokens": 259,
+      "cost_usd": 0.14063,
+      "is_valid": null
+    },
+    {
+      "segment": "19",
+      "type": "deletion",
+      "duration_seconds": 37.794,
+      "input_tokens": 26949,
+      "output_tokens": 1830,
+      "cost_usd": 0.180495,
+      "is_valid": false
+    },
+    {
+      "segment": "20",
+      "type": "insertion",
+      "duration_seconds": 18.858,
+      "input_tokens": 26848,
+      "output_tokens": 636,
+      "cost_usd": 0.15014,
+      "is_valid": null
+    },
+    {
+      "segment": "20",
+      "type": "deletion",
+      "duration_seconds": 11.705,
+      "input_tokens": 19962,
+      "output_tokens": 263,
+      "cost_usd": 0.106385,
+      "is_valid": null
+    },
+    {
+      "segment": "21",
+      "type": "insertion",
+      "duration_seconds": 9.84,
+      "input_tokens": 23819,
+      "output_tokens": 262,
+      "cost_usd": 0.125645,
+      "is_valid": null
+    },
+    {
+      "segment": "22",
+      "type": "insertion",
+      "duration_seconds": 7.709,
+      "input_tokens": 19981,
+      "output_tokens": 240,
+      "cost_usd": 0.105905,
+      "is_valid": null
+    },
+    {
+      "segment": "21",
+      "type": "deletion",
+      "duration_seconds": 10.862,
+      "input_tokens": 19970,
+      "output_tokens": 457,
+      "cost_usd": 0.111275,
+      "is_valid": null
+    },
+    {
+      "segment": "22",
+      "type": "deletion",
+      "duration_seconds": 16.412,
+      "input_tokens": 23996,
+      "output_tokens": 550,
+      "cost_usd": 0.13373,
+      "is_valid": null
+    },
+    {
+      "segment": "23",
+      "type": "insertion",
+      "duration_seconds": 10.873,
+      "input_tokens": 24006,
+      "output_tokens": 264,
+      "cost_usd": 0.12663,
+      "is_valid": null
+    },
+    {
+      "segment": "23",
+      "type": "deletion",
+      "duration_seconds": 18.786,
+      "input_tokens": 24116,
+      "output_tokens": 580,
+      "cost_usd": 0.13508,
+      "is_valid": null
+    },
+    {
+      "segment": "24",
+      "type": "insertion",
+      "duration_seconds": 12.897,
+      "input_tokens": 19311,
+      "output_tokens": 409,
+      "cost_usd": 0.10678,
+      "is_valid": null
+    },
+    {
+      "segment": "24",
+      "type": "deletion",
+      "duration_seconds": 23.387,
+      "input_tokens": 19960,
+      "output_tokens": 817,
+      "cost_usd": 0.120225,
+      "is_valid": null
+    },
+    {
+      "segment": "25",
+      "type": "insertion",
+      "duration_seconds": 34.34,
+      "input_tokens": 21488,
+      "output_tokens": 940,
+      "cost_usd": 0.13094,
+      "is_valid": null
+    },
+    {
+      "segment": "25",
+      "type": "deletion",
+      "duration_seconds": 12.695,
+      "input_tokens": 19973,
+      "output_tokens": 504,
+      "cost_usd": 0.112465,
+      "is_valid": null
+    },
+    {
+      "segment": "26",
+      "type": "insertion",
+      "duration_seconds": 14.957,
+      "input_tokens": 21488,
+      "output_tokens": 567,
+      "cost_usd": 0.121615,
+      "is_valid": null
+    },
+    {
+      "segment": "26",
+      "type": "deletion",
+      "duration_seconds": 13.604,
+      "input_tokens": 21483,
+      "output_tokens": 517,
+      "cost_usd": 0.12034,
+      "is_valid": null
+    },
+    {
+      "segment": "27",
+      "type": "insertion",
+      "duration_seconds": 10.896,
+      "input_tokens": 20003,
+      "output_tokens": 304,
+      "cost_usd": 0.107615,
+      "is_valid": true
+    },
+    {
+      "segment": "27",
+      "type": "deletion",
+      "duration_seconds": 13.709,
+      "input_tokens": 19990,
+      "output_tokens": 342,
+      "cost_usd": 0.1085,
+      "is_valid": true
+    },
+    {
+      "segment": "28",
+      "type": "insertion",
+      "duration_seconds": 24.408,
+      "input_tokens": 23828,
+      "output_tokens": 276,
+      "cost_usd": 0.12604,
+      "is_valid": true
+    },
+    {
+      "segment": "28",
+      "type": "deletion",
+      "duration_seconds": 16.697,
+      "input_tokens": 25497,
+      "output_tokens": 800,
+      "cost_usd": 0.147485,
+      "is_valid": null
+    },
+    {
+      "segment": "29",
+      "type": "insertion",
+      "duration_seconds": 42.425,
+      "input_tokens": 20070,
+      "output_tokens": 1448,
+      "cost_usd": 0.13655,
+      "is_valid": null
+    },
+    {
+      "segment": "30",
+      "type": "insertion",
+      "duration_seconds": 36.126,
+      "input_tokens": 23009,
+      "output_tokens": 1147,
+      "cost_usd": 0.14372,
+      "is_valid": true
+    },
+    {
+      "segment": "29",
+      "type": "deletion",
+      "duration_seconds": 30.863,
+      "input_tokens": 22993,
+      "output_tokens": 1112,
+      "cost_usd": 0.142765,
+      "is_valid": true
+    },
+    {
+      "segment": "31",
+      "type": "insertion",
+      "duration_seconds": 10.718,
+      "input_tokens": 25316,
+      "output_tokens": 318,
+      "cost_usd": 0.13453,
+      "is_valid": true
+    },
+    {
+      "segment": "30",
+      "type": "deletion",
+      "duration_seconds": 22.42,
+      "input_tokens": 25314,
+      "output_tokens": 997,
+      "cost_usd": 0.151495,
+      "is_valid": true
+    },
+    {
+      "segment": "31",
+      "type": "deletion",
+      "duration_seconds": 12.897,
+      "input_tokens": 25318,
+      "output_tokens": 355,
+      "cost_usd": 0.135465,
+      "is_valid": true
+    },
+    {
+      "segment": "32",
+      "type": "insertion",
+      "duration_seconds": 8.961,
+      "input_tokens": 23817,
+      "output_tokens": 307,
+      "cost_usd": 0.12676,
+      "is_valid": null
+    },
+    {
+      "segment": "33",
+      "type": "insertion",
+      "duration_seconds": 11.794,
+      "input_tokens": 23817,
+      "output_tokens": 301,
+      "cost_usd": 0.12661,
+      "is_valid": true
+    },
+    {
+      "segment": "32",
+      "type": "deletion",
+      "duration_seconds": 14.151,
+      "input_tokens": 23815,
+      "output_tokens": 303,
+      "cost_usd": 0.12665,
+      "is_valid": null
+    },
+    {
+      "segment": "34",
+      "type": "insertion",
+      "duration_seconds": 13.041,
+      "input_tokens": 23816,
+      "output_tokens": 308,
+      "cost_usd": 0.12678,
+      "is_valid": true
+    },
+    {
+      "segment": "33",
+      "type": "deletion",
+      "duration_seconds": 8.806,
+      "input_tokens": 23813,
+      "output_tokens": 310,
+      "cost_usd": 0.126815,
+      "is_valid": null
+    },
+    {
+      "segment": "35",
+      "type": "insertion",
+      "duration_seconds": 14.081,
+      "input_tokens": 26855,
+      "output_tokens": 377,
+      "cost_usd": 0.1437,
+      "is_valid": true
+    },
+    {
+      "segment": "34",
+      "type": "deletion",
+      "duration_seconds": 25.075,
+      "input_tokens": 26835,
+      "output_tokens": 813,
+      "cost_usd": 0.1545,
+      "is_valid": true
+    },
+    {
+      "segment": "36",
+      "type": "insertion",
+      "duration_seconds": 13.155,
+      "input_tokens": 25321,
+      "output_tokens": 344,
+      "cost_usd": 0.135205,
+      "is_valid": true
+    },
+    {
+      "segment": "35",
+      "type": "deletion",
+      "duration_seconds": 38.847,
+      "input_tokens": 26894,
+      "output_tokens": 1478,
+      "cost_usd": 0.17142,
+      "is_valid": true
+    },
+    {
+      "segment": "36",
+      "type": "deletion",
+      "duration_seconds": 14.181,
+      "input_tokens": 23794,
+      "output_tokens": 392,
+      "cost_usd": 0.12877,
+      "is_valid": false
+    },
+    {
+      "segment": "37",
+      "type": "insertion",
+      "duration_seconds": 13.088,
+      "input_tokens": 26830,
+      "output_tokens": 374,
+      "cost_usd": 0.1435,
+      "is_valid": true
+    },
+    {
+      "segment": "38",
+      "type": "insertion",
+      "duration_seconds": 18.176,
+      "input_tokens": 26855,
+      "output_tokens": 319,
+      "cost_usd": 0.14225,
+      "is_valid": true
+    },
+    {
+      "segment": "37",
+      "type": "deletion",
+      "duration_seconds": 28.197,
+      "input_tokens": 26846,
+      "output_tokens": 1021,
+      "cost_usd": 0.159755,
+      "is_valid": true
+    },
+    {
+      "segment": "39",
+      "type": "insertion",
+      "duration_seconds": 11.786,
+      "input_tokens": 25322,
+      "output_tokens": 359,
+      "cost_usd": 0.135585,
+      "is_valid": true
+    },
+    {
+      "segment": "38",
+      "type": "deletion",
+      "duration_seconds": 8.121,
+      "input_tokens": 23808,
+      "output_tokens": 283,
+      "cost_usd": 0.126115,
+      "is_valid": null
+    },
+    {
+      "segment": "40",
+      "type": "insertion",
+      "duration_seconds": 10.936,
+      "input_tokens": 23815,
+      "output_tokens": 330,
+      "cost_usd": 0.127325,
+      "is_valid": true
+    },
+    {
+      "segment": "39",
+      "type": "deletion",
+      "duration_seconds": 23.656,
+      "input_tokens": 25326,
+      "output_tokens": 853,
+      "cost_usd": 0.147955,
+      "is_valid": true
+    },
+    {
+      "segment": "41",
+      "type": "insertion",
+      "duration_seconds": 13.22,
+      "input_tokens": 23815,
+      "output_tokens": 290,
+      "cost_usd": 0.126325,
+      "is_valid": true
+    },
+    {
+      "segment": "42",
+      "type": "insertion",
+      "duration_seconds": 14.044,
+      "input_tokens": 26827,
+      "output_tokens": 378,
+      "cost_usd": 0.143585,
+      "is_valid": true
+    },
+    {
+      "segment": "40",
+      "type": "deletion",
+      "duration_seconds": 26.609,
+      "input_tokens": 26821,
+      "output_tokens": 839,
+      "cost_usd": 0.15508,
+      "is_valid": true
+    },
+    {
+      "segment": "43",
+      "type": "insertion",
+      "duration_seconds": 35.951,
+      "input_tokens": 23053,
+      "output_tokens": 1545,
+      "cost_usd": 0.15389,
+      "is_valid": true
+    },
+    {
+      "segment": "41",
+      "type": "deletion",
+      "duration_seconds": 30.009,
+      "input_tokens": 23084,
+      "output_tokens": 1138,
+      "cost_usd": 0.14387,
+      "is_valid": true
+    },
+    {
+      "segment": "44",
+      "type": "insertion",
+      "duration_seconds": 54.815,
+      "input_tokens": 27020,
+      "output_tokens": 2447,
+      "cost_usd": 0.196275,
+      "is_valid": false
+    },
+    {
+      "segment": "42",
+      "type": "deletion",
+      "duration_seconds": 33.157,
+      "input_tokens": 27121,
+      "output_tokens": 1253,
+      "cost_usd": 0.16693,
+      "is_valid": true
+    },
+    {
+      "segment": "45",
+      "type": "insertion",
+      "duration_seconds": 64.267,
+      "input_tokens": 27161,
+      "output_tokens": 2985,
+      "cost_usd": 0.21043,
+      "is_valid": false
+    },
+    {
+      "segment": "43",
+      "type": "deletion",
+      "duration_seconds": 34.839,
+      "input_tokens": 23341,
+      "output_tokens": 1440,
+      "cost_usd": 0.152705,
+      "is_valid": true
+    },
+    {
+      "segment": "46",
+      "type": "insertion",
+      "duration_seconds": 11.759,
+      "input_tokens": 24027,
+      "output_tokens": 318,
+      "cost_usd": 0.128085,
+      "is_valid": true
+    },
+    {
+      "segment": "44",
+      "type": "deletion",
+      "duration_seconds": 18.72,
+      "input_tokens": 24009,
+      "output_tokens": 316,
+      "cost_usd": 0.127945,
+      "is_valid": true
+    },
+    {
+      "segment": "47",
+      "type": "insertion",
+      "duration_seconds": 11.466,
+      "input_tokens": 22573,
+      "output_tokens": 394,
+      "cost_usd": 0.122715,
+      "is_valid": true
+    },
+    {
+      "segment": "48",
+      "type": "insertion",
+      "duration_seconds": 55.539,
+      "input_tokens": 24232,
+      "output_tokens": 2512,
+      "cost_usd": 0.18396,
+      "is_valid": true
+    },
+    {
+      "segment": "45",
+      "type": "deletion",
+      "duration_seconds": 20.086,
+      "input_tokens": 24115,
+      "output_tokens": 551,
+      "cost_usd": 0.13435,
+      "is_valid": null
+    },
+    {
+      "segment": "49",
+      "type": "insertion",
+      "duration_seconds": 16.378,
+      "input_tokens": 26428,
+      "output_tokens": 591,
+      "cost_usd": 0.146915,
+      "is_valid": null
+    },
+    {
+      "segment": "46",
+      "type": "deletion",
+      "duration_seconds": 9.058,
+      "input_tokens": 20980,
+      "output_tokens": 319,
+      "cost_usd": 0.112875,
+      "is_valid": true
+    },
+    {
+      "segment": "50",
+      "type": "insertion",
+      "duration_seconds": 31.809,
+      "input_tokens": 22623,
+      "output_tokens": 1221,
+      "cost_usd": 0.14364,
+      "is_valid": true
+    },
+    {
+      "segment": "47",
+      "type": "deletion",
+      "duration_seconds": 25.064,
+      "input_tokens": 21112,
+      "output_tokens": 737,
+      "cost_usd": 0.123985,
+      "is_valid": false
+    },
+    {
+      "segment": "51",
+      "type": "insertion",
+      "duration_seconds": 82.489,
+      "input_tokens": 23109,
+      "output_tokens": 3973,
+      "cost_usd": 0.21487,
+      "is_valid": false
+    }
+  ]
+}

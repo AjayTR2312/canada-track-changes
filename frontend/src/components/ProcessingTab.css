@@ -1,0 +1,180 @@
+.processing-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Status Banners */
+.status-banner {
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  border-left: 4px solid #2E7D32;
+  background: #f0f0f0;
+  font-size: 0.9rem;
+}
+
+.status-banner.running {
+  border-left-color: #F57C00;
+  background: #fff8f0;
+}
+
+.status-banner.failed {
+  border-left-color: #C62828;
+  background: #fef0f0;
+}
+
+.status-banner.completed {
+  border-left-color: #2E7D32;
+  background: #f0faf0;
+}
+
+.status-banner.ready {
+  border-left-color: #2E7D32;
+  background: #f8f9fa;
+}
+
+/* Grid Layout */
+.processing-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1.25rem;
+}
+
+/* Panel (card) */
+.panel {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: #fff;
+}
+
+.panel h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  color: #2c3e50;
+}
+
+.panel p {
+  font-size: 0.85rem;
+  color: #495057;
+  margin: 0.3rem 0;
+}
+
+.job-id-text {
+  font-size: 0.8rem !important;
+  color: #6c757d !important;
+}
+
+.job-id-text code {
+  background: #f0f2f6;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+}
+
+/* Metrics */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.metric-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.metric-label {
+  font-size: 0.7rem;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.metric-value {
+  font-size: 0.9rem;
+  color: #212529;
+  font-weight: 600;
+}
+
+/* Steps */
+.steps-panel {
+  margin-top: 0.5rem;
+}
+
+.steps-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.steps-header h3 {
+  margin: 0;
+}
+
+.steps-counter {
+  color: #6c757d;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #0068C9;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem 2rem;
+}
+
+.step-item {
+  font-size: 0.85rem;
+  padding: 0.2rem 0;
+}
+
+.step-done {
+  color: #2E7D32;
+}
+
+.step-active {
+  color: #F57C00;
+  font-weight: 600;
+}
+
+.step-pending {
+  color: #9e9e9e;
+}
+
+/* Log */
+.log-output {
+  margin-top: 0.75rem;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-family: 'Consolas', 'Courier New', monospace;
+  max-height: 400px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}

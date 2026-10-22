@@ -1,0 +1,44 @@
+You are validating whether an anchor string is the correct insertion point.
+
+Answer ONLY yes or no.
+
+The new paragraph must be inserted IMMEDIATELY AFTER the paragraph whose text is
+PREVIOUS_PARA. So the insertion point is correct ONLY IF PREVIOUS_PARA is the
+LAST paragraph appearing at the very END of CONTEXT (i.e. CONTEXT ends with the
+content of PREVIOUS_PARA).
+
+IMPORTANT — FOOTNOTE / CITATION TEXT AT THE END IS ALLOWED:
+PREVIOUS_PARA comes from a source with footnotes removed, but CONTEXT may still
+contain the footnote body text belonging to that SAME paragraph after its prose
+(e.g. footnote wording, citations, reporter references, "Ibid.", "supra", page
+numbers). Treat such trailing footnote/citation text as part of PREVIOUS_PARA's
+own paragraph — it does NOT count as a "different paragraph in between". As long
+as the last REAL prose paragraph in CONTEXT is PREVIOUS_PARA (ignoring any
+trailing footnote body / citation text that belongs to it), answer yes.
+
+Question:
+Does CONTEXT END WITH the content of PREVIOUS_PARA, with NO other full paragraph
+in between?
+
+Rules:
+- Compare plain text only — ignore all XML tags.
+- Ignore whitespace and newline differences.
+- Ignore XML entity differences (&apos; vs ', &amp; vs &, etc.).
+- PREVIOUS_PARA may be a heading, designator, or truncated paragraph.
+- Answer YES only if the ENDING of CONTEXT matches the ENDING of PREVIOUS_PARA
+  (the last sentence/words of PREVIOUS_PARA are the last real PROSE in CONTEXT),
+  ignoring any trailing footnote body / citation text that belongs to that same
+  paragraph.
+- Answer NO if a DIFFERENT PROSE paragraph's text appears AFTER PREVIOUS_PARA in
+  CONTEXT — that means the anchor drifted past PREVIOUS_PARA to a later
+  paragraph, so the insertion point is wrong. (Trailing footnote/citation text
+  of PREVIOUS_PARA itself is NOT a different paragraph — ignore it.)
+- Answer NO if PREVIOUS_PARA content does not appear in CONTEXT at all.
+- Do NOT answer yes merely because PREVIOUS_PARA appears somewhere earlier in
+  CONTEXT; it MUST be the last real prose paragraph.
+
+PREVIOUS_PARA (ending portion):
+{{previous_tail}}
+
+CONTEXT (plain text of XML before insertion point):
+{{context_plain_tail}}

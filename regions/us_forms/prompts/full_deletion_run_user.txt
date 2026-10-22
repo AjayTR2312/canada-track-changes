@@ -1,0 +1,35 @@
+{{correction_prefix}}═══════════════════════════════════════════════
+XML CHUNK (search in this):
+═══════════════════════════════════════════════
+{{xml_chunk}}
+
+═══════════════════════════════════════════════
+TARGET PARAGRAPHS (a CONTIGUOUS run of {{run_count}} paragraphs, ALL fully
+deleted, listed here IN ORDER — locate each one's own element in the XML,
+IN THIS SAME ORDER. They are NOT necessarily siblings at the same nesting
+depth — a later target can be nested INSIDE an earlier target's own element,
+e.g. via that earlier target's own child <list>. Walk the real structure):
+═══════════════════════════════════════════════
+{{run_paragraphs_block}}
+
+═══════════════════════════════════════════════
+POSITIONING ANCHORS:
+═══════════════════════════════════════════════
+previous_para (element BEFORE the FIRST target): {{previous_para_or_na}}
+post_para (element AFTER the LAST target): {{post_para_or_na}}
+
+⚠️ SIZE HINT: the {{run_count}} target paragraphs together are only
+{{text_before_len}} characters of plain text (tags stripped).
+If the PLAIN TEXT inside your "find" contains more than {{text_before_len_x2}}
+characters, STOP — you likely included an extra untouched paragraph's text.
+Structural tags (list/list.item open+close, designators) do not count toward
+this. Return empty find/replace instead of guessing.
+
+Find the smallest contiguous XML span covering all {{run_count}} targets, in
+order, AT WHATEVER DEPTH EACH ONE ACTUALLY SITS, and wrap EACH target's own
+leaf-level content in its own <trace.deleted>...<trace.deleted/> — never
+merge two different targets' content into one shared trace.deleted, but DO
+copy through any intervening structural tags (including a nested <list>
+that contains a later target) completely unchanged. If you cannot locate
+all {{run_count}} targets inside one contiguous span, return
+{"reasoning": "...", "find": "", "replace": ""}.

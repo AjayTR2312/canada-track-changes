@@ -1,0 +1,43 @@
+{
+  "session_id": "37dbe6e4",
+  "session_name": "Chapter 13 - combined.docx",
+  "emp_id": "C302473",
+  "created_at": 1787509994.9915752,
+  "updated_at": 1787510222.0911598,
+  "docx_filename": "Chapter 13 - combined.docx",
+  "pxml_filename": "Chapter 13 - combined.pxml",
+  "excel_filename": "final_validation_report_00-00_24_08_2026.xlsx",
+  "pdf_filename": "Chapter 13 - combined.pdf",
+  "failed_revisions_filename": null,
+  "current_revision_index": 7,
+  "total_revisions": 0,
+  "total_invalid": 0,
+  "revision_statuses": {},
+  "sharepoint_folder_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/37dbe6e4",
+  "sharepoint_uploads": [
+    {
+      "success": true,
+      "filename": "Chapter 13 - combined.docx",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7B3ADCE07B-09DE-4603-9B82-12AD8F3DB2F7%7D&file=Chapter%2013%20-%20combined.docx&action=default&mobileredirect=true",
+      "item_id": "01GZSMCAL34DODVXQJANDJXAQSVWHT3MXX"
+    },
+    {
+      "success": true,
+      "filename": "Chapter 13 - combined.pdf",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/37dbe6e4/Chapter%2013%20-%20combined.pdf",
+      "item_id": "01GZSMCAKPMGQR4QZXQZELQ7BQA56PLXVN"
+    },
+    {
+      "success": true,
+      "filename": "Chapter 13 - combined.pxml",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/Shared%20Documents/XML_Track_Changes/C302473/37dbe6e4/Chapter%2013%20-%20combined.pxml",
+      "item_id": "01GZSMCAP357HZ2BOU3FHZ5WKEHDEFRNY7"
+    },
+    {
+      "success": true,
+      "filename": "final_validation_report_00-00_24_08_2026.xlsx",
+      "sharepoint_url": "https://trten.sharepoint.com/sites/hyd-forms/_layouts/15/Doc.aspx?sourcedoc=%7BE0A3F8AC-5C9E-4205-B3F1-2F97786853F1%7D&file=final_validation_report_00-00_24_08_2026.xlsx&action=default&mobileredirect=true",
+      "item_id": "01GZSMCANM7CR6BHS4AVBLH4JPS54GQU7R"
+    }
+  ]
+}

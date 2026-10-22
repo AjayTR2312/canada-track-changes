@@ -1,0 +1,32 @@
+{{base_prompt}}
+
+INPUT FOR THIS CONVERSION TASK:
+
+SAMPLE XML CONTEXT (for structural consistency with target file):
+{{xml_context}}
+
+PLAIN TEXT TO CONVERT:
+{{plain_text}}
+
+BULLET POINTS DETECTED (authoritative):
+{{bullet_points_block}}
+
+SECTION HEADER HINT: {{section_header_or_none}}
+SECTION DESIGNATOR HINT: {{designator_hint_or_none}}
+
+ADDITIONAL PIPELINE RULES:
+- This is for section insertion output expected as a <section>...</section> block.
+- OUTPUT CONTRACT (MANDATORY): Return exactly one root <section> element.
+- Output must start with <section and end with </section>.
+- Include <section.front> with designator and name from the hints above.
+- Put converted content inside <section.body>...</section.body>.
+- Prefer the Canada Pamphlets instructions above for tagging decisions.
+- Preserve exact word order and punctuation from input text.
+
+{{XML_ENTITY_RULES}}
+
+{{CASE_CITATION_RULES}}
+
+{{URL_TAGGING_RULES}}
+
+Return ONLY valid XML output for the converted content, with no explanation or markdown fences.
