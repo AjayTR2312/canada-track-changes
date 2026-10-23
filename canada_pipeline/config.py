@@ -76,6 +76,20 @@ def build_anthropic_client(model_name=MODEL_OPUS):
     """
     workspace_id = os.getenv("TR_WORKSPACE_ID", "")
     token_url = os.getenv("TR_ANTHROPIC_TOKEN_URL", "")
+
+    # Fail fast with an actionable message when the deployment is missing these.
+    # Without this, an empty token_url makes requests.post("") raise the cryptic
+    # "Invalid URL '': No scheme supplied", which hides the real cause.
+    missing = [name for name, val in
+               (("TR_ANTHROPIC_TOKEN_URL", token_url), ("TR_WORKSPACE_ID", workspace_id))
+               if not val.strip()]
+    if missing:
+        raise RuntimeError(
+            "Missing required environment variable(s): " + ", ".join(missing) +
+            ". Set them in the deployment environment (e.g. the Plexus Deployment Job "
+            "Environment tab) so the pipeline can fetch Anthropic credentials."
+        )
+
     payload = {"workspace_id": workspace_id}
     url = token_url
 
