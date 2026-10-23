@@ -47,9 +47,9 @@ app = FastAPI(title="PXML Document Processor API", version="3.0")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 # ─────────────────────────────────────────────
-# ExecutorPool — 6 workers for concurrent pipeline jobs
+# ExecutorPool — workers for concurrent pipeline jobs (override via PIPELINE_MAX_WORKERS)
 # ─────────────────────────────────────────────
-MAX_WORKERS = int(os.getenv("PIPELINE_MAX_WORKERS", "6"))
+MAX_WORKERS = int(os.getenv("PIPELINE_MAX_WORKERS", "30"))
 executor = ProcessPoolExecutor(max_workers=MAX_WORKERS)
 
 # ─────────────────────────────────────────────
@@ -1546,7 +1546,7 @@ async def health_check():
             "storage": {"ok": ok, "detail": detail}}
 
 
-@app.get("/health")
+@app.get("/healthz")
 async def liveness():
     """Lightweight liveness probe for the deployment platform (Plexus) load balancer.
     Always 200 and does no I/O, so a transient S3/network hiccup can't get the pod killed.

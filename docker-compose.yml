@@ -8,7 +8,7 @@ services:
     env_file:
       - .env
     environment:
-      - PIPELINE_MAX_WORKERS=6
+      - PIPELINE_MAX_WORKERS=30
       # The image ENTRYPOINT binds $PORT; keep it in sync with the published port.
       - PORT=8000
       # All persistent state lives in this S3 bucket (credentials: the host's IAM role, or the

@@ -87,7 +87,7 @@ USER deployment
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PORT=8501 \
-    PIPELINE_MAX_WORKERS=6 \
+    PIPELINE_MAX_WORKERS=30 \
     HOME=/tmp \
     TMPDIR=/tmp \
     XDG_CACHE_HOME=/tmp/.cache \
@@ -98,6 +98,6 @@ EXPOSE 8501
 # Health endpoint the platform / load balancer can probe. A longer start period
 # accounts for the heavy first-import of the conversion stack (PyMuPDF, lxml).
 HEALTHCHECK --interval=30s --timeout=10s --start-period=80s --retries=3 \
-    CMD curl -fsS "http://localhost:${PORT}/health" || exit 1
+    CMD curl -fsS "http://localhost:${PORT}/healthz" || exit 1
 
 ENTRYPOINT ["./entrypoint.sh"]
