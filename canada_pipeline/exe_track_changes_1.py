@@ -296,9 +296,11 @@ class LLMFallbackHandler:
 
     MAX_BACKOFF = 60
 
-    # Shared Azure OpenAI defaults — loaded from environment variables
+    # Shared Azure OpenAI defaults — loaded from environment variables.
+    # AZURE_OPENAI_API_KEY (20 chars) exceeds some platforms' 16-char secret-name
+    # limit (e.g. Plexus Secrets), so also accept the short alias AZURE_OAI_KEY.
     _DEFAULT_AZURE_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "")
-    _DEFAULT_AZURE_API_KEY = os.getenv("AZURE_OPENAI_API_KEY", "")
+    _DEFAULT_AZURE_API_KEY = os.getenv("AZURE_OPENAI_API_KEY") or os.getenv("AZURE_OAI_KEY", "")
     _DEFAULT_AZURE_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "2024-03-01-preview")
     _DEFAULT_ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 
