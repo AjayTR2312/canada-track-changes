@@ -5,8 +5,9 @@ import './TrackChangesPanel.css';
 import './DraftPanel.css';
 import ResolverAgent from './ResolverAgent';
 import type { PxmlEditorApi } from './PxmlEditor';
+import { API_BASE } from '../../services/basePath';
 
-const API_URL = '';
+const API_URL = API_BASE;
 
 export interface DraftRevision {
   'Row Index': number;

@@ -1,8 +1,9 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import type { PxmlEditorApi } from './PxmlEditor';
 import './ResolverAgent.css';
+import { API_BASE } from '../../services/basePath';
 
-const API_URL = '';
+const API_URL = API_BASE;
 
 interface Proposal {
   kind: 'replace' | 'insert_after';

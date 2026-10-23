@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useJob } from '../context/JobContext';
 import { listOutputs, deleteValidationSession } from '../services/api';
+import { withBase } from '../services/basePath';
 import './Tabs.css';
 
-const DOCX_VIEWER_URL = '/docx-viewer.html';
+const DOCX_VIEWER_URL = withBase('/docx-viewer.html');
 
 interface RecentSession {
   session_id: string;
@@ -38,7 +39,7 @@ export default function ValidationTab() {
     setLoadingSessions(true);
     const empId = user?.emp_id || '';
     const qs = empId ? `?emp_id=${encodeURIComponent(empId)}` : '';
-    fetch(`/api/validation/sessions${qs}`)
+    fetch(withBase(`/api/validation/sessions${qs}`))
       .then(res => res.json())
       .then(data => setRecentSessions(data.sessions || []))
       .catch(() => {})

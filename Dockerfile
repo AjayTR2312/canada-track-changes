@@ -23,13 +23,21 @@ WORKDIR /build
 COPY frontend/package.json frontend/package-lock.json ./
 RUN npm ci
 COPY frontend/ ./
+# Relative asset base ("./") so the compiled UI loads its JS/CSS from wherever
+# the app is mounted — the web root locally, or a platform sub-path in production
+# (e.g. Plexus serves it at "/208321/canadatrackchanges/"). Without this, Vite
+# emits absolute "/assets/..." links that 404 under a sub-path and the page is
+# blank. API calls and cross-page links detect the same prefix at runtime (see
+# src/services/basePath.ts). Override with --build-arg BASE_PATH=... if a specific
+# absolute base is ever required.
+ARG BASE_PATH=./
 # Guard: if a host node_modules leaked in (e.g. a stale/missing .dockerignore),
 # the copied Windows binaries shadow the Linux ones and `tsc` fails with
 # "tsc: Permission denied". Wiping and reinstalling guarantees correct, executable
 # Linux binaries regardless of what the build context shipped.
 # Produces /build/dist (host app + docx-viewer + dtd-validator bundles), which
 # static_react.py serves: /assets via StaticFiles and index.html as SPA fallback.
-RUN rm -rf node_modules && npm ci && npm run build
+RUN rm -rf node_modules && npm ci && npm run build -- --base="${BASE_PATH}"
 
 # -----------------------------------------------------------------------------
 # Stage 2 — Python runtime

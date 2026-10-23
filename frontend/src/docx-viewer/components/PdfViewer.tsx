@@ -9,7 +9,9 @@ import './PdfViewer.css';
 // Set up PDF.js worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
-const API_URL = '';
+import { API_BASE } from '../../services/basePath';
+
+const API_URL = API_BASE;
 
 interface Props {
   selectedChange: TrackChange | null;

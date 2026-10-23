@@ -7,6 +7,7 @@ import {
   type BatchGroup, type BatchStatusResponse,
 } from '../services/api';
 import ErrorGuidance from './ErrorGuidance';
+import { withBase } from '../services/basePath';
 import '../components/Tabs.css';
 import './BatchTab.css';
 
@@ -185,7 +186,7 @@ export default function BatchTab() {
     setValidatingJob(jobId);
     try {
       const meta = await createSessionFromJob(jobId, user?.emp_id || '');
-      window.open(`/docx-viewer.html?session=${meta?.session_id || jobId}`, '_blank', 'noopener,noreferrer');
+      window.open(withBase(`/docx-viewer.html?session=${meta?.session_id || jobId}`), '_blank', 'noopener,noreferrer');
     } catch (err: any) {
       setPlanError(err?.response?.data?.detail || err?.message || 'Could not prepare this chapter for validation.');
     } finally {
@@ -616,7 +617,7 @@ export default function BatchTab() {
                           compact
                           info={item.error_info}
                           rawError={item.error}
-                          logUrl={item.job_id ? `/api/log/${item.job_id}` : undefined}
+                          logUrl={item.job_id ? withBase(`/api/log/${item.job_id}`) : undefined}
                           onRetry={() => handleRetryChapter(item.task_name)}
                           retryDisabled={isRunning}
                           retryTitle={isRunning
@@ -639,7 +640,7 @@ export default function BatchTab() {
                           compact
                           warning
                           info={{ ...item.validation_error_info, title: `Finished, but validation did not run — ${item.validation_error_info.title}` }}
-                          logUrl={item.job_id ? `/api/log/${item.job_id}` : undefined}
+                          logUrl={item.job_id ? withBase(`/api/log/${item.job_id}`) : undefined}
                           extraAction={{
                             label: '🔍 Run validation only',
                             onClick: () => handleRevalidate(item),
@@ -654,7 +655,7 @@ export default function BatchTab() {
                     </td>
                     <td>
                       {item.status === 'completed' && item.job_id ? (
-                        <a className="btn-download" href={`/api/download/${item.job_id}`} target="_blank" rel="noreferrer">
+                        <a className="btn-download" href={withBase(`/api/download/${item.job_id}`)} target="_blank" rel="noreferrer">
                           📥 Download
                         </a>
                       ) : (

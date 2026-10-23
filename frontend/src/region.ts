@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { API_BASE } from './services/basePath';
 
 // The active region pack (name, products, DTD families) comes from the backend
 // (GET /api/region, backed by regions/<REGION_ID>/region.yaml) so no screen hard-codes a
@@ -22,7 +23,7 @@ let cached: Promise<RegionInfo> | null = null;
 
 export function loadRegion(): Promise<RegionInfo> {
   if (!cached) {
-    const base = (import.meta as any).env?.VITE_API_URL || '';
+    const base = API_BASE;
     cached = fetch(`${base}/api/region`)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
       .catch((err) => {

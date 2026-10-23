@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { getRecentJobs, downloadBySession, resumeValidationSession, deleteValidationSession, createSessionFromJob, RecentJob } from '../services/api';
+import { withBase } from '../services/basePath';
 import './RecentJobs.css';
 
-const DOCX_VIEWER_URL = '/docx-viewer.html';
+const DOCX_VIEWER_URL = withBase('/docx-viewer.html');
 
 export default function RecentJobs() {
   const { user } = useAuth();

@@ -1,8 +1,9 @@
 import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import './CorrectionChat.css';
+import { API_BASE } from '../../services/basePath';
 
-const API_URL = (import.meta as any).env?.VITE_API_URL || '';
+const API_URL = API_BASE;
 
 /** The block the reviewer is correcting, captured from the editor when the chat opened. */
 export interface CapturedBlock {

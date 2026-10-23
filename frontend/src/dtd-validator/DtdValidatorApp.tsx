@@ -3,8 +3,9 @@ import PxmlEditor from '../docx-viewer/components/PxmlEditor';
 import type { DtdResult, DtdSchema, DtdFamily } from '../docx-viewer/components/PxmlEditor';
 import '../docx-viewer/DocxViewerApp.css';
 import { useRegion } from '../region';
+import { API_BASE } from '../services/basePath';
 
-const API_URL = (import.meta as any).env?.VITE_API_URL || '';
+const API_URL = API_BASE;
 
 const API_ERROR_RESULT = (msg: string): DtdResult => ({
   available: false,

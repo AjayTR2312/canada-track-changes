@@ -13,8 +13,9 @@ import type { ParsedDocx, TrackChange, ChunkMatch, ExcelValidationMap, ExcelMeta
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import type { MatchDetail } from './excelParser';
 import './DocxViewerApp.css';
+import { API_BASE } from '../services/basePath';
 
-const API_URL = '';
+const API_URL = API_BASE;
 
 type ViewerMode = 'docx' | 'pdf';
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useJob } from '../context/JobContext';
 import { JobStatus, getJobLog, cancelJob, rerunJob, revalidateJob } from '../services/api';
+import { withBase } from '../services/basePath';
 import RecentJobs from './RecentJobs';
 import ErrorGuidance from './ErrorGuidance';
 import { useRegion } from '../region';
@@ -151,7 +152,7 @@ export default function ProcessingTab({ jobId, status, files, productType, uploa
                 ? { ...status.validation_error_info, title: `Validation report could not be generated — ${status.validation_error_info.title}` }
                 : undefined}
               rawError={`Validation report could not be generated: ${status.validation_error}`}
-              logUrl={jobId ? `/api/log/${jobId}` : undefined}
+              logUrl={jobId ? withBase(`/api/log/${jobId}`) : undefined}
               extraAction={jobId ? {
                 label: '🔍 Run validation only',
                 onClick: handleRevalidate,
@@ -168,7 +169,7 @@ export default function ProcessingTab({ jobId, status, files, productType, uploa
           <ErrorGuidance
             info={status?.error_info}
             rawError={status?.error || 'Unknown error'}
-            logUrl={jobId ? `/api/log/${jobId}` : undefined}
+            logUrl={jobId ? withBase(`/api/log/${jobId}`) : undefined}
             onRetry={handleRerun}
             retryDisabled={uploading}
             retryTitle="Start a new run using the input files saved on the server (no re-upload)"
