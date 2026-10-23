@@ -8,6 +8,17 @@ __pycache__/
 *.pyo
 *.spec
 
+# Node / frontend build artifacts (frontend is built inside the Docker image)
+node_modules/
+**/node_modules/
+frontend/dist/
+docx-viewer-v2/**/dist/
+
+# Local Python virtualenvs
+.venv/
+venv/
+env/
+
 # Local output folders
 pipeline_jobs/
 pipeline_output/

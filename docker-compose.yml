@@ -12,7 +12,8 @@ services:
       # All persistent state lives in this S3 bucket (credentials: the host's IAM role, or the
       # standard AWS_* variables from .env for local runs). No volume needed: /tmp is only scratch.
       - S3_BUCKET_NAME=${S3_BUCKET_NAME:-a209309-s3-cdntrackchanges-653514985368-us-east-1-an}
-    command: uvicorn pipeline_api:app --host 0.0.0.0 --port 8000
+    # static_react:app serves the FastAPI backend AND the built React frontend.
+    command: uvicorn static_react:app --host 0.0.0.0 --port 8000
     restart: unless-stopped
     deploy:
       resources:
