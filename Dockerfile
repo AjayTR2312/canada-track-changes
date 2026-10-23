@@ -23,9 +23,13 @@ WORKDIR /build
 COPY frontend/package.json frontend/package-lock.json ./
 RUN npm ci
 COPY frontend/ ./
+# Guard: if a host node_modules leaked in (e.g. a stale/missing .dockerignore),
+# the copied Windows binaries shadow the Linux ones and `tsc` fails with
+# "tsc: Permission denied". Wiping and reinstalling guarantees correct, executable
+# Linux binaries regardless of what the build context shipped.
 # Produces /build/dist (host app + docx-viewer + dtd-validator bundles), which
 # static_react.py serves: /assets via StaticFiles and index.html as SPA fallback.
-RUN npm run build
+RUN rm -rf node_modules && npm ci && npm run build
 
 # -----------------------------------------------------------------------------
 # Stage 2 — Python runtime
