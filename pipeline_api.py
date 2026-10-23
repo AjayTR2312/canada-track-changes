@@ -1546,6 +1546,14 @@ async def health_check():
             "storage": {"ok": ok, "detail": detail}}
 
 
+@app.get("/health")
+async def liveness():
+    """Lightweight liveness probe for the deployment platform (Plexus) load balancer.
+    Always 200 and does no I/O, so a transient S3/network hiccup can't get the pod killed.
+    Registered before the SPA catch-all in static_react so it is never shadowed."""
+    return {"status": "ok"}
+
+
 @app.get("/api/region")
 async def region_info():
     """Active region pack's public info (name, products, DTD families) so the UI never hard-codes a region."""

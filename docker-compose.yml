@@ -9,11 +9,12 @@ services:
       - .env
     environment:
       - PIPELINE_MAX_WORKERS=6
+      # The image ENTRYPOINT binds $PORT; keep it in sync with the published port.
+      - PORT=8000
       # All persistent state lives in this S3 bucket (credentials: the host's IAM role, or the
       # standard AWS_* variables from .env for local runs). No volume needed: /tmp is only scratch.
       - S3_BUCKET_NAME=${S3_BUCKET_NAME:-a209309-s3-cdntrackchanges-653514985368-us-east-1-an}
-    # static_react:app serves the FastAPI backend AND the built React frontend.
-    command: uvicorn static_react:app --host 0.0.0.0 --port 8000
+    # entrypoint.sh serves the FastAPI backend AND the built React frontend (static_react:app).
     restart: unless-stopped
     deploy:
       resources:
@@ -30,7 +31,10 @@ services:
     environment:
       - API_URL=http://api:8000
       - S3_BUCKET_NAME=${S3_BUCKET_NAME:-a209309-s3-cdntrackchanges-653514985368-us-east-1-an}
-    command: streamlit run streamlit_app.py --server.port 8501 --server.address 0.0.0.0 --server.headless true
+    # Override the image ENTRYPOINT: this service runs the Streamlit UI, not the API.
+    entrypoint: ["streamlit", "run", "streamlit_app.py", "--server.port", "8501", "--server.address", "0.0.0.0", "--server.headless", "true"]
+    healthcheck:
+      disable: true
     depends_on:
       - api
     restart: unless-stopped

@@ -1,70 +1,91 @@
 # syntax=docker/dockerfile:1
-
-# ──────────────────────────────────────────────────────────────────────────
-# Stage 1 — Build the React/Vite frontend
-# Produces frontend/dist, which the FastAPI app (static_react.py) serves.
-# ──────────────────────────────────────────────────────────────────────────
-FROM public.ecr.aws/docker/library/node:20-slim AS frontend-build
-
-WORKDIR /frontend
-
-# Install dependencies first (better layer caching).
+#
+# Single-container image for the Plexus (StreamLit template) deployment.
+#
+# Despite the template's name it hosts any single-container app that serves HTTP
+# on one port. Here that is the FastAPI backend (pipeline_api), which also serves
+# the built React UI as static files via static_react:app. Pipeline jobs run in
+# an in-process ProcessPoolExecutor, so no separate worker is needed; durable
+# state lives in S3, which lets the pod run with a read-only root filesystem and
+# keep all scratch under /tmp.
+#
+# BUILD CONTEXT MUST BE THE REPOSITORY ROOT (the backend imports sibling packages
+# such as canada_pipeline/, src/, api/ at runtime):
+#
+#   docker build -t canada-track-changes .
+#
+# -----------------------------------------------------------------------------
+# Stage 1 — build the React frontend to static files
+# -----------------------------------------------------------------------------
+FROM public.ecr.aws/docker/library/node:20 AS frontend
+WORKDIR /build
+# Install dependencies first for better layer caching.
 COPY frontend/package.json frontend/package-lock.json ./
 RUN npm ci
-
-# Build the production bundle (tsc + vite build → /frontend/dist).
 COPY frontend/ ./
+# Produces /build/dist (host app + docx-viewer + dtd-validator bundles), which
+# static_react.py serves: /assets via StaticFiles and index.html as SPA fallback.
 RUN npm run build
 
+# -----------------------------------------------------------------------------
+# Stage 2 — Python runtime
+# -----------------------------------------------------------------------------
+# Full (non-slim) image: ships the shared libraries PyMuPDF / Pillow / NumPy need,
+# reducing missing-.so surprises.
+FROM public.ecr.aws/docker/library/python:3.12 AS runtime
 
-# ──────────────────────────────────────────────────────────────────────────
-# Stage 2 — Python backend (FastAPI) that also serves the built frontend
-# ──────────────────────────────────────────────────────────────────────────
-FROM public.ecr.aws/docker/library/python:3.12-slim AS runtime
-
-# System libraries required by the pipeline:
-#   poppler-utils  → pdf2image / pdfplumber
-#   libGL/glib/... → Pillow, PyMuPDF, OpenCV-style image ops
-#   curl           → container HEALTHCHECK
+# System libraries the PDF / image stack needs at runtime.
+#   poppler-utils            - pdf2image / pdfplumber
+#   libgomp1                 - OpenMP runtime for NumPy
+#   libglib2.0-0, libsm6,    - image libs used by Pillow / PyMuPDF
+#   libxext6, libxrender-dev
+#   curl                     - container HEALTHCHECK
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential curl poppler-utils \
         libglib2.0-0 libsm6 libxext6 libxrender-dev libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
-# Non-root runtime user.
-RUN groupadd -g 1234 deploymentgroup && \
-    useradd -m -u 1234 -g deploymentgroup deployment
+# Non-root user (Plexus runs containers unprivileged).
+RUN groupadd -g 1234 deploymentgroup \
+    && useradd -m -u 1234 -g deploymentgroup deployment
 
 WORKDIR /workspace
 
-RUN mkdir -p /workspace/pipeline_jobs /workspace/pipeline_output /workspace/logs && \
-    chown -R deployment:deploymentgroup /workspace
+# Install Python dependencies as root, into the system site-packages, BEFORE
+# switching to the non-root user. This matters: at runtime HOME=/tmp, so a
+# per-user install (~/.local) would not be importable. Windows-only packages in
+# requirements.txt carry platform markers and are skipped on Linux.
+COPY requirements.txt ./requirements.txt
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt
 
-# Install Python dependencies (Windows-only packages are skipped via markers).
-COPY --chown=deployment:deploymentgroup requirements.txt /workspace/requirements.txt
+# Application code + the compiled frontend.
+COPY . /workspace
+COPY --from=frontend /build/dist /workspace/frontend/dist
 
-USER deployment
-ENV PATH="/home/deployment/.local/bin:$PATH" \
-    PYTHONUNBUFFERED=1 \
-    PYTHONDONTWRITEBYTECODE=1
-
-RUN pip install --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
-
-# Application source.
-USER root
-COPY --chown=deployment:deploymentgroup . /workspace
-
-# Built React assets from the frontend stage → served by static_react.py.
-COPY --from=frontend-build --chown=deployment:deploymentgroup /frontend/dist /workspace/frontend/dist
+RUN chmod +x entrypoint.sh \
+    && chown -R deployment:deploymentgroup /workspace
 
 USER deployment
+# Plexus runs the pod with a READ-ONLY root filesystem, so the app must keep its
+# scratch/working files under a writable path (/tmp). The backend already writes
+# all scratch under tempfile.gettempdir(); durable data lives in S3. HOME and the
+# cache dirs are redirected to /tmp so tooling that writes to them still works.
+# Everything here can be overridden via the Deployment Job environment tab.
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PORT=8501 \
+    PIPELINE_MAX_WORKERS=6 \
+    HOME=/tmp \
+    TMPDIR=/tmp \
+    XDG_CACHE_HOME=/tmp/.cache \
+    MPLCONFIGDIR=/tmp/.mpl
 
-# FastAPI (API + React frontend) on 8000; Streamlit on 8501 (optional).
-EXPOSE 8000 8501
+EXPOSE 8501
 
+# Health endpoint the platform / load balancer can probe. A longer start period
+# accounts for the heavy first-import of the conversion stack (PyMuPDF, lxml).
 HEALTHCHECK --interval=30s --timeout=10s --start-period=80s --retries=3 \
-    CMD curl -f http://localhost:8000/api/health || exit 1
+    CMD curl -fsS "http://localhost:${PORT}/health" || exit 1
 
-# static_react:app = FastAPI backend (pipeline_api) + mounted React SPA.
-CMD ["uvicorn", "static_react:app", "--host", "0.0.0.0", "--port", "8000"]
+ENTRYPOINT ["./entrypoint.sh"]
