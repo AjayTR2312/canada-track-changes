@@ -148,7 +148,7 @@ def _run_pipeline_logic(job_id: str, docx_path: str, pxml_path: str, output_dir:
 
     try:
         # Import all pipeline dependencies
-        from finaloutputs.chapter_section import extract_designator_pattern_using_llm
+        from canada_pipeline.chapter_section import extract_designator_pattern_using_llm
         from full_section_insertion_prevendor import PXMLInserter
         from inline_replacement_section import SectionLineReplacement
         from new_footnotes_insertions import process_all_footnote_insertions

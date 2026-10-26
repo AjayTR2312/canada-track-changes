@@ -132,7 +132,7 @@ def build_enriched_dataframe(
         - 'pxml_content': The PXML file content.
     """
     from track_changes_df import process_docx
-    from finaloutputs.chapter_section import extract_designator_pattern_using_llm
+    from canada_pipeline.chapter_section import extract_designator_pattern_using_llm
     from inline_footnotes_insertion import build_anthropic_client
     from config import MODEL_OPUS
 

@@ -2,7 +2,7 @@
 import os
 from dotenv import load_dotenv
 load_dotenv()
-from finaloutputs.chapter_section import extract_designator_pattern_using_llm
+from canada_pipeline.chapter_section import extract_designator_pattern_using_llm
 from canada_pipeline.full_section_insertion_prevendor import PXMLInserter
 from canada_pipeline.inline_replacement_section import SectionLineReplacement
 from canada_pipeline.new_footnotes_insertions import process_all_footnote_insertions

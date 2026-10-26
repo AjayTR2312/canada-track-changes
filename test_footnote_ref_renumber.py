@@ -110,7 +110,7 @@ def main():
     from canada_pipeline.sectionnumber_filling import fill_sections_backward_verbose
     from canada_pipeline.inline_footnotes_insertion import build_anthropic_client
     from canada_pipeline.config import MODEL_SONNET
-    from finaloutputs.chapter_section import extract_designator_pattern_using_llm
+    from canada_pipeline.chapter_section import extract_designator_pattern_using_llm
 
     result = results["result"]
     no_changes_df = results["no_changes_df"]

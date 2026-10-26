@@ -261,7 +261,7 @@ def _run_pipeline_job(job_id: str, docx_path: str, pxml_path: str, output_dir: s
             remaining_insertions_df, create_edgecase_section_dict,
             extract_sectionedgecase_key, update_designator_by_name_match
         )
-        from finaloutputs.chapter_section import extract_designator_pattern_using_llm
+        from canada_pipeline.chapter_section import extract_designator_pattern_using_llm
         from canada_pipeline.full_section_insertion_prevendor import PXMLInserter
         from canada_pipeline.inline_replacement_section import SectionLineReplacement
         from canada_pipeline.new_footnotes_insertions import process_all_footnote_insertions

@@ -23,10 +23,8 @@ env/
 pipeline_jobs/
 pipeline_output/
 
-# finaloutputs: keep the code package (imported at runtime), drop generated data
-finaloutputs/*
-!finaloutputs/__init__.py
-!finaloutputs/chapter_section.py
+# finaloutputs: generated per-run data only; drop the whole folder from the image
+finaloutputs/
 
 # Dead code and standalone tools are not needed in the deployed image
 legacy/

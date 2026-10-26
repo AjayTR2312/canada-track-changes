@@ -17,7 +17,7 @@ from continous_ncont_insertions import *
 from newline_insertions import *
 from insertions_paragraphs import *
 from section_name_edge_cases import *
-from finaloutputs.chapter_section import extract_designator_pattern_using_llm
+from canada_pipeline.chapter_section import extract_designator_pattern_using_llm
 from inline_replacement_section import SectionLineReplacement
 from section_insertion import SectionExtractor
 from track_changes_df import process_docx

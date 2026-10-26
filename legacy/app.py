@@ -10,7 +10,7 @@ import shutil
 import re
 import anthropic
 import pandas as pd
-from finaloutputs.chapter_section import extract_designator_pattern_using_llm
+from canada_pipeline.chapter_section import extract_designator_pattern_using_llm
 from full_section_insertion_prevendor import PXMLInserter
 from inline_replacement_section import SectionLineReplacement
 from section_insertion import SectionExtractor

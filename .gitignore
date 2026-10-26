@@ -26,12 +26,8 @@ pipeline_log*.txt
 # ─── Pipeline outputs & job data ───
 pipeline_jobs/
 pipeline_output/
-# finaloutputs holds generated data, but the package's code is imported at runtime.
-# Ignore the data, keep the two code files. Use /* (not /) so git can descend and
-# honor the negations below — a plain "finaloutputs/" would exclude the whole dir.
-finaloutputs/*
-!finaloutputs/__init__.py
-!finaloutputs/chapter_section.py
+# finaloutputs holds generated per-run data only; ignore the whole folder.
+finaloutputs/
 
 # ─── IDE ───
 .vscode/
